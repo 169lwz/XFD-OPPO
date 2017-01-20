@@ -230,16 +230,16 @@
                     <li>
                         <a href="#"><i class="icon-add-contact"></i>用户管理</a>
                         <ul class="closed">
-                            <li><a href="">浏览用户</a></li>
-                            <li><a href="">添加用户</a></li>
-                            <li><a href="">恢复用户</a></li>
+                            <li><a href="/admin/user/index">浏览用户</a></li>
+                            <li><a href="/admin/user/add">添加用户</a></li>
+                            <li><a href="/admin/user/recycle">回收站</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-share"></i>类别管理</a>
+                        <a href="#"><i class="icon-table"></i>类别管理</a>
                         <ul  class="closed">
-                            <li><a href="">浏览类别</a></li>
-                            <li><a href="">添加类别</a></li>
+                            <li><a href="/admin/type/index">浏览类别</a></li>
+                            <li><a href="/admin/type/add">添加类别</a></li>
                         </ul>
                     </li>  
                     <li>
@@ -249,6 +249,15 @@
                             <li><a href="">回收订单</a></li>
                         </ul>
                     </li>      
+                    </li>
+                     <li>
+                        <a href="#"><i class="icon-share"></i>商品管理</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/goods/index">浏览商品</a></li>
+                            <li><a href="/admin/goods/add">添加商品</a></li>
+                            <li><a href="/admin/goods/hsz">回收站</a></li>
+                        </ul>
+                    </li>              
                 </ul>
             </div> 
         </div>
@@ -259,7 +268,6 @@
              <!--表单数据验证失败提示信息-->
             @if(count($errors)>0)
                 <div class="mws-form-message error" style="display: block;">
-                    错误提示
                     <ul>
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -270,7 +278,6 @@
             <!--插入失败提示信息-->
             @if(!empty(session('error')))
                 <div class="mws-form-message error" style="display: block;">
-                    提示信息
                     <ul>
                         <li>{{ session('error') }}</li>  
                     </ul>
@@ -279,7 +286,6 @@
             <!--插入成功提示-->
              @if(!empty(session('success')))
                 <div class="mws-form-message success" style="display: block;">
-                    提示信息
                     <ul>
                         <li>{{ session('success') }}</li>  
                     </ul>
@@ -287,6 +293,7 @@
             @endif
 
             @section('con')
+            
             @show
 
 

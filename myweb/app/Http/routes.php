@@ -14,6 +14,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/admin/index','AdminController@admin');//后台首页
 
 Route::controller('/orders','OrdersController');   //订单管理
+
+Route::controller('/admin/user','Usercontroller');	//用户模块
+
+Route::controller('/admin/type','TypeController');// 分类模块
+
+Route::controller('/admin/goods','GoodsController');// 商品模块
+
