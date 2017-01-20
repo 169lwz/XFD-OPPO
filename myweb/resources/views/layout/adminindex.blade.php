@@ -238,10 +238,18 @@
                     <li>
                         <a href="#"><i class="icon-table"></i>类别管理</a>
                         <ul  class="closed">
-                            <li><a href="">浏览类别</a></li>
-                            <li><a href="">添加类别</a></li>
+                            <li><a href="/admin/type/index">浏览类别</a></li>
+                            <li><a href="/admin/type/add">添加类别</a></li>
                         </ul>
-                    </li>       
+                    </li>
+                     <li>
+                        <a href="#"><i class="icon-share"></i>商品管理</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/goods/index">浏览商品</a></li>
+                            <li><a href="/admin/goods/add">添加商品</a></li>
+                            <li><a href="/admin/goods/hsz">回收站</a></li>
+                        </ul>
+                    </li>              
                 </ul>
             </div> 
         </div>
