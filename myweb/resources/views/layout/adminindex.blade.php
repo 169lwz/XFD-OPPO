@@ -230,13 +230,13 @@
                     <li>
                         <a href="#"><i class="icon-add-contact"></i>用户管理</a>
                         <ul class="closed">
-                            <li><a href="">浏览用户</a></li>
-                            <li><a href="">添加用户</a></li>
-                            <li><a href="">恢复用户</a></li>
+                            <li><a href="/admin/user/index">浏览用户</a></li>
+                            <li><a href="/admin/user/add">添加用户</a></li>
+                            <li><a href="/admin/user/recycle">回收站</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-share"></i>类别管理</a>
+                        <a href="#"><i class="icon-table"></i>类别管理</a>
                         <ul  class="closed">
                             <li><a href="">浏览类别</a></li>
                             <li><a href="">添加类别</a></li>
@@ -280,6 +280,7 @@
             @endif
 
             @section('con')
+            
             @show
 
 

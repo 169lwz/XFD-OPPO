@@ -12,3 +12,7 @@
 */
 
 Route::get('/admin/index','AdminController@admin');//后台首页
+
+//用户模块
+Route::controller('/admin/user','Usercontroller');
+
