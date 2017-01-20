@@ -260,7 +260,6 @@
              <!--表单数据验证失败提示信息-->
             @if(count($errors)>0)
                 <div class="mws-form-message error" style="display: block;">
-                    错误提示
                     <ul>
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -271,7 +270,6 @@
             <!--插入失败提示信息-->
             @if(!empty(session('error')))
                 <div class="mws-form-message error" style="display: block;">
-                    提示信息
                     <ul>
                         <li>{{ session('error') }}</li>  
                     </ul>
