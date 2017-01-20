@@ -48,7 +48,7 @@
     			<div class="mws-form-row">
     				<label class="mws-form-label">图片</label>
     				<div class="mws-form-item">
-    					<input type="file" class="small" name="pic" value="{{old('username')}}">
+    					<input type="file" style="width:50%" class="small" name="pic" value="{{old('username')}}">
     				</div>
     			</div>     		
     		</div>
@@ -89,22 +89,6 @@
                     <label class="mws-form-label">库存</label>
                     <div class="mws-form-item">
                         <input type="text" class="small" name="store" value="{{old('store')}}">
-                    </div>
-                </div>          
-            </div>
-            <div class="mws-form-inline">
-                <div class="mws-form-row">
-                    <label class="mws-form-label">点击量</label>
-                    <div class="mws-form-item">
-                        <input type="text" class="small" name="click" value="{{old('click')}}">
-                    </div>
-                </div>          
-            </div>
-            <div class="mws-form-inline">
-                <div class="mws-form-row">
-                    <label class="mws-form-label">状态</label>
-                    <div class="mws-form-item">
-                        <input type="text" class="small" name="status" value="{{old('status')}}">
                     </div>
                 </div>          
             </div>
