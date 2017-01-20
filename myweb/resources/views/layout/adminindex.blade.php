@@ -270,7 +270,6 @@
             <!--插入成功提示-->
              @if(!empty(session('success')))
                 <div class="mws-form-message success" style="display: block;">
-                    提示信息
                     <ul>
                         <li>{{ session('success') }}</li>  
                     </ul>
