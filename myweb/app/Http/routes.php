@@ -11,4 +11,8 @@
 |
 */
 
-Route::get('/admin/index','AdminController@admin');//后台首页
+Route::get('/admin','AdminController@admin');//后台首页
+
+Route::controller('/admin/type','TypeController');// 分类模块
+
+Route::controller('/admin/goods','GoodsController');// 商品模块
