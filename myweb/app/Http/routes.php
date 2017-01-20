@@ -14,8 +14,7 @@
 
 Route::get('/admin/index','AdminController@admin');//后台首页
 
-//用户模块
-Route::controller('/admin/user','Usercontroller');
+Route::controller('/admin/user','Usercontroller');	//用户模块
 
 Route::controller('/admin/type','TypeController');// 分类模块
 
