@@ -86,3 +86,12 @@ body,
     text-align: center;
     text-decoration: none;
 }
+
+#edit{
+    
+    width:100px;
+    height:100px;
+    background:red;
+    z-index:1000;
+}
+

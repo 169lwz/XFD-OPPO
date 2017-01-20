@@ -10,5 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/admin/index','AdminController@admin');//后台首页
+
+Route::controller('/orders','OrdersController');   //订单管理

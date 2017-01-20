@@ -241,7 +241,14 @@
                             <li><a href="">浏览类别</a></li>
                             <li><a href="">添加类别</a></li>
                         </ul>
-                    </li>       
+                    </li>  
+                    <li>
+                        <a href="#"><i class="icon-share"></i>订单管理</a>
+                        <ul  class="closed">
+                            <li><a href="/orders/index">浏览订单</a></li>
+                            <li><a href="">回收订单</a></li>
+                        </ul>
+                    </li>      
                 </ul>
             </div> 
         </div>
