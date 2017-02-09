@@ -46,7 +46,7 @@ class Usercontroller extends Controller
     	//2.数据插入  (发送请求)
     		//获取参数
 
-    	dd($request);
+    	// dd($request);
     	$data = $request->except(['_token','repass']);
 
     	//数据处理
@@ -88,7 +88,7 @@ class Usercontroller extends Controller
 
     //删除方法(放入回收站)
     public function getHs($id){
-    	$res = DB::table('user')->where('id',$id)->update(['recycle' => 0]);
+    	$res = DB::table('user')->where('id',$id)->update(['recycle' => 0,'status'=>0]);
     	if($res){
     		return redirect('/admin/user/recycle')->with('success','放入回收站');
     	}else{
@@ -107,7 +107,7 @@ class Usercontroller extends Controller
      //执行修改
     public function postUpdate(Request $request){
     	//获取修改后的数据
-    	dd($request);
+    	// dd($request);
     	$data = $request->only(['email','status']);
     	//验证修改的数据
     	$this->validate($request, [
