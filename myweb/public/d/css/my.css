@@ -1,0 +1,257 @@
+
+.nnav li{
+
+		position:relative;
+
+	}
+
+	.nnav a{
+
+		position:relative;
+
+	}
+
+	.nnav .navvsub{
+
+		display: none;
+
+		background-color: #fff;
+
+		position: absolute;
+
+		top: 40px;
+
+		left:0;
+
+		z-index: 900;	
+
+		max-width:1200px;
+
+		height:396px;
+
+		background-color:#fff;
+
+		box-shadow:2px 2px 4px #acacac;
+
+	}
+
+	.nnav .nlihover{
+
+		display:inline;
+
+	}
+
+	.nnavarr{
+
+		position: absolute;
+
+		top: -7px;
+
+		width: 16px;
+
+		height: 16px;
+
+		line-height: 16px;
+
+		text-align: center;
+
+		font-size: 16px;
+
+		font-family: "\5b8b\4f53";
+
+		color:#fff;
+
+		text-decoration: none;
+
+	}
+
+	.nnavmain{
+
+		padding:12px 0;
+
+		overflow: hidden;
+
+		zoom:1;
+
+		font-family:'Arial';
+
+	}
+
+	.nnavmain .colbox{
+
+		float:left;
+
+		display:inline;
+
+		padding:10px 12px; 
+
+		height:352px;
+
+		overflow: hidden;
+
+		border-right:1px dashed #aeaeae;
+
+	}
+
+	.nnavmain .colthumb{
+
+		float:left;
+
+		display:inline;
+
+		padding:10px 10px 10px 12px;
+
+	}
+
+
+
+	.nnavmain .colbox h3,.nnavmain .colthumb h3{
+
+		font-size:12px;
+
+		font-weight:bold;
+
+		color: #D20D33;
+
+	}
+
+	
+
+	.nnavmain .colbox .catewrap{
+
+		padding-top:12px;
+
+		width: 320px;
+
+		overflow:hidden;
+
+		zoom:1;
+
+	}
+
+	.nnavmain .colbox .catewidth{
+
+		width:300px;
+
+	}
+
+	.nnavmain .colbox .catewrap h3.black{
+
+		color:#5E5E5E;
+
+	}
+
+	.nnavmain .colbox .catewrap .context{
+
+		margin-top:16px;
+
+	}
+
+	.nnavmain .colbox .catewrap .context a{
+
+		float:left;
+
+		display:inline;
+
+		width:auto;
+
+		margin-right:15px;
+
+		margin-bottom:8px;
+
+		white-space:nowrap;
+
+		*line-height:14px;
+
+		color:#5E5E5E;
+
+		overflow:hidden;
+
+	}
+
+	.nnavmain .colbox .catewrap .context a.cateitem{
+
+		width:50px;
+
+		margin-right:8px;
+
+	}
+
+	.nnavmain .colbox .catewrap .context a.yellow{
+
+		color:#B17E3F;
+
+	}
+
+	.nnavmain .colbox .catewrap .context a.red{
+
+		color:#D92200;
+
+	}
+
+	.nnavmain .colbox .nconwrap{
+
+		margin-top:12px;
+
+		width:190px;
+
+		overflow:hidden;
+
+		zoom:1;
+
+	}
+
+	/*.nconwrap p{
+
+		margin-bottom:10px;
+
+		padding-left:10px;
+
+		background:url(images/nticon.jpg) top left no-repeat;
+
+	}*/
+
+	.nconwrap a.yellow{
+
+		color:#B17E3F;
+
+	}
+
+	.nconwrap a.red{
+
+		color:#D92200;
+
+	}
+
+	.nconwrap a:hover,.nnavmain .colbox .catewrap .context a:hover{
+
+		color:#d70057;
+
+	}
+	#g{
+			width:200px;
+			height:160px;
+			position:fixed;
+			z-index:10;
+			right:0px;
+			bottom:0px;
+		}
+	 #register{
+                width:900px;
+                height:550px;
+                
+                float:left;
+                position:absolute;
+                right:0px;
+           }
+	#cc{
+		position:absolute;
+		left:50px;
+		top:100px;
+
+	}
+	#yz{
+		position:absolute;
+		left:490px;
+		color:red;
+	}

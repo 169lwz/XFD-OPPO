@@ -1,0 +1,1 @@
+(function(a){a.fn.togglePassword=function(c){var d=a.extend(a.fn.togglePassword.defaults,c),b=a(this);a(d.el).bind(d.ev,function(){"password"==a(b).attr("type")?a(b).attr("type","text").next().addClass("hide"):a(b).attr("type","password").next().removeClass("hide")})};a.fn.togglePassword.defaults={ev:"click"}})(jQuery);
