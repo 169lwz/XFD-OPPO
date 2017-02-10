@@ -704,7 +704,7 @@
       }
       var arr=[];
       $('input[info="0"]').each(function(i){
-        arr[i]=$(this).parent().parent().next('div').find('div:eq(1)').find('input').val();
+        arr[i]=$(this).parent().parent().next('div').find('div:eq(1)').find('input').val(); //购物车id
       });
       $.ajax({
         url:'/shop/txie',

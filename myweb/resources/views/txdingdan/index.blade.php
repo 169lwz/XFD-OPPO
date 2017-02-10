@@ -307,118 +307,41 @@
 
 
 <form id="order-create-form" class="g">
-    <div class="gi one-whole slab-white-border">
-      <div class="delivery-header">
-        <h1 class="h-epsilon">选择配送方式:</h1>
-      </div>
-      <div class='brick-shadow'>
-        <div class='radio-title'>
-          <strong>手机发货默认顺丰快递，如收货地址顺丰快递不能送达，我们会更改为EMS快递为您配送。</strong>
-        </div>
+<div class="gi one-whole slab-white-border">
+  <div class="delivery-header">
+    <h1 class="h-epsilon">选择配送方式:</h1>
+  </div>
+  <div class='brick-shadow'>
+    <div id="charu" class='radio-title'>
+      <strong>手机发货默认顺丰快递，如收货地址顺丰快递不能送达，我们会更改为EMS快递为您配送。</strong>
+    </div>
 
-        <div class="content">
-                <div class="address-form-field">
-          <div data-address-id="1284411" class="address-form">
-            <div class="g" id="address-edit-1284411">
-  <div class="gi field lap-one-whole desk-one-quarter">
-    <label>*收货人姓名</label>
-    <input type="hidden" value="1284411" name="id">
-    <input type="text" value="lisi" name="receiver">
-  </div>
-  <div class="g">
-    <div class="gi field lap-one-whole desk-one-quarter">
-      <label>*手机号码</label>
-      <input type="text" value="13855452354" name="mobile">
-    </div>
-  </div>
-    <div class="g field">
-    <label>*收货地址</label>
-    <div class="g">
-      <div class="gi basic-input one-whole desk-one-fifth">
-        <span class="icon icon-grey-arrow-down"></span>
-        <select data-region-default="1023" name="province_id" id="select12844111">
-        </select><a class="select mozilla mozilla45 not_msie custom-form_select12844111 responsive_select"><span class="select_content"><span class="select_button"><span class="select_button_icon"></span></span><span class="select_label"><span></span></span></span></a>
-      </div>
-      <div class="gi basic-input one-whole desk-one-fifth">
-        <span class="icon icon-grey-arrow-down"></span>
-        <select data-region-default="1100" name="city_id" id="select12844112">
-        </select><a class="select mozilla mozilla45 not_msie custom-form_select12844112 responsive_select"><span class="select_content"><span class="select_button"><span class="select_button_icon"></span></span><span class="select_label"><span></span></span></span></a>
-      </div>
-      <div class="gi basic-input one-whole desk-one-fifth">
-        <span class="icon icon-grey-arrow-down"></span>
-        <select data-region-default="1108" name="district_id" id="select12844113">
-        </select><a class="select mozilla mozilla45 not_msie custom-form_select12844113 responsive_select"><span class="select_content"><span class="select_button"><span class="select_button_icon"></span></span><span class="select_label"><span></span></span></span></a>
-      </div>
-      <div class="gi basic-input one-whole desk-one-fifth">
-        <span class="icon icon-grey-arrow-down"></span>
-        <select data-region-default="42382" name="town_id" id="select12844114">
-        </select><a class="select mozilla mozilla45 not_msie custom-form_select12844114 responsive_select"><span class="select_content"><span class="select_button"><span class="select_button_icon"></span></span><span class="select_label"><span></span></span></span></a>
-      </div>
-    </div>
-    <div class="g">
-      <div class="gi desk-two-thirds one-whole">
-        <input type="text" value="和平街" name="address-detail" class="address-detail">
-      </div>
-    </div>
-  </div>
-  <div class="g">
-    <div class="gi field lap-one-whole desk-one-quarter">
-      <label>联系邮箱</label>
-      <input type="text" value="48945618@qq.com" name="email">
-    </div>
-  </div>
-  <div class="form-actions">
-    <div class="pull-left">
-      <a data-id="1284411" href="javascript:;" class="button-light pull-left address-update">保存</a>
-      <a data-id="1284411" href="javascript:;" class="button-light pull-left address-cancel">取消</a>
-    </div>
-  </div>
-  <div class="dividing-line"></div>
-</div>
-          </div>
-          <div class="field radio-item dark xl">
-            <input type="hidden" value="lisi" class="address-form-receiver">
-            <input type="hidden" value="13855452354" class="address-form-mobile">
-            <input type="hidden" value="48945618@qq.com" class="address-form-email">
-            <input type="hidden" value="和平街" class="address-form-address">
-            <style type="text/css">
-              .checked_radio{
-                  background: rgba(0, 0, 0, 0) url("/sprite-icons.png") repeat scroll -580px -198px;
-              }
-            </style>
-            <span class="radio mozilla mozilla45 not_msie custom-form_radio1284411 checked_radio"><input type="radio" checked="" value="1284411" name="r6" id="radio1284411"></span>
-              <label for="radio1284411">
-                <div class="g address-form-content">
-                  <div class="gi desk-one-fifth one-whole">lisi</div>
-                  <div class="gi desk-one-fifth one-whole">138 5545 2354</div>
-                  <div class="gi desk-one-fifth one-whole">48945618@qq.com</div>
-                  <div class="gi desk-two-fifths one-whole">河南省南阳市淅川县盛湾镇和平街</div>
-                </div>
-                <div class="links">
-                  <a onclick="vm.edit(&quot;1284411&quot;)">编辑</a>
-                  <a data-id="1284411" class="remove-address" href="javascript:;">删除</a>
-                </div>
-              </label>
-            
-          </div>
-        </div>
+
+    <div class="content" style="display:none">
+      <div class="address-form-field">
+        <div class="field radio-item dark xl">
+          <span class="radio mozilla mozilla45 not_msie custom-form_radio1284411 checked_radio"></span>
+          <label for="radio1284411">
+            <div class="g address-form-content">
+              <div class="gi desk-one-fifth one-whole"></div>
+              <div class="gi desk-one-fifth one-whole"></div>
+              <div class="gi desk-one-fifth one-whole"></div>
+              <div class="gi desk-two-fifths one-whole">
+           
               </div>
-<!-- <div id="kuang">
-  <label for="radio0">
-    <div class="g address-form-content">
-      <div class="gi desk-one-fifth one-whole title">lisi</div>
-      <div class="gi desk-one-fifth one-whole">138 5545 2354</div>
-      <div class="gi desk-one-fifth one-whole">48945618@qq.com</div>
-      <div class="gi desk-two-fifths one-whole">河南省南阳市淅川县盛湾镇和平街</div>
-      <span class="radio mozilla mozilla45 not_msie custom-form_radio1284411 checked_radio"><input type="radio" checked="" value="1284411" name="r6" id="radio1284411"></span>
+            </div>
+            <div class="links">
+              <a class="bianji" href="javascript:;">编辑</a>
+              <a data-id="1284411" class="remove-address" href="javascript:;">删除</a>
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
-    <div class="links">
-      <a onclick="vm.edit(&quot;1284411&quot;)" href="javascript:;">编辑</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a data-id="1284411" class="remove-address" href="javascript:;">删除</a>
-    </div>
-  </label>
-</div> -->
+
+
+    
+
 <br>
         <a class='button-light field' id="address_new" href='javascript:;'>添加新地址</a>
         <div id="block" class='js-content address-form-new' style='display:none;'>
@@ -441,28 +364,28 @@
                     请选择
                   </div>
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select1'><option value="800">省份/自治区</option></select>
+                  <select id='select1'><option value="x">省份/自治区</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select2' name='city_id'><option value="800">城市/地区</option></select>
+                  <select id='select2' name='city_id'><option value="x">城市/地区</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>              
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select3' name='district_id'><option value="800">区/县</option></select>
+                  <select id='select3' name='district_id'><option value="x">区/县</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>              
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select4' name='town_id'><option value="800">配送区域</option></select>
+                  <select id='select4' name='town_id'><option value="x">配送区域</option></select>
                 </div>
               </div>
             <div class="g">
@@ -618,77 +541,55 @@
                 <a href="javascript:;" id="update-invoice-btn" class="button button-light">重新编辑</a>
               </div>
             </div>
-            
-                        <div class="brick-shadow">
-                          <h4>商品清单：</h4>
-                            <div class="goods-list">
-                <div class="goods-list-show">
-                  <a class="goods-list-image" href="http://www.opposhop.cn/products/393" target="_blank">
-                    <img src="/txdd/2016120610125258462660023ba.png">
-                  </a>
-                </div>
-                <div class="goods-list-detail">
-                  <div class="goods-list-info goods-list-main">
-                    <div class="goods-list-description">
-                      <h4 class="heading">
-                        <a href="http://www.opposhop.cn/products/393" target="_blank">R9s 黑色版 静如墨玉</a>
-                      </h4>
-                      <p>黑色|全网通|64G</p>
-                    </div>
-                    <div class="goods-list-quantity"><strong>×1</strong></div>
-                    <div class="goods-list-price"><strong>￥
-                                        2799.00
-                                        </strong></div>
-                  </div>
-                                    <div class="goods-list-info goods-list-attach goods-list-gift">
-                    <div class="goods-list-description">
-                      <i class="goods-list-flag-gift">赠品</i>
-                      <a href="http://www.opposhop.cn/products/383" target="_blank">蓝牙音箱Q9</a>
-                    </div>
-                    <div class="goods-list-quantity">×1</div>
-                  </div>
-                  
-                                                               <div class="goods-list-info goods-list-attach goods-list-service">
-                    <div class="goods-list-description">
-                      <i class="goods-list-flag-service">延保</i>
-                      延长保半年                    </div>
-                    <div class="goods-list-quantity">×1</div>
-                    <div class="goods-list-price">￥
-                                        0.00
-                                        </div>
-                  </div>
-                                                                                                            </div>
-              </div>
-                           <div class="goods-list">
-                <div class="goods-list-show">
-                  <a class="goods-list-image" href="http://www.opposhop.cn/products/397" target="_blank">
-                    <img src="/txdd/2016120610125258462624378c0.png">
-                  </a>
-                </div>
-                <div class="goods-list-detail">
-                  <div class="goods-list-info goods-list-main">
-                    <div class="goods-list-description">
-                      <h4 class="heading">
-                        <a href="http://www.opposhop.cn/products/397" target="_blank">A57 玫瑰金 1600万美颜自拍</a>
-                      </h4>
-                      <p>玫瑰金|全网通|32G</p>
-                    </div>
-                    <div class="goods-list-quantity"><strong>×1</strong></div>
-                    <div class="goods-list-price"><strong>￥
-                                        1599.00
-                                        </strong></div>
-                  </div>
-                                    <div class="goods-list-info goods-list-attach goods-list-gift">
-                    <div class="goods-list-description">
-                      <i class="goods-list-flag-gift">赠品</i>
-                      <a href="http://www.opposhop.cn/products/384" target="_blank">蓝牙耳机Q13</a>
-                    </div>
-                    <div class="goods-list-quantity">×1</div>
-                  </div>
-                  
-                                                                                                                   </div>
-              </div>
-                                      </div>
+           
+<div class="brick-shadow">
+  <h4>商品清单：</h4>
+  @foreach($arr1 as $v) 
+  <div class="goods-list">
+    <div class="goods-list-show">
+      <a class="goods-list-image" href="http://www.opposhop.cn/products/393" target="_blank">
+        <img src="/image/{{$v['sf']}}">
+      </a>
+    </div>
+    <div class="goods-list-detail">
+      <div class="goods-list-info goods-list-main">
+        <div class="goods-list-description">
+          <h4 class="heading">
+            <a href="http://www.opposhop.cn/products/393" target="_blank">{{$v['goods']}}</a>
+          </h4>
+          <p>黑色|全网通|64G</p>
+        </div>
+        <div class="goods-list-quantity"><strong>×<span>{{$v['num']}}</span></strong></div>
+        <div class="goods-list-price"><strong>￥<span>{{$v['price']}}.00</span></strong></div>
+      </div>
+      <!-- <div class="goods-list-info goods-list-attach goods-list-gift">
+        <div class="goods-list-description">
+          <i class="goods-list-flag-gift">赠品</i>
+          <a href="http://www.opposhop.cn/products/383" target="_blank">蓝牙音箱Q9</a>
+        </div>
+        <div class="goods-list-quantity">×1</div>
+      </div> -->
+
+      <div class="goods-list-info goods-list-attach goods-list-service">
+        <div class="goods-list-description">
+          <i class="goods-list-flag-service">延保</i>
+          延长保半年                   
+        </div>
+        <div class="goods-list-quantity">×<span>1</span></div>
+        <div class="goods-list-price">￥<span>0.00</span></div>
+      </div>
+    </div>
+  </div>
+  @endforeach
+</div>
+
+
+
+
+
+
+
+
 
                         <input name="voucher" value="" type="hidden">
 <div class="brick-shadow coupon-p">
@@ -737,7 +638,7 @@
     </div>
   </div>
 
-    <div id="dialog-coupon-code" class="hidden">
+  <div id="dialog-coupon-code" class="hidden">
     <div class="mask"></div>
     <div class="dialog-common dialog-box-common">
       <div class="dialog-container">
@@ -753,62 +654,44 @@
       </div>
     </div>
   </div>
-
-    <div id="dialog-coupon-mykq" class="hidden">
-    <div class="mask"></div>
-    <div class="dialog-common dialog-box-common">
-      <div class="dialog-container">
-        <a class="dialog-close">×</a>
-        <div class="dialog-content">
-          <div class="g">
-            <input name="coupon-mykq-m" placeholder="输入口令有惊喜" type="text">
-          </div>
-          <p class="alert-danger"></p>
-          <p>（优惠码一旦使用，不可取消）</p>
-          <p><a class="button one-whole use-btn">立即使用</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 
-                        <div class="brick-shadow fee-list">
-
-              <ul>
-                <li>
-                  <span class="fee-list-title">商品数量：</span>
-                  <span class="fee-list-data">5</span>
-                </li>
-                <li>
-                  <span class="fee-list-title">合计：</span>
-                  <span class="fee-list-data" id="trade_total_fee">￥<font>4398.00</font></span>
-                </li>
-                <li>
-                  <span class="fee-list-title">优惠券/码：</span>
-                  <span class="fee-list-data" id="discount_fee_price">- ￥0.00</span>
-                </li>
-                                <li>
-                    <span class="fee-list-title">邮费（<font color="color_red">全场包邮</font>）：</span>
-                  <span class="fee-list-data" id="shipping_fee_price">+ ￥0.00</span>
-                </li>
-                <li class="fee-list-payment">
-                  <span class="fee-list-title">手续费（货到付款手续费）：</span>
-                  <span class="fee-list-data" id="payment_fee_price">+ ￥0.00</span>
-                </li>
-                <li>
-                  <span class="fee-list-title">应付金额：</span>
-                                      <span class="fee-list-data fee-list-amount" id="amount_fee_price">￥4398.00</span>
-                                  </li>
-                                <li class="cart-alipay-hb" data-checkfree="0">
-                  <span class="fee-list-title"><i class="icon-hb"></i>花呗最低月供：</span>
-                  <span class="fee-list-data total-hb">￥395.82x12期</span>
-                </li>
-                              </ul>
-            </div>
+  <div class="brick-shadow fee-list">
+    <ul>
+      <li>
+        <span class="fee-list-title">商品数量：</span>
+        <span id="jishu" class="fee-list-data">5</span>
+      </li>
+      <li>
+        <span class="fee-list-title">合计：</span>
+        <span class="fee-list-data" id="trade_total_fee">￥<font>4398.00</font></span>
+      </li>
+      <li>
+        <span class="fee-list-title">优惠券/码：</span>
+        <span class="fee-list-data" id="discount_fee_price">- ￥<span id="yhq">20.00</span></span>
+      </li>
+      <li>
+        <span class="fee-list-title">邮费（<font color="color_red">全场包邮</font>）：</span>
+        <span class="fee-list-data" id="shipping_fee_price">+ ￥<span id="yf">10.00</span></span>
+      </li>
+      <li class="fee-list-payment">
+        <span class="fee-list-title">手续费（货到付款手续费）：</span>
+        <span class="fee-list-data" id="payment_fee_price">+ ￥<span>0.00</span></span>
+      </li>
+      <li>
+        <span class="fee-list-title">应付金额：</span>
+        <span class="fee-list-data fee-list-amount" id="amount_fee_price">￥<span id="yifu">4398.00</sapn></span>
+      </li>
+      <li class="cart-alipay-hb" data-checkfree="0">
+        <span class="fee-list-title"><i class="icon-hb"></i>花呗最低月供：</span>
+        <span class="fee-list-data total-hb">￥395.82x12期</span>
+      </li>
+    </ul>
+  </div>
 
             <div class="form-actions brick-shadow right-text">
-                                  <a class="button cart-button">提交订单</a>
+                <a id="tijiao" class="button cart-button">提交订单</a>
             </div>
           </div>
 
@@ -959,6 +842,7 @@
 
     var token=$('input[name="_token"]').val();
     myajax(0);
+    myadd();//显示收货地址
     $('#address_new').click(function(){
       $('#block').show();
     });
@@ -995,47 +879,152 @@
       });    
     });
 
-    $('#submit').click(function(){
-      var name=$('input[name="name"]').val();
-      var phone=$('input[name="phone"]').val();
-      var address=$('input[name="address-detail"]').val();
-      var email=$('input[name="email"]').val();
-      var select1=$('#select1').val();
-      var select2=$('#select2').val();
-      var select3=$('#select3').val();
-      var select4=$('#select4').val();
+    $('#submit').click(function(){ //填写收货地址的保存按钮
+      var obj=new Object();
+      console.log(obj);
+      // return false;
+      obj.name=$('input[name="name"]').val();
+      obj.phone=$('input[name="phone"]').val();
+      obj.xiangxi=$('input[name="address-detail"]').val();
+      obj.email=$('input[name="email"]').val();
+      obj.sheng=$('#select1').val(); //城市联动的id
+      obj.shi=$('#select2').val();
+      obj.xian=$('#select3').val();
+      obj.jiedao=$('#select4').val();
+      obj.sheng1=$('#select1 option:selected').text(); //城市联动的名称
+      obj.shi1=$('#select2 option:selected').text();
+      obj.xian1=$('#select3 option:selected').text();
+      obj.jiedao1=$('#select4 option:selected').text();
+      // console.log(obj);
+      // return false;
       var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
       var patrn1 = /^([0-9A-Za-z\-_\.]+)@([0-9A-Za-z]+\.[A-Za-z]{2,3}(\.[A-Za-z]{2})?)$/g;
-
-        if(!patrn.exec(phone)){
-          $('#phone').html('手机号码格式不正确!');
-          return false;
-        }else{
-          $('#phone').html('');
-          
-        }
-
-        if(!patrn1.exec(email)){
-          $('#email').html('邮箱格式不正确!');
-          return false;
-        }else{
-          $('#email').html('');
-        } 
-    
+      if(patrn.exec(phone)){
+        $('#phone').html('手机号码格式不正确!');
+        return false;
+      }else{
+        $('#phone').html('');
+      }
+      if(patrn1.exec(email)){
+        $('#email').html('邮箱格式不正确!');
+        return false;
+      }else{
+        $('#email').html('');
+      } 
       $.ajax({
         url:'/shop/biao',
         type:'post',
-        data:{'_token':token,'name':name,'phone':phone,'xiangxi':address,'email':email,'sheng':select1,'shi':select2,'xian':select3,'jiedao':select4},
+        data:{'_token':token,'obj':obj},
+        dataType:'text',
+        success:function(mes){
+          if(mes){
+            $('#block').hide();
+            $('input').val(''); $('select').val('x');
+            myadd();
+          }else{
+            $('#aaa').html('请将地址添加完整!');
+          }
+          
+        }
+      });
+    });
+    
+    function myadd(){ //添加完地址后无刷新显示地址
+      // $('.')
+       $.ajax({
+          url:'/shop/myadd',
+          type:'get',
+          dataType:'json',
+          success:function(mes){
+            // console.log(mes);
+             $('div[info="charu1"]').remove();
+             var add2 = null;
+             $(mes).each(function(i){
+                var add1=$('.content:eq(0)').clone().attr({'info':'charu1','style':'display:block','id':$(this).attr('id')});
+                 add2=add1.find('div').find('div').find('label').find('div').find('div');
+                 add2.html($(this).attr('name'));
+                 add2.next('div').html($(this).attr('phone'));
+                 add2.next('div').next('div').html($(this).attr('ema '));
+                 add2.next('div').next('div').next('div').html(($(this).attr('sheng1'))+($(this).attr('shi1'))+($(mes).attr('xian1'))+($(this).attr('jiedao1'))+($(this).attr('xiangxi')));
+                 // add1.appendTo($('#charu'));
+                 $('#charu').append(add1);
+              });
+            }
+          });
+      }
+
+    $('.remove-address').live('click',function(){ //删除添加的地址
+      var bq=$(this).parents('div[info="charu1"]'); //根据父辈元素最快获取顶级标签
+      $.ajax({
+        url:'/shop/del1',
+        type:'post',
+        data:{'_token':token,'id':bq.attr('id')},
+        success:function(mes){
+          if(mes=='yes'){
+            bq.remove();
+          }
+        }
+      });
+    })
+
+    $('.bianji').live('click',function(){
+      var bq1=$(this).parents('div[info="charu1"]');
+      
+      $.ajax({
+        url:'/shop/myadd',
+        type:'get',
+        data:{'_token':token},
+        dataType:'json',
+        success:function(mes){
+          // console.log($(mes));
+          $(mes).each(function(){
+            if($(this).attr('id')==bq1.attr('id')){
+              $('input[name="name"]').val($(this).attr('name'));
+              $('input[name="phone"]').val($(this).attr('phone'));
+              $('input[name="address-detail"]').val($(this).attr('xiangxi'));
+              $('input[name="email"]').val($(this).attr('email'));
+              $('#select1').val($(this).attr('sheng')); //城市联动的id
+              $('#select2').val($(this).attr('shi'));
+              $('#select3').val($(this).attr('xian'));
+              $('#select4').val($(this).attr('jiedao'));
+              $('#block').show();
+            }
+          })
+        }
+      });
+    })
+
+
+    $('#tijiao').click(function(){ //提交订单的按钮
+      $.ajax({
+        url:'/dingdan/scorders',
+        type:'post',
+        data:{'_token':token},
         dataType:'text',
         success:function(mes){
           if(mes=='yes'){
-            $('#block').hide();
-          }else{
-            $('#aaa').html('请将地址添加完整!');
+            location.href='/dingdan/zhifu';
           }
         }
       });
     });
+
+    function jishu(){
+      var a= 0; //数量
+      var b=0;  //总计
+      $('.goods-list-quantity').each(function(){
+         a+=parseInt($(this).find('span').text());
+         b+=(parseInt($(this).next('div').find('span').text()))*(parseInt($(this).find('span').text()));
+         // console.log(parseInt($(this).next('div').find('span').text()));
+         // console.log(parseInt($(this).find('span').text()));
+      });
+      $('#jishu').html(a);
+      $('#trade_total_fee').find('font').html(b);
+      $('#yifu').html(b+parseInt($('#yf').text())-parseInt($('#yhq').text()));
+    }
+
+    jishu();
+
     function myajax(upid){
       $.ajax({
         url:'/shop/site',
@@ -1043,7 +1032,7 @@
         data:{'_token':token,'upid':upid},
         dataType:'json',
         success:function(mes){
-          console.log($(mes));
+          // console.log($(mes));
           $(mes).each(function(){
             // console.log($(this).attr('id'))
             var op=$('<option value="'+$(this).attr('id')+'">'+$(this).attr('name')+'</option>');

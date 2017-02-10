@@ -16,7 +16,7 @@
   <meta name="keywords" content="OPPO,OPPO手机官网,OPPO智能手机,OPPO拍照手机,OPPO新款手机,OPPO手机资讯 " />
   <meta name="description" content="OPPO是一家全球性智能手机制造商和移动互联网服务商，让您随时了解OPPO手机官网,OPPO智能手机,,OPPO拍照手机OPPO新款手机,OPPO手机资讯等内容，为客户开创先进的智能手机产品和移动互联网服务。 " />
   <meta property="qc:admins" content="1257363774670076375" />
-  	<link media="all" type="text/css" rel="stylesheet" href="css/styles.css?v=20161221100627">
+  	<link media="all" type="text/css" rel="stylesheet" href="/dingdan/styles.css?v=20161221100627">
   <!-- <script src="http://www.oppo.com/cn/lib/modernizr.custom.js"></script>
  -->
   	<script type="text/javascript">
@@ -59,7 +59,7 @@
   <script src="http://shopfs.myoppo.com/cn/lib/selectivizr-min.js"></script>
   <link media="all" type="text/css" rel="stylesheet" href="http://shopfs.myoppo.com/cn/assets/stylesheets/ie.css?v=20161221100627">
   <![endif]-->
-  <style type="text/css">
+  <style type="/dingdan/text/css">
     .mykq{background: #e96864;text-align: center; line-height: 30px;color: #fff;}
     .mykq .wrapper{position: relative;}
     .mykq p{font-size: 14px;padding-top: 5px;}
@@ -77,7 +77,7 @@
     <div class='wrapper g'>
                   <ul class='gi log-area'>
   <li class='gi hidden hasLogin' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
-    <a href='http://www.opposhop.cn/orders'>
+    <a href='/dingdan/index'>
       <span class='text'>我的OPPO</span>
       <span class='icon icon-messages'></span>
       <span class='n-messages'>()</span>

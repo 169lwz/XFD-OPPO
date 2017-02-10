@@ -38,23 +38,6 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 Route::controller('/dingdan','DingdanController');  //(前台)订单管理
 
-// Route::get('/admin/index','AdminController@admin');//后台首页
-
-// Route::controller('/orders','OrdersController');   //订单管理
-
-// Route::controller('/admin/user','Usercontroller');	//用户模块
-
-// Route::controller('/admin/guanli','Guanlicontroller');	//管理员模块
-
-// Route::controller('/admin/type','TypeController');// 分类模块
-
-// Route::controller('/admin/goods','GoodsController');// 商品模块
-
-// Route::controller('/admin/login','AdminloginController'); //后台登录模块
-
-
-
-
 Route::controller('/home/login','LoginController'); //前台登录模块
 
 Route::post("/home/zhuce","AjaxController@zhuce");//ajax验证注册的账号
