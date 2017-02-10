@@ -25,3 +25,13 @@ Route::controller('/admin/type','TypeController');// 分类模块
 
 Route::controller('/admin/goods','GoodsController');// 商品模块
 
+Route::controller('/admin/talk','TalkController');// 评论模块
+
+Route::controller('/admin/detail','DetailController');// 后台商品详情
+
+Route::controller('/home/detail','DetailController');// 前台商品详情
+
+
+
+
+

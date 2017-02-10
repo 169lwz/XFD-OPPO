@@ -257,7 +257,15 @@
                             <li><a href="/admin/goods/add">添加商品</a></li>
                             <li><a href="/admin/goods/hsz">回收站</a></li>
                         </ul>
-                    </li>              
+                    </li> 
+                     <li>
+                        <a href="#"><i class="icon-share"></i>商品详情</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/detail/indexh">浏览商品详情</a></li>
+                            <li><a href="/admin/detail/add">添加商品详情</a></li>
+                            <li><a href="/admin/detail/hsz">回收站</a></li>
+                        </ul>
+                    </li>                      
                 </ul>
             </div> 
         </div>

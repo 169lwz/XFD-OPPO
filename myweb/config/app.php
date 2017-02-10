@@ -195,4 +195,9 @@ return [
 
     ],
 
+    'upload_dir'=>'./upload/',
+    'upload_dir1'=>'./upload1/',
+    'upload_dir2'=>'./upload2/'
+
+
 ];
