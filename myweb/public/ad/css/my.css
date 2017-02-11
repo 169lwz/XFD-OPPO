@@ -16,15 +16,70 @@
     text-align: center;
     text-decoration: none;
 }
-<<<<<<< HEAD
 
-#edit{
-    
-    width:100px;
-    height:100px;
-    background:red;
-    z-index:1000;
+
+#big1{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    background: black;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    width:100%;
+    height:500px;
+    background:;
+    z-index:10;
 }
 
-=======
->>>>>>> a003fc02c5a06ccf2059fa0214f9cee590747ab4
+#small1{
+    position:relative;
+    line-height: 100px;
+    margin:0 auto;
+    padding:0;
+    background:black;
+    width:800px;
+    height:300px;
+}
+
+
+.edit0{
+    width:90px;
+}
+
+#text-color{
+    position: relative;
+    text-align: center;
+    margin-top:10px;
+    color:white;
+}
+#text-color tr{
+    padding-top:0px;
+}
+
+#del{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    background: black;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    width:100%;
+    height:500px;
+    background:;
+    z-index:10;  
+}
+#del1{
+    position:absolute;
+    line-height: 500px;
+    margin:0 auto;
+    padding:0;
+    color:cyan;
+    text-align:auto;
+    font-size:20px;
+    width:300px;
+    height:300px;
+}

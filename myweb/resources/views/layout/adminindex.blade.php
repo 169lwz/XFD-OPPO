@@ -192,7 +192,7 @@
                     <ul>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">修改密码</a></li>
-                        <li><a href="index.html">退出</a></li>
+                        <li><a href="/admin/login/logout">退出</a></li>
                     </ul>
                 </div>
             </div>
@@ -233,6 +233,14 @@
                             <li><a href="/admin/user/index">浏览用户</a></li>
                             <li><a href="/admin/user/add">添加用户</a></li>
                             <li><a href="/admin/user/recycle">回收站</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-official"></i>管理员管理</a>
+                        <ul class="closed">
+                            <li><a href="/admin/guanli/index">浏览管理员</a></li>
+                            <li><a href="/admin/guanli/add">添加管理员</a></li>
+                            <li><a href="/admin/guanli/recycle">回收站</a></li>
                         </ul>
                     </li>
                     <li>

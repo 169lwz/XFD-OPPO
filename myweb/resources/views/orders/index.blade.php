@@ -50,32 +50,48 @@
 	   	</div>
 	</div>
 </div>
-<div id="edit" style="display:none">
-	<table border="1">
-		<tr>
-			<td id="edit1"></td>
-		</tr>
-	</table>
+<div id="big1" style="display:none">
+	<div id="small1">
+		<table id="text-color" border="1" width="800px">
+			<tr><th colspan="8">	订单详情</th></tr>
+			<tr>
+				<th>用户名</th>
+				<th>电话</th>
+				<th>地址</th>
+				<th>商品类别</th>
+				<th>商品名称</th>
+				<th>购买数量</th>
+				<th>单价</th>
+				<th>小计</th>
+			</tr>
+		</table>
+	</div>
 </div>
+<div id="del" style="display:none">
+	<div id="del1">
+		删除成功~1...
+	</div>
+</div>
+{{csrf_field()}}
 <script type="text/javascript">
 	myajax(5,1);
 	
 	$('#shou').click(function(){
-		$('select:eq(1)').empty();
+		$('#ye)').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		myajax(num,1,key);
 	});
 
 	$('#mo').click(function(){
-		$('select:eq(1)').empty();
+		$('#ye').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		myajax(num,$(this).attr('info'),key);
 	});	
 
 	$('#shang').click(function(){
-		$('select:eq(1)').empty();
+		$('#ye').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		var page=parseInt($(this).attr('info'));
@@ -88,7 +104,7 @@
 	});
 	
 	$('#xia').click(function(){
-		$('select:eq(1)').empty();
+		$('#ye').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		var page=parseInt($(this).attr('info'));
@@ -102,7 +118,7 @@
 
 	$('select:eq(0)').change(function(){
 		var key=$('#search').val();
-		$('select:eq(1)').empty();
+		$('#ye').empty();
 		var num=$(this).val();
 		myajax(num,1,key);
 		
@@ -118,20 +134,99 @@
 
 //====================搜索条件===================================
 	$('#search').keyup(function(){
-		$('select:eq(1)').empty();
+		$('#ye').empty();
 		var key=$(this).val();
 		var num=$('select:eq(0)').val();
 		console.log(key);
+		console.log(num);
 		myajax(num,1,key);
 	});
+//====================删除操作===================================
+	$('.icol32-bin').live('click',function(){
+		var id=$(this).parent().parent().find('td:eq(0)').html();
+		var _token=$('input[name="_token"]').val();
+		var num=$('select:eq(0)').val();
+		var page=$('#ye').val();
+		var key=$('#search').val();
+		$.ajax({
+			url:'/orders/del',
+			type:'post',
+			data:{'id':id,'_token':_token},
+			dataType:'text',
+			success:function(mes){
+				if(mes=='yes'){
+					$('#del').css('display','block');
 
-//====================修改操作====================================
-	$('.icol32-cog-edit').live('click',function(){
-		$('#edit').css('display','block');
+					setTimeout(function(){
+						$('#del').css('display','none');
+					},1000);
+					$('#ye').empty();
+					myajax(num,page,key);
+				}else{
+
+				}
+			}
+		});
+
 	});
+//====================修改操作====================================
+
+	$('.edit0').live('change',function(){
+		var dz=$(this).val();
+		var id=$(this).parent().parent().find('td:eq(0)').html();
+		var _token=$('input[name="_token"]').val();
+		$.ajax({
+			url:'/orders/edit',
+			type:'post',
+			data:{'editid':id,'editval':dz,'_token':_token},
+			dataType:'text',
+			async:false,
+			success:function(mes){
+				var page1=$('#ye').val();
+				var num1=$('select:eq(0)').val();
+				var key1 =$('#search').val();
+				if(mes=='yes'){
+					alert('修改成功');
+					$('#ye').empty();
+					myajax(num1,page1,key1);
+				}else{
+					alert('修改失败');
+				}		
+			}
+		});
+	});
+//====================查看操作====================================
+	$('.icol32-cog-edit').live('click',function(){
+		$('.sc').remove(); 
+		$('#big1').css('display','block');
+		var id=$(this).parent().parent().find('td:eq(0)').html();
+		var _token=$('input[name="_token"]').val();
+		var dd=$('#text-color');
+		$.ajax({
+		url:'/orders/detail',
+		type:'post',
+		data:{'id':id,'_token':_token},
+		dataType:'json',
+		success:function(mes){
+			$(mes).each(function(){
+				var con=$('<tr class="sc"><td>'+$(this).attr('username')+'</td><td>'+$(this).attr('phone')+'</td><td>'+$(this).attr('address')+'</td><td>'+$(this).attr('tname')+'</td><td>'+$(this).attr('nam')+'</td><td>'+$(this).attr('num')+'</td><td>'+$(this).attr('price')+'</td><td>'+$(this).attr('num')*$(this).attr('price')+'</td></tr>');
+				dd.append(con);
+
+			});
+		}
+	});
+});
+
 
 	
-	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数
+
+	$(window).keyup(function(ent){
+		if(ent.key=='Escape'){
+			$('#big1').css('display','none');
+		}
+	});
+
+	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数 key=搜索条件
 		$.ajax({
 			url:'/orders/show',
 			type:'get',
@@ -142,7 +237,7 @@
 				$('select:eq(1)').val(page);
 				var y=$('#ye');
 				var y1=$(mes)[$(mes).length-1]; //最大页数
-				console.log(y1);
+				// console.log(y1);
 				for(var i=1;i<=y1;i++){
 					if(i==page){
 						var op=$('<option selected>'+i+'</option>');
@@ -157,8 +252,11 @@
 				$('#mo').attr('info',$(mes)[$(mes).length-1]);//末页最大页数
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
-					a= $('<tr class="odd"><td>'+$(this).attr('id')+'</td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('code')+'</td><td>'+$(this).attr('addtime')+'</td><td>'+$(this).attr('status')+'</td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+					
+				a= $('<tr class="odd" align="center"><td>'+$(this).attr('id')+'</td><td>'+$(this).attr('username')+'</td><td>'+$(this).attr('code')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="0">新订单</option><option value="1">已发货</option><option value="2">已收货</option><option value="3">无效订单</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
 					$('#z').append(a);
+					$(a).find('select').val($(this).attr('status'));
+					// console.log($(this).attr('status'));
 				});
 			}
 		});
@@ -166,7 +264,6 @@
 		$('#xia').attr('info',page);
 	}
 	
-
-
 </script>
+
 @endsection

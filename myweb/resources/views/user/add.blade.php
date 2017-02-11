@@ -15,37 +15,37 @@
         			<div class="mws-form-row">
         				<label class="mws-form-label">姓名</label>
         				<div class="mws-form-item">
-        					<input type="text" class="small" name="name" value='{{old('name')}}' info='姓名不能为空'><span></span>
+        					<input type="text" class="small" name="name" value='{{old('name')}}'>
         				</div>
         			</div>
         			<div class="mws-form-row">
         				<label class="mws-form-label">账号</label>
         				<div class="mws-form-item">
-        					<input type="text" class="small" name="username" value='{{old('username')}}' info='账号不能为空'><span></span>
+        					<input type="text" class="small" name="username" value='{{old('username')}}'>
         				</div>
         			</div>
         			<div class="mws-form-row">
         				<label class="mws-form-label">密码</label>
         				<div class="mws-form-item">
-        					<input type="password" class="small" name="pass" value='{{old('pass')}}' info='密码不能为空'><span></span>
+        					<input type="password" class="small" name="pass" value='{{old('pass')}}'>
         				</div>
         			</div>
         			<div class="mws-form-row">
         				<label class="mws-form-label">确认密码</label>
         				<div class="mws-form-item">
-        					<input type="password" class="small" name="repass" value='{{old('repass')}}' info='确认账号不能为空'><span></span>
+        					<input type="password" class="small" name="repass" value='{{old('repass')}}'>
         				</div>
         			</div>
         			<div class="mws-form-row">
         				<label class="mws-form-label">邮箱</label>
         				<div class="mws-form-item">
-        					<input type="text" class="small" name="email" value='{{old('email')}}' info='邮箱不能为空'><span></span>
+        					<input type="text" class="small" name="email" value='{{old('email')}}'>
         				</div>
         			</div>
         			<div class="mws-form-row">
         				<label class="mws-form-label">电话</label>
         				<div class="mws-form-item">
-        					<input type="text" class="small" name="phone" value='{{old('phone')}}' info='电话不能为空'><span></span>
+        					<input type="text" class="small" name="phone" value='{{old('phone')}}'>
         				</div>
         			</div>
 
