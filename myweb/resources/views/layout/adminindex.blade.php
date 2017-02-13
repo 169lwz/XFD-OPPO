@@ -265,7 +265,31 @@
                             <li><a href="/admin/goods/add">添加商品</a></li>
                             <li><a href="/admin/goods/hsz">回收站</a></li>
                         </ul>
-                    </li>              
+                    </li> 
+                    <li>
+                        <a href="#"><i class="icon-share"></i>商品详情</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/detail/indexh">浏览商品详情</a></li>
+                            <li><a href="/admin/detail/add">添加商品详情</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-share"></i>商品参数</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/parameter/index">浏览商品参数</a></li>
+                            <li><a href="/admin/parameter/add">添加商品参数</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><i class="icon-share"></i>商品属性</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/val/index">浏览商品属性</a></li>
+                            <li><a href="/admin/val/addcolor">添加商品颜色</a></li>
+                            <li><a href="/admin/val/addversion">添加商品网络</a></li>
+                            <li><a href="/admin/val/addmemory">添加商品内存</a></li>
+                            <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
+                        </ul>
+                    </li>                                           
                 </ul>
             </div> 
         </div>

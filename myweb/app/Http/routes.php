@@ -24,11 +24,25 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/user','Usercontroller');	//用户模块
 
+
 	Route::controller('/admin/guanli','Guanlicontroller');//管理员模块
 
-	Route::controller('/admin/type','TypeController');// 分类模块
+	Route::controller('/admin/talk','TalkController');// 商品评论模块
 
-	Route::controller('/admin/goods','GoodsController');// 商品模块
+	Route::controller('/admin/type','TypeController');// 后台分类模块
+
+	Route::controller('/admin/goods','GoodsController');// 后台商品模块
+
+	Route::controller('/admin/detail','DetailController');// 后台商品详情
+
+
+	Route::controller('/admin/parameter','ParameterController');// 后台商品参数
+
+	Route::controller('/admin/val','ValController');// 后台商品属性
+
+	Route::controller('/home/detail','DetailController');// 前台商品详情
+
+	Route::controller('/admin/guanli','Guanlicontroller');// 管理员模块
 
 	Route::get("/admin/logout","LoginController@logout"); //退出操作
 
@@ -55,12 +69,11 @@ Route::controller('/home','HomeController'); //前台商城主页
 
 Route::group(['middleware'=>'login'],function(){ //前台路由组
 
-	Route::get("/home/logout","LoginController@logout"); //退出操作
+Route::get("/home/logout","LoginController@logout"); //退出操作
 
 });
 
 Route::get("/home/forget","LoginController@forget"); //忘记密码
-
 
 Route::controller('/home','HomeController');   //前台首页
 
@@ -69,3 +82,4 @@ Route::controller('/shop','ShopController');  //购物车模块
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);
 //  });
+
