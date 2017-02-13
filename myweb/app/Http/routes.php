@@ -75,11 +75,10 @@ Route::get("/home/logout","LoginController@logout"); //退出操作
 
 Route::get("/home/forget","LoginController@forget"); //忘记密码
 
-Route::controller('/home','HomeController');   //前台首页
-
 Route::controller('/shop','ShopController');  //购物车模块
+
+Route::controller('/address','AddressController'); //用户收货地址
 
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);
 //  });
-

@@ -23,8 +23,8 @@ class ShopController extends Controller
 
     public function getIndex(){ //购物车遍历
     	$uid=session('user')['id'];
-    	$data=DB::table('shop')->where('uid',$uid)->get();
-        // dd($data);
+    	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','goods.pic','goods.desc','goods.gname','goods.price')->where('shop.uid',$uid)->get();
+        // dd($uid);
     	return view('gouwuche.index',['list'=>$data]);
     }
 
@@ -106,7 +106,7 @@ class ShopController extends Controller
     public function getMyadd(){
         // dd(DB::table('address')->where('uid',session('user')['id'])->get());
         // dd(session('user')['id']);
-        echo json_encode(DB::table('address')->where('uid',session('user')['id'])->get());
+        echo json_encode(DB::table('address')->where('uid',session('user')['id'])->get()); //遍历当前用户的所以收货地址
     }
 
     public function postDel1(Request $request){ //删除用户已存在的收货地址
@@ -123,5 +123,10 @@ class ShopController extends Controller
         if($data){
             echo json_encode($data);
         }
+    }
+
+    public static function num(){
+        $data=DB::table('shop')->where('uid',session('user')['id'])->count();
+        echo $data;
     }
 }

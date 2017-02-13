@@ -246,7 +246,7 @@
 
 	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数 key=搜索条件
 		$.ajax({
-			url:'/orders/show',
+			url:'/orders/show1',
 			type:'get',
 			data:{'num':num,'page':page,'key':key},
 			dataType:'json',

@@ -22,7 +22,7 @@
     position:absolute;
     top:0;
     left:0;
-    opacity: 0.5;
+    opacity: 0.8;
     background: black;
     margin:0 auto;
     padding:0;
@@ -35,7 +35,7 @@
 
 #small1{
     position:relative;
-    line-height: 100px;
+    line-height: 70px;
     margin:0 auto;
     padding:0;
     background:black;
@@ -52,7 +52,8 @@
     position: relative;
     text-align: center;
     margin-top:10px;
-    color:white;
+    color:cyan;
+    border:1px solid cyan;
 }
 #text-color tr{
     padding-top:0px;
@@ -83,3 +84,63 @@
     width:300px;
     height:300px;
 }
+
+        #zz{
+            height:90px;
+            /*border:1px solid red;*/
+        }
+        #sjr{
+            position: absolute;
+            margin-left:10px;
+            margin-top:-23px;
+        }
+        #sjr1{
+            position: absolute;
+            margin-left:80px;
+            margin-top:-23px;
+        }
+        #dh{
+            position: absolute;
+            margin-left:10px;
+            margin-top:4px;  
+        }
+        #dh1{
+            position: absolute;
+            margin-left:80px;
+            margin-top:4px;  
+        }
+        #dz{
+            position: absolute;
+            margin-left:10px;
+            margin-top:33px;  
+        }
+        #dz1{
+            position: absolute;
+            margin-left:80px;
+            margin-top:33px;  
+        }
+        #zj{
+            position: absolute;
+            margin-left:630px;
+            margin-top:33px;  
+        }
+        #zj1{
+            position: absolute;
+            margin-left:700px;
+            margin-top:33px; 
+              
+        }
+        #text-color{
+            border-collapse:collapse;
+        }
+        #big1 tr {
+            height: 1px;
+            margin-top:100px;
+        }
+
+        #quxiao{
+            background: cyan;
+            border:1px solid cyan;
+            margin-left:300px;
+            margin-top:60px;
+        }

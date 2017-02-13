@@ -34,7 +34,6 @@
 <link rel="stylesheet" type="text/css" href="/ad/css/my.css" media="screen">
 
 <title>OPPO Admin Controller</title>
-
 </head>
 
 <body>
@@ -254,7 +253,7 @@
                         <a href="#"><i class="icon-share"></i>订单管理</a>
                         <ul  class="closed">
                             <li><a href="/orders/index">浏览订单</a></li>
-                            <li><a href="">回收订单</a></li>
+                            <li><a href="/orders/index1">回收订单</a></li>
                         </ul>
                     </li>      
                     </li>

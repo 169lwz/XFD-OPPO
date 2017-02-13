@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
     <meta content="width=device-width,initial-scale=1, user-scalable=no" name="viewport">
     <title>『OPPO官网商城』OPPO最新款智能手机在线购买_OPPO最新款智能手机快捷支付-OPPO智能手机官网 </title>
+
     <meta name="keywords" content="OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付 ">
     <meta name="description" content="OPPO官网商城首页为您提供OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付等信息,多种OPPO智能手机任您选择与订购,智能手机网上购买尽在OPPO官网。 ">
-    <link media="all" type="text/css" rel="stylesheet" href="/txdd/styles.css">
-
+    <link media="all" type="text/css" rel="stylesheet" href="/myhome_files/styles.css">
 
     <!--[if lt IE 9]>
       <link media="all" type="text/css" rel="stylesheet" href="http://www.opposhop.cn/assets/stylesheets/styles.css?v=20161221100627">
@@ -33,10 +33,10 @@
                   <ul class="gi log-area">
     
     <li class="gi hasLogin show" data-desktop=".upper-area .log-area" data-mobile=".mobile-tools .log-area">
-      <a href="/myhome_files/myhome.html">
+      <a href="/dingdan/index">
         <span class="text">我的OPPO</span>
         <span class="icon icon-messages"></span>
-        <span class="n-messages">(0)</span>
+        <span class="n-messages">({!!\App\Http\Controllers\DingdanController::num()!!})</span>
       </a>
     </li><li class="gi hasLogin show" data-desktop=".upper-area .log-area" data-mobile=".mobile-tools .log-area">
       <a class="logout" href="https://id.oppo.com/logout?callback=http%3A%2F%2Fwww.opposhop.cn%2Forders">退出</a>
@@ -133,16 +133,16 @@
         <i class="js-open-menu-bar"></i>
       </a>
       <div class="shop-cart">
-  <a href="http://www.opposhop.cn/cart">
-        <span class="icon icon-cart"></span>
+  <a href="/shop/index">
+        <span class="icon icon-cart"><img src="/g.jpg" alt=""></span>
 
 
 
 
-    <span class="n-item-cart cart_number" id="shopping-count">0</span>
+    <span class="n-item-cart cart_number" id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span>
   </a>
 </div>      <div class="logo logo-extend">
-        <a href="http://www.oppo.com/cn/">
+        <a href="/home/index">
           <img src="/myhome_files/logo.png" alt="">
         </a>
         <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
@@ -168,7 +168,7 @@
   <ul class="menu g">
     <li class="gi
     ">
-      <a class="m-item" href="http://www.oppo.com/cn/">
+      <a class="m-item" href="/home/index">
         <span>首页</span>
       </a>
     </li>
@@ -360,20 +360,6 @@
   <div class="g wrapper">
     <div class="footer-linear"></div>
   </div>
-
-                              <!-- <div class='g'>
-          <div class='gi lap-one-whole one-whole'>
-            <a href='#' id="btn-kf"><img src='/cn/media/images/zxkf.png' /></a>
-          </div>
-          <div class='gi footer-lap-hide one-third'><img alt='' src='/cn/media/images/m.jpg' /></div>
-        </div> -->
-              <!-- <div class='footer-subscribe lap-one-half desk-lap-one-third'>
-        <form action='#' class='main-form'>
-          <div class='input-button-item'><input placeholder='输入Email订阅我们的最新动态' type='text'>
-          <button class='button button-primary' type='submit'>订 阅</button>
-          </div>
-        </form>
-      </div> -->
     <div class="footer-info">
     <div class="wrapper">
             <div class="footer-focus">
@@ -411,8 +397,6 @@
     <div class="purchase-advisory">
         <a href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank" id="advisory">购机咨询</a>
     </div>
-
-   
-  
-
-<div class="js-sensor"></div><div id="UniSwfStore_uniswfstore_0" style="position: absolute; top: -2000px; left: -2000px;"><object height="1" width="1" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="UniSwfStore_uniswfstore_1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">	<param value="http://sit.gentags.net/adagent/gunic.swf" name="movie">	<param value="logfn=UniSwfStore.uniswfstore.log&amp;" name="FlashVars">	<param value="always" name="allowScriptAccess">	<embed height="1" align="middle" width="1" pluginspage="https://www.macromedia.com/go/getflashplayer" flashvars="logfn=UniSwfStore.uniswfstore.log&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" loop="false" play="true" name="UniSwfStore_uniswfstore_1" bgcolor="#ffffff" src="http://sit.gentags.net/adagent/gunic.swf"></object></div></body></html>
+<div class="js-sensor"></div><div id="UniSwfStore_uniswfstore_0" style="position: absolute; top: -2000px; left: -2000px;"><object height="1" width="1" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="UniSwfStore_uniswfstore_1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">	<param value="http://sit.gentags.net/adagent/gunic.swf" name="movie">	<param value="logfn=UniSwfStore.uniswfstore.log&amp;" name="FlashVars">	<param value="always" name="allowScriptAccess">	<embed height="1" align="middle" width="1" pluginspage="https://www.macromedia.com/go/getflashplayer" flashvars="logfn=UniSwfStore.uniswfstore.log&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" loop="false" play="true" name="UniSwfStore_uniswfstore_1" bgcolor="#ffffff" src="http://sit.gentags.net/adagent/gunic.swf"></object></div>
+</body>
+</html>
