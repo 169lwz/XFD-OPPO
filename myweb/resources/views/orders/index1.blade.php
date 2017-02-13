@@ -4,7 +4,7 @@
 
 <div class="mws-panel grid_8">
 	<div class="mws-panel-header">
-		<span><i class="icon-table"></i>订单浏览</span>
+		<span><i class="icon-table"></i>订单回收</span>
 	</div>
 	<div class="mws-panel-body no-padding">
 	    <div role="grid" class="dataTables_wrapper" id="DataTables_Table_1_wrapper">
@@ -152,16 +152,16 @@
 	});
 //====================删除操作===================================
 	$('.icol32-bin').live('click',function(){
-		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
+		var id=$(this).parent().parent().find('td:eq(2)').html(); //订单号
+		var uid=$(this).parent().parent().find('input').val();    //用户ID
 		var _token=$('input[name="_token"]').val();
 		var num=$('select:eq(0)').val();
 		var page=$('#ye').val();
 		var key=$('#search').val();
 		$.ajax({
-			url:'/orders/del',
+			url:'/orders/del1',
 			type:'post',
-			data:{'id':id,'_token':_token,'uid':uid},
+			data:{'id':id,'uid':uid,'_token':_token},
 			dataType:'text',
 			success:function(mes){
 				if(mes=='yes'){
@@ -183,10 +183,9 @@
 
 	$('.edit0').live('change',function(){
 		var dz=$(this).val();
-		var id=$(this).parent().prev().prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('input').val(); //用户id
-		console.log(uid);
-		console.log(id);
+		var id=$(this).parent().parent().find('td:eq(2)').html();
+		var uid=$(this).parent().parent().find('input').val();
+		// console.log(uid);
 		// return false;
 		var _token=$('input[name="_token"]').val();
 		$.ajax({
@@ -215,9 +214,8 @@
 		$('#big1').css('display','block');
 		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
 		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
-		// console.log($(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td'));
+		// console.log(id);
 		// return false;
-		// console.log($(this).parent().parent().find('td:eq(0)'));
 		var _token=$('input[name="_token"]').val();
 		var dd=$('#lll');
 		$.ajax({
@@ -254,7 +252,7 @@
 
 	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数 key=搜索条件
 		$.ajax({
-			url:'/orders/show',
+			url:'/orders/show1',
 			type:'get',
 			data:{'num':num,'page':page,'key':key},
 			dataType:'json',
