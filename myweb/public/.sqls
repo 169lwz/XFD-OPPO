@@ -3180,3 +3180,24 @@
 [2017-02-13 22:06:38]select * from `orders` where `uid` = ? group by `order_num`
 [2017-02-13 22:06:38]select count(*) as aggregate from `shop` where `uid` = ?
 [2017-02-13 22:06:39]select order_num,count(*) as count from orders where uid=42 group by order_num
+[2017-02-13 22:13:02]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-13 22:13:18]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-13 22:13:29]select * from `user` where `username` = ? limit 1
+[2017-02-13 22:13:32]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-13 22:13:32]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-13 22:13:32]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-13 22:13:32]select order_num,count(*) as count from orders where uid=42 group by order_num
+[2017-02-13 22:13:33]select * from `address` where `uid` = ?
+[2017-02-13 22:13:33]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-13 22:13:33]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-13 22:13:34]select * from `district` where `upid` = ?
+[2017-02-13 22:13:34]select * from `address` where `uid` = ?
+[2017-02-13 22:13:34]select count(*) as aggregate from `address` where `uid` = ?
+[2017-02-13 22:13:39]select * from `address` where `uid` = ?
+[2017-02-13 22:13:39]select * from `district` where `upid` = ?
+[2017-02-13 22:13:39]select * from `district` where `upid` = ?
+[2017-02-13 22:13:39]select * from `district` where `upid` = ?
+[2017-02-13 22:13:43]select * from `address` where `uid` = ?
+[2017-02-13 22:13:43]select * from `district` where `upid` = ?
+[2017-02-13 22:13:43]select * from `district` where `upid` = ?
+[2017-02-13 22:13:43]select * from `district` where `upid` = ?
