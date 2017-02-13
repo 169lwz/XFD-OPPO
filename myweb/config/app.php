@@ -195,4 +195,8 @@ return [
 
     ],
 
+    'lunbo_dir'=>'./lunbo/',
+
+    'guanggao_dir'=>'./guanggao/',
+
 ];

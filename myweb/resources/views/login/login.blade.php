@@ -44,7 +44,7 @@
                 <!--头部logo-->
                 <div class="lgnheader">
                     <div class="logo"></div>
-                    <h3 class="title">登录OPPO帐号可享受更多的服务</h3>
+                    <h3 class="title">登录OPPO帐号之前请先确认账号已激活</h3>
                 </div>
                 <!--主体登录框-->
                 <div class="login_area">
