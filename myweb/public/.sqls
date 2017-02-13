@@ -784,3 +784,85 @@
 [2017-02-13 21:42:04]select * from `links` where `id` = ? limit 1
 [2017-02-13 21:42:04]select * from `links` where `id` = ? limit 1
 [2017-02-13 21:42:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:01]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:37]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:44:38]select * from `links` where `id` = ? limit 1
+[2017-02-13 21:49:09]select * from `links`
+[2017-02-13 21:49:10]select * from `links`
+[2017-02-13 21:49:12]select * from `links`
+[2017-02-13 21:49:39]select * from `links`
+[2017-02-13 21:51:15]select * from `links`
+[2017-02-13 21:51:17]select * from `links`
+[2017-02-13 21:51:17]select * from `lunbo` where `status` = ?
+[2017-02-13 21:51:17]select * from `guanggao` where `status` = ?
+[2017-02-13 21:51:24]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-13 21:51:33]select * from `user` where `username` = ? limit 1
+[2017-02-13 21:51:33]select * from `links`
+[2017-02-13 21:51:33]select * from `lunbo` where `status` = ?
+[2017-02-13 21:51:33]select * from `guanggao` where `status` = ?
+[2017-02-13 21:51:39]select * from `links`
+[2017-02-13 21:52:41]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 21:52:41]select order_num,count(*) as count from orders group by order_num
+[2017-02-13 21:53:35]select order_num,count(*) as count from orders group by order_num
+[2017-02-13 21:53:40]select * from `links`
+[2017-02-13 21:53:41]select * from `links`
+[2017-02-13 21:53:42]select * from `links`
+[2017-02-13 21:53:48]select * from `links`
+[2017-02-13 22:03:07]select * from `links`
+[2017-02-13 22:03:56]select * from `links`
+[2017-02-13 22:05:47]select * from `links`
+[2017-02-13 22:05:54]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 22:06:54]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 22:07:10]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 22:08:08]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:08]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:08:10]select * from `links` where `id` = ? limit 1
+[2017-02-13 22:36:06]select * from `links`
+[2017-02-13 22:37:50]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 23:18:45]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-13 23:29:46]select * from `links`
+[2017-02-13 23:29:46]select * from `lunbo` where `status` = ?
+[2017-02-13 23:29:46]select * from `guanggao` where `status` = ?
+[2017-02-13 23:33:35]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-13 23:33:45]select * from `user` where `username` = ? limit 1
+[2017-02-13 23:33:45]select * from `links`
+[2017-02-13 23:33:45]select * from `lunbo` where `status` = ?
+[2017-02-13 23:33:45]select * from `guanggao` where `status` = ?
+[2017-02-13 23:35:04]select *, concat(path,id) as paths from `links` order by `paths` asc
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
+[2017-02-13 23:35:18]select * from `adminuser` where `username` = ? limit 1
+[2017-02-13 23:37:32]select * from `adminuser` where `username` = ? limit 1

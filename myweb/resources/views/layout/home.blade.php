@@ -62,7 +62,7 @@
         <ul class='gi log-area'>
           @if(session()->has("user"))
           <li class='gi' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
-            <a href='/home/myorders'>
+            <a href='/dingdan/index'>
               <span class='text'>我的OPPO</span>
               <span class='icon icon-messages'></span>
               <span class='n-messages'>(0)</span>

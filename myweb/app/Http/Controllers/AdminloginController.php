@@ -40,6 +40,7 @@ class AdminloginController extends Controller
     	}
     }
 
+    //退出
     public function getLogout(){
     	session()->forget('adminuser'); //清除session
 
