@@ -32,6 +32,10 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/detail','DetailController');// 后台商品详情
 
+	Route::controller('/admin/parameter','ParameterController');// 后台商品参数
+
+	Route::controller('/admin/val','ValController');// 后台商品属性
+
 	Route::controller('/home/detail','DetailController');// 前台商品详情
 
 	Route::controller('/admin/guanli','Guanlicontroller');// 管理员模块
