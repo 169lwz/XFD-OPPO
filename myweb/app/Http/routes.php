@@ -27,7 +27,17 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/guanli','Guanlicontroller');//管理员模块
 
+
 	Route::controller('/admin/talk','TalkController');// 商品评论模块
+
+	Route::controller('/admin/lunbo','LunboController');  //轮播图模块
+
+	Route::controller('/admin/guanggao','GuanggaoController');  //广告模块
+
+	Route::controller('/admin/links','LinksController');  //链接模块
+
+});
+
 
 	Route::controller('/admin/type','TypeController');// 后台分类模块
 
@@ -65,21 +75,27 @@ Route::post("/home/forget","AjaxController@forget");//ajax验证忘记密码
 
 Route::post("/home/code","AjaxController@code");//ajax验证手机验证码
 
-Route::controller('/home','HomeController'); //前台商城主页
+
 
 Route::group(['middleware'=>'login'],function(){ //前台路由组
 
-Route::get("/home/logout","LoginController@logout"); //退出操作
+
+	Route::get("/home/logout","LoginController@logout"); //退出操作
+
+	Route::post("/home/chongzhi","AjaxController@chongzhi");//ajax重置密码
+
 
 });
 
-Route::get("/home/forget","LoginController@forget"); //忘记密码
+Route::controller('/home','HomeController'); //前台商城主页
 
-Route::controller('/home','HomeController');   //前台首页
+Route::get("/home/forget","LoginController@forget"); //忘记密码
 
 Route::controller('/shop','ShopController');  //购物车模块
 
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);
 //  });
+
+
 
