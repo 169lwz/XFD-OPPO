@@ -66,11 +66,7 @@ class LoginController extends Controller
         // exit();
     }
 
-    //退出
-    public function logout(){
-    	session()->forget('user');	//清除session
-      	return redirect("/home/index");	//(跳转到前台首页)-->没有session值,受LoginMiddleware限制,会跳转到登录页面
-    }
+    
 
     //忘记密码
     public function forget(){

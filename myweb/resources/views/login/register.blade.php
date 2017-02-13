@@ -17,7 +17,7 @@
                     </td>
                     <td> 
                         <div class="login_txt register_txt">
-                            <input type="text" placeholder="请输入6-12位有效字符" name="username">              
+                            <input type="text" placeholder="请输入6-16位有效字符" name="username">              
                          </div>
                     </td>
                     <td>
@@ -161,7 +161,7 @@
         $('input[name="username"]').blur(function(){
             //获取账号
             var info =$(this).val();
-            var reg = /^\w{6,12}$/;
+            var reg = /^\w{6,16}$/;
             var obj=$(this);
             if(reg.test(info)){
                 //发送ajax请求1.php验证账号是否存在
@@ -246,7 +246,7 @@
          //手机号码验证
         $('input[name="phone"]').blur(function(){
 
-            var reg = /^1[3-8][0-9]{9}/;
+            var reg = /^1[3-8][0-9]{9}$/;
             var info = $(this).val();
             if(reg.test(info)){
                 // $("#hh").html('&nbsp;&nbsp;&nbsp;'+'手机号码格式正确').css('color','green');

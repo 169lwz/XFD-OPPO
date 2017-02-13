@@ -7,6 +7,8 @@ use DB;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Hash;
+use Session;
 
 class AjaxController extends Controller
 {
@@ -61,6 +63,20 @@ class AjaxController extends Controller
     	}else{
     		echo "no";
     	}
+    }
+
+
+    public function chongzhi(){
+        echo 'yes';
+        
+
+        // $res = session('user')['pass'];
+
+        // if(Hash::check($res),$_POST['info']){
+        //     echo "yes";
+        // }else{
+        //     echo "no";
+        // }
     }
 
 
