@@ -1,4 +1,4 @@
-@extends('homeindex.home')
+@extends('layout.home')
 @section('con')
           <main class='main-content slab-light'>
       <div class='wrapper'>

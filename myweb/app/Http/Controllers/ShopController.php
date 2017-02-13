@@ -25,7 +25,9 @@ class ShopController extends Controller
     	$uid=session('user')['id'];
     	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','goods.pic','goods.desc','goods.gname','goods.price')->where('shop.uid',$uid)->get();
         // dd($uid);
-    	return view('gouwuche.index',['list'=>$data]);
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+    	return view('gouwuche.index',['list'=>$data,'links'=>$links]);
     }
 
     public function postRequest(Request $request){ //修改购买数量
