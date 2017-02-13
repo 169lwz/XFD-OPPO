@@ -36,9 +36,6 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/links','LinksController');  //链接模块
 
-});
-
-
 	Route::controller('/admin/type','TypeController');// 后台分类模块
 
 	Route::controller('/admin/goods','GoodsController');// 后台商品模块
