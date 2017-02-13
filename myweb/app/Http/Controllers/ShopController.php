@@ -13,7 +13,7 @@ class ShopController extends Controller
 		$data=$request->except('_token');
 		session(['cart'=>[]]);
 		$data['uid']=session('user')['id'];
-		$request->session()->push('cart',$data);
+		$request->session()->push('cart',$data); //将购买的商品存入session
 		if(!empty(session('cart'))){
 			echo 'yes';
 		}else{
@@ -83,20 +83,29 @@ class ShopController extends Controller
 
     public function postBiao(Request $request){ //将填写的地址插入表里
         // dd($request->all()['obj']);
-        $con0=[];
-    	$con=$request->except(['_token']);
+        $con=$request->except(['_token']);
         $con1=$con['obj'];
         $con1['uid']=session('user')['id'];
-    	// dd($con1);
-        // $con0[]=$con1;
-    	$data=DB::table('address')->insertGetId($con1);
-    	if($data){
-            echo 'yes';
-    	}
+        $idzu=DB::table('address')->select('id')->get();
+        foreach($idzu as $v){
+            if($request->input('add_id')==$v['id']){
+                $data=DB::table('address')->where('id',$request->input('add_id'))->update($con1);
+                if($data){
+                    echo 'yes';
+                    return;
+                }
+            }
+        }
+            $data=DB::table('address')->insertGetId($con1);
+            if($data){
+                echo 'yes';
+                return;
+            }  
     }
 
     public function getMyadd(){
         // dd(DB::table('address')->where('uid',session('user')['id'])->get());
+        // dd(session('user')['id']);
         echo json_encode(DB::table('address')->where('uid',session('user')['id'])->get());
     }
 

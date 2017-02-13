@@ -346,7 +346,7 @@
               <!-- <span class="icon icon-checkbox"></span> -->
             </label>
             <a target="_blank" href="http://www.opposhop.cn/products/397" class="cart-product-image">
-              <img src="/image/{{$v['sf']}}">
+              <img src="{{$v['sf']}}">
             </a>
           </div>
           <div class="cart-product-info">
@@ -735,7 +735,6 @@
         type:'post',
         data:{'_token':token,'num':num,'id':id},
         dataType:'json',
-        
         success:function(mes){
 
         }

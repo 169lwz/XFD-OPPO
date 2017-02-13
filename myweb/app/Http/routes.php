@@ -18,14 +18,13 @@ Route::controller('/admin/login','AdminloginController'); //后台登录模块
 
 Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
-	Route::controller('/orders','OrdersController');   //(后台)订单管理
+	Route::controller('/orders','OrdersController');  //(后台)订单管理
 
 	Route::get('/admin/index','AdminController@admin');//后台首页
 
-
 	Route::controller('/admin/user','Usercontroller');	//用户模块
 
-	Route::controller('/admin/guanli','Guanlicontroller');	//管理员模块
+	Route::controller('/admin/guanli','Guanlicontroller');//管理员模块
 
 	Route::controller('/admin/type','TypeController');// 分类模块
 

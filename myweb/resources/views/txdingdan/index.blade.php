@@ -9,6 +9,10 @@
       select:hover{
         border:1px solid #2aad6f;
       }
+      select{
+        border:1px solid #ccc;
+        border-radius: 4px;
+      }
     </style>
     <meta name="keywords" content=" OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付 ">
     <meta name="description" content=" OPPO官网购物首页为您提供OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付等信息,多种OPPO智能手机任您选择与订购,智能手机网上购买尽在OPPO官网。 ">
@@ -320,15 +324,15 @@
     <div class="content" style="display:none">
       <div class="address-form-field">
         <div class="field radio-item dark xl">
-          <span class="radio mozilla mozilla45 not_msie custom-form_radio1284411 checked_radio"></span>
+          <span class="radio mozilla mozilla45 not_msie custom-form_radio1284411 checked_radio">
+            <img src="/quan.jpg" alt="">
+          </span>
           <label for="radio1284411">
             <div class="g address-form-content">
               <div class="gi desk-one-fifth one-whole"></div>
               <div class="gi desk-one-fifth one-whole"></div>
               <div class="gi desk-one-fifth one-whole"></div>
-              <div class="gi desk-two-fifths one-whole">
-           
-              </div>
+              <div class="gi desk-two-fifths one-whole"></div>
             </div>
             <div class="links">
               <a class="bianji" href="javascript:;">编辑</a>
@@ -339,6 +343,9 @@
       </div>
     </div>
 
+  <div class="field center-text">
+    <a class="address-more"><span>查看更多地址<span><br><img src="/jian.jpg" alt=""></a>
+  </div>
 
     
 
@@ -364,28 +371,28 @@
                     请选择
                   </div>
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select1'><option value="x">省份/自治区</option></select>
+                  <select id='select1' style="height:63px" ><option value="999999999999">省份/自治区</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select2' name='city_id'><option value="x">城市/地区</option></select>
+                  <select id='select2' style="height:63px" name='city_id'><option value="999999999999">城市/地区</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>              
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select3' name='district_id'><option value="x">区/县</option></select>
+                  <select id='select3' style="height:63px" name='district_id'><option value="999999999999">区/县</option></select>
                 </div>
                 <div class='gi basic-input one-whole desk-one-fifth'>
                   <div class="gg">
                     请选择
                   </div>              
                   <span class='icon icon-grey-arrow-down'></span>
-                  <select id='select4' name='town_id'><option value="x">配送区域</option></select>
+                  <select id='select4' style="height:63px" name='town_id'><option value="999999999999">配送区域</option></select>
                 </div>
               </div>
             <div class="g">
@@ -837,19 +844,22 @@
   {{csrf_field()}}
   <div class="js-sensor"></div><div style="position: absolute; top: -2000px; left: -2000px;" id="UniSwfStore_uniswfstore_0"><object codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="UniSwfStore_uniswfstore_1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="1" width="1"> <param value="" name="movie"> <param value="logfn=UniSwfStore.uniswfstore.log&amp;" name="FlashVars"> <param value="always" name="allowScriptAccess"> <embed pluginspage="https://www.macromedia.com/go/getflashplayer" flashvars="logfn=UniSwfStore.uniswfstore.log&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" loop="false" play="true" name="UniSwfStore_uniswfstore_1" bgcolor="#ffffff" src="/txdd/gunic.swf" align="middle" height="1" width="1"></object>
 </div>
-<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
   <script type="text/javascript">
-
     var token=$('input[name="_token"]').val();
-    myajax(0);
+    myajax(0); //显示城市联动 第一个select;
     myadd();//显示收货地址
+    jishu();//应付金额的方法;
+    // addressnum(); //显示'查看更多地址'
     $('#address_new').click(function(){
       $('#block').show();
     });
 
     $('#reset').click(function(){
       $('#block').hide();
+      $('input').val(''); $('select').val('999999999999');
     });
+
     $('select').live('change',function(){
       var d=$(this).parent().next().find('select');
       // console.log($('select'));
@@ -880,9 +890,9 @@
     });
 
     $('#submit').click(function(){ //填写收货地址的保存按钮
+      var add_id=$(this).parents('#address-create').attr('id1');
       var obj=new Object();
-      console.log(obj);
-      // return false;
+      //将这些获取的数据(用户添加的新地址)放在一个对象里;
       obj.name=$('input[name="name"]').val();
       obj.phone=$('input[name="phone"]').val();
       obj.xiangxi=$('input[name="address-detail"]').val();
@@ -895,62 +905,103 @@
       obj.shi1=$('#select2 option:selected').text();
       obj.xian1=$('#select3 option:selected').text();
       obj.jiedao1=$('#select4 option:selected').text();
-      // console.log(obj);
-      // return false;
+      // console.log(obj.phone);
       var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
       var patrn1 = /^([0-9A-Za-z\-_\.]+)@([0-9A-Za-z]+\.[A-Za-z]{2,3}(\.[A-Za-z]{2})?)$/g;
-      if(patrn.exec(phone)){
+      //手机号正则匹配
+      if(!patrn.exec(obj.phone)){ 
         $('#phone').html('手机号码格式不正确!');
         return false;
       }else{
         $('#phone').html('');
       }
-      if(patrn1.exec(email)){
+      //邮箱正则匹配
+      if(!patrn1.exec(obj.email)){
         $('#email').html('邮箱格式不正确!');
         return false;
       }else{
         $('#email').html('');
-      } 
-      $.ajax({
+      }
+
+      $.ajax({ //发送请求将这些数据添加到address表里
         url:'/shop/biao',
         type:'post',
-        data:{'_token':token,'obj':obj},
+        data:{'_token':token,'obj':obj,'add_id':add_id},
         dataType:'text',
         success:function(mes){
           if(mes){
+            // addressnum();
             $('#block').hide();
-            $('input').val(''); $('select').val('x');
+            $('input').val(''); $('select').val('999999999999');//赋值999999999999的原因是因为在没选择第一个select之前 不能选中下一个select并产生省的数据
             myadd();
           }else{
             $('#aaa').html('请将地址添加完整!');
           }
-          
         }
       });
     });
-    
-    function myadd(){ //添加完地址后无刷新显示地址
-      // $('.')
-       $.ajax({
-          url:'/shop/myadd',
-          type:'get',
-          dataType:'json',
-          success:function(mes){
-            // console.log(mes);
-             $('div[info="charu1"]').remove();
-             var add2 = null;
-             $(mes).each(function(i){
-                var add1=$('.content:eq(0)').clone().attr({'info':'charu1','style':'display:block','id':$(this).attr('id')});
-                 add2=add1.find('div').find('div').find('label').find('div').find('div');
-                 add2.html($(this).attr('name'));
-                 add2.next('div').html($(this).attr('phone'));
-                 add2.next('div').next('div').html($(this).attr('ema '));
-                 add2.next('div').next('div').next('div').html(($(this).attr('sheng1'))+($(this).attr('shi1'))+($(mes).attr('xian1'))+($(this).attr('jiedao1'))+($(this).attr('xiangxi')));
-                 // add1.appendTo($('#charu'));
-                 $('#charu').append(add1);
-              });
-            }
-          });
+
+    $('.address-more').click(function(){ //隐藏多条用户收货地址的方法
+      $('div[info="charu1"]:gt(0)').slideToggle();
+    }); 
+
+    $('.content').live('mouseover',function(){
+      $(this).find('div').find('div').find('label').css({'border':'2px solid #2aad6f','color':'black','background':'white'});
+      $(this).find('div').find('div').find('label').find('div').find('a').css('color','#2aad6f');
+      $(this).find('div').find('div').find('label').prev('span').find('img').attr('src','/quan.jpg');
+    });
+
+    $('.content').live('mouseout',function(){
+      if($(this).attr('show')=='zhong'){
+        $(this).find('div').find('div').find('label').css({'border':'2px solid #2aad6f','color':'black','background':'white'});
+        $(this).find('div').find('div').find('label').find('div').find('a').css('color','#2aad6f');
+        $(this).find('div').find('div').find('label').prev('span').find('img').attr('src','/quan.jpg');       
+      }else{
+        $(this).find('div').find('div').find('label').css({'border':'1px solid #ccc','color':'#ccc','background':'#f7f7f7'});
+        $(this).find('div').find('div').find('label').find('div').find('a').css('color','#ccc');
+        $(this).find('div').find('div').find('label').prev('span').find('img').attr('src','/quan1.jpg');       
+      } 
+    });
+
+    $('.content').live('click',function(){
+      $('.content').removeAttr('show');
+      $('.content').find('div').find('div').find('label').css({'border':'1px solid #ccc','color':'#ccc','background':'#f7f7f7'});
+      $('.content').find('div').find('div').find('label').find('div').find('a').css('color','#ccc');
+      $('.content').find('div').find('div').find('label').prev('span').find('img').attr('src','/quan1.jpg'); 
+      $(this).attr('show','zhong');
+      $(this).find('div').find('div').find('label').css({'border':'2px solid #2aad6f','color':'black','background':'white'});
+      $(this).find('div').find('div').find('label').find('div').find('a').css('color','#2aad6f');
+      $(this).find('div').find('div').find('label').prev('span').find('img').attr('src','/quan.jpg');
+      $('#tijiao').attr('address_id',$(this).attr('id'));
+      console.log($('#tijiao').attr('address_id'))  
+    });
+  
+
+    function myadd(){ //添加完地址后无刷新显示地址 或显示当前用户的所以收货地址
+      $.ajax({
+        url:'/shop/myadd',
+        type:'get',
+        dataType:'json',
+        success:function(mes){
+          // console.log(mes);
+           $('div[info="charu1"]').remove();
+           var add2 = null;
+           $(mes).each(function(i){
+              var add1=$('.content:eq(0)').clone().attr({'info':'charu1','style':'display:block','id':$(this).attr('id')});
+               add2=add1.find('div').find('div').find('label').find('div').find('div');
+               add2.html($(this).attr('name'));
+               add2.next('div').html($(this).attr('phone'));
+               add2.next('div').next('div').html($(this).attr('email'));
+               add2.next('div').next('div').next('div').html(($(this).attr('sheng1'))+($(this).attr('shi1'))+($(mes).attr('xian1'))+($(this).attr('jiedao1'))+($(this).attr('xiangxi')));
+               $('#charu').append(add1);
+               $('div[info="charu1"]:gt(0)').attr('style','display:none');//地址框的样式
+               $('div[info="charu1"]').find('div').find('div').find('label').css('border','1px solid #ccc').css('color','#ccc').css('background','#f7f7f7');
+               $('div[info="charu1"]').find('div').find('div').find('label').find('div').find('a').css('color','#ccc');
+               $('div[info="charu1"]').find('div').find('div').find('label').prev('span').find('img').attr('src','/quan1.jpg');
+            });
+          }
+        });
+        
       }
 
     $('.remove-address').live('click',function(){ //删除添加的地址
@@ -965,11 +1016,11 @@
           }
         }
       });
-    })
+    });
 
-    $('.bianji').live('click',function(){
+    $('.bianji').live('click',function(){ //编辑用户收货地址
       var bq1=$(this).parents('div[info="charu1"]');
-      
+      $('#address-create').attr('id1',bq1.attr('id'));
       $.ajax({
         url:'/shop/myadd',
         type:'get',
@@ -992,14 +1043,15 @@
           })
         }
       });
-    })
-
+    });
 
     $('#tijiao').click(function(){ //提交订单的按钮
+      var address_id=$('#tijiao').attr('address_id');//地址id
+      var yftotal=$('#yifu').html();
       $.ajax({
-        url:'/dingdan/scorders',
+        url:'/dingdan/scorders',//生成订单
         type:'post',
-        data:{'_token':token},
+        data:{'_token':token,'address_id':address_id,'yftotal':yftotal},
         dataType:'text',
         success:function(mes){
           if(mes=='yes'){
@@ -1008,24 +1060,34 @@
         }
       });
     });
-
-    function jishu(){
+    // console.log($('.content').length+1);
+    function jishu(){ //支付的价格 优惠券邮费合计的方法
       var a= 0; //数量
       var b=0;  //总计
       $('.goods-list-quantity').each(function(){
          a+=parseInt($(this).find('span').text());
          b+=(parseInt($(this).next('div').find('span').text()))*(parseInt($(this).find('span').text()));
-         // console.log(parseInt($(this).next('div').find('span').text()));
-         // console.log(parseInt($(this).find('span').text()));
       });
       $('#jishu').html(a);
       $('#trade_total_fee').find('font').html(b);
       $('#yifu').html(b+parseInt($('#yf').text())-parseInt($('#yhq').text()));
     }
-
-    jishu();
-
-    function myajax(upid){
+    
+    function addressnum(){
+      $.ajax({
+        url:'/dingdan/addressnum',
+        type:'post',
+        data:{'_token':token},
+        dataType:'text',
+        success:function(mes){
+          if(mes==1 || mes==0){
+            $('.address-more').parent().hide();
+          }
+        }
+      });
+    }
+    
+    function myajax(upid){ //城市联动的第一个select的方法
       $.ajax({
         url:'/shop/site',
         type:'post',
@@ -1036,7 +1098,7 @@
           $(mes).each(function(){
             // console.log($(this).attr('id'))
             var op=$('<option value="'+$(this).attr('id')+'">'+$(this).attr('name')+'</option>');
-            $('#select1').append(op);
+            $('#select1').append(op); //将遍历创建的option插入第一个select框
           });
         }
       });
