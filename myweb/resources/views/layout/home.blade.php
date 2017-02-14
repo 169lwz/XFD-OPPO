@@ -172,7 +172,7 @@
       <div class='shop-cart'>
         <a href='http://www.opposhop.cn/cart'>
           <span class='icon icon-cart'></span>
-          <span class='n-item-cart cart_number' id="shopping-count">0</span>
+          <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span>
         </a>
       </div>      
       <div class='logo logo-extend'>
