@@ -1236,3 +1236,6 @@
 [2017-02-14 10:27:33]select * from `links`
 [2017-02-14 10:27:33]select * from `lunbo` where `status` = ?
 [2017-02-14 10:27:33]select * from `guanggao` where `status` = ?
+[2017-02-14 10:29:29]select * from `links`
+[2017-02-14 10:29:29]select * from `lunbo` where `status` = ?
+[2017-02-14 10:29:29]select * from `guanggao` where `status` = ?
