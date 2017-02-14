@@ -30,7 +30,7 @@
     </div>
 
     <div class="logo logo-extend">
-        <a href="/home/myorders">
+        <a href="/dingdan/index">
           <img src="/myhome_files/logo.png" alt="">
         </a>
     </div>

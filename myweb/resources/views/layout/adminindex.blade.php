@@ -318,7 +318,7 @@
                             <li><a href="/admin/links/add">链接添加</a></li>
                             <!-- <li><a href="/admin/goods/hsz">回收站</a></li> -->
                         </ul>
-                    </li>              
+                    </li>   
 
                 </ul>
             </div> 

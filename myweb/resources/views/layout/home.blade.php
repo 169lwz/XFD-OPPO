@@ -179,23 +179,13 @@
         <a href='http://www.oppo.com/cn/'>
           <img src="/qiantai/images/logo.png" alt="">
         </a>
-        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
-          <img src="/media/images/revision/qixi/qixi-logo.gif" />
-        </a> -->
-        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
-          <img src="/media/images/revision/newyear/monkey-logo.gif" />
-        </a> -->
+
       </div>
       <a class='js-open-user' href='#'>
         <img src="/qiantai/images/icon-menu-user.png" alt="">
       </a>
       <div class='main-menu'>
-        <!-- <div class='mobile-tools'>
-          <a class='js-close-menu' href='#'>
-            <img alt='' src='/cn/media/images/icon-menu-close.png' />
-          </a>
-          <ul class='g log-area'></ul>
-        </div> -->
+
         <div class='search'></div>
         <nav>
           <div class='nav-ul-view'>
@@ -229,16 +219,16 @@
         <div class='relative'>
           <ul>
             <li class='user-menu-login'>
-              <a href="/dingdan/index">我的订单</a>
+              <a href="http://www.opposhop.cn/orders">我的订单</a>
             </li>
             <li class='user-menu-login'>
               <a href="https://id.oppo.com/account/profile">账户信息</a>
             </li>
             <li class='user-menu-login'>
-              <a href="/address/myaddress">配送地址</a>
+              <a href="http://www.opposhop.cn/user/addresses">配送地址</a>
             </li>
             <li class='user-menu-login user-menu-cart'>
-              <a href="/shop/index">购物车</a>
+              <a href="http://www.opposhop.cn/cart">购物车</a>
             </li>
             <li class='user-menu-login user-menu-toLogin'>
               <a href='https://id.oppo.com/login?callback=http%3A%2F%2Fwww.opposhop.cn%2F'>
@@ -327,19 +317,7 @@
   <div class="g wrapper">
     <div class="footer-linear"></div>
   </div>
-                              <!-- <div class='g'>
-          <div class='gi lap-one-whole one-whole'>
-            <a href='#' id="btn-kf"><img src='/cn/media/images/zxkf.png' /></a>
-          </div>
-          <div class='gi footer-lap-hide one-third'><img alt='' src='/cn/media/images/m.jpg' /></div>
-        </div> -->
-              <!-- <div class='footer-subscribe lap-one-half desk-lap-one-third'>
-        <form action='#' class='main-form'>
-          <div class='input-button-item'><input placeholder='输入Email订阅我们的最新动态' type='text'>
-          <button class='button button-primary' type='submit'>订 阅</button>
-          </div>
-        </form>
-      </div> -->
+
     <div class='footer-info'>
     <div class='wrapper'>
             <div class="footer-focus">
@@ -376,8 +354,20 @@
     <div class="purchase-advisory">
         <a href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank" id="advisory">购机咨询</a>
     </div>
-
-
+    <script src="/qiantai/js/jquery-1.9.1.min.js"></script>
+    <script src="/qiantai/js/jquery-1.8.3.js"></script>
+    <script src="/qiantai/js/jquery.lazyload.min.js"></script>
+    <script src="/qiantai/js/underscore-min.js"></script>
+    <script src="/qiantai/js/es5-shim.min.js"></script>
+    <script src="/qiantai/js/base64.min.js"></script>
+    <script src="/qiantai/js/custom_form.js?v=20150914144728"></script>
+    <script src="/qiantai/js/jquery.countdown.min.js"></script>
+    <script src="/qiantai/js/slick.min.js"></script>
+    <script src="/qiantai/js/responsive.js"></script>
+    <script src="/qiantai/js/picturefill.min.js"></script>
+    <script src="/qiantai/js/scripts.js?v=201511041533"></script>
+        <script src="/qiantai/js/opposhop.min.js?v=20170111112201"></script>
+   
   </body>
 </html>
 <!-- cached at 2017-01-13 10:10:02 -->
