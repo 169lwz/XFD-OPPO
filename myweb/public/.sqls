@@ -1460,3 +1460,8 @@
 [2017-02-14 10:51:26]select * from `guanggao` where `status` = ?
 [2017-02-14 10:51:26]select * from `orders` where `uid` = ? group by `order_num`
 [2017-02-14 10:51:26]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-14 10:54:20]select * from `links`
+[2017-02-14 10:54:20]select * from `lunbo` where `status` = ?
+[2017-02-14 10:54:20]select * from `guanggao` where `status` = ?
+[2017-02-14 10:54:20]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-14 10:54:20]select count(*) as aggregate from `shop` where `uid` = ?
