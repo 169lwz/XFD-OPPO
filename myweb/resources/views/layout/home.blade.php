@@ -172,30 +172,20 @@
       <div class='shop-cart'>
         <a href='/shop/index'>
           <span class='icon icon-cart'></span>
-          <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span>
+          <!-- <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span> -->
         </a>
       </div>      
       <div class='logo logo-extend'>
         <a href='http://www.oppo.com/cn/'>
           <img src="/qiantai/images/logo.png" alt="">
         </a>
-        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
-          <img src="/media/images/revision/qixi/qixi-logo.gif" />
-        </a> -->
-        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
-          <img src="/media/images/revision/newyear/monkey-logo.gif" />
-        </a> -->
+
       </div>
       <a class='js-open-user' href='#'>
         <img src="/qiantai/images/icon-menu-user.png" alt="">
       </a>
       <div class='main-menu'>
-        <!-- <div class='mobile-tools'>
-          <a class='js-close-menu' href='#'>
-            <img alt='' src='/cn/media/images/icon-menu-close.png' />
-          </a>
-          <ul class='g log-area'></ul>
-        </div> -->
+
         <div class='search'></div>
         <nav>
           <div class='nav-ul-view'>
@@ -327,19 +317,7 @@
   <div class="g wrapper">
     <div class="footer-linear"></div>
   </div>
-                              <!-- <div class='g'>
-          <div class='gi lap-one-whole one-whole'>
-            <a href='#' id="btn-kf"><img src='/cn/media/images/zxkf.png' /></a>
-          </div>
-          <div class='gi footer-lap-hide one-third'><img alt='' src='/cn/media/images/m.jpg' /></div>
-        </div> -->
-              <!-- <div class='footer-subscribe lap-one-half desk-lap-one-third'>
-        <form action='#' class='main-form'>
-          <div class='input-button-item'><input placeholder='输入Email订阅我们的最新动态' type='text'>
-          <button class='button button-primary' type='submit'>订 阅</button>
-          </div>
-        </form>
-      </div> -->
+
     <div class='footer-info'>
     <div class='wrapper'>
             <div class="footer-focus">
