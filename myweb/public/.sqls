@@ -1233,3 +1233,6 @@
 [2017-02-14 09:40:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
 [2017-02-14 09:40:57]select * from `links`
 [2017-02-14 09:40:57]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 10:27:33]select * from `links`
+[2017-02-14 10:27:33]select * from `lunbo` where `status` = ?
+[2017-02-14 10:27:33]select * from `guanggao` where `status` = ?
