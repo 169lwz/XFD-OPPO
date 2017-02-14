@@ -170,7 +170,7 @@
         <i class='js-open-menu-bar'></i>
       </a>
       <div class='shop-cart'>
-        <a href='http://www.opposhop.cn/cart'>
+        <a href='/shop/index'>
           <span class='icon icon-cart'></span>
           <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span>
         </a>
