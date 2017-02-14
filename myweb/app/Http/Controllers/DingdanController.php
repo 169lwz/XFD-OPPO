@@ -33,7 +33,9 @@ class DingdanController extends Controller
         }
         // dd($data3);
         // dd($data2);
-    	return view('txdingdan.index',['arr1'=>$data2]);
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+    	return view('txdingdan.index',['arr1'=>$data2,'links'=>$links]);
     }
 
 
@@ -53,6 +55,8 @@ class DingdanController extends Controller
                 $res=DB::table('shop')->where('id',$v)->delete();
             }
         }
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
         $ss=DB::table('orders')->where('order_num',$order_num)->first();
         if($ss){
             echo 'yes';
@@ -112,7 +116,9 @@ class DingdanController extends Controller
         $data1=DB::table('orders')->where('uid',session('user')['id'])->where('order_num',$order_num)->sum('num');
         $data2=DB::table('orders')->join('address','address.id','=','orders.address_id')->select('orders.*','address.name','address.phone','address.email','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi')->where('order_num',$order_num)->first(); 
         // dd($data1);
-        return view('ddxiangqing.index',['list'=>$data,'list1'=>$data2,'list2'=>$data1]);
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+        return view('ddxiangqing.index',['list'=>$data,'list1'=>$data2,'list2'=>$data1,'links'=>$links]);
     }
 
 
@@ -123,8 +129,17 @@ class DingdanController extends Controller
         echo $num;
     }
 
-
-
+    //前台用户修改确认收货
+    public function postXiu(Request $request){
+        $uid=session('user')['id'];
+        $order_num=$request->input('order_num');
+        $res=DB::table('orders')->where('uid',$uid)->where('order_num',$order_num)->update(['status'=>3]);
+        if($res){
+            echo $order_num;
+        }else{
+            echo 'no';
+        }
+    }
 
 
 

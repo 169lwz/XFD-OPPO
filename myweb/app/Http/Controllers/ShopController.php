@@ -23,7 +23,7 @@ class ShopController extends Controller
 
     public function getIndex(){ //购物车遍历
     	$uid=session('user')['id'];
-    	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','goods.pic','goods.desc','goods.gname','goods.price')->where('shop.uid',$uid)->get();
+    	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','goods.pic','goods.desc','goods.gname','goods.price','goods.store')->where('shop.uid',$uid)->get();
         // dd($uid);
         $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
         $links = $res->getLinksarr();

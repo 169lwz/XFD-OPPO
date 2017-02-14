@@ -1,6 +1,17 @@
 @extends('layout.home')
 @section('con')
 
+<style type="text/css">
+              select:hover{
+        border:1px solid #2aad6f;
+      }
+      select{
+        border:1px solid #ccc;
+        border-radius: 4px;
+        opacity: 1;
+      }
+</style>
+
   <main class='main-content user'>
   <div class='wrapper'>
   <ul class='breadcrumb'>
@@ -174,6 +185,7 @@
 
     $('#reset').click(function(){
       $('#address-create').css('display','none');
+      $('#submit').parents('#address-create').removeAttr('id1');
       $('input').val(''); $('select').val('999999999999');
       $('#phone').html('');
       $('#email').html('');
@@ -208,7 +220,7 @@
         }
       });    
     });
-
+    // console.log($('#submit').parents('#address-create'))
     $('#submit').click(function(){ //填写收货地址的保存按钮
       var add_id=$(this).parents('#address-create').attr('id1');
       var obj=new Object();
@@ -254,8 +266,6 @@
           return false;         
         }
       
-
-
       $.ajax({ //发送请求将这些数据添加到address表里
         url:'/shop/biao',
         type:'post',
@@ -274,8 +284,10 @@
       });
     });
 
+
+
     $('.address-more').click(function(){ //隐藏多条用户收货地址的方法
-      $('div[info="charu1"]:gt(0)').slideToggle();
+      $('div[info="charu1"]:gt(1)').slideToggle();
     }); 
 
     $('.content').live('mouseover',function(){
@@ -346,6 +358,7 @@
         data:{'_token':token,'id':bq.attr('id')},
         success:function(mes){
           if(mes=='yes'){
+            myadd();
             bq.remove();
           }
         }

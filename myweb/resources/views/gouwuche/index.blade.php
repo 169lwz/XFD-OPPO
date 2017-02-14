@@ -79,8 +79,10 @@
 
               <div class="counter-box">
                   <a data-id="b5c161c6639cbf6eb3a51469ece3aa05" id="jian" class="btn minus">-</a>
-                  <input type="text" data-price="1599.00" data-quantity="1" value="{{$v['num']}}" readonly="" class="number cart-product-quantity-b5c161c6639cbf6eb3a51469ece3aa05">
-                  <a data-id="b5c161c6639cbf6eb3a51469ece3aa05" id="jia" class="btn plus">+</a>
+                  <input type="hidden" name="store" value="{{$v['store']}}">
+                  <input type="text" data-price="1599.00" data-quantity="1" name="num0" value="{{$v['num']}}" readonly="" class="number cart-product-quantity-b5c161c6639cbf6eb3a51469ece3aa05">
+                  <a data-id="b5c161c6639cbf6eb3a51469ece3aa05" id="jia" class="btn plus">+</a><span><font size="2px" color="red" id="sss"></font></span>
+                  
               </div>
             </div>
             <div class="cart-product-price">
@@ -210,8 +212,10 @@
         $(this).attr('info',1);
       }
        $('input[info="0"]').each(function(){ //计算选中物品的总数
-          var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input').val();//每个选中物品的数量
-          var price=$(this).parent().parent().next().find('div').find('span').html();//每个物品的单价
+          var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input[name="num0"]').val();//每个选中物品的数量
+          var price=$(this).parent().parent().next().find('div').next('div').next('div').find('span').html();//每个物品的单价
+         
+          // console.log(price);
           total+=parseInt(a)*parseInt(price);
           num+=parseInt(a);
       });
@@ -244,15 +248,23 @@
     });
 
     $('#jia').live('click',function(){
+      var store=parseInt($(this).prev('input').prev('input').val()); //库存量
+      // console.log(store)
       var num3=0;
       var total=0;
       var id=$(this).parent().prev().val();//获取当前商品的id
       var num=parseInt($(this).prev().val())+1; //当前购买数量+1
+      if(num>store){
+        $('#sss').html('已超出库存量!');
+        return false;
+      }
       $(this).prev().val(num);
       if($('input[info="0"]').attr('info')==0){ //查看当前物品是否选中 选中的把数量和价格写到'商品数量'和'总计'里
           $('input[info="0"]').each(function(){
-            var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input').val();
-            var price=$(this).parent().parent().next().find('div').find('span').html();
+            var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input[name="num0"]').val();
+            // console.log(a);
+            var price=parseInt($(this).parent().parent().next().find('div').find('.normal').html());
+            // console.log(price)
             total+=parseInt(a)*parseInt(price);
             num3+=parseInt(a);
           });
@@ -266,19 +278,21 @@
     $('#jian').live('click',function(){
       var num3=0;
       var total=0;
-      if($(this).next().val()==1){
-        return;
+      if($(this).next('input').next('input').val()==1){
+        return false;
       }
       var id=$(this).parent().prev().val();
-      var num=parseInt($(this).next().val())-1;
-      $(this).next().val(num);
+      var num=parseInt($(this).next('input').next('input').val())-1; //改变购物车表的数量
+      $(this).next('input').next('input').val(num);
       if($('input[info="0"]').attr('info')==0){
           $('input[info="0"]').each(function(){
-            var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input').val();
-            var price=$(this).parent().parent().next().find('div').find('span').html();
+            var a=$(this).parent().parent().next().find('.cart-counter-box').find('div').find('input[name="num0"]').val();
+            var price=$(this).parent().parent().next().find('div').find('.normal').html();
             total+=parseInt(a)*parseInt(price);
             num3+=parseInt(a);
           });
+          console.log(num3)
+          console.log(total)
         $('#count').html(num3);
         $('#price').html('￥'+total);
       }

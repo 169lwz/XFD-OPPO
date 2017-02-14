@@ -229,16 +229,16 @@
         <div class='relative'>
           <ul>
             <li class='user-menu-login'>
-              <a href="/dingdan/index">我的订单</a>
+              <a href="http://www.opposhop.cn/orders">我的订单</a>
             </li>
             <li class='user-menu-login'>
               <a href="https://id.oppo.com/account/profile">账户信息</a>
             </li>
             <li class='user-menu-login'>
-              <a href="/address/myaddress">配送地址</a>
+              <a href="http://www.opposhop.cn/user/addresses">配送地址</a>
             </li>
             <li class='user-menu-login user-menu-cart'>
-              <a href="/shop/index">购物车</a>
+              <a href="http://www.opposhop.cn/cart">购物车</a>
             </li>
             <li class='user-menu-login user-menu-toLogin'>
               <a href='https://id.oppo.com/login?callback=http%3A%2F%2Fwww.opposhop.cn%2F'>
@@ -293,21 +293,17 @@
             <div class="g">
               <div class="gi lap-three-quarters">
                 <ul class="g">
-                  @foreach($links as $k=>$v)
                   <li class="gi lap-one-quarter">
-                    <!-- <a class="m-item" href="http://www.oppo.com/cn/products" target="_blank">{{$v['lname']}}</a> -->
-                    <a>{{$v['lname']}}</a>
+                    <a></a>
                     <span class="toggle js-toggle-sitemap"></span>
-                      @foreach($v['sub'] as $kk=>$vv)
                       <ul>               
                         <li>
-                           <!-- <a href="http://www.opposhop.cn/products/390.html" target="_blank">{{$vv['lname']}}</a> -->
-                           <a>{{$vv['lname']}}</a>
+                           <a></a>
                         </li>
                       </ul>
-                    @endforeach
+                    
                   </li>
-                @endforeach
+                
                 </ul>
           </div>
           <div class="gi lap-one-quarter align-right">

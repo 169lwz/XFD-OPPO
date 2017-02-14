@@ -37,3 +37,9 @@
         opacity: 1;
         /*text-align: center;*/
       }
+	
+		.zzj{
+			 background: #2aad6f  repeat scroll 0 0;
+    border: 2px solid #2aad6f;
+    color: #fff;
+		}

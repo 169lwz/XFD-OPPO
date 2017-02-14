@@ -1,4 +1,4 @@
-@extends('homeindex.home')
+@extends('layout.home')
 @section('con')
 <style type="text/css">
               select:hover{
@@ -7,6 +7,7 @@
       select{
         border:1px solid #ccc;
         border-radius: 4px;
+        opacity: 1;
       }
 </style>
   <main class="main-content slab-light">
@@ -464,14 +465,18 @@
     myajax(0); //显示城市联动 第一个select;
     myadd();//显示收货地址
     jishu();//应付金额的方法;
-    // addressnum(); //显示'查看更多地址'
+    addressnum(); //显示'查看更多地址'
     $('#address_new').click(function(){
       $('#block').show();
     });
 
     $('#reset').click(function(){
-      $('#block').hide();
+      $('#block').css('display','none');
+      $('#submit').parents('#address-create').removeAttr('id1');
       $('input').val(''); $('select').val('999999999999');
+      $('#phone').html('');
+      $('#email').html('');
+      $('#sss').html('');
     });
 
     $('select').live('change',function(){
@@ -639,6 +644,7 @@
         data:{'_token':token,'id':bq.attr('id')},
         success:function(mes){
           if(mes=='yes'){
+            myadd();
             bq.remove();
           }
         }

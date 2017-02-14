@@ -29,7 +29,7 @@
 	    	<table class="mws-datatable-fn mws-table dataTable" id="DataTables_Table_1" aria-describedby="DataTables_Table_1_info">
 		        <thead>
 		            <tr role="row">
-		            	<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">ID</th>
+		            	<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">用户名</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 208px;" aria-label="Browser: activate to sort column ascending">收件人</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 195px;" aria-label="Platform(s): activate to sort column ascending">订单号</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">下单时间</th>
@@ -152,7 +152,8 @@
 	});
 //====================删除操作===================================
 	$('.icol32-bin').live('click',function(){
-		var id=$(this).parent().parent().find('td:eq(2)').html();
+		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
+		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
 		var _token=$('input[name="_token"]').val();
 		var num=$('select:eq(0)').val();
 		var page=$('#ye').val();
@@ -160,7 +161,7 @@
 		$.ajax({
 			url:'/orders/del',
 			type:'post',
-			data:{'id':id,'_token':_token},
+			data:{'id':id,'_token':_token,'uid':uid},
 			dataType:'text',
 			success:function(mes){
 				if(mes=='yes'){
@@ -182,12 +183,16 @@
 
 	$('.edit0').live('change',function(){
 		var dz=$(this).val();
-		var id=$(this).parent().parent().find('td:eq(0)').html();
+		var id=$(this).parent().prev().prev('td').html(); //订单号
+		var uid=$(this).parent().parent().find('input').val(); //用户id
+		console.log(uid);
+		console.log(id);
+		// return false;
 		var _token=$('input[name="_token"]').val();
 		$.ajax({
 			url:'/orders/edit',
 			type:'post',
-			data:{'editid':id,'editval':dz,'_token':_token},
+			data:{'editid':id,'editval':dz,'_token':_token,'uid':uid},
 			dataType:'text',
 			async:false,
 			success:function(mes){
@@ -208,14 +213,17 @@
 	$('.icol32-cog-edit').live('click',function(){
 		$('.sc').remove(); 
 		$('#big1').css('display','block');
-		var id=$(this).parent().parent().find('td:eq(0)').next('td').next('td').html(); //订单号
+		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
+		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
+		// console.log($(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td'));
+		// return false;
 		// console.log($(this).parent().parent().find('td:eq(0)'));
 		var _token=$('input[name="_token"]').val();
 		var dd=$('#lll');
 		$.ajax({
 		url:'/orders/detail',
 		type:'post',
-		data:{'order_num':id,'_token':_token},
+		data:{'order_num':id,'_token':_token,'uid':uid},
 		dataType:'json',
 		success:function(mes){
 			$(mes).each(function(){
@@ -271,7 +279,7 @@
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
 					
-				a= $('<tr class="odd" align="center"><td>'+$(this).attr('id')+'</td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1">新订单</option><option value="2">已发货</option><option value="3">已收货</option><option value="4">未支付</option><option value="5">已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+				a= $('<tr class="odd" align="center"><td>'+$(this).attr('username')+'</td><input type="hidden" name="uid" value="'+$(this).attr('uid')+'"><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1">新订单</option><option value="2">已发货</option><option value="3">已收货</option><option value="4">未支付</option><option value="5">已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
 					$('#z').append(a);
 					$(a).find('select').val($(this).attr('status'));
 					// console.log($(this).attr('status'));

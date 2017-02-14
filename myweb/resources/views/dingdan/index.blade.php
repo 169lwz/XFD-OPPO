@@ -1,5 +1,21 @@
 @extends('layout.home')
 @section('con')
+
+  <style type="text/css">
+    .zzj{
+      color:white;
+      position: absolute;
+      margin-left: 943px;
+      margin-top: -53px;
+      background: #2aad6f;
+      padding: 10px 22px;
+    }
+    .zzj :hover{
+      background: #47b488 none repeat scroll 0 0;
+      border:#47b488;
+    }
+  </style>
+
       <main class='main-content user'>
     <div class='wrapper'>
       <ul class='breadcrumb'>
@@ -88,13 +104,16 @@
           </div>
           <div class="row" style="display:none"><a  class="button button-s but">立即支付</a></div>
           <div class="row"><a href="" class="button button-s">查看详情</a></div>
-          <div class="row" style="display:none"><a  class="box-link">取消订单</a></div>
+          
+          @if($v['status']==4) <div class="row" style="display:none"><a  class="box-link">取消订单</a></div> @endif
+          
         </div>
       </div>
-
+      @if($v['status']==2) <div ><a class="zzj">确认收货</a></div> @endif
       <div class="gi lap-three-fifths desk-three-quarters pagination-content">
       </div>
     </div>
+
 @endforeach    
 {{csrf_field()}}
 
@@ -106,6 +125,24 @@
   var s2=s.parent().next('div').next('div').find('a');             //查看订单按钮
   myajax();
   myajax1();
+  
+  $('.zzj').click(function(){
+    var aa=$(this).parents('.my-oppo-content').find('div').find('div').find('strong').find('a').html();
+    // console.log(aa)
+    $.ajax({
+      url:'/dingdan/xiu',
+      type:'post',
+      data:{'_token':token,'order_num':aa},
+      dataType:'text',
+      success:function(mes){
+        // console.log(mes);
+        $('a:contains('+mes+')').parents('.order-list-top').next('ul').next('div').find('div:last').prev('div').prev('div').find('span').html('已收货');
+        $('a:contains('+mes+')').parents('.order-list-top').next('ul').next('div').next('div').find('a').css('display','none');
+        // console.log($('a:contains('+mes+')').parents('.order-list-top').next('ul').next('div').next('div').find('a'));
+      }
+    });
+  });
+
   function myajax(){
     $.ajax({
       url:'/dingdan/show',
@@ -159,7 +196,7 @@
     
   })
 
-  console.log($('.but'))
+  
   $('.but').click(function(){
     var a1=$(this).parents('.order-list').parent().find('div').find('div').find('strong').find('a').html();//相对应的订单号
     $.ajax({

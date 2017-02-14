@@ -1,4 +1,4 @@
-@extends('homeindex.home')
+@extends('layout.home1')
 @section('con')
 <main class="main-content slab-light order-payments-revision opr">
     <div class="wrapper">
@@ -435,23 +435,27 @@
 
     $('a[info="submit"]').click(function(){
       // alert('支付成功');
-      var coco=$('#order_num').html();
+      var result = prompt("请输入你的支付密码：", "");
+      
+      if(result == 'yes') {  
+       alert('支付成功');
+       var coco=$('#order_num').html();
       // console.log(coco);
-      // 
-       //要该状态的订单 订单号
+      
+       // 要该状态的订单 订单号
       $.ajax({
         url:'/dingdan/edit1', //修改订单状态
         type:'post',
         data:{'_token':token,'order_num':coco},
         dataType:'text',
         success:function(mes){
-          
-            location.href='/dingdan/index';
-          
+          location.href='/dingdan/index';
         }
-
       });
-      // return false;
+      return false;
+      } else {
+       alert("你未输入值或者输入错误");
+      }  
     });
   </script>
 @endsection
