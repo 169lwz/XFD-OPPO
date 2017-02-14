@@ -959,6 +959,7 @@
 [2017-02-13 23:35:04]select * from `links` where `id` = ? limit 1
 [2017-02-13 23:35:18]select * from `adminuser` where `username` = ? limit 1
 [2017-02-13 23:37:32]select * from `adminuser` where `username` = ? limit 1
+<<<<<<< HEAD
 >>>>>>> wcf
 [2017-02-14 09:52:29]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
 [2017-02-14 09:52:29]select * from `links`
@@ -980,3 +981,372 @@
 [2017-02-14 09:55:06]select * from `guanggao` where `status` = ?
 [2017-02-14 09:55:06]select * from `orders` where `uid` = ? group by `order_num`
 [2017-02-14 09:55:06]select count(*) as aggregate from `shop` where `uid` = ?
+=======
+[2017-02-14 00:31:00]select * from `links`
+[2017-02-14 00:31:00]select * from `lunbo` where `status` = ?
+[2017-02-14 00:31:00]select * from `guanggao` where `status` = ?
+[2017-02-14 00:41:03]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-14 00:41:17]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-14 00:41:42]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `orders`.`uid` = ? group by `order_num`
+[2017-02-14 00:49:34]select * from `links`
+[2017-02-14 00:49:34]select * from `lunbo` where `status` = ?
+[2017-02-14 00:49:34]select * from `guanggao` where `status` = ?
+[2017-02-14 00:49:43]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:43]select * from `links`
+[2017-02-14 00:49:54]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:54]select * from `links`
+[2017-02-14 00:49:55]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:55]select * from `links`
+[2017-02-14 00:49:55]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:55]select * from `links`
+[2017-02-14 00:49:56]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:56]select * from `links`
+[2017-02-14 00:49:56]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:56]select * from `links`
+[2017-02-14 00:49:56]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:56]select * from `links`
+[2017-02-14 00:49:56]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:56]select * from `links`
+[2017-02-14 00:49:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:57]select * from `links`
+[2017-02-14 00:49:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:57]select * from `links`
+[2017-02-14 00:49:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:57]select * from `links`
+[2017-02-14 00:49:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:57]select * from `links`
+[2017-02-14 00:49:58]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:49:58]select * from `links`
+[2017-02-14 00:50:37]select * from `links`
+[2017-02-14 00:50:37]select * from `lunbo` where `status` = ?
+[2017-02-14 00:50:37]select * from `guanggao` where `status` = ?
+[2017-02-14 00:50:45]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 00:51:00]select * from `user` where `username` = ? limit 1
+[2017-02-14 00:51:00]select * from `links`
+[2017-02-14 00:51:00]select * from `lunbo` where `status` = ?
+[2017-02-14 00:51:00]select * from `guanggao` where `status` = ?
+[2017-02-14 00:51:03]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:51:03]select * from `links`
+[2017-02-14 00:51:23]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:51:23]select * from `links`
+[2017-02-14 00:52:03]select * from `links`
+[2017-02-14 00:52:03]select * from `lunbo` where `status` = ?
+[2017-02-14 00:52:03]select * from `guanggao` where `status` = ?
+[2017-02-14 00:52:15]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 00:52:22]select * from `user` where `username` = ? limit 1
+[2017-02-14 00:52:22]select * from `links`
+[2017-02-14 00:52:22]select * from `lunbo` where `status` = ?
+[2017-02-14 00:52:22]select * from `guanggao` where `status` = ?
+[2017-02-14 00:52:25]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:52:25]select * from `links`
+[2017-02-14 00:54:36]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:54:36]select * from `links`
+[2017-02-14 00:54:37]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:54:37]select * from `links`
+[2017-02-14 00:54:38]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:54:38]select * from `links`
+[2017-02-14 00:54:41]select * from `links`
+[2017-02-14 00:54:41]select * from `lunbo` where `status` = ?
+[2017-02-14 00:54:41]select * from `guanggao` where `status` = ?
+[2017-02-14 00:54:43]select * from `links`
+[2017-02-14 00:54:43]select * from `lunbo` where `status` = ?
+[2017-02-14 00:54:43]select * from `guanggao` where `status` = ?
+[2017-02-14 00:54:51]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 00:55:00]select * from `user` where `username` = ? limit 1
+[2017-02-14 00:55:00]select * from `links`
+[2017-02-14 00:55:00]select * from `lunbo` where `status` = ?
+[2017-02-14 00:55:00]select * from `guanggao` where `status` = ?
+[2017-02-14 00:55:02]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:55:02]select * from `links`
+[2017-02-14 00:56:19]select * from `links`
+[2017-02-14 00:56:19]select * from `lunbo` where `status` = ?
+[2017-02-14 00:56:19]select * from `guanggao` where `status` = ?
+[2017-02-14 00:57:44]select * from `links`
+[2017-02-14 00:57:44]select * from `lunbo` where `status` = ?
+[2017-02-14 00:57:44]select * from `guanggao` where `status` = ?
+[2017-02-14 00:57:47]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:57:47]select * from `links`
+[2017-02-14 00:57:47]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:57:57]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:58:02]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:58:02]select * from `links`
+[2017-02-14 00:58:03]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:58:32]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:58:59]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:58:59]select * from `links`
+[2017-02-14 00:58:59]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:59:13]select * from `links`
+[2017-02-14 00:59:13]select * from `lunbo` where `status` = ?
+[2017-02-14 00:59:13]select * from `guanggao` where `status` = ?
+[2017-02-14 00:59:19]select * from `links`
+[2017-02-14 00:59:19]select * from `lunbo` where `status` = ?
+[2017-02-14 00:59:19]select * from `guanggao` where `status` = ?
+[2017-02-14 00:59:31]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 00:59:37]select * from `user` where `username` = ? limit 1
+[2017-02-14 00:59:38]select * from `links`
+[2017-02-14 00:59:38]select * from `lunbo` where `status` = ?
+[2017-02-14 00:59:38]select * from `guanggao` where `status` = ?
+[2017-02-14 00:59:44]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:59:44]select * from `links`
+[2017-02-14 00:59:45]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 00:59:54]select `shop`.*, `goods`.`pic`, `goods`.`desc`, `goods`.`gname`, `goods`.`price` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`uid` = ?
+[2017-02-14 00:59:54]select * from `links`
+[2017-02-14 00:59:59]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 00:59:59]select * from `links`
+[2017-02-14 01:00:00]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:00:07]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:00:14]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:00:14]select * from `links`
+[2017-02-14 01:00:15]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:00:53]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:00:53]select * from `links`
+[2017-02-14 01:00:53]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:00:54]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:00:54]select * from `links`
+[2017-02-14 01:00:54]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:02:20]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:02:20]select * from `links`
+[2017-02-14 01:02:20]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:08:38]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:08:38]select * from `links`
+[2017-02-14 01:08:39]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:08:51]select * from `links`
+[2017-02-14 01:08:51]select * from `lunbo` where `status` = ?
+[2017-02-14 01:08:51]select * from `guanggao` where `status` = ?
+[2017-02-14 01:08:53]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:08:53]select * from `links`
+[2017-02-14 01:08:53]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:08:58]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:08:58]select * from `links`
+[2017-02-14 01:08:58]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:09:04]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:10:07]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:10:07]select * from `links`
+[2017-02-14 01:10:08]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:10:08]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:10:08]select * from `links`
+[2017-02-14 01:10:09]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:10:14]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:12:26]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:12:26]select * from `links`
+[2017-02-14 01:12:26]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:12:29]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:12:45]select * from `links`
+[2017-02-14 01:12:45]select * from `lunbo` where `status` = ?
+[2017-02-14 01:12:45]select * from `guanggao` where `status` = ?
+[2017-02-14 01:13:49]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:13:49]select * from `links`
+[2017-02-14 01:13:49]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:13:50]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:13:50]select * from `links`
+[2017-02-14 01:13:51]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:14:02]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:14:02]select * from `links`
+[2017-02-14 01:14:02]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:14:14]select * from `links`
+[2017-02-14 01:14:24]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:14:24]select * from `links`
+[2017-02-14 01:14:24]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:14:33]select * from `links`
+[2017-02-14 01:15:05]select * from `links`
+[2017-02-14 01:15:07]select * from `links`
+[2017-02-14 01:15:08]select * from `links`
+[2017-02-14 01:15:12]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:12]select * from `links`
+[2017-02-14 01:15:12]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:17]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:17]select * from `links`
+[2017-02-14 01:15:17]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:18]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:18]select * from `links`
+[2017-02-14 01:15:18]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:19]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:19]select * from `links`
+[2017-02-14 01:15:20]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:23]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:23]select * from `links`
+[2017-02-14 01:15:23]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:30]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 01:15:30]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 01:15:30]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 01:15:30]select * from `links`
+[2017-02-14 01:15:52]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 01:15:53]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 01:15:54]select * from `links`
+[2017-02-14 01:15:54]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 08:59:33]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` is null group by `order_num` order by `addtime` desc
+[2017-02-14 08:59:33]select * from `links`
+[2017-02-14 09:00:00]select * from `links`
+[2017-02-14 09:02:39]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` is null group by `order_num` order by `addtime` desc
+[2017-02-14 09:02:39]select * from `links`
+[2017-02-14 09:02:48]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` is null group by `order_num` order by `addtime` desc
+[2017-02-14 09:02:48]select * from `links`
+[2017-02-14 09:02:59]select * from `links`
+[2017-02-14 09:02:59]select * from `lunbo` where `status` = ?
+[2017-02-14 09:02:59]select * from `guanggao` where `status` = ?
+[2017-02-14 09:03:13]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 09:03:24]select * from `user` where `username` = ? limit 1
+[2017-02-14 09:03:24]select * from `links`
+[2017-02-14 09:03:24]select * from `lunbo` where `status` = ?
+[2017-02-14 09:03:24]select * from `guanggao` where `status` = ?
+[2017-02-14 09:03:28]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:03:28]select * from `links`
+[2017-02-14 09:03:29]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:03:39]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:03:39]select * from `links`
+[2017-02-14 09:03:39]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:03:44]select * from `links`
+[2017-02-14 09:03:44]select * from `lunbo` where `status` = ?
+[2017-02-14 09:03:44]select * from `guanggao` where `status` = ?
+[2017-02-14 09:03:58]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:03:58]select * from `links`
+[2017-02-14 09:03:58]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:04:08]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:04:16]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:04:21]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:04:21]select * from `links`
+[2017-02-14 09:04:21]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:05:16]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:05:16]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:05:16]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:05:16]select * from `links`
+[2017-02-14 09:06:19]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:06:19]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:06:19]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:06:19]select * from `links`
+[2017-02-14 09:08:07]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:08:53]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:08:53]select * from `links`
+[2017-02-14 09:08:54]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:08:59]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:08:59]select * from `links`
+[2017-02-14 09:08:59]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:09:01]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:09:01]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:09:01]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:09:01]select * from `links`
+[2017-02-14 09:09:34]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:09:44]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:09:44]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:09:44]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:09:44]select * from `links`
+[2017-02-14 09:10:59]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:10:59]select * from `links`
+[2017-02-14 09:10:59]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:11:22]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:11:22]select * from `links`
+[2017-02-14 09:11:22]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:12:35]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:12:35]select * from `links`
+[2017-02-14 09:12:35]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:13:55]select * from `links`
+[2017-02-14 09:13:55]select * from `lunbo` where `status` = ?
+[2017-02-14 09:13:55]select * from `guanggao` where `status` = ?
+[2017-02-14 09:14:51]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:14:51]select * from `links`
+[2017-02-14 09:14:52]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:15:23]update `user` set `pass` = ? where `id` = ?
+[2017-02-14 09:15:29]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 09:15:40]select * from `user` where `username` = ? limit 1
+[2017-02-14 09:15:44]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 09:15:52]select * from `user` where `username` = ? limit 1
+[2017-02-14 09:15:52]select * from `links`
+[2017-02-14 09:15:52]select * from `lunbo` where `status` = ?
+[2017-02-14 09:15:52]select * from `guanggao` where `status` = ?
+[2017-02-14 09:15:55]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:15:55]select * from `links`
+[2017-02-14 09:15:55]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:16:08]update `user` set `pass` = ? where `id` = ?
+[2017-02-14 09:16:13]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 09:16:22]select * from `user` where `username` = ? limit 1
+[2017-02-14 09:16:22]select * from `links`
+[2017-02-14 09:16:22]select * from `lunbo` where `status` = ?
+[2017-02-14 09:16:22]select * from `guanggao` where `status` = ?
+[2017-02-14 09:16:30]select * from `links`
+[2017-02-14 09:16:30]select * from `lunbo` where `status` = ?
+[2017-02-14 09:16:30]select * from `guanggao` where `status` = ?
+[2017-02-14 09:16:34]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:16:34]select * from `links`
+[2017-02-14 09:16:34]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:16:37]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:16:37]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:16:37]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:16:37]select * from `links`
+[2017-02-14 09:16:40]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:16:40]select * from `links`
+[2017-02-14 09:16:41]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:21:41]select * from `links`
+[2017-02-14 09:21:41]select * from `lunbo` where `status` = ?
+[2017-02-14 09:21:41]select * from `guanggao` where `status` = ?
+[2017-02-14 09:21:55]select count(*) as aggregate from `user` where `phone` = ?
+[2017-02-14 09:21:57]select * from `user` where `phone` = ? limit 1
+[2017-02-14 09:22:46]select count(*) as aggregate from `user` where `phone` = ?
+[2017-02-14 09:22:49]select * from `user` where `phone` = ? limit 1
+[2017-02-14 09:25:39]select * from `links`
+[2017-02-14 09:25:39]select * from `lunbo` where `status` = ?
+[2017-02-14 09:25:39]select * from `guanggao` where `status` = ?
+[2017-02-14 09:28:40]select * from `adminuser` where `username` = ? limit 1
+[2017-02-14 09:28:43]select * from `lunbo`
+[2017-02-14 09:28:46]select * from `lunbo` where `id` = ? limit 1
+[2017-02-14 09:28:49]select * from `lunbo` where `id` = ? limit 1
+[2017-02-14 09:28:49]update `lunbo` set `id` = ?, `desc` = ?, `status` = ? where `id` = ?
+[2017-02-14 09:28:50]select * from `lunbo`
+[2017-02-14 09:28:55]select * from `links`
+[2017-02-14 09:28:55]select * from `lunbo` where `status` = ?
+[2017-02-14 09:28:55]select * from `guanggao` where `status` = ?
+[2017-02-14 09:29:17]select * from `lunbo` where `id` = ? limit 1
+[2017-02-14 09:29:22]select * from `lunbo` where `id` = ? limit 1
+[2017-02-14 09:29:22]update `lunbo` set `id` = ?, `desc` = ?, `status` = ? where `id` = ?
+[2017-02-14 09:29:23]select * from `lunbo`
+[2017-02-14 09:29:29]select * from `links`
+[2017-02-14 09:29:29]select * from `lunbo` where `status` = ?
+[2017-02-14 09:29:29]select * from `guanggao` where `status` = ?
+[2017-02-14 09:35:11]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-14 09:35:18]select * from `user` where `username` = ? limit 1
+[2017-02-14 09:35:18]select * from `links`
+[2017-02-14 09:35:18]select * from `lunbo` where `status` = ?
+[2017-02-14 09:35:18]select * from `guanggao` where `status` = ?
+[2017-02-14 09:35:21]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:35:21]select * from `links`
+[2017-02-14 09:35:21]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:35:52]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:35:52]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:35:52]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:35:52]select * from `links`
+[2017-02-14 09:35:58]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:35:58]select * from `links`
+[2017-02-14 09:35:58]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:36:01]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:36:01]select * from `links`
+[2017-02-14 09:36:01]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:36:12]select * from `links`
+[2017-02-14 09:36:12]select * from `lunbo` where `status` = ?
+[2017-02-14 09:36:12]select * from `guanggao` where `status` = ?
+[2017-02-14 09:36:33]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:36:33]select * from `links`
+[2017-02-14 09:36:33]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:38:20]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:38:20]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:38:20]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:38:20]select * from `links`
+[2017-02-14 09:38:43]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:38:43]select * from `links`
+[2017-02-14 09:38:44]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:38:54]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:38:54]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:38:54]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:38:54]select * from `links`
+[2017-02-14 09:39:23]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:39:23]select * from `links`
+[2017-02-14 09:39:24]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:39:29]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`pic`, `goods`.`desc` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:39:29]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-14 09:39:29]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-14 09:39:29]select * from `links`
+[2017-02-14 09:40:54]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:40:54]select * from `links`
+[2017-02-14 09:40:54]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:40:57]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:40:57]select * from `links`
+[2017-02-14 09:40:57]select order_num,count(*) as count from orders where uid=43 group by order_num
+>>>>>>> wcf

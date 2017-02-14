@@ -4,7 +4,11 @@
 
 <div class="mws-panel grid_8">
 	<div class="mws-panel-header">
+
 		<span><i class="icon-table"></i>订单浏览</span>
+
+		<span><i class="icon-table"></i>订单回收</span>
+
 	</div>
 	<div class="mws-panel-body no-padding">
 	    <div role="grid" class="dataTables_wrapper" id="DataTables_Table_1_wrapper">
@@ -152,15 +156,20 @@
 	});
 //====================删除操作===================================
 	$('.icol32-bin').live('click',function(){
-		var id=$(this).parent().parent().find('td:eq(2)').html();
+
+		var id=$(this).parent().parent().find('td:eq(2)').html(); //订单号
+		var uid=$(this).parent().parent().find('input').val();    //用户ID
+
 		var _token=$('input[name="_token"]').val();
 		var num=$('select:eq(0)').val();
 		var page=$('#ye').val();
 		var key=$('#search').val();
 		$.ajax({
-			url:'/orders/del',
+
+			url:'/orders/del1',
 			type:'post',
-			data:{'id':id,'_token':_token},
+			data:{'id':id,'uid':uid,'_token':_token},
+
 			dataType:'text',
 			success:function(mes){
 				if(mes=='yes'){
@@ -182,12 +191,19 @@
 
 	$('.edit0').live('change',function(){
 		var dz=$(this).val();
-		var id=$(this).parent().parent().find('td:eq(0)').html();
+
+		var id=$(this).parent().parent().find('td:eq(2)').html();
+		var uid=$(this).parent().parent().find('input').val();
+		// console.log(uid);
+		// return false;
+
 		var _token=$('input[name="_token"]').val();
 		$.ajax({
 			url:'/orders/edit',
 			type:'post',
-			data:{'editid':id,'editval':dz,'_token':_token},
+
+			data:{'editid':id,'editval':dz,'_token':_token,'uid':uid},
+
 			dataType:'text',
 			async:false,
 			success:function(mes){
@@ -208,14 +224,20 @@
 	$('.icol32-cog-edit').live('click',function(){
 		$('.sc').remove(); 
 		$('#big1').css('display','block');
-		var id=$(this).parent().parent().find('td:eq(0)').next('td').next('td').html(); //订单号
-		// console.log($(this).parent().parent().find('td:eq(0)'));
+
+		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
+		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
+		// console.log(id);
+		// return false;
+
 		var _token=$('input[name="_token"]').val();
 		var dd=$('#lll');
 		$.ajax({
 		url:'/orders/detail',
 		type:'post',
-		data:{'order_num':id,'_token':_token},
+
+		data:{'order_num':id,'_token':_token,'uid':uid},
+
 		dataType:'json',
 		success:function(mes){
 			$(mes).each(function(){
@@ -271,7 +293,9 @@
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
 					
-				a= $('<tr class="odd" align="center"><td>'+$(this).attr('id')+'</td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1">新订单</option><option value="2">已发货</option><option value="3">已收货</option><option value="4">未支付</option><option value="5">已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+
+				a= $('<tr class="odd" align="center"><td>'+$(this).attr('id')+'</td><input type="hidden" name="uid" value="'+$(this).attr('uid')+'"><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1">新订单</option><option value="2">已发货</option><option value="3">已收货</option><option value="4">未支付</option><option value="5">已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+
 					$('#z').append(a);
 					$(a).find('select').val($(this).attr('status'));
 					// console.log($(this).attr('status'));

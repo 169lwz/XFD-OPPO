@@ -1,10 +1,12 @@
 @extends('layout.home')
 @section('con')
-      <main class='main-content user'>
+
+  <main class='main-content user'>
+
     <div class='wrapper'>
       <ul class='breadcrumb'>
   <li>
-    <a href='http://www.oppo.com/cn/'>
+    <a href='/home/index'>
       首页
       <span>/</span>
     </a>
@@ -26,21 +28,12 @@
     <a href='http://www.opposhop.cn/coupons/show'>优惠券</a>
     </li>
     <li>
-    <a href='https://id.oppo.com/account/profile?callback=http%3A%2F%2Fwww.opposhop.cn'>账户信息</a>
+    <a href='/home/myhome'>账户信息</a>
     </li>
     </ul>
   </div>
 
-
-
-
   <div class="g">
-
-
-
-
-
-
 
 @foreach($list as $v)
     <div class="gi one-whole my-oppo-content slab-white-border order">
@@ -178,11 +171,10 @@
 </script>
 
 
-
-
 </div>
 
   </main>
+
   <div id='dialog-confirm' class='hidden'>
       <div class="mask-common"></div>
       <div class="dialog-common dialog-box-common">
@@ -208,4 +200,6 @@
         </div>
       </div>
     </div>
+
 @endsection
+

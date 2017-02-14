@@ -26,12 +26,12 @@ class HomeController extends Controller
     }
 
 
-    public function getMyorders(){
-        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
-        $links = $res->getLinksarr();
+    // public function getMyorders(){
+    //     $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+    //     $links = $res->getLinksarr();
 
-    	return view('home.myorders',['links'=>$links]);
-    }
+    // 	return view('home.myorders',['links'=>$links]);
+    // }
     public function getMyhome(){
     	$res = session('user');
     	return view('home.myhome',['res'=>$res]);

@@ -112,7 +112,11 @@ class DingdanController extends Controller
         $data1=DB::table('orders')->where('uid',session('user')['id'])->where('order_num',$order_num)->sum('num');
         $data2=DB::table('orders')->join('address','address.id','=','orders.address_id')->select('orders.*','address.name','address.phone','address.email','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi')->where('order_num',$order_num)->first(); 
         // dd($data1);
-        return view('ddxiangqing.index',['list'=>$data,'list1'=>$data2,'list2'=>$data1]);
+
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+        return view('ddxiangqing.index',['list'=>$data,'list1'=>$data2,'list2'=>$data1,'links'=>$links]);
+
     }
 
 
