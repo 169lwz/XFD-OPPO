@@ -4,7 +4,7 @@
     <div class='wrapper'>
       <ul class='breadcrumb'>
   <li>
-    <a href='http://www.oppo.com/cn/'>
+    <a href='/home/index'>
       首页
       <span>/</span>
     </a>
@@ -151,13 +151,9 @@
   })
 
 </script>
-
-
 </div>
 
   </main>
-
-
 
   <div id='dialog-confirm' class='hidden'>
       <div class="mask-common"></div>

@@ -4,13 +4,13 @@
     <div class="wrapper">
       <ul class="breadcrumb">
   <li>
-    <a href="http://www.oppo.com/cn/">
+    <a href="/home/index">
       首页
       <span>/</span>
     </a>
   </li>
             <li>
-                  <a href="http://www.opposhop.cn/orders">
+                  <a href="/dingdan/index">
             我的订单
             <span>/</span>
           </a>
@@ -23,7 +23,7 @@
   <h1 class="h-gamma">订单详情</h1>
   <ul class="navigation">
     <li class="is-active">
-      <a href="http://www.opposhop.cn/orders">我的订单</a>
+      <a href="/dingdan/index">我的订单</a>
     </li>
     <li class="">
       <a href="http://www.opposhop.cn/user/addresses">配送地址</a>
@@ -32,7 +32,7 @@
       <a href="http://www.opposhop.cn/coupons/show">优惠券</a>
     </li>
     <li>
-      <a href="https://id.oppo.com/account/profile?callback=http%3A%2F%2Fwww.opposhop.cn">账户信息</a>
+      <a href="/home/myhome">账户信息</a>
     </li>
               </ul>
 </div>

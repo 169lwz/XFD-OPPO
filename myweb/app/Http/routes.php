@@ -44,8 +44,6 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/val','ValController');// 后台商品属性
 
-	Route::controller('/admin/guanli','Guanlicontroller');// 管理员模块
-
 });
 
 
