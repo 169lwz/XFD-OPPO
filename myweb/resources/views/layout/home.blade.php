@@ -65,7 +65,7 @@
             <a href='/dingdan/index'>
               <span class='text'>我的OPPO</span>
               <span class='icon icon-messages'></span>
-              <span class='n-messages'>(0)</span>
+              <span class='n-messages'>({!!\App\Http\Controllers\DingdanController::num()!!})</span>
             </a>
           </li>
           <li class='gi' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
