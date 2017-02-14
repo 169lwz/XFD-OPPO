@@ -960,3 +960,23 @@
 [2017-02-13 23:35:18]select * from `adminuser` where `username` = ? limit 1
 [2017-02-13 23:37:32]select * from `adminuser` where `username` = ? limit 1
 >>>>>>> wcf
+[2017-02-14 09:52:29]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-14 09:52:29]select * from `links`
+[2017-02-14 09:52:29]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-14 09:52:29]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-14 09:52:30]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-14 09:52:32]select * from `links`
+[2017-02-14 09:52:32]select * from `lunbo` where `status` = ?
+[2017-02-14 09:52:32]select * from `guanggao` where `status` = ?
+[2017-02-14 09:52:32]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-14 09:52:32]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-14 09:54:45]select * from `links`
+[2017-02-14 09:54:45]select * from `lunbo` where `status` = ?
+[2017-02-14 09:54:45]select * from `guanggao` where `status` = ?
+[2017-02-14 09:54:45]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-14 09:54:45]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-14 09:55:06]select * from `links`
+[2017-02-14 09:55:06]select * from `lunbo` where `status` = ?
+[2017-02-14 09:55:06]select * from `guanggao` where `status` = ?
+[2017-02-14 09:55:06]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-14 09:55:06]select count(*) as aggregate from `shop` where `uid` = ?
