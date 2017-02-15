@@ -77,6 +77,7 @@ Route::post("/home/code","AjaxController@code");//ajax验证手机验证码
 
 Route::group(['middleware'=>'login'],function(){ //前台路由组
 
+
 	Route::post("/home/chongzhi","AjaxController@chongzhi");//ajax重置密码
 
 	Route::controller('/shop','ShopController');  //购物车模块
@@ -84,6 +85,9 @@ Route::group(['middleware'=>'login'],function(){ //前台路由组
 	Route::controller('/address','AddressController'); //用户收货地址
 
 	Route::controller('/dingdan','DingdanController');  //(前台)订单管理
+
+	
+
 
 });
 
@@ -94,6 +98,11 @@ Route::controller('/home/detail','DetailController');// 前台商品详情
 Route::get("/home/forget","LoginController@forget"); //忘记密码
 
 Route::controller('/ty','TyController');
+
+// Route::controller('/home/detail','DetailController');// 前台商品详情
+
+
+
 
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);

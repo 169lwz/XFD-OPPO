@@ -130,7 +130,7 @@ class TypeController extends Controller
 
 
 	// 拼装一个类别的数组
-	public function getTypearr(){
+	public static function getTypearr(){
 		$types = self::getAlltypes();
 		$types = self::getTypesInfo($types,0);		
 	}
