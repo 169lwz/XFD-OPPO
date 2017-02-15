@@ -331,7 +331,7 @@
                 wei_du.value= wei_du_value;
             });
 
-            var poi = new BMap.Point(116.406881,39.146333);
+            var poi = new BMap.Point(116.453413,39.936075);
 
 
             map.centerAndZoom(poi, 16);
@@ -388,7 +388,7 @@
 
             })
 
-            map.addOverlay(marker); //在地图中添加marker  显示小红点
+            // map.addOverlay(marker); //在地图中添加marker  显示小红点
 
       // window.onload = function() { searchInfoWindow.open(marker); };//页面加载时弹框  调用创建的检索信息窗口
 

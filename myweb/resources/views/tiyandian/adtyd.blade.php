@@ -30,10 +30,10 @@
 		        <thead>
 		            <tr role="row">
 		            	<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">ID</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 208px;" aria-label="Browser: activate to sort column ascending">所在省份</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 195px;" aria-label="Platform(s): activate to sort column ascending">联系电话</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 208px;" aria-label="Browser: activate to sort column ascending">所在城市</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 195px;" aria-label="Platform(s): activate to sort column ascending">门店名称</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">营业时间</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">状态</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">类型</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
 		            </tr>
 		        </thead>
@@ -54,20 +54,15 @@
 
 	<div id="small1">
 		<table id="text-color" border="1" width="800px">
-			<tr><th colspan="10">订单详情</th></tr>
-			<tr >
-				<th>商品名称</th>
-				<th>购买数量</th>
-				<th>单价</th>
-				<th>小计</th>
-			</tr>
+			<tr><th colspan="10">门店详情</th></tr>
 			<tr id="lll">
 				<th colspan="10" id="zz" >
 					<div id="zz">
-						<p id="sjr">收件人 : </p><p id="sjr1">165</p>
+						<p id="sjr">店面名称 : </p><p id="sjr1">165</p>
+						<p id="sjr3">店面类型 : </p><p id="sjr2">165</p>
 						<p id="dh">电话 : </p><p id="dh1">444</p>
 						<p id="dz">地址 : </p><p id="dz1">55</p>				
-						<p id="zj">应付金额 : </p><p id="zj1">55</p>
+						<p id="zj">营业时间 : </p><p id="zj1">55</p>
 						<button id="quxiao">取消</button>				
 					</div>
 
@@ -152,16 +147,15 @@
 	});
 //====================删除操作===================================
 	$('.icol32-bin').live('click',function(){
-		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
+		var id=$(this).parents('.odd').find('td:eq(0)').html(); //获取id
 		var _token=$('input[name="_token"]').val();
 		var num=$('select:eq(0)').val();
 		var page=$('#ye').val();
 		var key=$('#search').val();
 		$.ajax({
-			url:'/orders/del',
+			url:'/ty/del',
 			type:'post',
-			data:{'id':id,'_token':_token,'uid':uid},
+			data:{'id':id,'_token':_token},
 			dataType:'text',
 			success:function(mes){
 				if(mes=='yes'){
@@ -181,18 +175,15 @@
 	});
 //====================修改操作====================================
 
-	$('.edit0').live('change',function(){
+	$('.edit0').live('change',function(){ //修改店面类型
 		var dz=$(this).val();
-		var id=$(this).parent().prev().prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('input').val(); //用户id
-		console.log(uid);
-		console.log(id);
+		var id=$(this).parents('.odd').find('td:eq(0)').html(); //获取id
 		// return false;
 		var _token=$('input[name="_token"]').val();
 		$.ajax({
-			url:'/orders/edit',
+			url:'/ty/edit',
 			type:'post',
-			data:{'editid':id,'editval':dz,'_token':_token,'uid':uid},
+			data:{'id':id,'type':dz,'_token':_token},
 			dataType:'text',
 			async:false,
 			success:function(mes){
@@ -209,30 +200,55 @@
 			}
 		});
 	});
+
+	$('.edit1').live('change',function(){ //修改店面类型
+		var dz1=$(this).val();
+		var id1=$(this).parents('.odd').find('td:eq(0)').html(); //获取id
+		// return false;
+		var _token=$('input[name="_token"]').val();
+		$.ajax({
+			url:'/ty/edit1',
+			type:'post',
+			data:{'id':id1,'jobtime':dz1,'_token':_token},
+			dataType:'text',
+			async:false,
+			success:function(mes){
+				var page1=$('#ye').val();
+				var num1=$('select:eq(0)').val();
+				var key1 =$('#search').val();
+				if(mes=='yes'){
+					alert('修改成功');
+					$('#ye').empty();
+					myajax(num1,page1,key1);
+				}else{
+					alert('修改失败');
+				}		
+			}
+		});
+	});	
 //====================查看操作====================================
 	$('.icol32-cog-edit').live('click',function(){
 		$('.sc').remove(); 
 		$('#big1').css('display','block');
-		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
-		// console.log($(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td'));
+		var id=$(this).parents('.odd').find('td:eq(0)').html(); //获取id
+		// console.log($(this).parents('.odd').find('td:eq(0)'));
 		// return false;
-		// console.log($(this).parent().parent().find('td:eq(0)'));
+		
 		var _token=$('input[name="_token"]').val();
 		var dd=$('#lll');
 		$.ajax({
-		url:'/orders/detail',
+		url:'/ty/detail',
 		type:'post',
-		data:{'order_num':id,'_token':_token,'uid':uid},
+		data:{'id':id,'_token':_token},
 		dataType:'json',
 		success:function(mes){
 			$(mes).each(function(){
-				$('#zj1').html($(this).attr('total')+'.00');
 				$('#sjr1').html($(this).attr('name'));
+				$('#sjr2').html($(this).attr('type'));
 				$('#dh1').html($(this).attr('phone'));
-				$('#dz1').html($(this).attr('sheng1')+$(this).attr('shi1')+$(this).attr('xian1')+$(this).attr('jiedao1')+$(this).attr('xiangxi'));
-				var con=$('<tr class="sc"><td>'+$(this).attr('gname')+'</td><td>'+$(this).attr('num')+'</td><td>'+$(this).attr('price')+'</td><td>'+$(this).attr('num')*$(this).attr('price')+'.00'+'</td></tr>');
-				dd.before(con);
+				$('#dz1').html($(this).attr('sheng')+$(this).attr('shi')+$(this).attr('name'));
+				$('#zj1').html($(this).attr('jobtime'));
+				// dd.before(con);
 
 			});
 		}
@@ -254,7 +270,7 @@
 
 	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数 key=搜索条件
 		$.ajax({
-			url:'/orders/show',
+			url:'/ty/show',
 			type:'get',
 			data:{'num':num,'page':page,'key':key},
 			dataType:'json',
@@ -279,9 +295,10 @@
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
 					
-				a= $('<tr class="odd" align="center"><td>'+$(this).attr('username')+'</td><input type="hidden" name="uid" value="'+$(this).attr('uid')+'"><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1">新订单</option><option value="2">已发货</option><option value="3">已收货</option><option value="4">未支付</option><option value="5">已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+				a= $('<tr class="odd" align="center"><td>'+$(this).attr('id')+'</td><td>'+$(this).attr('shi')+'</td><td>'+$(this).attr('name')+'</td>       <td><select class="edit1"><option value="9:00--17:00">9:00--17:00</option><option value="12:00--00:00">12:00--00:00</option><option value="10:00--20:00">10:00--20:00</option></select></td>       <td><select class="edit0"><option value="旗舰店">旗舰店</option><option value="体验店">体验店</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
 					$('#z').append(a);
-					$(a).find('select').val($(this).attr('status'));
+					$(a).find('.edit0').val($(this).attr('type'));
+					$(a).find('.edit1').val($(this).attr('jobtime'));
 					// console.log($(this).attr('status'));
 				});
 			}

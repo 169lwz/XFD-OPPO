@@ -5,6 +5,13 @@
     select{
       opacity: 1;
     }
+    #bj{
+      position: absolute;
+      margin-left: -527px;
+    }
+    #myid{
+      text-align:center;
+    }
   </style>
 
   <main class='main-content'>
@@ -33,10 +40,10 @@
     <img alt='' src='/ty1/images/20150317090321NxympTnrMhDCjBxd.jpg' srcset='http://static.oppo.com/archives/201503/20150317090358ot93yaALDPx6zZyJ.jpg'>
   </picture>
     </div>      <div class='search-store-wrapper'>
-        <form action='http://www.oppo.com/cn/shops' class='search-store'>
+        <form action="/ty/hong1"  class='search-store'>
           <div class='input-button-item'>
-            <input type='text' name="q" value="北京市" placeholder="请输入城市或体验店名称">
-            <button class='button' type='submit'>搜索</button>
+            <input id="q" type='text' name="q" value="北京市" placeholder="请输入城市或体验店名称">
+            <button type="submit" class='button'>搜索</button>
           </div>
         </form>
       </div>
@@ -56,13 +63,13 @@
                   <span class='icon icon-grey-arrow-down'></span>
                   <select style="height:63px" id='select1' name='province_id'></select>
               </div>
-              <div class='basic-input one-whole desk-one-fifth inline-block city-select'>
+         <!--      <div class='basic-input one-whole desk-one-fifth inline-block city-select'>
                               <div>
                   请选择
                 </div>
                   <span class='icon icon-grey-arrow-down'></span>
                   <select style="height:63px" id='select2' name='city_id'></select>
-              </div>
+              </div> -->
               <div class='basic-input one-whole desk-one-fifth inline-block level-select'>
                               <div>
                   请选择
@@ -75,7 +82,7 @@
                 </select>
               </div>
           </div>
-        <!-- </div> -->
+        </div>
       </div>
     </div>
   <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
@@ -89,7 +96,7 @@
         data:{'upid':upid},
         dataType:'json',
         success:function(mes){
-          console.log($(mes));
+          // console.log($(mes));
           $(mes).each(function(){
             var op=$('<option value="'+$(this).attr('id')+'">'+$(this).attr('name')+'</option>');
             $(bq).append(op);
@@ -101,6 +108,7 @@
     $('#select1').change(function(){
       $('#select2').find('option').remove();
       var id=$(this).val();       //当前城市的ID
+      $('input[name="q"]').val($('#select1 option:selected').text());
       myajax(id,$('#select2'));
     });
   </script>
@@ -163,7 +171,7 @@
                 <div class='js-tab is-active'>
 
                   <div class='map map-fix-infowindow' id='shop_map'>
-                      <section class="lx_center1">
+<section class="lx_center1">
 
   <div class="dt">
 
@@ -252,9 +260,9 @@
         </div>
         </div>
         <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;">
-        <span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 19px; height: 25px; left: 950px; top: 225px; z-index: -6945250; background: url(http://api0.map.bdimg.com/images/blank.gif);" title="">
-        </span>
-        <span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 18px; height: 18px; left: 575px; top: 106px; z-index: 19000000; -webkit-user-select: none; display: none; background: url(http://api0.map.bdimg.com/images/blank.gif);" title="">
+          <span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 19px; height: 25px; left: 950px; top: 225px; z-index: -6945250; background: url(http://api0.map.bdimg.com/images/blank.gif);" title="">
+          </span>
+          <span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 18px; height: 18px; left: 575px; top: 106px; z-index: 19000000; -webkit-user-select: none; display: none; background: url(http://api0.map.bdimg.com/images/blank.gif);" title="">
             
         </span>
         </div>
@@ -360,7 +368,39 @@
         </div>
         <span id="jing_du"></span>
         <span id="wei_du"></span>
+        <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
         <script type="text/javascript">
+       
+          function meajax(sheng){
+            $.ajax({
+              url:'/ty/hong',
+              type:'get',
+              data:{'sheng':sheng},
+              dataType:'json',
+              success:function(mes){
+                // console.log($(mes))
+                $(mes).each(function(i){
+                  var poi = new BMap.Point($(this).attr('jing'),$(this).attr('wei'));
+                  var marker = new BMap.Marker(poi); //创建marker对象  创建小红点
+                  map.addOverlay(marker); //在地图中添加marker  显示小红点
+                  map.centerAndZoom(poi, i); //显示小红点
+                })
+              }
+            });
+          }
+          meajax('北京市');
+
+          $('.button').click(function(){
+            var key=$('#q').val();
+            // console.log(key);
+            meajax(key);
+            return false;
+          });
+
+  
+
+
+
 
             // 百度地图API功能   
 
@@ -377,11 +417,12 @@
 
             });
 
-            var poi = new BMap.Point(116.414822,39.114399);
 
-            var poi1 = new BMap.Point(116.416053,39.114581);
 
-            map.centerAndZoom(poi, 16);
+           var poi = new BMap.Point(116.453413,39.936075);
+
+
+            // map.centerAndZoom(poi, 16);
 
             map.enableScrollWheelZoom();
 
@@ -426,18 +467,16 @@
                 });
 
             var marker = new BMap.Marker(poi); //创建marker对象  创建小红点
-            var marker1 = new BMap.Marker(poi1); //创建marker对象  创建小红点
 
-            marker.enableDragging(); //marker可拖拽
+            // marker.enableDragging(); //marker可拖拽
 
-            marker.addEventListener("click", function(e){
+            // marker.addEventListener("click", function(e){
 
-                searchInfoWindow.open(marker);
+            //     searchInfoWindow.open(marker);
 
-            })
+            // })
 
-            map.addOverlay(marker); //在地图中添加marker  显示小红点
-            map.addOverlay(marker1); //在地图中添加marker  显示小红点
+            // map.addOverlay(marker); //在地图中添加marker  显示小红点
 
       // window.onload = function() { searchInfoWindow.open(marker); };//页面加载时弹框  调用创建的检索信息窗口
 
@@ -518,403 +557,85 @@
 
 
         <div class='location-address'>
-          <h3 class='h-gamma'> 北京市 · 体验店（51）</h3>
-          <ul class='list-store slab-white-border'>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>1</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京海淀五道口店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/11767'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        旗舰店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市海淀区成府路华清嘉园东北门OPPO专卖店</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-82888189</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-11767'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>2</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京顺义鑫海韵通电器店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/10456'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        旗舰店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市顺义区顺义区鑫海韵通电器一层（和合谷旁边）</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-81460551</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-10456'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>3</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京通州梨园店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/11149'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        旗舰店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市通州区云景东路4-3号OPPO专卖店</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-80812991</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-11149'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>4</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京丰台刘家窑旗舰店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/911'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        旗舰店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市丰台区南三环东路29号</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-67601181</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-911'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>5</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京黄村东大街店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/15679'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市大兴区黄村东大街46号</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-61208510</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-15679'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>6</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京昌平华光店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/12808'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市昌平区鼓楼大街</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-89701108</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-12808'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>7</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京房山城关思睿店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/16145'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市房山区房山区城关南大街15号底商oppo专卖店</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-61375945</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-16145'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>8</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京朝阳横街子店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8666'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市朝阳区朝阳区横街子（百分百商</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>01058488789</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8666'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>9</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京怀柔京北店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/10177'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市怀柔区商业街</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>60686163</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-10177'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>10</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京顺义宜宾店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/10178'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市顺义区北京市顺义区义宾北区</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-57416181</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-10178'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>11</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京大兴火神庙商业店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8696'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市大兴区大兴区火神庙商业街C座</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-69223800</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8696'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>12</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京朝阳东辛店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8663'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市朝阳区东辛店村99号</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-52495276</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8663'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>13</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京正阳桥体验店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8619'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市丰台区西四环南路86号</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-52493986</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8619'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>14</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京磁器口店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8606'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市东城区东大街珠市口1-12</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-67013598</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8606'></p>
-                  </div> -->
-                </div>
-              </li>
-                          <li class='store-location js-collapse'>
-                <span class='marker'>15</span>
-                <div class='store-location-info g'>
-                  <div class='gi lap-one-fifth store-name'>
-                    <p>
-                      <strong>北京海淀中关村店</strong>
-                    </p>
-                    <p>
-                      <a class='view-details' href='http://www.oppo.com/cn/shops/8183'>查看详情</a>
-                    </p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>                        体验店
-                                        </p>
-                  </div>
-                  <div class='gi lap-two-fifths'>
-                    <p>北京市海淀区中关村大街近中关村加油站</p>
-                  </div>
-                  <div class='gi lap-one-fifth'>
-                    <p>010-82619179</p>
-                  </div>
-                  <!-- <div class='gi lap-one-fifth shop-distance-p hide'>
-                    <p class='shop-distance shop-distance-8183'></p>
-                  </div> -->
-                </div>
-              </li>
-                      </ul>
-          <ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=2">2</a></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=3">3</a></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=4">4</a></li> <li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=2" rel="next">&raquo;</a></li></ul>
+          <h3 class='h-gamma'> 中国 · 体验店（<span id="num1">{{$num}}</span>）</h3>
+
+
+  <ul id="myid" class='list-store slab-white-border' >
+    <li id="kkk" class='store-location js-collapse' style="display:none">
+    <img id="bj" src="/tiyandian/images/marker.png" alt="">
+      <!-- <span id="bj" class='marker'>1</span> -->
+      <div class='store-location-info g'>
+        <div class='gi lap-one-fifth store-name'>
+          <p><strong class="ming">北京海淀五道口店</strong></p>
+          <p><a class='view-details' href='/ty/xiang'>查看详情</a></p>
         </div>
-                <div class='aside-mobile'></div>
+        <div class='gi lap-one-fifth'>
+          <p class="leixing">旗舰店</p>
+        </div>
+        <div class='gi lap-two-fifths'>
+          <p class="dddd">北京市海淀区成府路华清嘉园东北门OPPO专卖店</p>
+        </div>
+        <div class='gi lap-one-fifth'>
+          <p class="dianhua">010-82888189</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+
+          <!-- <ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=2">2</a></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=3">3</a></li><li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=4">4</a></li> <li><a href="http://www.oppo.com/cn/shops?q=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;page=2" rel="next">&raquo;</a></li></ul> -->
+        </div>
+        <div class='aside-mobile'></div>
       </div>
     </div>
   </main>
+  <script type="text/javascript">
+  var p=1;
+  function getDt(){
+    var ul=$('#myid');
+    // console.log(ul);
+    // console.log($('#kkk'));
+    $.ajax({
+      url:'/ty/ppl',
+      data:{'p':p},
+      type:'get',
+      dataType:'json',
+      success:function(mes){
+        // console.log($(mes));
+        $(mes).each(function(i){
+          var nli=$('#kkk').clone().attr({'info':'meinfo','style':'display:block'});
+          nli.find('.ming').html($(this).attr('sheng')+$(this).attr('shi'));
+          nli.find('a').attr('info',$(this).attr('id'));
+          nli.find('.leixing').html($(this).attr('type'));
+          nli.find('.dddd').html($(this).attr('sheng')+$(this).attr('shi')+$(this).attr('name'));
+          nli.find('.dianhua').html($(this).attr('phone'));
+          ul.append(nli);
+        });
+      }
+    });
+    p++;
+  }
+  getDt();
+  $(window).scroll(function(){
+    var dy=$(document).height()-550;
+    // console.log(dy);
+    var wy=$(window).height();
+    var sy=$(window).scrollTop(); //滚动过的高度
+    var y=dy-wy-sy;// 获取可下拉的高度
+    if(y<1){
+      getDt();
+    }
+  });
+
+  $('.view-details').live('click',function(){
+    var id=$(this).attr('info');
+    $(this).attr('href','/ty/xiang/'+id);
+    // $.ajax({
+    //   url:'/ty/xiang',
+    //   type:'get',
+    //   data:{'id':id}
+
+    // });
+  });
+  </script>
 @endsection

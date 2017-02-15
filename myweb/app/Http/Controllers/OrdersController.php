@@ -22,7 +22,7 @@ class OrdersController extends Controller
         $key = $request->input('key');
     	$num = $request->input('num');   //每页 显示的最大条数
     	$page = ($request->input('page')-1)*$num; //显示的起始位置
-    	$data = DB::table('orders')->join('address','address.id','=','orders.address_id')->join('goods','goods.id','=','orders.goodsid')->join('user','user.id','=','orders.uid')->select('orders.*','goods.gname','address.name','address.phone','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi','user.username')->skip($page)->take($num)->where('recycle1',0)->where('order_num','like','%'.$key.'%')->orderBy('orders.addtime')->groupBy('order_num')->groupBy('uid')->get();
+    	$data = DB::table('orders')->join('address','address.id','=','orders.address_id')->join('goods','goods.id','=','orders.goodsid')->join('user','user.id','=','orders.uid')->select('orders.*','goods.gname','address.name','address.phone','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi','user.username')->skip($page)->take($num)->where('recycle1',0)->where('order_num','like','%'.$key.'%')->orderBy('orders.addtime','desc')->groupBy('order_num')->groupBy('uid')->get();
         $count = DB::table('orders')->where('order_num','like','%'.$key.'%')->count();
         $maxpage= ceil($count/$num);
         // dd($data);
