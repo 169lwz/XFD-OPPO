@@ -65,7 +65,7 @@ Route::controller('/home','HomeController'); //前台商城主页
 
 Route::group(['middleware'=>'login'],function(){ //前台路由组
 
-Route::get("/home/logout","LoginController@logout"); //退出操作
+	Route::get("/home/logout","LoginController@logout"); //退出操作
 
 });
 
@@ -74,6 +74,11 @@ Route::get("/home/forget","LoginController@forget"); //忘记密码
 Route::controller('/home','HomeController');   //前台首页
 
 Route::controller('/shop','ShopController');  //购物车模块
+
+// Route::controller('/home/detail','DetailController');// 前台商品详情
+
+
+
 
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);

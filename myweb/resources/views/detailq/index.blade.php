@@ -7,11 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
     <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
-    <title>【R9s 黑色版】全新配色上市 最新价格_图片_配置参数-OPPO智能手机官网 </title>
+    <title>【{{$data['con']}}】 </title>
     <meta name="keywords" content="OPPO  R9s黑色版智能手机,OPPO R9s黑色版最新价格,OPPO  R9s黑色版配置参数,OPPO R9s黑色版图片,OPPO R9s黑色版评测 " />
     <meta name="description" content="OPPO官网为您提供OPPO R9s黑色版的最新价格,图片,OPPOR9s黑色版的参数配置及评测,帮您全面了解OPPO R9s黑色版 " />
     <link media="all" type="text/css" rel="stylesheet" href="/detail/css/styles.css?20161130133802">
-        <script>
+       <script>
 var isMobile = navigator.userAgent.search(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|Windows Phone|Tizen|Bada)/);
 if( !!~isMobile ) {
     window.location.href = "http://www.opposhop.cn/m/products/393.html";
@@ -42,7 +42,7 @@ if( !!~isMobile ) {
 
   </head>
   <body>
-          <header class='main-header'>
+  <header class='main-header'>
   <div class='upper-area'>
     <div class='wrapper g'>
                   <ul class='gi log-area'>
@@ -268,7 +268,7 @@ if( !!~isMobile ) {
             <a href='http://www.opposhop.cn/products?is_promotion=0&category=1'>商品列表<span>/</span>
             </a>
           </li>
-          <li>R9s 黑色版 全新配色</li>
+          <li id="con">{{$data['con']}}</li>
       </ul>
     </div>
     <!--购买信息开始-->
@@ -276,213 +276,224 @@ if( !!~isMobile ) {
         <article class='wrapper'>
           <div class='buying-header-mov'></div>
           <div class='g'>
-          <!--图片开始-->
-          <div class='gi lap-two-fifths desk-one-half'>
-              <div class='product-gallery js-tabs'>
-                  <div class='product-gallery-view js-tab-content swipe' id="product-swipe">
-                      <div class="swipe-wrap">
-                          <div class='swipe-slide  is-active '>
-                              <img alt='' title='' src='{{$vo["pic"]}}'>
-                          </div>
-                      </div>
-                  </div>
-                  <div class='product-gallery-items'>
-                      <div class="ps-carousel" id="product-carousel">
-                          <div class="ps-item  ps-item-active ">
-                              <a href='#'>
-                                  <img alt='' src='{{$vo["pic"]}}' width="50px">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!--图片结束-->
-            <div class='gi lap-three-fifths desk-one-half'>
-              <div class='buying-header-desk'>
-                  <h1 class='product-title' data-desktop='.buying-header-desk' data-mobile='.buying-header-mov'>{{$vo['desc']}}</h1>
-                  <p class="product-name-extra" data-desktop=".buying-header-desk" data-mobile=".buying-header-mov">5.5英寸，前后1600万像素，4G运存+64GB内存，3010mAh大电池，充电5分钟通话2小时</p>
-              </div>
-              <div class='buying-price'>
-                  <p><strong class='price'>￥{{$vo['price']}}</strong></p>
-              </div>
-              <!--表单开始-->
-              <div class='add-cart-form'>
-                <form id="add-cart-form" onsubmit="return false;">
-                    <section class="g module product-selector" data-common-name="attribute-0" data-selector-type="box">
-                        <div class='gi one-quarter desk-one-fifth'>
-                            <div class='radio-label'>颜色</div>
-                        </div>
-                        <div class="gi three-quarters desk-four-fifths">
-                            <div class="g g-wrapper-s">
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="http://www.opposhop.cn/products/390.html" class="swatch ">
-                                        <span>金色</span>
-                                    </a>
-                                </div>
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="http://www.opposhop.cn/products/391.html" class="swatch ">
-                                        <span>玫瑰金</span>
-                                    </a>
-                                </div>
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="javascript:;" class="swatch selected">
-                                        <span>黑色</span>
-                                    </a>
-                                </div>
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="http://www.opposhop.cn/products/406.html" class="swatch ">
-                                        <span>红色</span>
-                                    </a>
-                                </div>
+            <!--图片开始-->
+            
+            <div class='gi lap-two-fifths desk-one-half'>
+                <div class='product-gallery js-tabs'>
+                    <div class='product-gallery-view js-tab-content swipe' id="product-swipe">
+                        <div class="swipe-wrap">
+                            <div class='swipe-slide  is-active '>
+                                <img alt='' title='' src='{{$data["pic7"]}}' id="p1">
                             </div>
                         </div>
-                    </section>
-                    <section class="g module product-selector" data-common-name="attribute-1" data-selector-type="box">
-                        <div class='gi one-quarter desk-one-fifth'>
-                            <div class='radio-label'>网络</div>
-                        </div>
-                        <div class="gi three-quarters desk-four-fifths">
-                            <div class="g g-wrapper-s">
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="http://www.opposhop.cn/products/390.html" class="swatch selected">
-                                        <span>全网通</span>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class='product-gallery-items'>
+                        <div class="ps-carousel" id="product-carousel">
+                            <div class="ps-item  ps-item-active ">
+                                <a href='#'>
+                                    <img alt='' src='{{$data["pic7"]}}' width="50px"  id="p2">
+                                </a>
                             </div>
                         </div>
-                    </section>
-                    <section class="g module product-selector" data-common-name="attribute-2" data-selector-type="box">
-                        <div class='gi one-quarter desk-one-fifth'>
-                            <div class='radio-label'>容量</div>
-                        </div>
-                        <div class="gi three-quarters desk-four-fifths">
-                            <div class="g g-wrapper-s">
-                                <div class="gi one-half desk-one-third ">
-                                    <a href="javascript:;" class="swatch selected">
-                                        <span>64G</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="g product-gifts" id="good-gifts">
-                        <div class="one-quarter desk-one-fifth">
-                            <div class="y-label">赠品</div>
-                        </div>
-                        <div class="gi three-quarters desk-four-fifths">
-                              <div class="g gift-item clearfix">
-                                  <input type="hidden" name="gift[]" value="383">
-                                  <div class="y-img" ><img src="/detail/images/thumbnail_201607210407209QRrhLczYqI6zwdv_60x60.jpg" alt="蓝牙音箱Q9"></div>
-                                  <div class="y-name"><a href="http://www.opposhop.cn/products/383.html" title="蓝牙音箱Q9" target="_blank">蓝牙音箱Q9</a></div>
-                                  <div class="y-attributes">
-                                      <ul class="swatches">
-                                          <li class="swatch  selected " data-gift-id="383" data-thumbnail="images/thumbnail_201607210407209QRrhLczYqI6zwdv_60x60.jpg"><a href="javascript:;">深蓝</a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="g gift-item clearfix">
-                                  <input type="hidden" name="gift[]" value="387">
-                                  <div class="y-img" ><img src="/detail/images/thumbnail_2016101002101957fb357b42e4d_60x60.jpg" alt="运动臂包"></div>
-                                  <div class="y-name"><a href="http://www.opposhop.cn/products/387.html" title="运动臂包" target="_blank">运动臂包</a></div>
-                                  <div class="y-attributes">
-                                      <ul class="swatches">
-                                          <li class="swatch  selected " data-gift-id="387" data-thumbnail="images/thumbnail_2016101002101957fb357b42e4d_60x60.jpg"><a href="javascript:;">黑色</a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                        </div>
                     </div>
-                
-                                
-                    <input type="hidden" name="service-repair" value=" 0 "/>
-                    <input type="hidden" name="service-screen" value="0"/>
-                    <input type="hidden" name="service-accident" value="0"/>
-                    <div class="g pro-service" id="product-services"></div>
-                        
-                    <div class="g product-gifts">
-                        <div class="one-quarter desk-one-fifth">
-                          <div class="y-label">分期</div>
-                        </div>
-                        <div class="gi three-quarters desk-four-fifths">
-                            <p class='alipay-hb-product alipay-hb-product-free'><i class='icon-hb icon-hb-free'></i>订单满600可享3、6、12期分期免息</p>
-                            <a href="http://www.oppo.com/cn/service/help/330?name=%E8%B4%AD%E4%B9%B0%E5%B8%AE%E5%8A%A9" target="_blank" class='huabei-more'>了解详情&gt;&gt;</a>
-                        </div>
-                    </div>
-                    
-                    <div class="g slab-white-border buying-actions">
-                          <div class='gi lap-one-third'>
-                              <div class='wrapper'>
-                                  <div class='counter-box' id="product-amount">
-                                    <a class='btn minus disabled' data-bind="minus">-</a>
-                                    <input class='number' type='text' id="amount-textbox" value='1'>
-                                    <a class='btn plus' data-bind="plus">+</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="gi lap-two-thirds">
-                              <div class="g normal-button-container">
-                                  <div class="gi one-half">
-                                      <button class="button-light" id="button-buy">加入购物车</button>
-                                  </div>
-                                  <div class="gi one-half">
-                                      <button class="button button-primary" id="go-buy">立即购买</button>
-                                  </div>
-                              </div>
-                          </div>
-                    </div>
-                </form>
-              </div>
-              <!--表单结束-->
-              
-              <!--服务信息开始-->
-              <div class='g delivery-specs pro-delivery-specs'>
-                  <div class='gi one-half desk-one-quarter'>            
-                      <div class='badge'>
-                          <div class='badge-item'><span class='icon icon-postage'></span></div>
-                          <div class='badge-info'><span>全场包邮</span></div>
-                      </div>
-                  </div>
-                  <div class='gi one-half desk-one-quarter'>
-                      <a href="http://www.oppo.com/cn/service/help?name=%E6%9C%8D%E5%8A%A1%E6%94%BF%E7%AD%96" target="_blank">
-                          <div class='badge'>
-                            <div class='badge-item'><span class='icon icon-return'></span></div>
-                            <div class='badge-info'><span>7天包退30天包换</span></div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class='gi one-half desk-one-quarter'>
-                      <a href="http://hd.oppo.com/act/2016/e-invoice/index.html" target="_blank">
-                          <div class='badge'>
-                            <div class='badge-item'><span class='icon icon-credit'></span></div>
-                            <div class='badge-info'><span>电子发票</span></div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class='gi one-half desk-one-quarter'>
-                      <div class='badge'>
-                          <div class='badge-item'><span class='icon icon-points'></span></div>
-                          <div class='badge-info'><span>购物返积分</span></div>
-                      </div>
-                  </div>
-              </div>
-          <!--服务信息结束-->
+                </div>
             </div>
+            <!--图片结束-->
+              <div class='gi lap-three-fifths desk-one-half'>
+                <div class='buying-header-desk'>
+                    <h1 class='product-title' data-desktop='.buying-header-desk' data-mobile='.buying-header-mov' id="con1">{{$data['con']}}</h1>
+                    <p class="product-name-extra" data-desktop=".buying-header-desk" data-mobile=".buying-header-mov">{{$data['desc']}}</p>
+                </div>
+                <div class='buying-price'>
+                    <p><strong class='price'>￥{{$data['price']}}</strong></p>
+                </div>
+                <!--表单开始-->
+                <div class='add-cart-form'>
+                  <form id="add-cart-form" onsubmit="return false;">
+                  {{csrf_field()}}
+                      <section class="g module product-selector" data-common-name="attribute-0" data-selector-type="box">
+                          <div class='gi one-quarter desk-one-fifth'>
+                              <div class='radio-label'>颜色</div>
+                          </div>
+                          <div class="gi three-quarters desk-four-fifths">
+                              <div class="g g-wrapper-s">
+                              @foreach($color as $vc)
+                                  <div class="gi one-half desk-one-third ">
+                                      <a href="javascript:;" INFO="{{$vc['gid']}}/{{$vc['color']}}" class="swatch" show="color">
+                                          <span>{{$vc['color']}}</span>
+                                      </a>
+                                  </div>
+                              @endforeach
+                              </div>
+                          </div>
+                      </section>
+                      <section class="g module product-selector" data-common-name="attribute-1" data-selector-type="box">
+                          <div class='gi one-quarter desk-one-fifth'>
+                              <div class='radio-label'>网络</div>
+                          </div>
+                          <div class="gi three-quarters desk-four-fifths">
+                              <div class="g g-wrapper-s">
+                              @foreach($version as $vv)
+                                  <div class="gi one-half desk-one-third">
+                                      <a href="javascript:;"  class="swatch selected">
+                                          <span>{{$vv['version']}}</span>
+                                      </a>
+                                  </div>
+                              @endforeach
+                              </div>
+                          </div>
+                      </section>
+                      <section class="g module product-selector" data-common-name="attribute-2" data-selector-type="box">
+                          <div class='gi one-quarter desk-one-fifth'>
+                              <div class='radio-label'>容量</div>
+                          </div>
+                          <div class="gi three-quarters desk-four-fifths">
+                              <div class="g g-wrapper-s">
+                              @foreach($memory as $vm)
+                                  <div class="gi one-half desk-one-third ">
+                                      <a href="javascript:;" class="swatch selected" >
+                                          <span>{{$vm['memory']}}</span>
+                                      </a>
+                                  </div>
+                              @endforeach
+                              </div>
+                          </div>
+                      </section>
+                      <div class="g product-gifts" id="good-gifts">
+                          <div class="one-quarter desk-one-fifth">
+                              <div class="y-label">赠品</div>
+                          </div>
+                          <div class="gi three-quarters desk-four-fifths">
+                                @foreach($gift as $vg)
+                                <div class="g gift-item clearfix">
+                                    <input type="hidden" name="gift[]" value="387">
+                                    <div class="y-img" ><img src="{{$vg['picture1']}}" alt="{{$vg['gift']}}"></div>
+                                    <div class="y-name"><a href="http://www.opposhop.cn/products/387.html" title="{{$vg['gift']}}" target="_blank">{{$vg['gift']}}</a></div>
+                                    <div class="y-attributes">
+                                        <ul class="swatches">
+                                            <li class="swatch  selected " data-gift-id="387" data-thumbnail="images/thumbnail_2016101002101957fb357b42e4d_60x60.jpg"><a href="javascript:;">{{$vg['giftcolor']}}</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                @endforeach
+                          </div>
+                      </div>
+                  
+                                  
+                      <input type="hidden" name="service-repair" value=" 0 "/>
+                      <input type="hidden" name="service-screen" value="0"/>
+                      <input type="hidden" name="service-accident" value="0"/>
+                      <div class="g pro-service" id="product-services"></div>
+                          
+                      <div class="g product-gifts">
+                          <div class="one-quarter desk-one-fifth">
+                            <div class="y-label">分期</div>
+                          </div>
+                          <div class="gi three-quarters desk-four-fifths">
+                              <p class='alipay-hb-product alipay-hb-product-free'><i class='icon-hb icon-hb-free'></i>订单满600可享3、6、12期分期免息</p>
+                              <a href="http://www.oppo.com/cn/service/help/330?name=%E8%B4%AD%E4%B9%B0%E5%B8%AE%E5%8A%A9" target="_blank" class='huabei-more'>了解详情&gt;&gt;</a>
+                          </div>
+                      </div>
+                      
+                      <div class="g slab-white-border buying-actions">
+                            <div class='gi lap-one-third'>
+                                <div class='wrapper'>
+                                    <div class='counter-box' id="product-amount">
+                                      <a class='btn minus disabled' data-bind="minus" value="-">-</a>
+                                      <input class='number' type='text' id="amount-textbox" value='1'>
+                                      <a class='btn plus' data-bind="plus" value="+">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi lap-two-thirds">
+                                <div class="g normal-button-container">
+                                    <div class="gi one-half">
+                                        <button class="button-light" id="button-buy">加入购物车</button>
+                                    </div>
+                                    <div class="gi one-half">
+                                        <button class="button button-primary" id="go-buy">立即购买</button>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                  </form>
+                </div>
+               
+                <!--表单结束-->
+                
+                <!--服务信息开始-->
+                <div class='g delivery-specs pro-delivery-specs'>
+                    <div class='gi one-half desk-one-quarter'>            
+                        <div class='badge'>
+                            <div class='badge-item'><span class='icon icon-postage'></span></div>
+                            <div class='badge-info'><span>全场包邮</span></div>
+                        </div>
+                    </div>
+                    <div class='gi one-half desk-one-quarter'>
+                        <a href="http://www.oppo.com/cn/service/help?name=%E6%9C%8D%E5%8A%A1%E6%94%BF%E7%AD%96" target="_blank">
+                            <div class='badge'>
+                              <div class='badge-item'><span class='icon icon-return'></span></div>
+                              <div class='badge-info'><span>7天包退30天包换</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='gi one-half desk-one-quarter'>
+                        <a href="http://hd.oppo.com/act/2016/e-invoice/index.html" target="_blank">
+                            <div class='badge'>
+                              <div class='badge-item'><span class='icon icon-credit'></span></div>
+                              <div class='badge-info'><span>电子发票</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='gi one-half desk-one-quarter'>
+                        <div class='badge'>
+                            <div class='badge-item'><span class='icon icon-points'></span></div>
+                            <div class='badge-info'><span>购物返积分</span></div>
+                        </div>
+                    </div>
+                </div>
+            <!--服务信息结束-->
+              </div>             
           </div>
         </article>
     </div>
     <!--购买信息结束-->
+    <script type="text/javascript">
+        // 颜色选中
+        $('a[show="color"]').click(function(){                    
+            $('a[show="color"]').attr('class','swatch');
+            $(this).attr('class','swatch selected');
+             var arr = $(this).attr('INFO').split('/');
+             // console.log(arr);
+                      
+            $.ajax({
+              url:'/home/detail/indexqj',
+              data:{'id':arr[0],'color':arr[1],'_token':$('input[name="_token"]').val()},
+              type:'post',
+              dataType:'json',
+              success:function(mes){
 
-    <!--产品相关开始-->
-    <div class="product-related">
-        <div class="wrapper">
-            <div class="related-tabs">
-                <ul class="clearfix tabs" data-bind="related"></ul>
-            </div>
-            <div class="related-view" data-tab="related"></div>
-        </div>
-    </div>
-    <!--产品相关结束-->
+                $('#p1').attr('src',$(mes).attr('pic7'));
+                $('#p2').attr('src',$(mes).attr('pic7'));
+                $('#con').html($(mes).attr('con'));
+                $('#con1').html($(mes).attr('con'));
+                for(var i=1;i<7;i++){
+                  $('#pic'+i).attr('src',$(mes).attr('pic'+i));
+                } 
+              }         
+            });
+                           
+        });
+        // var array = $('a[show="color"]').attr('INFO').split('/');
+        // var color ="{{$data['color']}}";
+        // //console.log(array);
+        // var color1 =array[1];
+        // if(color==color1){
+        //   $('a[show="color"]').attr('class','swatch selected')
+        // }
+
+      </script>
+
 
     <div class="product-view">
       <div class="product-view-tabs">
@@ -501,62 +512,15 @@ if( !!~isMobile ) {
           <!--商品详情图片开始-->
           <div class="product-detail-tab y-tab-frame  tab-item-active " id="product-detail-features">
             <section>
+            @foreach($detail as $vd)
+                @for($i=1;$i<7;$i++)
                 <p style="text-align:center;">
-                  <picture>
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201701/20170103100139586b072f34942.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/20170103100141586b073175139.jpg'>               
-                      <img src='/detail/images/20170103100141586b073175139.jpg' srcset='http://static.oppo.com/archives/201701/20170103100139586b072f34942.jpg' alt=''>
+                  <picture>                           
+                      <img src='{{$vd["pic".$i]}}' alt='' id="pic<?php echo $i;?>">
                   </picture>
                 </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/20161110051107582444739c40d.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/20161110051141582444957a3b0.jpg'>                
-                      <img src='/detail/images/20161110051141582444957a3b0.jpg' srcset='http://static.oppo.com/archives/201611/20161110051107582444739c40d.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/20161110051110582444760c254.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/2016111005114358244497b47ec.jpg'>                       
-                      <img src='/detail/images/2016111005114358244497b47ec.jpg' srcset='http://static.oppo.com/archives/201611/20161110051110582444760c254.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/20161110051113582444796dc30.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/201611100511465824449aefb5f.jpg'>                                      
-                      <img src='/detail/images/201611100511465824449aefb5f.jpg' srcset='http://static.oppo.com/archives/201611/20161110051113582444796dc30.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/201611100511175824447d90b11.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/201611100511505824449e1c92a.jpg'>                        
-                      <img src='/detail/images/201611100511505824449e1c92a.jpg' srcset='http://static.oppo.com/archives/201611/201611100511175824447d90b11.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                    
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/2016111005112658244486ae32c.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/20161110051155582444a3f0505.jpg'>                                      
-                      <img src='/detail/images/20161110051155582444a3f0505.jpg' srcset='http://static.oppo.com/archives/201611/2016111005112658244486ae32c.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/20161110051129582444899bd60.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/20161110051159582444a708e3d.jpg'>                                       
-                      <img src='/detail/images/20161110051159582444a708e3d.jpg' srcset='http://static.oppo.com/archives/201611/20161110051129582444899bd60.jpg' alt=''>
-                  </picture>
-                </p>
-                <p style="text-align:center;">
-                  <picture>                      
-                      <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201611/201611100511325824448c1db23.jpg'>
-                      <source media='(min-width: 300px)' srcset='images/20161110051101582444a9cad57.jpg'>                                   
-                      <img src='/detail/images/20161110051101582444a9cad57.jpg' srcset='http://static.oppo.com/archives/201611/201611100511325824448c1db23.jpg' alt=''>
-                  </picture>
-                </p>
+                @endfor
+            @endforeach             
             </section>
           </div>
           <!--商品详情图片结束-->
@@ -564,105 +528,15 @@ if( !!~isMobile ) {
           <!--商品规格参数开始-->
           <div class="product-detail-tab y-tab-frame " id="product-detail-params">
             <section>
-              <p style="text-align:center;">
-                <picture>               
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/2016103110103158175497b6310.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101031581754d3c0cd4.jpg'>
-                    <img src='/detail/images/20161031101031581754d3c0cd4.jpg' srcset='http://static.oppo.com/archives/201610/2016103110103158175497b6310.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/201610311010345817549a3c72d.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101034581754d6b934c.jpg'>                
-                    <img src='/detail/images/20161031101034581754d6b934c.jpg' srcset='http://static.oppo.com/archives/201610/201610311010345817549a3c72d.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>
-                   
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/201610311010375817549d97414.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101037581754d935e2b.jpg'>           
-                    <img src='/detail/images/20161031101037581754d935e2b.jpg' srcset='http://static.oppo.com/archives/201610/201610311010375817549d97414.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>             
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101040581754a028546.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101039581754db4ee9a.jpg'>            
-                    <img src='/detail/images/20161031101039581754db4ee9a.jpg' srcset='http://static.oppo.com/archives/201610/20161031101040581754a028546.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>                
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101042581754a2bf89f.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101042581754de421dd.jpg'>               
-                    <img src='/detail/images/20161031101042581754de421dd.jpg' srcset='http://static.oppo.com/archives/201610/20161031101042581754a2bf89f.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>            
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101046581754a69bf79.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101045581754e136475.jpg'>               
-                    <img src='/detail/images/20161031101045581754e136475.jpg' srcset='http://static.oppo.com/archives/201610/20161031101046581754a69bf79.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101002581754b60faaa.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101048581754e40615e.jpg'>                               
-                    <img src='/detail/images/20161031101048581754e40615e.jpg' srcset='http://static.oppo.com/archives/201610/20161031101002581754b60faaa.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>                
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101004581754b89f88c.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101051581754e78e32b.jpg'>                               
-                    <img src='/detail/images/20161031101051581754e78e32b.jpg' srcset='http://static.oppo.com/archives/201610/20161031101004581754b89f88c.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>       
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101007581754bb42d94.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101054581754eadfe21.jpg'>               
-                    <img src='/detail/images/20161031101054581754eadfe21.jpg' srcset='http://static.oppo.com/archives/201610/20161031101007581754bb42d94.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>               
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101010581754be0d77c.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101057581754edd65e1.jpg'>               
-                    <img src='/detail/images/20161031101057581754edd65e1.jpg' srcset='http://static.oppo.com/archives/201610/20161031101010581754be0d77c.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>               
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101014581754c22e8c5.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101002581754f22a866.jpg'>                               
-                    <img src='/detail/images/20161031101002581754f22a866.jpg' srcset='http://static.oppo.com/archives/201610/20161031101014581754c22e8c5.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>             
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101017581754c513241.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101005581754f56f665.jpg'>            
-                    <img src='/detail/images/20161031101005581754f56f665.jpg' srcset='http://static.oppo.com/archives/201610/20161031101017581754c513241.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>                
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201610/20161031101019581754c7d2beb.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/20161031101008581754f820c14.jpg'>              
-                    <img src='/detail/images/20161031101008581754f820c14.jpg' srcset='http://static.oppo.com/archives/201610/20161031101019581754c7d2beb.jpg' alt=''>
-                </picture>
-              </p>
-              <p style="text-align:center;">
-                <picture>               
-                    <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201612/2016121405124258510e3660801.jpg'>
-                    <source media='(min-width: 300px)' srcset='images/2016121405124558510e39c5488.jpg'>                  
-                    <img src='/detail/images/2016121405124558510e39c5488.jpg' srcset='http://static.oppo.com/archives/201612/2016121405124258510e3660801.jpg' alt=''>
-                </picture>
-              </p>
+            @foreach($parameter as $vp)
+              @for($p=1;$p<7;$p++)
+                <p style="text-align:center;">
+                  <picture>                                   
+                      <img src='{{$vp["ppic".$p]}}' alt=''>
+                  </picture>
+                </p>
+              @endfor
+            @endforeach          
             </section>
           </div>
           <!--商品规格参数结束-->
@@ -1017,12 +891,11 @@ if( !!~isMobile ) {
     <div class="purchase-advisory">
         <a href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank" id="advisory">购机咨询</a>
     </div>
-    <script src="/detail/js/global.min.js?20150820191148"></script>
-        <script src="/detail/js/opposhop.min.js?20170111112201"></script>
-    
+   <script src="/detail/js/global.min.js?20150820191148"></script>
+    <script src="/detail/js/opposhop.min.js?20170111112201"></script>   
     <script src="/detail/js/main.min.js?20161130134015"></script>
-<script src="/detail/js/product.min.js?20161222175313"></script>
-<script src="/detail/js/oppo.login.js"></script>
+    <script src="/detail/js/product.min.js?20161222175313"></script>
+    <script src="/detail/js/oppo.login.js"></script>
 <script>
     $(window).on('load', function() {
         var stickyBuy = new Yo.Product.stickyBuy();

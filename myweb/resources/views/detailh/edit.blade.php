@@ -21,7 +21,38 @@
                             @endforeach
                         </select>
                     </div>
-                </div> 
+                </div>
+
+                 <div class="mws-form-row">
+                    <label class="mws-form-label">商品颜色</label>
+                    <div class="mws-form-item">
+                      <input type="text" class="small" name="color" value="{{$vo['color']}}">
+                    </div>
+                </div>
+
+                <div class="mws-form-row">
+                    <label class="mws-form-label">描述</label>
+                    <div class="mws-form-item">
+                      <input type="text" class="small" name="con" value="{{$vo['con']}}">
+                    </div>
+                </div>
+
+                <div class="mws-form-row">
+                  <label class="mws-form-label">商品主图</label>
+                  <div class="mws-form-item">
+                      <div style="position: relative;" class="fileinput-holder">
+                            <img src="{{$vo['pic7']}}" alt="" width="80px">
+                      </div>
+                 </div>
+                </div>
+                <div class="mws-form-row">
+                  <label class="mws-form-label">修改主图</label>
+                  <div class="mws-form-item">
+                      <div style="position: relative;" class="fileinput-holder">
+                            <input type="file" name='pic7' multiple style="position: absolute; top: 0px; right: 0px; margin: 0px; cursor: pointer; font-size: 999px; opacity: 0; z-index: 999;">    
+                      </div>
+                 </div>
+                </div>   
 
                 <div class="mws-form-row">
                   <label class="mws-form-label">商品图一</label>
