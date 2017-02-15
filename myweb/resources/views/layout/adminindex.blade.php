@@ -74,36 +74,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="read">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="unread">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="unread">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
+                            
                         </ul>
                         <div class="mws-dropdown-viewall">
                             <a href="#">View All Notifications</a>
@@ -189,8 +160,8 @@
                        欢迎登陆!
                     </div>
                     <ul>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">修改密码</a></li>
+                        <li><a>大煞笔</a></li>
+                        <!-- <li><a href="#">修改密码</a></li> -->
                         <li><a href="/admin/login/logout">退出</a></li>
                     </ul>
                 </div>
@@ -249,6 +220,7 @@
                             <li><a href="/admin/type/add">添加类别</a></li>
                         </ul>
                     </li>  
+
                     <li>
                         <a href="#"><i class="icon-share"></i>订单管理</a>
                         <ul  class="closed">
@@ -256,8 +228,8 @@
                             <li><a href="/orders/index1">回收订单</a></li>
                         </ul>
                     </li>      
-                    
-                    <li>
+               
+                     <li>
                         <a href="#"><i class="icon-share"></i>商品管理</a>
                         <ul  class="closed">
                             <li><a href="/admin/goods/index">浏览商品</a></li>
@@ -280,15 +252,15 @@
                             <li><a href="/admin/parameter/add">添加商品参数</a></li>
                         </ul>
                     </li>
-                     <li>
+                    <li>
                         <a href="#"><i class="icon-share"></i>商品属性</a>
                         <ul  class="closed">
                             <li><a href="/admin/val/index">浏览商品属性</a></li>
-                            <li><a href="/admin/val/addcolor">添加商品颜色</a></li>
                             <li><a href="/admin/val/addversion">添加商品网络</a></li>
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
+<<<<<<< HEAD
                     </li>                                           
 
                     </li>
@@ -327,6 +299,19 @@
                             <li><a href="/ty/add">门店添加</a></li>
                         </ul>
                     </li>  
+
+
+                  
+
+                    <li>
+                        <a href="#"><i class="icon-share"></i>赠品管理</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/val/indexgift">浏览赠品</a></li>
+                            <li><a href="/admin/val/addgift">添加赠品</a></li>
+                        </ul>
+                    </li>
+                  
+                                                           
 
                 </ul>
             </div> 

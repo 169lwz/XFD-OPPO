@@ -14,20 +14,12 @@ class ValController extends Controller
 		/admin/val/index
 	*/
 	public function getIndex(Request $request){
-		$data = DB::table('goods')->where(function($query) use($request){
-			if($request->input('keyword')!=null){
-				$query->where('gname','like','%'.$request->input('keyword').'%')
-					  ->orWhere('gcolor','like','%'.$request->input('keyword').'%')
-					  ->orWhere('gversion','like','%'.$request->input('keyword').'%')
-					  ->orWhere('gmemory','like','%'.$request->input('keyword').'%')
-					  ->orWhere('gsize','like','%'.$request->input('keyword').'%');
-			}
-		})
-			->join('gcolor','goods.id','=','gcolor.gid')
+		$data = DB::table('goods')
+			->join('gdetail','goods.id','=','gdetail.gid')
 			->join('gversion','goods.id','=','gversion.gid')
 			->join('gmemory','goods.id','=','gmemory.gid')
 			->join('gsize','goods.id','=','gsize.gid')
-			->select('goods.gname','goods.pic','gcolor.color','gversion.version','gmemory.memory','gsize.size')
+			->select('goods.gname','gdetail.pic7','gdetail.color','gversion.version','gmemory.memory','gsize.size')
 			->paginate($request->input('num',5));
 			
 		return view('val.index',['list'=>$data,'request'=>$request->all()]);
@@ -49,98 +41,6 @@ class ValController extends Controller
 		
 	
 
-//-----------------------------------------------------------------------------------------
-
-    //商品颜色开始
-		/*
-			商品颜色添加
-			/admin/val/addcolor
-		*/
-		public function getAddcolor(){
-			$data =	DB::table('goods')->get();
-			return view('val.color.add',['list'=>$data]);
-		}
-
-		/*
-			执行商品颜色插入
-			/admin/val/insertcolor
-		*/
-		public function postInsertcolor(Request $request){
-			$newdata = self::dealPic($request);
-			// dd($newdata);
-			if(DB::table('gcolor')->insert($newdata)){
-				return redirect('/admin/val/indexcolor')->with('success','添加成功');
-			}else{
-				return back()->with('error','添加失败');
-			}
-
-		}
-
-		/*
-			浏览商品颜色
-			/admin/val/indexcolor
-		*/
-		public function getIndexcolor(Request $request){
-			$data = DB::table('gcolor')->where(function($query) use($request){
-				if($request->input('keyword')!=null){
-					$query->where('gid',$request->input('keyword'))
-						  ->orWhere('color','like',$request->input('keyword'));
-				}
-			})->paginate($request->input('num',5));
-			return view('val.color.index',['list'=>$data,'request'=>$request->all()]);
-		}
-
-		/*
-			删除商品颜色
-			/admin/val/delcolor
-		*/
-		public function getDelcolor($id){
-			$data = DB::table('gcolor')->where('id',$id)->first();
-			//dd($data);
-			
-			if(DB::table('gcolor')->where('id',$id)->delete()){
-
-				if(file_exists('.'.$data['gpic'])){
-					unlink('.'.$data['gpic']);
-				}	
-				return redirect('/admin/val/indexcolor')->with('success','删除成功');
-			}else{
-				return back()->with('error','删除失败');
-			}
-
-		}
-
-		/*
-			呈递修改商品颜色
-			/admin/val/editcolor
-		*/
-		public function getEditcolor($id){
-			$data = DB::table('goods')->get();
-			$colordata = DB::table('gcolor')->where('id',$id)->first();
-			return view('val.color.edit',['list'=>$data,'vo'=>$colordata]);
-		}
-
-		/*
-			执行修改商品颜色
-			/admin/val/updatecolor
-		*/
-		public function postUpdatecolor(Request $request){
-			$newdata = self::dealPic($request);
-			$data = DB::table('gcolor')->where('id',$request->input('id'))->first();
-
-			if(DB::table('gcolor')->where('id',$request->input('id'))->update($newdata)){
-				if(file_exists('.'.$data['gpic'])){
-					unlink('.'.$data['gpic']);
-				}
-				return redirect('/admin/val/indexcolor')->with('success','修改成功');
-			}else{
-				return back()->with('error','修改失败');
-			}
-
-		}
-
-
-    //商品颜色结束
 //-----------------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------------
@@ -398,5 +298,103 @@ class ValController extends Controller
 	//商品尺寸结束
 //-----------------------------------------------------------------------------------------
 
+//-----------------------------------------------------------------------------------------
+	//赠品开始
+		// 呈递赠品添加页面
+	public function getAddgift(){
+		$data = DB::table('goods')->where('price','>','1200')->get();
+		return view('val.gift.add',['list'=>$data]);
+	}
 
+	// //自定义图片处理
+		public function dealPicture($request){
+			
+			$data = $request->except('_token');
+			//
+			for($i=1;$i<3;$i++){
+				if($request->hasFile('picture'.$i)){				
+					$picname = time().rand(10000,99999).'.'.$request->file('picture'.$i)->getClientOriginalExtension();
+					$request->file('picture'.$i)->move(\Config::get('app.upload_dir1'),$picname);
+					$data['picture'.$i] = ltrim(\Config::get('app.upload_dir1').$picname,'.');			
+				}				
+			}
+			return $data;
+		}
+	
+		//执行赠品添加
+	public function postInsertgift(Request $request){
+		$pic = $this->dealPicture($request);
+		//dd($pic);
+		if(DB::table('ggift')->insert($pic)){
+			return redirect('/admin/val/indexgift')->with('success','添加成功');
+		}else{
+			return back()->with('error','添加失败');
+		}
+
+	}
+
+	//浏览赠品信息
+	public function getIndexgift(Request $request){
+		$data = DB::table('ggift')->where(function($query) use($request){
+			if($request->input('keyword')!=null){
+				$query->where('gift','like','%'.$request->input('keyword').'%')
+					  ->orWhere('giftcolor',$request->input('keyword'));
+			}
+		})->paginate($request->input('num',5));
+			return view('val.gift.index',['list'=>$data,'request'=>$request->all()]);
+	}
+
+
+	//删除赠品
+	public function getDelgift($id){
+			//获取要删除的数据
+			$data = DB::table('ggift')->where('id',$id)->first();
+			//dd($res);
+			// 如果数据删除成功,name执行图片的删除
+			if(DB::table('ggift')->where('id',$id)->delete()){
+				foreach($data as $k=>$v){
+					if(file_exists('.'.$v)){
+						unlink('.'.$v);
+					}							
+				}
+				return redirect('/admin/val/indexgift')->with('success','删除成功');
+			}else{
+				return back()->with('error','删除失败');
+			}
+
+		}
+
+
+		// 呈递修改赠品页面
+		public function getEditgift($id){
+			$list = DB::table('goods')->get();
+			$data = DB::table('ggift')->where('id',$id)->first();
+			return view('val.gift.edit',['vo'=>$data,'list'=>$list]);
+		}
+
+		//执行赠品修改
+		public function postUpdategift(Request $request){
+			//获取请求数据中的图片数据
+			$req = $this->dealPicture($request);
+			// dd($req);
+			//获取修改商品的原图片数据
+			$data = DB::table('ggift')->where('id',$request->input('id'))->first();
+
+			if(DB::table('ggift')->where('id',$request->input('id'))->update($req)){
+				for($i=1;$i<3;$i++){
+					if($request->hasFile('picture'.$i)){
+						unlink('.'.$data['picture'.$i]);
+					}
+				}
+				return redirect('/admin/val/indexgift')->with('success','修改成功');
+			}else{
+				return back()->with('error','修改失败');
+			}
+						
+
+		}
+
+
+	//赠品结束
+//-----------------------------------------------------------------------------------------
 }

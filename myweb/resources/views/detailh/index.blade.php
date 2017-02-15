@@ -43,12 +43,14 @@
 		                <tr role="row">
 			                <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 255px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">ID</th>
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">商品</th>			         
+			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">颜色</th>			         
+			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">描述</th>			         
+			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">主图</th>			         
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图一</th>
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图二</th>
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图三</th>
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图四</th>			               
-			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图五</th>
-			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">图六</th>
+			             
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 166px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
 		                </tr>
 		            </thead>                         
@@ -60,13 +62,16 @@
 				                	<tr class="even">
 				                @endif
 				                        <td class=" ">{{$v['id']}}</td>
-				                        <td class=" ">{{$v['gid']}}</td>
+				                        <td class=" ">{{\App\Http\Controllers\DetailController::getGname($v['gid'])}}</td>
+				                        <td class=" ">{{$v['color']}}</td>
+				                        <td class=" ">{{$v['con']}}</td>
+				                        <td class=" "><img src="{{$v['pic7']}}" alt="" width="60px"></td>
 				                        <td class=" "><img src="{{$v['pic1']}}" alt="" width="60px"></td>
+				                       
 				                        <td class=" "><img src="{{$v['pic2']}}" alt="" width="60px"></td>
 				                        <td class=" "><img src="{{$v['pic3']}}" alt="" width="60px"></td>
 				                        <td class=" "><img src="{{$v['pic4']}}" alt="" width="60px"></td>
-				                        <td class=" "><img src="{{$v['pic5']}}" alt="" width="60px"></td>
-				                        <td class=" "><img src="{{$v['pic6']}}" alt="" width="60px"></td>				            				                       				                                   
+				                      			            				                       				                                   
 				                        <td class=" " align='center' font-size='30px'>
 				                        	<a href='/admin/detail/del/{{$v['id']}}' class="icon-trash" style='font-size:25px;color:red' title='删除'></a> | 
 				                        	<a href='/admin/detail/edit/{{$v['id']}}' class="icon-cogs" style='font-size:25px;color:green' title='修改'></a>

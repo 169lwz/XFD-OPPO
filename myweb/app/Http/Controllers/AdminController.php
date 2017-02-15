@@ -10,6 +10,9 @@ use App\Http\Controllers\Controller;
 class AdminController extends Controller
 {
     public function admin(){
+    	// $res = session('adminuser')['username'];
+
+    	// return view('layout.adminindex',['res'=>$res]);
     	return view('layout.adminindex');
     }
 }

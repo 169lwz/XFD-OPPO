@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use DB;
+
 use Hash;
 use Session;
 
@@ -86,5 +87,29 @@ class HomeController extends Controller
     	session()->forget('user');	//清除session
       	return redirect("/home/index");	//(跳转到前台首页)-->没有session值,受LoginMiddleware限制,会跳转到登录页面
     }
+
+    /*
+		呈递商城页面
+		/home/shangcheng
+    */
+	public function getShangcheng(){
+		$res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+     
+    
+
+       
+         $data = DB::table('goods')
+               ->join('type','type.id','=','goods.tid')
+               ->join('gdetail','goods.id','=','gdetail.gid')
+               ->select('type.tname','goods.id','goods.price','gdetail.con','gdetail.pic7','gdetail.color')         
+               ->get();
+
+                
+       
+		return view('shangcheng.index',['links'=>$links,'list'=>$data]);
+	}
+
+    
 }
  

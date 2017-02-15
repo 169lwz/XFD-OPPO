@@ -21,13 +21,22 @@ class AjaxController extends Controller
     	}
     }
 
-    public function homelogin(){
+    public function homelogin(){    //验证是否是账号
     	$res = DB::table("user")->where("username",$_POST['info'])->count();
     	if($res){
     		echo "yes";
     	}else{
     		echo "no";
     	}
+    }
+
+    public function homemailogin(){  //验证是否是邮箱
+        $res = DB::table("user")->where("email",$_POST['info'])->count();
+        if($res){
+            echo "yes";
+        }else{
+            echo "no";
+        }
     }
 
     public function registeremail(){

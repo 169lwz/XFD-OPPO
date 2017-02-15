@@ -200,7 +200,9 @@
                 <a class='m-item' id='storeLink' href='http://www.opposhop.cn' data-hd-url='http://hd.oppo.com/act/2016/1001/index.html'><span>商城</span></a>
               </li>
               <li class='gi'>
-                <a class='m-item' href='/ty/index'>体验店</a>
+
+                <a class='m-item' href='/ty/index'>体验店</a>   
+
               </li>
               <li class='gi'>
                 <a class='m-item' href='http://www.oppo.com/cn/service.html'>服务</a>
@@ -219,13 +221,18 @@
         <div class='relative'>
           <ul>
             <li class='user-menu-login'>
+
               <a href="/dingdan/index">我的订单</a>
+
             </li>
             <li class='user-menu-login'>
               <a href="https://id.oppo.com/account/profile">账户信息</a>
             </li>
             <li class='user-menu-login'>
+
               <a href="/address/myaddress">配送地址</a>
+
+
             </li>
             <li class='user-menu-login user-menu-cart'>
               <a href="http://www.opposhop.cn/cart">购物车</a>
@@ -354,6 +361,7 @@
     <div class="purchase-advisory">
         <a href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank" id="advisory">购机咨询</a>
     </div>
+
     <script src="/qiantai/js/jquery-1.8.3.js"></script>
 
     <script src="/qiantai/js/custom_form.js?v=20150914144728"></script>
@@ -362,7 +370,9 @@
 
     <script src="/qiantai/js/picturefill.min.js"></script>
     <script src="/qiantai/js/scripts.js?v=201511041533"></script>
-   
+
+    <script src="/qiantai/js/opposhop.min.js?v=20170111112201"></script>
+
   </body>
 </html>
 <!-- cached at 2017-01-13 10:10:02 -->

@@ -42,7 +42,7 @@
     <a href='http://www.opposhop.cn/coupons/show'>优惠券</a>
     </li>
     <li>
-    <a href='https://id.oppo.com/account/profile?callback=http%3A%2F%2Fwww.opposhop.cn'>账户信息</a>
+    <a href='/home/myhome'>账户信息</a>
     </li>
     </ul>
   </div>

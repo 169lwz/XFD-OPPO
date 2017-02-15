@@ -22,29 +22,32 @@ class LoginController extends Controller
     }
 
     public function postDologin(LoginRequest $request){
-    	// echo session('code');
     	if(session('code')==$request->input('code')){
-    		//验证账号
+    		//验证账号 是否是邮箱
+            $info = $request->input("shuru");
+            $reg = '/\w+@\w+(\.com|\.cn){1,2}/';
+            if(preg_match($reg,$info)==1){
+                $data = DB::table("user")->where("email",$request->input("shuru"))->first();  
+            }else{
+                $data = DB::table("user")->where("username",$request->input("shuru"))->first();
+            }
+            // dd($data);
             // $data = DB::table("user")->where("username",$request->input("username"))->orWhere('email',$request->input('email'))->first();
-    		$data = DB::table("user")->where("username",$request->input("username"))->first();
-          		if (Hash::check($request->input("pass"),$data['pass'])) {
+        }	
 
-           		if($data['status']==0){		//status=1 启用;status=0 禁用
-              		return back()->with("error","该用户已被禁用,请先激活账号或联系客服");
-            	}
 
-            	session(['user'=>$data]); //将用户信息存入session
-            	// session(['user',$data]); //将用户信息存入session
-
-            	return redirect("/home/index");
-            	// return redirect("/admin/user/recycle")->with("success","登录成功");		//跳转到前台首页
-        	}else{
-          		return back()->with("error","用户名或密码错误");
-        	}
-        }else{
-        	return back()->with('error','验证码不一致');
-        }
-    	
+        if (Hash::check($request->input("pass"),$data['pass'])) {
+       		if($data['status']==0){		//status=1 启用;status=0 禁用
+          	     return back()->with("error","该用户已被禁用,请先激活账号或联系客服");
+            }else{
+                session(['user'=>$data]); //将用户信息存入session
+                // session(['user',$data]); //将用户信息存入session
+                return redirect("/home/index");
+                // return redirect("/admin/user/recycle")->with("success","登录成功");      //跳转到前台首页
+            }     	
+    	}else{
+      		return back()->with("error","密码错误");
+    	}        	
     }
 
     public function getCode(){  //验证码
