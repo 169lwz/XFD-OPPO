@@ -3170,3 +3170,10 @@
 [2017-02-15 19:42:24]select * from `links`
 [2017-02-15 19:42:24]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
 [2017-02-15 19:42:24]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 19:54:25]select * from `gversion` where `gid` = ?
+[2017-02-15 19:54:25]select * from `gmemory` where `gid` = ?
+[2017-02-15 19:54:25]select * from `gdetail` where `gid` = ?
+[2017-02-15 19:54:25]select * from `gparameter` where `gid` = ?
+[2017-02-15 19:54:25]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-15 19:54:25]select * from `ggift` where `gid` = ?
+[2017-02-15 19:54:25]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
