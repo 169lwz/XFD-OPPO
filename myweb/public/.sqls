@@ -3148,3 +3148,25 @@
 [2017-02-15 09:28:53]select * from `orders` where `uid` = ? group by `order_num`
 [2017-02-15 09:28:53]select count(*) as aggregate from `shop` where `uid` = ?
 [2017-02-15 09:28:53]select order_num,count(*) as count from orders where uid=43 group by order_num
+[2017-02-15 19:35:30]select count(*) as aggregate from `gdetail`
+[2017-02-15 19:35:30]select * from `gdetail` limit 5 offset 0
+[2017-02-15 19:35:30]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:35:30]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:35:30]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:35:30]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:35:30]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:01]select count(*) as aggregate from `gdetail`
+[2017-02-15 19:37:01]select * from `gdetail` limit 5 offset 0
+[2017-02-15 19:37:01]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:01]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:01]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:01]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:01]select * from `goods` where `id` = ? limit 1
+[2017-02-15 19:37:30]select count(*) as aggregate from `ggift`
+[2017-02-15 19:37:30]select * from `ggift` limit 5 offset 0
+[2017-02-15 19:42:16]select * from `links`
+[2017-02-15 19:42:16]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 19:42:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 19:42:24]select * from `links`
+[2017-02-15 19:42:24]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 19:42:24]select count(*) as aggregate from `shop` where `uid` is null

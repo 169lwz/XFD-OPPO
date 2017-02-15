@@ -236,7 +236,6 @@
                             <li><a href="/admin/goods/add">添加商品</a></li>
                             <li><a href="/admin/goods/hsz">回收站</a></li>
                         </ul>
-
                     </li> 
                     <li>
                         <a href="#"><i class="icon-share"></i>商品详情</a>
@@ -260,11 +259,8 @@
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
-<<<<<<< HEAD
+
                     </li>                                           
-
-                    </li>
-
                     <li>
                         <a href="#"><i class="icon-share"></i>轮播图管理</a>
                         <ul  class="closed">
