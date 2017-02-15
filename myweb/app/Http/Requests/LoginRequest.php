@@ -24,14 +24,14 @@ class LoginRequest extends Request
     public function rules()
     {
         return [
-            "username"=>"required",
+            "shuru"=>"required",
             "pass"=>"required"
         ];
     }
 
     public function messages(){
         return [
-            "username.required"=>"用户名不能为空",
+            "shuru.required"=>"用户名不能为空",
             "pass.required"=>"密码不能为空"
         ];
     }

@@ -55,6 +55,8 @@ Route::post("/home/zhuce","AjaxController@zhuce");//ajax验证注册的账号
 
 Route::post("/home/homelogin","AjaxController@homelogin");//ajax验证登录的账号
 
+Route::post("/home/homemailogin","AjaxController@homemailogin");//ajax验证登录输入的邮箱
+
 Route::post("/home/registeremail","AjaxController@registeremail");//ajax验证注册的邮箱
 
 Route::post("/home/registerphone","AjaxController@registerphone");//ajax验证注册的手机号

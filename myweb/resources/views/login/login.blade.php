@@ -48,21 +48,37 @@
                 </div>
                 <!--主体登录框-->
                 <div class="login_area">
+                    @if(count($errors)>0)
+                        <div class="mws-form-message error" style="display: block;">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <!--插入失败提示信息-->
                     @if(!empty(session('error')))
-                        <div id='error' style="display:block;color:red">
+                        <div class="mws-form-message error" style="display: block;">
                             <ul>
                                 <li>{{ session('error') }}</li>  
                             </ul>
                         </div>
                     @endif
+                    <!--插入成功提示-->
+                     @if(!empty(session('success')))
+                        <div class="mws-form-message success" style="display: block;">
+                            <ul>
+                                <li>{{ session('success') }}</li>  
+                            </ul>
+                        </div>
+                    @endif
 
                     
-
                     <form action='/home/login/dologin' method='post'>
                         {{csrf_field()}}
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="请输入6-16位账号" info='请输入正确用户名' name="username" value="{{old('username')}}"><span id="uu"></span>
+                            <input type="text" autocomplete="off" placeholder="请输入6-16位账号或邮箱" info='请输入正确用户名' name="shuru" value="{{old('shuru')}}"><span id="uu"></span>
                         </div>
                         
                         <div class="input_area">
@@ -127,8 +143,9 @@
         var uname=false;
 
          //账号名验证
-        $('input[name="username"]').blur(function(){
+        $('input[name="shuru"]').blur(function(){
             var reg = /^\w{6,16}$/;
+            var res = /\w+@\w+(\.com|\.cn){1,2}/;
             var info = $(this).val();
             if(reg.test(info)){
                 //发送ajax请求验证账号是否存在
@@ -148,6 +165,23 @@
                     }
                 });
      
+            }else if(res.test(info)){  //验证是否是邮箱
+                //发送ajax请求验证账号是否存在
+                $.ajax({
+                    url:'/home/homemailogin',
+                    data:{'info':info,"_token":$('input[type="hidden"]').val()},
+                    type:'post',
+                    success:function(mes){
+                        
+                        if(mes=='yes'){
+                            $("#uu").html('&nbsp;&nbsp;&nbsp;'+'邮箱可用').css({"color":"green"});
+                            uname=true;
+                        }else{
+                            $("#uu").html('&nbsp;&nbsp;&nbsp;'+'邮箱未注册不可用').css('color','red').css('font-weight','bold');
+                            uname=false;
+                        }
+                    }
+                });  
             }else{
 
                 $("#uu").html('&nbsp;&nbsp;&nbsp;'+'填入正确的账号').css('color','red');

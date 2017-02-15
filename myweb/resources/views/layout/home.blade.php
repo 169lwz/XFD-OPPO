@@ -172,7 +172,7 @@
       <div class='shop-cart'>
         <a href='/shop/index'>
           <span class='icon icon-cart'></span>
-          <!-- <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span> -->
+          <span class='n-item-cart cart_number' id="shopping-count">{!!\App\Http\Controllers\ShopController::num()!!}</span>
         </a>
       </div>      
       <div class='logo logo-extend'>
@@ -367,128 +367,7 @@
     <script src="/qiantai/js/picturefill.min.js"></script>
     <script src="/qiantai/js/scripts.js?v=201511041533"></script>
         <script src="/qiantai/js/opposhop.min.js?v=20170111112201"></script>
-            <script type="text/javascript">
-    var vm;
-    OPPO.conf.BASE_URL = "http://www.opposhop.cn";
-    OPPO.conf.STORE_URL = 'http://www.opposhop.cn';
-    OPPO.conf.ACCOUNT_URL = 'http://my.oppo.com';
-    OPPO.conf.WWW_URL = "http://www.oppo.com/cn/";
-    OPPO.conf.SSO_LOGIN_URL = "https://id.oppo.com/login";
-    OPPO.conf.date = '1484273402';
-    
-    var url = OPPO.conf.STORE_URL + '/auth/check';
-    //callback for jsonp
-    var successCallback = function(data){
-        $('ul.log-area .hasLogout').removeClass('show').addClass('hidden');
-        $('ul.log-area .hasLogin').removeClass('hidden').addClass('show');
-        $('.cart_number').text(data['cart_number']);
-        $('.n-messages').text("(" + data['message_number'] + ")");
-        $('.user-menu').addClass('isLogin');
-        $('.user-menu-toLogin').hide();
-        if (data['message_number']>0 || data['cart_number']>0) {
-          $('.js-open-user').addClass('point-red');
-          if (data['message_number']>0) $('.user-menu-message a').addClass('point-red');
-          if (data['cart_number']>0) $('.user-menu-cart a').addClass('point-red');
-        };
-        if (data['append'] != '') $('body').append(data['append']);
-    };
-    var errorCallback = function(){
-        $('ul.log-area .hasLogin').removeClass('show').addClass('hidden');
-        $('ul.log-area .hasLogout').removeClass('hidden').addClass('show');
-        $('.cart_number').text(0);
-    };
-    $.ajax({
-        url: url,
-        type: 'GET',
-        dataType: 'jsonp',
-        error: function() {
-            errorCallback();
-        },
-        success: function(data){
-            successCallback(data);
-        }
-    });
-    (function () {
-        var controllerNameWithAction = "HomeController@index".split('@');
-        var controllerName = controllerNameWithAction[0];
-        var actionName = controllerNameWithAction[1];
-        var controller = OPPO.controller[controllerName];
-        if (controller) {
-            action = controller()[actionName];
-            if (action) {
-                $(function () {
-                    vm = action();
-                });
-            }
-        }
-        // else console.log(controllerNameWithAction);
-    })();
-    </script>
-    <script type="text/javascript">
-      $(function(){
-              });
-    </script>
-    <!-- 百度统计代码  -->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?9cb8846b548404438c81aaa02eda4f0f";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<!-- 谷歌统计代码 -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-66238290-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<!--oppo统计-->
-<script>
-var _optj = _optj || [];
-//判断是否登录，有登录则输出用户ID
-//加入购物车的商品ID信息
-//判断是否有订单号信息 有则输出
- //判断是否有订单的商品ID信息 有则输出 多个用"|"中划线分割
-
-(function() {
-  var op = document.createElement("script");
-  op.src = "http://shopfs.myoppo.com/hd/static/js/optj-1.1.0.min.js?20161104";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(op, s);
-})();
-</script>
-<!-- 华扬统计 -->
-<script type="text/javascript">
-var _utaq = _utaq || [];
-_utaq.push(["trackPageView"]);
-_utaq.push(["enableLinkTracking"]);
-(function() {
-var utu="https://sit.gentags.net/";
-_utaq.push(["setTrackerUrl", utu+"site/unids.gif"]);
-_utaq.push(["setSiteId", "1351"]);
-var utd=document, ut=utd.createElement("script"), s=utd.getElementsByTagName("script")[0]; ut.type="text/javascript";
-ut.defer=true; ut.async=true; ut.src=utu+"adagent/js/uta.js"; s.parentNode.insertBefore(ut,s);
-})();
-</script>
-<noscript><img src="/qiantai/other/img?site=1351" style="border:0" alt="" /></noscript> 
-<!--听云监测-->
-<script src="/qiantai/js/tingyun-rum.js"></script>
-<script type="text/javascript">
-$(function(){
-  $("body").on("click",".oppo-tj",function(){
-    if (typeof $(this).data('tj') != 'undefined' && typeof _optj != 'undefined') {
-      var tj = $(this).data('tj');
-      var tjs = tj.split("|");
-      _optj.push(['_trackEvent', tjs[0], tjs[1], tjs[2], tjs[3]]);
-    };
-  });
-});
-</script>
+   
   </body>
 </html>
 <!-- cached at 2017-01-13 10:10:02 -->
