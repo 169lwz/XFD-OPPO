@@ -95,12 +95,12 @@
       this.set_parameters(element,options);
       replacement = this.set_replacement(element);
       replacement.addClass(FormElement.browser_string)
-      if(element_id.match(/\S/))
-         replacement.addClass("custom-form_"+element_id)
-      this.replace_elements(element,replacement);
-      this.init_replacement(element,replacement,width);
-      this.disable_if_disabled(element);
-      this.init_mouse_events(element,replacement);
+      // if(element_id.match(/\S/))
+      //    replacement.addClass("custom-form_"+element_id)
+      // this.replace_elements(element,replacement);
+      // this.init_replacement(element,replacement,width);
+      // this.disable_if_disabled(element);
+      // this.init_mouse_events(element,replacement);
       return this;
     },
     set_replacement:function(element){

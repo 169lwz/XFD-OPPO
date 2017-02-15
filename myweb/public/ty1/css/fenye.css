@@ -1,0 +1,1184 @@
+
+/*!
+ * Bootstrap v2.3.0
+ *
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+@charset "utf-8";
+/*公用类*/
+body{ margin:0 auto;
+padding:0;
+font-family:"Microsoft YaHei";
+}
+input,button,select,textarea{outline:none;}
+div,p,ul,li{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+a{ text-decoration:none;font-family:"Microsoft YaHei";}
+.qc{clear:both;}
+.bgzy{width:100%;border:0 solid #00FF00; }
+img{ border:0px}
+h1,h2,h3,h4,h5,h6{ font-weight:100; padding:0; margin:0;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.footer{
+	z-index:99;}
+/*---------------------------------案例---------------------------*/
+.case_center1{
+	width:100%;
+	background:#e5e5e5;}
+.case_center11{
+	max-width:1200px;
+	margin:0 auto;}
+.case_center111{
+	width:600px;
+	margin:0 auto ;
+	padding-top:50px;
+	}
+.case_center1111{
+	float:left;
+	width:80px;
+	height:80px;
+	text-align:center;
+	padding:20px;
+	}
+.case_center11111{
+	width:30px;
+	height:30px;
+	border:1px solid #1f212e;
+	margin:0 auto;
+	line-height:26px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition:all .10s;
+	-moz-transition:all .10s;
+	-ms-transition:all .10s;
+	-o-transition:all .10s;
+	transition:all .10s 
+	}
+.case_center1111:hover .case_center11111{
+	background:#1f212e;
+	border:1px solid #1f212e;
+	}
+.case_center11112,.case_center11113,.case_center11114,.case_center11115,.case_center11116{
+	 width:30px;
+	 height:30px;
+	 -webkit-transition:all .10s;
+	-moz-transition:all .10s;
+	-ms-transition:all .10s;
+	-o-transition:all .10s;
+	transition:all .10s }
+.case_center1111 .case_center11112{
+	background:url(../images/bj2.png) center center no-repeat;
+	}
+.case_center1111 .case_center11113{
+	background:url(../images/bj3.png) center center no-repeat;
+	}
+.case_center1111 .case_center11114{
+	background:url(../images/bj4.png) center center no-repeat;
+	}
+.case_center1111 .case_center11115{
+	background:url(../images/bj5.png) center center no-repeat;
+	}
+.case_center1111 .case_center11116{
+	background:url(../images/bj6.png) center center no-repeat;
+	}
+.case_center1111:hover .case_center11112{
+	background:url(../images/bj21.png) center center no-repeat;
+	}
+.case_center1111:hover .case_center11113{
+	background:url(../images/bj31.png) center center no-repeat;
+	}
+.case_center1111:hover .case_center11114{
+	background:url(../images/bj41.png) center center no-repeat;
+	}
+.case_center1111:hover .case_center11115{
+	background:url(../images/bj51.png) center center no-repeat;
+	}
+.case_center1111:hover .case_center11116{
+	background:url(../images/bj61.png) center center no-repeat;
+	}
+.case_center1111:hover p{
+	color:#18ab74;}
+.case_center1111 p{
+	font-size:15px;
+	color:#525252;
+	line-height:50px;}
+.case_center1112{
+	float:left;
+	width:80px;
+	height:80px;
+	text-align:center;
+	padding:20px;
+	}
+.case_center1112 .case_center11111{
+	background:#1f212e;
+	border:1px solid #1f212e;
+	}
+.case_center1112 .case_center11112{
+	background:url(../images/bj21.png) center center no-repeat;
+	}
+.case_center1112 .case_center11113{
+	background:url(../images/bj31.png) center center no-repeat;
+	}
+.case_center1112 .case_center11114{
+	background:url(../images/bj41.png) center center no-repeat;
+	}
+.case_center1112 .case_center11115{
+	background:url(../images/bj51.png) center center no-repeat;
+	}
+.case_center1112 .case_center11116{
+	background:url(../images/bj61.png) center center no-repeat;
+	}
+.case_center1112 p{
+	font-size:15px;
+	color:#525252;
+	line-height:50px;
+	color:#18ab74;}
+.case_center112{
+	min-height:500px;
+	width:1200px;
+	margin:0 auto;
+	padding-bottom:50px;}
+.case_center1121{
+	float:left;
+	width:270px;
+	height:280px;
+	
+	-webkit-transition:all .10s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	margin: 15px;
+	line-height:30px;
+	}
+.news_center1121{
+	float:left;
+	width:566px;
+	height:196px;
+	background:#fff;
+	border:2px solid #1f212e;
+	-webkit-transition:all .10s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	margin: 15px;
+	line-height:30px;
+	}
+.news_center1121 h4{
+	float:left;
+	width:260px;
+	height:33px;
+	overflow:hidden;
+	font-size:18px;
+	color:#252525;
+	font-weight:bold;
+	line-height:35px;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:10px;}
+.news_center1121 h5{
+	float:left;
+	width:260px;
+	overflow:hidden;
+	font-size:14px;
+	color:#818181;
+	padding-left:10px;
+	padding-top:20px;}
+.news_center1121 p{
+	float:left;
+	width:260px;
+	height:90px;
+	overflow:hidden;
+	overflow:hidden;
+	font-size:14px;
+	color:#818181;
+	padding-left:10px;
+	line-height:24px;}
+.news_center11211{
+	float:left;
+	width:250px;
+	height:180px;
+	padding:10px;
+	position:relative;
+	line-height:30px;}
+.news_center11211 img{
+	width:250px;
+	height:180px;}
+.news_center1121:hover{
+	background:#1f212e;}
+.news_center1121:hover h4,.news_center1121:hover h5,.news_center1121:hover p{
+	color:#fff;}
+.showMoreNChildren{
+	clear:both;}
+.showMorehandle{
+	clear:both;
+	line-height:30px;
+	padding-top:30px;
+	text-align:center;
+	cursor:pointer; }
+.case_center11211{
+	border:1px solid #e5e5e5;
+	width:260px;
+	height:260px;
+	/*padding:10px;*/
+	position:relative;
+	line-height:30px;
+	overflow:hidden;
+	}
+.case_center11211 img{
+	width:260px;
+	height:260px;}
+.case_center1121 h4{
+	font-size:16px;
+	color:#252525;
+	padding-left:10px;
+	line-height:40px;}
+.case_center1121 p{
+	font-size:14px;
+	color:#818181;
+	padding-left:10px;}
+.case_center1121 p span{
+	padding-left:30px;}
+.case_center112111{
+	width:260px;
+	height:260px;
+	filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.0; /*Firefox私有，透明度50%*/
+	opacity:0.0;/*其他，透明度50%*/
+	position:absolute;
+	top:10px;
+	left:10px;
+	-webkit-transition:all .10s;
+	-moz-transition:all .10s;
+	-ms-transition:all .10s;
+	-o-transition:all .10s;
+	transition:all .10s 
+	}
+.case_center112111 a{
+	display:block;
+	width:250px;
+	height:250px;}
+.case_center112112{
+	width:260px;
+	height:260px;
+	
+	font-size:16px;
+	color:#fff;
+	position:absolute;
+	/*left:10px;*/
+	filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.0; /*Firefox私有，透明度50%*/
+	opacity:0.0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
+	transition:all .3s 
+	}
+.case_center1121:hover h4{
+	color:#fff;}
+.case_center1121:hover p{
+	color:#fff;}
+.case_center1121:hover .case_center112111{
+	filter:alpha(opacity=100); /*IE滤镜，透明度50%*/
+	-moz-opacity:1.0; /*Firefox私有，透明度50%*/
+	opacity:1.0;/*其他，透明度50%*/
+	}
+.case_center1121:hover .case_center112112{
+	top:0px;
+	left:0px;
+	filter:alpha(opacity=100); /*IE滤镜，透明度50%*/
+	-moz-opacity:1.0; /*Firefox私有，透明度50%*/
+	opacity:1.0;
+	}
+.case_center1 .case_center12{
+	line-height:100px;
+	text-align:center;
+	font-size:15px;
+	color:#3f3f3f;}
+/*------------------------------------------新闻-----------------------------------*/
+.news_center111{
+	width:360px;
+	margin:0 auto ;
+	padding-top:50px;
+	}
+.news_center1111{
+	float:left;
+	width:80px;
+	height:80px;
+	text-align:center;
+	padding:20px;
+	}
+.news_center11111{
+	width:30px;
+	height:30px;
+	border:1px solid #1f212e;
+	margin:0 auto;
+	line-height:26px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition:all .10s;
+	-moz-transition:all .10s;
+	-ms-transition:all .10s;
+	-o-transition:all .10s;
+	transition:all .10s 
+	}
+.news_center1111:hover .news_center11111{
+	background:#1f212e;
+	border:1px solid #1f212e;
+	}
+.news_center11112,.news_center11113,.news_center11114,.news_center11115,.news_center11116{
+	 width:30px;
+	 height:30px;
+	 -webkit-transition:all .10s;
+	-moz-transition:all .10s;
+	-ms-transition:all .10s;
+	-o-transition:all .10s;
+	transition:all .10s }
+.news_center1111 .news_center11112{
+	background:url(../images/bj2.png) center center no-repeat;
+	}
+.news_center1111 .news_center11113{
+	background:url(../images/bj8.png) center center no-repeat;
+	}
+.news_center1111 .news_center11114{
+	background:url(../images/bj9.png) center center no-repeat;
+	}
+.news_center1111:hover .news_center11112{
+	background:url(../images/bj21.png) center center no-repeat;
+	}
+.news_center1111:hover .news_center11113{
+	background:url(../images/bj81.png) center center no-repeat;
+	}
+.news_center1111:hover .news_center11114{
+	background:url(../images/bj91.png) center center no-repeat;
+	}
+.news_center1111:hover p{
+	color:#18ab74;}
+.news_center1111 p{
+	font-size:15px;
+	color:#525252;
+	line-height:50px;}
+.news_center1112{
+	float:left;
+	width:80px;
+	height:80px;
+	text-align:center;
+	padding:20px;
+	}
+.news_center1112 .news_center11111{
+	background:#1f212e;
+	border:1px solid #1f212e;
+	}
+.news_center1112 .news_center11112{
+	background:url(../images/bj21.png) center center no-repeat;
+	}
+.news_center1112 .news_center11113{
+	background:url(../images/bj81.png) center center no-repeat;
+	}
+.news_center1112 .news_center11114{
+	background:url(../images/bj91.png) center center no-repeat;
+	}
+.news_center1112 p{
+	font-size:15px;
+	color:#525252;
+	line-height:50px;
+	color:#18ab74;}
+/*------------------------------------------招聘-----------------------------------*/
+.zp_center1{
+	width:100%;
+	background:#fff;}
+.zp_center11{
+	height:1010px;
+	background:url(../images/bj1.jpg) center center no-repeat;
+	 -webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s }
+.zp_center112{
+	width:1200px;
+	margin:auto;
+	padding:50px 0px;}
+.zp_center1121{
+	width:46%;
+	padding-right:4%;
+	float:left;
+	text-align:right;}
+.zp_center1122{
+	width:46%;
+	padding-left:4%;
+	float:left;
+	 -webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s }
+.zp_center11211{
+	width:400px;
+	font-size:21px;
+	float:right;
+	color:#252525;
+	line-height:50px;
+	border-bottom:5px solid #252525;
+	margin-bottom:20px;}
+.zp_center1122 h4{
+	font-size:36px;
+	color:#040404;
+	font-weight:600;
+	line-height:40px;}
+.zp_center1122 h5{
+	width:400px;
+	font-size:21px;
+	color:#040404;
+	line-height:54px;
+	border-bottom:5px solid #252525;
+	margin-bottom:30px;}
+.zp_center1122 h5 span{
+	font-size:16px;
+	color:#7b7b7b;}
+.zp_center11221{
+	font-size:14px;
+	color:#4b4b4b;
+	line-height:27px;}
+.zp_center13{
+	background:#1f212e;}
+.zp_center131{
+	width:1200px;
+	margin:0 auto;
+	padding:50px 0;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s }
+.zp_center1311{
+	padding-bottom:30px;}
+.zp_center1311 span{
+	display:block;
+	font-size:32px;
+	color:#ffffff;
+	font-weight:bold;
+	line-height:40px;}
+.zp_center13111{
+	float:left;
+	width:190px;
+	font-size:29px;
+	color:#ffffff;
+	line-height:40px;}
+.zp_center13112{
+	float:left;
+	width:1010px;
+	height:40px;
+	}
+.zp_center1312{
+	color:#ffffff;}
+.zp_center13121{
+	float:left;
+	width:350px;
+	min-height:360px;
+	border-right:5px solid #dcfff2;}
+.zp_center13121 ul li{
+	width:230px;
+	height:60px;
+	background:#ffffff;
+	font-size:16px;
+	color:#1f212e;
+	line-height:60px;
+	text-align:center;
+	margin:10px auto;}
+.zp_center13121 ul .zp_center131211{
+	width:220px;
+	height:50px;
+	border:5px solid #ffffff;
+	background:none;
+	font-size:18px;
+	font-weight:bold;
+	color:#ffffff;
+	line-height:50px;}
+.zp_center13122{
+	float:left;
+	width:785px;
+	padding-left:60px;
+	display:block;}
+.hidetext{
+	float:left;
+	width:785px;
+	padding-left:60px;
+	display:none;}
+.zp_center131221{
+	width:100%;
+	color:#fff;
+	margin-bottom:20px;
+	font-size:15px;
+	line-height:30px;}
+.zp_center1312211{
+	width:85px;
+	text-align:right;
+	font-weight:bold;}
+.zp_center1312212{
+	width:700px;}
+.zp_center1312213{
+	width:150px;
+	height:40px;
+	background:##ffffff;
+	border:none;
+	font-size:16px;
+	color:#1f212e;
+	font-weight:bold;
+	}
+#alertFram input{
+	width:100px;
+	background:#18ab74;
+	border:none;
+	color:#fff;}
+.zp_center14{
+	width:1200px;
+	margin:0 auto;
+	padding:50px 0px;
+	}
+.zp_center141{
+	font-size:28px;
+	color:#2e2e2e;
+	font-weight:bold;
+	line-height:50px;}
+.zp_center142{
+	float:left;
+	width:290px;
+	height:70px;
+	font-size:62px;
+	line-height:62px;
+	padding-left:300px;
+	color:#2e2e2e;
+	font-weight:bold;
+	margin-bottom:20px;
+	background:url(../images/bj12.png) left center no-repeat;}
+.zp_center143{
+	float:left;
+	width:605px;
+	font-size:11px;
+	line-height:20px;
+	color:#f1f1f1;
+	text-transform:uppercase;}
+.zp_center14 ul li{
+	float:left;
+	width:275px;
+	height:390px;
+	margin:12px;
+	margin-top:30px;
+	overflow:hidden;
+	position:relative;}
+.zp_center144{
+	width:100%;
+	height:100%;
+	background:#000;
+	filter:alpha(opacity=70); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.7; /*Firefox私有，透明度50%*/
+	opacity:0.7;/*其他，透明度50%*/
+	margin-top:200px;
+	}
+.zp_center145{
+	width:50px;
+	height:50px;
+	background:url(../images/bj10.png) center center no-repeat;
+	position:absolute;
+	left:0px;
+	bottom:0px;}
+.zp_center146{
+	width:275px;
+	height:190px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	color:#fff;}
+.zp_center146 span{
+	display:block;
+	font-size:26px;
+	line-height:30px;
+	font-weight:bold;
+	padding-left:30px;
+	padding-top:30px;}
+.zp_center146 p{
+	display:block;
+	font-size:16px;
+	line-height:30px;
+	padding-left:30px;
+	padding-top:10px;
+	padding-right:30px;}
+/*------------------------------------------联系我们-----------------------------------*/
+.lx_center1{
+	background:#fff;}
+.dt{
+	width:100%;
+	height:480px;
+	background:#999;}
+.lx_center11{
+	height:120px;
+	border-bottom:1px solid #e2e2e2;}
+.lx_center111{
+	font-size:27px;
+	color:#212121;
+	line-height:50px;
+	padding-top:50px;
+	text-align:center;
+	}
+.lx_center112{
+	width:50px;
+	height:5px;
+	background:#e30012;
+	margin:0 auto;
+	}
+.lx_center12{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	background:#f9f9f9;
+	text-align:center;
+	font-size:15px;
+	color:#4e4e4e;
+	padding-bottom:50px;}
+.lx_center12 h2{
+	line-height:30px;
+	font-size:15px;
+	color:#4e4e4e;
+	padding:50px 0;}
+.lx_center12 h3{
+	width:180px;
+	height:30px;
+	margin:0 auto;
+	font-size:14px;
+	color:#fff;
+	line-height:30px;
+	text-transform:uppercase;
+	background:#1f212e;}
+.lx_center121{
+	font-size:15px;
+	color:#353535;
+	padding:50px 0 ;
+	line-height:30px;}
+.lx_center13{
+	border-top:1px solid #e2e2e2;
+	padding:50px 0;
+	text-align:center;
+	line-height:30px;}
+.lx_center13 p{
+	font-size:14px;
+	color:#464545;
+	padding-top:20px;}
+/*------------------------------------------内容页-----------------------------------*/
+.nry_center1{
+	z-index:1;
+	background:#fff;}
+.nry_cneter11{
+	width:22%;
+	position:fixed;
+	top:140px;
+	right:40px;
+	z-index:2;
+	overflow:hidden;
+	}
+.nry_cneter11 h2{
+	font-size: 18px;
+	font-weight: bold;
+	}
+.nry_cneter11 h2 span a{
+	float:right;
+	font-size: 14px;
+	font-weight: 100;
+	color:#666;
+	}
+.nry_cneter11 p{
+	height: 93px;
+overflow: hidden;
+	font-size: 14px;
+	line-height:27px;
+	color: #666;
+	padding:20px 0px;}
+.nry_cneter11 h4{
+	font-size: 14px;
+	line-height:27px;
+	color: #666;}
+.nry_cneter11 h4 span{
+	color:#999;
+	font-size: 12px;
+	}
+.nry_cneter11 h5{
+	font-size: 14px;
+	line-height:27px;
+	color: #666;
+	padding:20px 0px;}
+.nry_center111{
+	width:80px;
+	padding-top:50px;
+	}
+.nry_center1111{
+	float:left;
+	width:37px;
+	height:37px;
+	background:url(../images/bj26.jpg) center center no-repeat;}
+.nry_center1112{
+	float:right;
+	width:37px;
+	height:37px;
+	background:url(../images/bj27.jpg) center center no-repeat;}
+.nry_center11111{
+	width:37px;
+	height:37px;
+	border-radius:18px;
+	text-align:center;
+	line-height:37px;
+	background:#1f212e;
+	color:#fff;
+	font-family:"simsun";
+	font-size:20px;
+	font-weight:bold;
+	}
+.nry_center11111:hover{
+	background:#c2c2c2;
+	color:#fff;
+	}
+.nry_cneter12{
+	float:left;
+	width:66%;
+	padding:0 3% ;
+	padding-top:40px;
+	min-height:500px;
+	background:#f7f7f7;
+	font-size:15px;
+	color:#666;
+	line-height:30px;
+	padding-bottom:50px;
+	}
+.xwnry_cneter12{
+	float:left;
+	width:66%;
+	padding:0 3% ;
+	padding-top:40px;
+	min-height:500px;
+	background:#f7f7f7;
+	font-size:15px;
+	color:#666;
+	line-height:30px;
+	padding-bottom:50px;
+	}
+.nry_cneter12 img{
+	width:100%;
+	max-width:1200px;}
+.about_center2{
+	height:270px;
+	background:#1f212e;}
+.about_center21{
+	width:1200px;
+	margin:0 auto;}
+/*----------------圆形鼠标经过-----------------------*/
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 37px 130px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+/* Effect 1 */
+.hi-icon-effect-1 .hi-icon {
+	background: rgba(255,255,255,0.1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+.hi-icon-effect-1 .hi-icon:after {
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 4px #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(.8);
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transition: transform 0.2s, opacity 0.2s;
+	transform: scale(.8);
+	opacity: 0;
+}
+/* Effect 3 */
+.hi-icon-effect-3 .hi-icon {
+	box-shadow: 0 0 0 4px #fff;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.hi-icon-effect-3 .hi-icon:after {
+	top: -2px;
+	left: -2px;
+	padding: 2px;
+	z-index: -1;
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.3s;
+	transition: transform 0.2s, opacity 0.3s;
+}
+/* Effect 3a */
+.hi-icon-effect-3a .hi-icon {
+	color: #f06060;
+}
+.hi-icon-effect-3a .hi-icon:hover {
+	color: #fff;
+}
+.hi-icon-effect-3a .hi-icon:hover:after {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+/*----------------圆形鼠标经过结束-----------------------*/
+.about_center271,.about_center272,.about_center273,.about_center274{
+	width:100px;
+	height:100px;
+	padding:15px;}
+.about_center271{
+	background:url(../images/111.png) center center no-repeat;}
+.hi-icon-images:hover .about_center271{
+	background:url(../images/112.png) center center no-repeat;
+	}
+.about_center272{
+	background:url(../images/121.png) center center no-repeat;}
+.hi-icon-pencil:hover .about_center272{
+	background:url(../images/122.png) center center no-repeat;
+	}
+.about_center273{
+	background:url(../images/131.png) center center no-repeat;}
+.hi-icon-link:hover .about_center273{
+	background:url(../images/132.png) center center no-repeat;
+	}
+.about_center274{
+	background:url(../images/141.png) center center no-repeat;}
+.hi-icon-mail:hover .about_center274{
+	background:url(../images/142.png) center center no-repeat;
+	}
+.about_center211 p{
+	float:left;
+	width:33%;
+	text-align:center;
+	font-size:21px;
+	color:#fff;
+	text-transform:uppercase;
+	line-height:30px;}
+.about_center212 p{
+	font-size:18px; font-family:"simsun"; font-weight:100;}
+.about_center3{
+	display:block;
+	width:1200px;
+	margin:0 auto;
+	padding-top:50px;
+	padding-bottom:50px;
+	background:#efefef;}
+.about_center3_none{
+	display:none;}
+.about_center32,.about_center32 p{
+	font-size:14px;
+	color:#333;
+	line-height:30px;}
+.about_center32 img{
+	max-width:1200px;}
+/*------------------- 弹框开始 -----------------------*/
+@-webkit-keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+}
+@keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	-ms-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	-ms-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}
+.bounceIn{
+	-webkit-animation-name:bounceIn;
+	animation-name:bounceIn
+}
+/*------------------- 华丽分割线 -----------------------*/
+/*------------------- 华丽分割线 -----------------------*/
+#dialogBg{width:100%;height:100%;background-color:#000000;opacity:.6;filter:alpha(opacity=60);position:fixed;top:0;left:0;z-index:9999;display:none;}
+#dialog,#dialog1,#dialog2,#dialog3{width:100%; height:100%;display:none;background-color:#ffffff;position:fixed;top:0;left:0;z-index:10000;border:1px solid #ccc;border-radius:0px;-webkit-border-radius:0px;box-shadow:0px 0px 0px #ccc;-webkit-box-shadow:0px 0px 0px #ccc;}
+.dialogTop{width:90%; height:2%;margin:0 auto;border-bottom:1px dotted #ccc;letter-spacing:1px;padding:10px 0; margin-bottom:3%;text-align:right; line-height:19px;}
+.dialogIco{width:50px;height:50px;position:absolute;top:-25px;left:50%;margin-left:-25px;}
+.editInfos{padding:15px 0;}
+.ipt{border:1px solid #ccc;padding:5px;border-radius:3px;-webkit-border-radius:3px;box-shadow:0 0 3px #ccc inset;-webkit-box-shadow:0 0 3px #ccc inset;margin-left:5px;}
+.ipt:focus{outline:none;border-color:#66afe9;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);}
+.submitBtn{width:90px;height:30px;line-height:30px;font-family:"微软雅黑","microsoft yahei";cursor:pointer;margin-top:10px;display:inline-block;border-radius:5px;-webkit-border-radius:5px;text-align:center;background-color:#428bca;color:#fff;box-shadow: 0 -3px 0 #2a6496 inset;-webkit-box-shadow: 0 -3px 0 #2a6496 inset;}
+@-webkit-keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+}
+@keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	-ms-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	-ms-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}
+.bounceIn1{
+	-webkit-animation-name:bounceIn;
+	animation-name:bounceIn
+}
+/*------------------- 华丽分割线 -----------------------*/
+header1{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font-size:1.2em;text-shadow:0 0 2px #999;}
+.demo1{width:100%;margin:0 auto;text-align:center;}
+.demo1 a{margin:0 5px 20px;background-color:#eee;}
+.about_center22{
+	width:70%;
+	height:89%;
+	max-width:1200px;
+	margin:0 auto;
+	font-size:15px;
+	color:#666;
+	text-align:left;
+	line-height:27px;
+	overflow:hidden;
+	 }
+.about_center221{
+	overflow:auto;
+	width:100%;
+	height:100%;
+	padding-right:50px;
+	}
+.about_center22 img{
+	width:auto;
+	max-width:1200px;}
+/*------------------- 弹框结束 -----------------------*/
+/*------------------- 地图开始 -----------------------*/
+.center711{
+	float:left;
+	width:51%;
+	height:auto;
+	font-size:14px;
+	color:#7f7f7f;
+	line-height:27px;
+	overflow:hidden;}
+	#allmap {height: 500px;width:100%;overflow: hidden;}
+	#result {width:100%;font-size:12px;}
+	dl,dt,dd,ul,li{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	dt{
+		font-size:14px;
+		font-family:"微软雅黑";
+		font-weight:bold;
+		border-bottom:1px dotted #000;
+		padding:5px 0 5px 5px;
+		margin:5px 0;
+	}
+	dd{
+		padding:5px 0 0 5px;
+	}
+	li{
+		line-height:28px;
+	}
+/*------------------- 地图结束 -----------------------*/
+@media (max-width:1400px) {
+	/*------------------------------------------招聘-----------------------------------*/
+	.zp_center11{
+		height:600px;
+		background:url(../images/bj1.jpg) center bottom no-repeat;
+		background-size: auto 674px;}

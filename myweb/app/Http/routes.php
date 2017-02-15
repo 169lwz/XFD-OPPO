@@ -91,7 +91,7 @@ Route::controller('/home/detail','DetailController');// 前台商品详情
 
 Route::get("/home/forget","LoginController@forget"); //忘记密码
 
-
+Route::controller('/ty','TyController');
 
 // Event::listen('illuminate.query',function($query){
 //      var_dump($query);

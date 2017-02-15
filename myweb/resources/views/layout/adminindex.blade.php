@@ -320,6 +320,14 @@
                         </ul>
                     </li>   
 
+                    <li>
+                        <a href="#"><i class="icon-share"></i>体验店</a>
+                        <ul  class="closed">
+                            <li><a href="/ty/adindex">门店浏览</a></li>
+                            <li><a href="/ty/add">门店添加</a></li>
+                        </ul>
+                    </li>  
+
                 </ul>
             </div> 
         </div>

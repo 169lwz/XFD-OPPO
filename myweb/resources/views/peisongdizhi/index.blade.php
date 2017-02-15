@@ -194,7 +194,7 @@
 
     $('select').live('change',function(){
       var d=$(this).parent().next().find('select');
-      // console.log($('select'));
+      console.log(d);
       if($(this).attr('id')=='select1'){
         $('#select2').find('option:gt(0)').remove();
         $('#select3').find('option:gt(0)').remove();
