@@ -74,36 +74,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="read">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="unread">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="unread">
-                                <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                    <span class="time">
-                                        January 21, 2012
-                                    </span>
-                                </a>
-                            </li>
+                            
                         </ul>
                         <div class="mws-dropdown-viewall">
                             <a href="#">View All Notifications</a>
@@ -189,8 +160,8 @@
                        欢迎登陆!
                     </div>
                     <ul>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">修改密码</a></li>
+                        <li><a>大煞笔</a></li>
+                        <!-- <li><a href="#">修改密码</a></li> -->
                         <li><a href="/admin/login/logout">退出</a></li>
                     </ul>
                 </div>

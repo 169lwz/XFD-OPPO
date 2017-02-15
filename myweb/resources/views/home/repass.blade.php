@@ -32,7 +32,7 @@
         <div class="header">
             <div class="w960">
                  <ul class="menu_sec">
-                    <li><a href="http://www.oppo.com">OPPO官网</a></li>
+                    <li><a href="/home/index">OPPO官网</a></li>
                     <li><a href="http://www.coloros.com/">ColorOS</a></li>
                     <div class="clear"></div>
                 </ul>
@@ -79,6 +79,7 @@
                         <div class="error_tip" id="info_pwd"></div>
 
                         <input type="submit" class="button login_button mt30" id="loginBtn" value="修改密码" onclick="check_login();"  style="margin-bottom:15px;" />
+                        <input type="button" class="button register_button oppo-tj" id="registerBtn" value="返回" link="/home/myhome" data-tj="account|link|register|register"/>
                         <div class="error_tip1" style="margin-top:10px;" id="info_login_form"></div>
                         <!--其他登录方式-->
                         
@@ -113,12 +114,13 @@
         $('input[name="oldpass"]').blur(function(){
             var reg = /^\w{6,16}$/;
             var info = $(this).val();
+            var token=$("input[name='_token']").val();
             // console.log(info);
             if(reg.test(info)){
                 //发送ajax请求验证账号是否存在
                 $.ajax({
                     url:'/home/chongzhi',
-                    data:{'info':info,"_token":$('input[type="hidden"]').val()},
+                    data:{'info':info,"_token":token},
                     type:'post',
                     success:function(mes){
                         // console.log(mes);

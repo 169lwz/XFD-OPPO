@@ -35,14 +35,7 @@
                 </div>
             @endif
 
-            <!--插入成功提示-->
-             @if(!empty(session('success')))
-                <div class="mws-form-message success" style="display: block;">
-                    <ul>
-                        <li>{{ session('success') }}</li>  
-                    </ul>
-                </div>
-            @endif
+           
 
 
             <div class="mws-login-lock"><i class="icon-lock"></i></div>
@@ -77,6 +70,8 @@
 
     <!-- JavaScript Plugins -->
     <script src="/ad/js/libs/jquery-1.8.3.min.js"></script>
+    
+
     <script src="/ad/js/libs/jquery.placeholder.min.js"></script>
     <script src="/ad/custom-plugins/fileinput.js"></script>
     
@@ -91,8 +86,8 @@
 
     <script type="text/javascript">
     //提示信息点击事件
-        $('.mws-form-message error').click(function(){
-            $(this).attr('display','none');
+        $('.mws-form-message').click(function(){
+            $(this).css('display','none');
         });
 
     </script>

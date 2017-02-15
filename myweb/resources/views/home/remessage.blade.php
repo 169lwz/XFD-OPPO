@@ -161,10 +161,10 @@
         //真实姓名验证
         $('input[name="name"]').blur(function(){
 
-            var reg = /^\w{1,16}$/;
-            // var reg = /.*/;
-            var info = $(this).val();
-            if(reg.test(info)){
+            // var reg = /^\w{1,16}$/;
+            // var info = $(this).val();
+            // if(reg.test(info)){
+            if($(this).val().length){
                 $("#cc").html('&nbsp;&nbsp;&nbsp;'+'该信息可用').css('display','none');
                 name=true;
             }else{

@@ -362,6 +362,9 @@
 
     <script src="/qiantai/js/picturefill.min.js"></script>
     <script src="/qiantai/js/scripts.js?v=201511041533"></script>
+
+    <script src="/qiantai/js/opposhop.min.js?v=20170111112201"></script>
+
    
   </body>
 </html>

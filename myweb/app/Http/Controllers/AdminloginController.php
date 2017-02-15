@@ -21,7 +21,7 @@ class AdminloginController extends Controller
     }
 
     //处理登录的数据
-    public function postDologin(LoginRequest $request){   	
+    public function postDologin(Request $request){   	
 		//验证账号
         // $data = DB::table("user")->where("username",$request->input("username"))->orWhere('email',$request->input('email'))->first();
 		$data = DB::table("adminuser")->where("username",$request->input("username"))->first();
