@@ -60,7 +60,7 @@
 				                	<tr class="even">
 				                @endif
 				                        <td class=" ">{{$v['id']}}</td>
-				                        <td class=" ">{{$v['gid']}}</td>
+				                        <td class=" ">{{\App\Http\Controllers\DetailController::getGname($v['gid'])}}</td>
 				                        <td class=" "><img src="{{$v['ppic1']}}" alt="" width="60px"></td>
 				                        <td class=" "><img src="{{$v['ppic2']}}" alt="" width="60px"></td>
 				                        <td class=" "><img src="{{$v['ppic3']}}" alt="" width="60px"></td>

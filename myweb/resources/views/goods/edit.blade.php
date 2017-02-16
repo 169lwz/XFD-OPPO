@@ -51,21 +51,6 @@
                     </div>
               </div>
               <div class="mws-form-row">
-                <label class="mws-form-label">颜色</label>
-                <div class="mws-form-item clearfix">
-                    <ul class="mws-form-list inline">
-                        <li><input type="checkbox" name="color[]" value="金色" @if($vo['color']=="金色") checked @endif> <label>金色</label></li>
-                        <li><input type="checkbox" name="color[]" value="玫瑰金" @if($vo['color']=="玫瑰金") checked @endif> <label>玫瑰金</label></li>
-                        <li><input type="checkbox" name="color[]" value="黑色" @if($vo['color']=="黑色") checked @endif> <label>黑色</label></li>
-                        <li><input type="checkbox" name="color[]" value="红色" @if($vo['color']=="红色") checked @endif> <label>红色</label></li>
-                        <li><input type="checkbox" name="color[]" value="白色" @if($vo['color']=="白色") checked @endif> <label>白色</label></li>
-                        <li><input type="checkbox" name="color[]" value="樱花粉" @if($vo['color']=="樱花粉") checked @endif> <label>樱花粉</label></li>
-                        <li><input type="checkbox" name="color[]" value="晴空蓝" @if($vo['color']=="晴空蓝") checked @endif> <label>晴空蓝</label></li>
-                        <li><input type="checkbox" name="color[]" value="河畔蓝" @if($vo['color']=="河畔蓝") checked @endif> <label>河畔蓝</label></li>                    
-                    </ul>
-                </div>
-              </div>
-              <div class="mws-form-row">
                   <label class="mws-form-label">商品描述</label>
                   <div class="mws-form-item">
                       <input type="text" class="small" name="desc" value="{{$vo['desc']}}">
