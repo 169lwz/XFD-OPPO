@@ -69,12 +69,12 @@
                         </div>
                         
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="请输入6-16位正确密码" info='请输入正确密码' name="pass"><span id="aa"></span>
+                            <input type="password" autocomplete="off" placeholder="请输入6-16位正确密码" info='请输入正确密码' name="pass"><span id="aa"></span>
                         </div>
                         <div class="error_tip" id="info_pwd"></div>
 
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="请确认新密码" info='请输入正确密码' name="repass"><span id="bb"></span>
+                            <input type="password" autocomplete="off" placeholder="请确认新密码" info='请输入正确密码' name="repass"><span id="bb"></span>
                         </div>
                         <div class="error_tip" id="info_pwd"></div>
 
@@ -114,35 +114,29 @@
         $('input[name="oldpass"]').blur(function(){
             var reg = /^\w{6,16}$/;
             var info = $(this).val();
-            var token=$("input[name='_token']").val();
-            // console.log(info);
+            // var psid = $("input[name='id']").val();
+            var token= $("input[name='_token']").val();
+
             if(reg.test(info)){
-                //发送ajax请求验证账号是否存在
+                //发送ajax请求验证原密码是否正确
                 $.ajax({
                     url:'/home/chongzhi',
                     data:{'info':info,"_token":token},
+                    // data:{'info':info,'id':psid,"_token":token},
                     type:'post',
-                    success:function(mes){
-                        // console.log(mes);
-                        
+                    success:function(mes){                       
                         if(mes=='yes'){
                             $("#uu").html('&nbsp;&nbsp;&nbsp;'+'原密码正确').css({"color":"green"});
                             oldpass=true;
-                            // console.log('aa');
                         }else{
                             $("#uu").html('&nbsp;&nbsp;&nbsp;'+'原密码错误').css('color','red').css('font-weight','bold');
                             oldpass=false;
-                            // console.log('bb');
                         }
                     }
                 });
-                // console.log('aa');
             }else{
-
                 $("#uu").html('&nbsp;&nbsp;&nbsp;'+'填入正确格式的密码').css('color','red');
                 oldpass=false;
-                // console.log('bb');
-
             }
         });
 
