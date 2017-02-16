@@ -59,7 +59,7 @@
 				                	<tr class="even">
 				                @endif
 				                        <td class=" ">{{$v['gname']}}</td>
-				                        <td class=" "><img src="{{$v['pic7']}}" alt="" width="60px"></td>           
+				                        <td class=" "><img src="{{$v['pic7']}}" alt="" style="width:60px"></td>           
 				                        <td class=" ">{{$v['color']}}</td>           
 				                        <td class=" ">{{$v['version']}}</td>           
 				                        <td class=" ">{{$v['memory']}}</td>           

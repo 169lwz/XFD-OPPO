@@ -160,7 +160,7 @@
                        欢迎登陆!
                     </div>
                     <ul>
-                        <li><a>大煞笔</a></li>
+                        <li><a>管理员</a></li>
                         <!-- <li><a href="#">修改密码</a></li> -->
                         <li><a href="/admin/login/logout">退出</a></li>
                     </ul>
@@ -260,9 +260,14 @@
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
-<<<<<<< HEAD
-                    </li>                                           
+                    </li>
 
+                    <li>
+                        <a href="#"><i class="icon-share"></i>赠品管理</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/val/indexgift">浏览赠品</a></li>
+                            <li><a href="/admin/val/addgift">添加赠品</a></li>
+                        </ul>
                     </li>
 
                     <li>
@@ -299,21 +304,7 @@
                             <li><a href="/ty/add">门店添加</a></li>
                         </ul>
                     </li>  
-
-
-                  
-
-                    <li>
-                        <a href="#"><i class="icon-share"></i>赠品管理</a>
-                        <ul  class="closed">
-                            <li><a href="/admin/val/indexgift">浏览赠品</a></li>
-                            <li><a href="/admin/val/addgift">添加赠品</a></li>
-                        </ul>
-                    </li>
-                  
-                                                           
-
-                </ul>
+             </ul>
             </div> 
         </div>
         <div id="mws-container" class="clearfix">
