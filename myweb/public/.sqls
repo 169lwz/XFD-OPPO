@@ -4900,3 +4900,32 @@
 [2017-02-17 00:37:14]select * from `guanggao` where `status` = ?
 [2017-02-17 00:37:15]select count(*) as aggregate from `shop` where `uid` is null
 >>>>>>> 02-15
+[2017-02-17 01:02:31]select * from `links`
+[2017-02-17 01:02:31]select * from `lunbo` where `status` = ?
+[2017-02-17 01:02:31]select * from `guanggao` where `status` = ?
+[2017-02-17 01:02:31]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:02:37]select * from `links`
+[2017-02-17 01:02:37]select * from `type`
+[2017-02-17 01:02:37]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 01:02:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:02:44]select * from `gversion` where `gid` = ?
+[2017-02-17 01:02:44]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:02:44]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:02:44]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:02:44]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:02:44]select * from `ggift` where `gid` = ?
+[2017-02-17 01:02:44]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:02:47]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:02:48]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:02:49]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:02:49]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:03:26]select * from `gversion` where `gid` = ?
+[2017-02-17 01:03:26]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:03:26]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:03:26]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:03:26]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:03:26]select * from `ggift` where `gid` = ?
+[2017-02-17 01:03:26]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:03:31]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:03:33]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:03:34]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
