@@ -172,7 +172,7 @@ if( !!~isMobile ) {
   <ul class='menu g'>
     <li class='gi
     '>
-      <a class='m-item' href='http://www.oppo.com/cn/'>
+      <a class='m-item' href='/home'>
         <span>首页</span>
       </a>
     </li>
@@ -181,15 +181,15 @@ if( !!~isMobile ) {
         <span>产品</span>
       </a>
     </li>
-                                <li class='gi
+  <li class='gi
         is-active
         '>
-      <a class='m-item' id='storeLink' href='http://www.opposhop.cn' data-hd-url='http://hd.oppo.com/act/2016/1001/index.html'>
+      <a class='m-item' id='storeLink' href='http://www.lamp169.com/home/shangcheng' data-hd-url='http://hd.oppo.com/act/2016/1001/index.html'>
         <span>商城</span>
               </a>
           </li>
     <li class='gi'>
-      <a class='m-item' href='http://www.oppo.com/cn/shops'>
+      <a class='m-item' href='http://www.lamp169.com/tyd/index'>
         体验店
       </a>
     </li>
@@ -327,6 +327,7 @@ if( !!~isMobile ) {
                               </div>
                           </div>
                       </section>
+                      @if($data['tid']!=2)
                       <section class="g module product-selector" data-common-name="attribute-1" data-selector-type="box">
                           <div class='gi one-quarter desk-one-fifth'>
                               <div class='radio-label'>网络</div>
@@ -368,7 +369,7 @@ if( !!~isMobile ) {
                                 <div class="g gift-item clearfix">
                                     <input type="hidden" name="gift[]" value="387">
                                     <div class="y-img" ><img src="{{$vg['picture1']}}" alt="{{$vg['gift']}}"></div>
-                                    <div class="y-name"><a href="http://www.opposhop.cn/products/387.html" title="{{$vg['gift']}}" target="_blank">{{$vg['gift']}}</a></div>
+                                    <div class="y-name"><a href="/home/detail/indexq/{{$vg['id']}}/{{$vg['giftcolor']}}" title="{{$vg['gift']}}" target="_blank">{{$vg['gift']}}</a></div>
                                     <div class="y-attributes">
                                         <ul class="swatches">
                                             <li class="swatch  selected " data-gift-id="387" data-thumbnail="images/thumbnail_2016101002101957fb357b42e4d_60x60.jpg"><a href="javascript:;">{{$vg['giftcolor']}}</a></li>
@@ -378,6 +379,7 @@ if( !!~isMobile ) {
                                 @endforeach
                           </div>
                       </div>
+                      @endif
                   
                                   
                       <input type="hidden" name="service-repair" value=" 0 "/>

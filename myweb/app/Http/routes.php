@@ -95,13 +95,11 @@ Route::group(['middleware'=>'login'],function(){ //前台路由组
 
 Route::controller('/home','HomeController'); //前台商城主页
 
-
-
 Route::get("/home/forget","LoginController@forget"); //忘记密码
 
 Route::controller('/ty','TyController');
 
-// Route::controller('/home/detail','DetailController');// 前台商品详情
+Route::controller('/spss/select','SelectController');// 前台商品搜索
 
 
 

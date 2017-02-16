@@ -93,14 +93,25 @@ class HomeController extends Controller
 	public function getShangcheng(){
 		$res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
         $links = $res->getLinksarr();
-         $data = DB::table('goods')
-               ->join('type','type.id','=','goods.tid')
-               ->join('gdetail','goods.id','=','gdetail.gid')
-               ->select('type.tname','goods.id','goods.price','gdetail.con','gdetail.pic7','gdetail.color')         
-               ->get();      
-		return view('shangcheng.index',['links'=>$links,'list'=>$data]);
+       
+
+        $sc = new TypeController();
+         $scdata = $sc -> getTypearr();
+        //dd($scdata);
+         // $newdata = DB::table('goods')
+         //       ->join('gdetail','goods.id','=','gdetail.gid')
+         //       ->select('goods.tid','goods.price','gdetail.con','gdetail.pic7','gdetail.color')         
+         //       ->get(); 
+            // dd($data);     
+		return view('shangcheng.index',['links'=>$links,'list'=>$scdata]);
 	}
 
     
+    //呈递商品列表
+    public function getLiebiao(){
+        $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        $links = $res->getLinksarr();
+       return view('shangcheng.liebiao',['links'=>$links]); 
+    }
 }
  

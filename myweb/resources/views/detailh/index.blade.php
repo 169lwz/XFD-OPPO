@@ -6,7 +6,7 @@
 		<span><i class="icon-table"></i> 商品详情浏览</span>
 	</div>
 	<div role="grid" class="dataTables_wrapper" id="DataTables_Table_1_wrapper">
-		<form action='/admin/goods/index' method='get'>	<!--要传参数,自己提交给自己,所以用get-->
+		<form action='/admin/detail/indexh' method='get'>	<!--要传参数,自己提交给自己,所以用get-->
 			<div id="DataTables_Table_1_length" class="dataTables_length">		
 				<label>显示
 					<select name="num" size="1" aria-controls="DataTables_Table_1">

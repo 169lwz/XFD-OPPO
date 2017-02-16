@@ -15,37 +15,42 @@
           </div>
         </div>
       </div>
-   
-  
-      <section class='brick-m'>
-               
+   <span></span>
+
+      @foreach($list as $vv)
+      @if(isset($vv['good']))
+      <span class="normal" style="margin-left:50px"><b>{{$vv['tname']}}</b></span>
+      <section class='brick-m'>             
         <div class='wrapper'>
-        <div class='grid-special equalize top-bar'>
-            
-             @foreach($list as $val)
-              <div class='box '>
-                <a target='_blank' href='http://www.lamp169.com/home/detail/indexq/{{$val['id']}}/{{$val['color']}}' title="">
-                  <div class='box-photo'>
-                      <img alt='' title="{{$val['con']}}" src='{{$val['pic7']}}'>
+            <div class='grid-special equalize top-bar'>
+                   @foreach($vv['good'] as $val)  
+                  <div class='box'>
+                          <a target='_blank' href='/home/detail/indexq/{{$val['spid']}}/{{$val['color']}}' title="">
+                      <div class='box-photo'>
+                          <img alt='' title="{{$val['con']}}" src='{{$val['pic7']}}'>
+                      </div>
+                      <h2 class='box-heading'>
+                          <a target='_blank' href='/home/detail/indexq/{{$val['spid']}}/{{$val['color']}}' title="{{$val['con']}}">{{$val['con']}}</a>
+                      </h2>
+                      <div class='box-details'>
+                          <p class='box-price'>
+                              <span class='normal'>&nbsp;</span>
+                              <strong>￥{{$val['price']}}</strong>
+                          </p>
+                      </div>
+                      @if($val['color'] == '红色' || $val['color'] == '黑色')
+                        <i class="ribbon  ribbon-cheap "></i>
+                      @elseif($val['price'] == '1599')
+                        <i class="ribbon  ribbon-new "></i>
+                      @endif  
+                    </a>
                   </div>
-                  <h2 class='box-heading'>
-                      <a target='_blank' href='http://www.lamp169.com/home/detail/indexq/{{$val['id']}}/{{$val['color']}}' title="{{$val['con']}}">{{$val['con']}}</a>
-                  </h2>
-                  <div class='box-details'>
-                      <p class='box-price'>
-                          <span class='normal'>&nbsp;</span>
-                          <strong>￥{{$val['price']}}</strong>
-                      </p>
-                  </div>
-                  <i class="ribbon  ribbon-new "></i>  
-                </a>
-              </div>
-             @endforeach
-        </div>
+                  @endforeach                
+            </div>
         </div> 
-      
       </section>
-       
+      @endif
+      @endforeach
     
 
      

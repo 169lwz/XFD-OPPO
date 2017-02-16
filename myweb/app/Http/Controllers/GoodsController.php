@@ -15,10 +15,9 @@ class GoodsController extends Controller
    */
   public function getIndex(Request $request){
     //模型类实现数据查找
-    $data = Goods::where(function($query) use($request){
-      if($request->input('keyword')){
-        $query->where('gname','like','%'.$request->input('keyword').'%')
-              ->orWhere('color','like','%'.$request->input('keyword').'%');
+    $data = DB::table('goods')->where(function($query) use($request){
+      if($request->input('keyword')!=null){
+        $query->where('gname','like','%'.$request->input('keyword').'%');
       }
     })->paginate($request->input('num',5));
 
@@ -48,7 +47,7 @@ class GoodsController extends Controller
 
       //执行数据插入 (返回的布尔值)
       if($g -> save()){
-        return redirect('/admin/goods/index')->with('success','添加成功');
+        return redirect('/admin/detail/add')->with('success','添加成功');
       }else{
         return back()->with('error','添加失败');
       }

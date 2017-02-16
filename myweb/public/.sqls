@@ -3177,6 +3177,7 @@
 [2017-02-15 19:54:25]select * from `gdetail` where `gid` = ? and `color` = ?
 [2017-02-15 19:54:25]select * from `ggift` where `gid` = ?
 [2017-02-15 19:54:25]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+<<<<<<< HEAD
 [2017-02-17 00:46:26]select * from `links`
 [2017-02-17 00:46:26]select * from `lunbo` where `status` = ?
 [2017-02-17 00:46:26]select * from `guanggao` where `status` = ?
@@ -3191,3 +3192,1711 @@
 [2017-02-17 00:57:03]select * from `links`
 [2017-02-17 00:57:03]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
 [2017-02-17 00:57:03]select count(*) as aggregate from `shop` where `uid` is null
+=======
+[2017-02-15 20:11:15]select * from `links`
+[2017-02-15 20:11:15]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:13:16]select * from `links`
+[2017-02-15 20:13:16]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:13:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:14:01]select * from `links`
+[2017-02-15 20:14:01]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:14:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:16:15]select * from `links`
+[2017-02-15 20:16:15]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:16:15]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:17:04]select * from `links`
+[2017-02-15 20:17:04]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:17:04]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:17:29]select * from `links`
+[2017-02-15 20:17:29]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:17:29]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:18:37]select * from `links`
+[2017-02-15 20:18:37]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:18:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:19:35]select * from `links`
+[2017-02-15 20:19:35]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:19:35]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:19:39]select * from `links`
+[2017-02-15 20:19:39]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:19:39]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:19:59]select * from `links`
+[2017-02-15 20:19:59]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 20:19:59]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 20:44:23]select * from `links`
+[2017-02-15 20:44:23]select * from `type`
+[2017-02-15 20:44:42]select * from `links`
+[2017-02-15 20:44:42]select * from `type`
+[2017-02-15 20:50:03]select * from `links`
+[2017-02-15 20:50:03]select * from `type`
+[2017-02-15 20:50:03]select * from `type`
+[2017-02-15 20:50:28]select * from `links`
+[2017-02-15 20:50:28]select * from `type`
+[2017-02-15 20:50:28]select * from `type`
+[2017-02-15 20:51:03]select * from `links`
+[2017-02-15 20:51:03]select * from `type`
+[2017-02-15 20:51:03]select * from `type`
+[2017-02-15 20:51:56]select * from `links`
+[2017-02-15 20:51:56]select * from `type`
+[2017-02-15 20:51:56]select * from `type`
+[2017-02-15 20:56:57]select * from `links`
+[2017-02-15 20:56:57]select * from `type`
+[2017-02-15 20:56:57]select * from `type`
+[2017-02-15 21:01:36]select * from `links`
+[2017-02-15 21:01:36]select * from `type`
+[2017-02-15 21:01:36]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:05:30]select * from `links`
+[2017-02-15 21:05:30]select * from `type`
+[2017-02-15 21:12:46]select * from `links`
+[2017-02-15 21:12:46]select * from `type`
+[2017-02-15 21:12:46]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:14:47]select * from `links`
+[2017-02-15 21:14:47]select * from `type`
+[2017-02-15 21:14:47]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:16:00]select * from `links`
+[2017-02-15 21:16:00]select * from `type`
+[2017-02-15 21:16:00]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:19:07]select * from `links`
+[2017-02-15 21:19:07]select * from `type`
+[2017-02-15 21:19:07]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:19:09]select * from `links`
+[2017-02-15 21:19:09]select * from `type`
+[2017-02-15 21:19:09]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:21:29]select * from `links`
+[2017-02-15 21:21:29]select * from `type`
+[2017-02-15 21:21:29]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:23:24]select * from `links`
+[2017-02-15 21:23:24]select * from `type`
+[2017-02-15 21:23:24]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:24:01]select * from `links`
+[2017-02-15 21:24:01]select * from `type`
+[2017-02-15 21:24:01]select `type`.`id`, `type`.`tname`, `goods`.`tid`, `goods`.`id` as `gid`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:34:05]select * from `links`
+[2017-02-15 21:34:05]select * from `type`
+[2017-02-15 21:34:05]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:47:20]select * from `links`
+[2017-02-15 21:47:20]select * from `type`
+[2017-02-15 21:47:20]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:47:35]select * from `links`
+[2017-02-15 21:47:35]select * from `type`
+[2017-02-15 21:47:35]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:00]select * from `links`
+[2017-02-15 21:48:00]select * from `type`
+[2017-02-15 21:48:00]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:03]select * from `links`
+[2017-02-15 21:48:03]select * from `type`
+[2017-02-15 21:48:03]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:04]select * from `links`
+[2017-02-15 21:48:04]select * from `type`
+[2017-02-15 21:48:04]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:05]select * from `links`
+[2017-02-15 21:48:05]select * from `type`
+[2017-02-15 21:48:05]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:07]select * from `links`
+[2017-02-15 21:48:07]select * from `type`
+[2017-02-15 21:48:07]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:10]select * from `links`
+[2017-02-15 21:48:10]select * from `type`
+[2017-02-15 21:48:10]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:12]select * from `links`
+[2017-02-15 21:48:12]select * from `type`
+[2017-02-15 21:48:12]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:48:47]select * from `links`
+[2017-02-15 21:48:47]select * from `type`
+[2017-02-15 21:48:47]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 21:49:10]select * from `links`
+[2017-02-15 21:49:10]select * from `type`
+[2017-02-15 21:49:10]select `type`.*, `goods`.`id` as `goodid`, `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`gid`, `gdetail`.`con` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 22:18:33]select * from `links`
+[2017-02-15 22:18:33]select * from `type`
+[2017-02-15 22:18:33]select `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`con`, `gdetail`.`color` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 22:22:02]select * from `links`
+[2017-02-15 22:22:02]select * from `type`
+[2017-02-15 22:22:02]select `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`con`, `gdetail`.`color` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 22:22:02]select * from `type`
+[2017-02-15 22:22:27]select * from `links`
+[2017-02-15 22:22:27]select * from `type`
+[2017-02-15 22:22:27]select * from `type`
+[2017-02-15 22:28:53]select * from `links`
+[2017-02-15 22:28:53]select * from `type`
+[2017-02-15 22:28:53]select * from `type`
+[2017-02-15 22:40:14]select * from `links`
+[2017-02-15 22:40:14]select * from `type`
+[2017-02-15 22:40:14]select `goods`.`tid`, `goods`.`price`, `gdetail`.`pic7`, `gdetail`.`con`, `gdetail`.`color` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-15 22:40:14]select * from `type`
+[2017-02-15 23:11:14]select * from `links`
+[2017-02-15 23:11:14]select * from `type`
+[2017-02-15 23:11:14]select * from `type`
+[2017-02-15 23:11:14]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:12:50]select * from `links`
+[2017-02-15 23:12:50]select * from `type`
+[2017-02-15 23:12:50]select * from `type`
+[2017-02-15 23:12:50]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:15:48]select * from `links`
+[2017-02-15 23:15:48]select * from `type`
+[2017-02-15 23:15:48]select * from `type`
+[2017-02-15 23:15:48]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:21:25]select * from `links`
+[2017-02-15 23:21:25]select * from `type`
+[2017-02-15 23:21:25]select * from `type`
+[2017-02-15 23:21:25]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:23:49]select * from `links`
+[2017-02-15 23:23:49]select * from `type`
+[2017-02-15 23:23:49]select * from `type`
+[2017-02-15 23:23:49]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:25:31]select * from `links`
+[2017-02-15 23:25:31]select * from `type`
+[2017-02-15 23:25:31]select * from `type`
+[2017-02-15 23:25:31]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:26:17]select * from `links`
+[2017-02-15 23:26:17]select * from `type`
+[2017-02-15 23:26:17]select * from `type`
+[2017-02-15 23:26:17]select `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:26:58]select * from `links`
+[2017-02-15 23:26:58]select * from `type`
+[2017-02-15 23:26:58]select * from `type`
+[2017-02-15 23:26:58]select `goods`.`id`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:27:16]select * from `links`
+[2017-02-15 23:27:16]select * from `type`
+[2017-02-15 23:27:16]select * from `type`
+[2017-02-15 23:27:16]select `goods`.`id`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:28:10]select * from `links`
+[2017-02-15 23:28:10]select * from `type`
+[2017-02-15 23:28:10]select * from `type`
+[2017-02-15 23:28:10]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:28:25]select * from `links`
+[2017-02-15 23:28:25]select * from `type`
+[2017-02-15 23:28:25]select * from `type`
+[2017-02-15 23:28:25]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:30:25]select * from `links`
+[2017-02-15 23:30:25]select * from `type`
+[2017-02-15 23:30:25]select * from `type`
+[2017-02-15 23:30:25]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:31:45]select * from `links`
+[2017-02-15 23:31:45]select * from `type`
+[2017-02-15 23:31:45]select * from `type`
+[2017-02-15 23:31:45]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:33:25]select * from `links`
+[2017-02-15 23:33:25]select * from `type`
+[2017-02-15 23:33:25]select * from `type`
+[2017-02-15 23:33:25]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:36:10]select * from `links`
+[2017-02-15 23:36:10]select * from `type`
+[2017-02-15 23:36:11]select * from `type`
+[2017-02-15 23:36:11]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:39:45]select * from `links`
+[2017-02-15 23:39:45]select * from `type`
+[2017-02-15 23:39:45]select * from `type`
+[2017-02-15 23:39:45]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:39:45]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-15 23:40:21]select * from `links`
+[2017-02-15 23:40:21]select * from `type`
+[2017-02-15 23:40:21]select * from `type`
+[2017-02-15 23:40:21]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:47:28]select * from `links`
+[2017-02-15 23:47:28]select * from `type`
+[2017-02-15 23:47:28]select * from `type`
+[2017-02-15 23:47:28]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:47:41]select * from `links`
+[2017-02-15 23:47:41]select * from `type`
+[2017-02-15 23:47:41]select * from `type`
+[2017-02-15 23:47:41]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:48:47]select * from `links`
+[2017-02-15 23:48:47]select * from `type`
+[2017-02-15 23:48:47]select * from `type`
+[2017-02-15 23:48:47]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:49:24]select * from `links`
+[2017-02-15 23:49:24]select * from `type`
+[2017-02-15 23:49:24]select * from `type`
+[2017-02-15 23:49:24]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:50:11]select * from `links`
+[2017-02-15 23:50:11]select * from `type`
+[2017-02-15 23:50:11]select * from `type`
+[2017-02-15 23:50:11]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:50:36]select * from `links`
+[2017-02-15 23:50:36]select * from `type`
+[2017-02-15 23:50:36]select * from `type`
+[2017-02-15 23:50:36]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:50:46]select * from `links`
+[2017-02-15 23:50:46]select * from `type`
+[2017-02-15 23:50:46]select * from `type`
+[2017-02-15 23:50:46]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:51:30]select * from `links`
+[2017-02-15 23:51:30]select * from `type`
+[2017-02-15 23:51:30]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:52:05]select * from `links`
+[2017-02-15 23:52:05]select * from `type`
+[2017-02-15 23:52:05]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:54:34]select * from `links`
+[2017-02-15 23:54:34]select * from `type`
+[2017-02-15 23:54:34]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:55:09]select * from `links`
+[2017-02-15 23:55:09]select * from `type`
+[2017-02-15 23:55:09]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:57:36]select * from `links`
+[2017-02-15 23:57:36]select * from `type`
+[2017-02-15 23:57:36]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-15 23:59:28]select * from `links`
+[2017-02-15 23:59:28]select * from `type`
+[2017-02-15 23:59:28]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:00:23]select * from `links`
+[2017-02-16 00:00:23]select * from `type`
+[2017-02-16 00:00:23]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:02:11]select * from `links`
+[2017-02-16 00:02:11]select * from `type`
+[2017-02-16 00:02:11]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:02:28]select * from `links`
+[2017-02-16 00:02:28]select * from `type`
+[2017-02-16 00:02:28]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:03:03]select * from `links`
+[2017-02-16 00:03:03]select * from `type`
+[2017-02-16 00:03:03]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:03:29]select * from `links`
+[2017-02-16 00:03:29]select * from `type`
+[2017-02-16 00:03:29]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:03:31]select * from `links`
+[2017-02-16 00:03:31]select * from `type`
+[2017-02-16 00:03:31]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:04:08]select * from `links`
+[2017-02-16 00:04:08]select * from `type`
+[2017-02-16 00:04:08]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:06:18]select * from `links`
+[2017-02-16 00:06:18]select * from `type`
+[2017-02-16 00:06:18]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:08:36]select * from `links`
+[2017-02-16 00:08:36]select * from `type`
+[2017-02-16 00:08:36]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:08:36]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 00:11:15]select * from `links`
+[2017-02-16 00:11:15]select * from `type`
+[2017-02-16 00:11:15]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:11:15]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 00:12:36]select * from `links`
+[2017-02-16 00:12:36]select * from `type`
+[2017-02-16 00:12:36]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:12:55]select * from `links`
+[2017-02-16 00:12:55]select * from `type`
+[2017-02-16 00:12:55]select `goods`.`id` as `goodsid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:15:53]select * from `links`
+[2017-02-16 00:15:53]select * from `type`
+[2017-02-16 00:15:53]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:16:10]select * from `links`
+[2017-02-16 00:16:10]select * from `type`
+[2017-02-16 00:16:10]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:16:15]select * from `links`
+[2017-02-16 00:16:15]select * from `type`
+[2017-02-16 00:16:15]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:16:16]select * from `links`
+[2017-02-16 00:16:16]select * from `type`
+[2017-02-16 00:16:16]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:16:18]select * from `links`
+[2017-02-16 00:16:18]select * from `type`
+[2017-02-16 00:16:18]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:16:39]select * from `links`
+[2017-02-16 00:16:39]select * from `type`
+[2017-02-16 00:16:39]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:17:17]select * from `links`
+[2017-02-16 00:17:17]select * from `type`
+[2017-02-16 00:17:17]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:20:01]select * from `links`
+[2017-02-16 00:20:01]select * from `type`
+[2017-02-16 00:20:01]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:21:43]select * from `links`
+[2017-02-16 00:21:43]select * from `type`
+[2017-02-16 00:21:43]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:24:26]select * from `links`
+[2017-02-16 00:24:26]select * from `type`
+[2017-02-16 00:24:26]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:25:02]select * from `links`
+[2017-02-16 00:25:02]select * from `type`
+[2017-02-16 00:25:02]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:25:25]select * from `links`
+[2017-02-16 00:25:25]select * from `type`
+[2017-02-16 00:25:25]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:28:10]select * from `links`
+[2017-02-16 00:28:10]select * from `type`
+[2017-02-16 00:28:10]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:28:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 00:28:58]select * from `adminuser` where `username` = ? limit 1
+[2017-02-16 00:29:18]select * from `links`
+[2017-02-16 00:29:18]select * from `type`
+[2017-02-16 00:29:18]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 00:29:18]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 00:29:22]select * from `gversion` where `gid` = ?
+[2017-02-16 00:29:22]select * from `gmemory` where `gid` = ?
+[2017-02-16 00:29:22]select * from `gdetail` where `gid` = ?
+[2017-02-16 00:29:22]select * from `gparameter` where `gid` = ?
+[2017-02-16 00:29:22]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 00:29:22]select * from `ggift` where `gid` = ?
+[2017-02-16 00:29:22]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 00:55:13]select * from `gversion` where `gid` = ?
+[2017-02-16 00:55:13]select * from `gmemory` where `gid` = ?
+[2017-02-16 00:55:13]select * from `gdetail` where `gid` = ?
+[2017-02-16 00:55:13]select * from `gparameter` where `gid` = ?
+[2017-02-16 00:55:13]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 00:55:13]select * from `ggift` where `gid` = ?
+[2017-02-16 00:55:13]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 00:55:20]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 00:55:21]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 00:55:24]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 00:55:27]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 00:57:17]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 00:57:48]select * from `gversion` where `gid` = ?
+[2017-02-16 00:57:48]select * from `gmemory` where `gid` = ?
+[2017-02-16 00:57:48]select * from `gdetail` where `gid` = ?
+[2017-02-16 00:57:48]select * from `gparameter` where `gid` = ?
+[2017-02-16 00:57:48]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 00:57:48]select * from `ggift` where `gid` = ?
+[2017-02-16 00:57:48]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 08:56:21]select * from `links`
+[2017-02-16 08:56:21]select * from `type`
+[2017-02-16 08:56:21]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 08:56:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 08:59:13]select * from `links`
+[2017-02-16 08:59:13]select * from `type`
+[2017-02-16 08:59:13]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 08:59:13]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:00:16]select * from `adminuser` where `username` = ? limit 1
+[2017-02-16 09:00:43]select * from `links`
+[2017-02-16 09:00:43]select * from `type`
+[2017-02-16 09:00:43]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:00:43]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:00:47]select * from `gversion` where `gid` = ?
+[2017-02-16 09:00:47]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:00:47]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:00:47]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:00:47]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:00:47]select * from `ggift` where `gid` = ?
+[2017-02-16 09:00:47]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:01:11]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:03:29]select * from `links`
+[2017-02-16 09:03:29]select * from `type`
+[2017-02-16 09:03:29]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:03:29]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:07:19]select * from `gversion` where `gid` = ?
+[2017-02-16 09:07:19]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:07:19]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:07:19]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:07:19]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:07:19]select * from `ggift` where `gid` = ?
+[2017-02-16 09:07:19]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:08:34]select * from `links`
+[2017-02-16 09:08:34]select * from `type`
+[2017-02-16 09:08:34]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:08:34]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:09:47]select * from `links`
+[2017-02-16 09:09:47]select * from `type`
+[2017-02-16 09:09:47]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:09:48]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:10:05]select * from `links`
+[2017-02-16 09:10:05]select * from `type`
+[2017-02-16 09:10:05]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:10:05]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:11:01]select * from `links`
+[2017-02-16 09:11:01]select * from `type`
+[2017-02-16 09:11:01]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:11:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:12:18]select * from `links`
+[2017-02-16 09:12:18]select * from `type`
+[2017-02-16 09:12:18]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:12:18]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:12:48]select * from `links`
+[2017-02-16 09:12:48]select * from `type`
+[2017-02-16 09:12:48]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:12:48]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:12:58]select * from `links`
+[2017-02-16 09:12:58]select * from `type`
+[2017-02-16 09:12:58]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:12:58]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:13:26]select * from `links`
+[2017-02-16 09:13:26]select * from `type`
+[2017-02-16 09:13:26]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:13:26]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:18:55]select * from `links`
+[2017-02-16 09:18:55]select * from `type`
+[2017-02-16 09:18:55]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:18:55]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:19:29]select * from `links`
+[2017-02-16 09:19:29]select * from `type`
+[2017-02-16 09:19:29]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:19:29]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:19:58]select * from `links`
+[2017-02-16 09:19:58]select * from `type`
+[2017-02-16 09:19:58]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:19:58]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:20:53]select * from `links`
+[2017-02-16 09:20:53]select * from `type`
+[2017-02-16 09:20:53]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:20:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:22:00]select * from `links`
+[2017-02-16 09:22:00]select * from `type`
+[2017-02-16 09:22:00]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:22:00]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:23:02]select * from `links`
+[2017-02-16 09:23:02]select * from `type`
+[2017-02-16 09:23:02]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:23:02]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:24:56]select * from `links`
+[2017-02-16 09:24:56]select * from `type`
+[2017-02-16 09:24:56]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:27:55]select * from `links`
+[2017-02-16 09:27:55]select * from `type`
+[2017-02-16 09:27:55]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:27:55]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:29:06]select * from `links`
+[2017-02-16 09:29:06]select * from `type`
+[2017-02-16 09:29:06]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:29:06]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:33:22]select * from `links`
+[2017-02-16 09:33:22]select * from `type`
+[2017-02-16 09:33:22]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:33:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:33:39]select * from `links`
+[2017-02-16 09:33:39]select * from `type`
+[2017-02-16 09:33:39]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:33:39]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:34:09]select * from `gversion` where `gid` = ?
+[2017-02-16 09:34:09]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:34:09]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:34:09]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:34:09]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:34:09]select * from `ggift` where `gid` = ?
+[2017-02-16 09:34:09]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:34:36]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:37]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:38]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:39]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:39]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:40]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:41]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:41]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:48]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:49]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:50]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:34:50]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:35:14]select * from `gversion` where `gid` = ?
+[2017-02-16 09:35:14]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:35:14]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:35:14]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:35:14]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:35:14]select * from `ggift` where `gid` = ?
+[2017-02-16 09:35:14]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:37:11]select * from `gversion` where `gid` = ?
+[2017-02-16 09:37:11]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:37:11]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:37:11]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:37:11]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:37:11]select * from `ggift` where `gid` = ?
+[2017-02-16 09:37:11]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:37:17]select * from `links`
+[2017-02-16 09:37:17]select * from `type`
+[2017-02-16 09:37:17]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:37:17]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:37:25]select * from `gversion` where `gid` = ?
+[2017-02-16 09:37:25]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:37:25]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:37:25]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:37:25]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:37:25]select * from `ggift` where `gid` = ?
+[2017-02-16 09:37:25]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:48:42]select * from `gversion` where `gid` = ?
+[2017-02-16 09:48:42]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:48:42]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:48:42]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:48:42]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:48:42]select * from `ggift` where `gid` = ?
+[2017-02-16 09:48:42]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:48:53]select * from `gversion` where `gid` = ?
+[2017-02-16 09:48:53]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:48:53]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:48:53]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:48:53]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:48:53]select * from `ggift` where `gid` = ?
+[2017-02-16 09:48:53]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:49:10]select * from `gversion` where `gid` = ?
+[2017-02-16 09:49:10]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:49:10]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:49:10]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:49:10]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:49:10]select * from `ggift` where `gid` = ?
+[2017-02-16 09:49:10]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:49:20]select * from `gversion` where `gid` = ?
+[2017-02-16 09:49:20]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:49:20]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:49:20]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:49:20]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:49:20]select * from `ggift` where `gid` = ?
+[2017-02-16 09:49:20]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:54:19]select * from `links`
+[2017-02-16 09:54:19]select * from `type`
+[2017-02-16 09:54:19]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:54:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:54:24]select * from `gversion` where `gid` = ?
+[2017-02-16 09:54:24]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:54:24]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:54:24]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:54:24]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:54:24]select * from `ggift` where `gid` = ?
+[2017-02-16 09:54:24]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:54:51]select * from `gversion` where `gid` = ?
+[2017-02-16 09:54:51]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:54:51]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:54:51]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:54:51]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:54:51]select * from `ggift` where `gid` = ?
+[2017-02-16 09:54:51]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:55:01]select * from `gversion` where `gid` = ?
+[2017-02-16 09:55:01]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:55:01]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:55:01]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:55:01]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:55:01]select * from `ggift` where `gid` = ?
+[2017-02-16 09:55:01]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:55:06]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 09:55:11]select * from `links`
+[2017-02-16 09:55:11]select * from `type`
+[2017-02-16 09:55:11]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:55:11]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:56:35]select * from `links`
+[2017-02-16 09:56:35]select * from `type`
+[2017-02-16 09:56:35]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:56:35]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:56:59]select * from `gversion` where `gid` = ?
+[2017-02-16 09:56:59]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:56:59]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:56:59]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:56:59]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:56:59]select * from `ggift` where `gid` = ?
+[2017-02-16 09:56:59]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:57:04]select * from `links`
+[2017-02-16 09:57:04]select * from `type`
+[2017-02-16 09:57:04]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:57:04]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:57:24]select * from `links`
+[2017-02-16 09:57:24]select * from `type`
+[2017-02-16 09:57:24]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 09:57:24]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 09:57:29]select * from `gversion` where `gid` = ?
+[2017-02-16 09:57:29]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:57:29]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:57:29]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:57:29]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:57:29]select * from `ggift` where `gid` = ?
+[2017-02-16 09:57:29]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 09:59:30]select * from `gversion` where `gid` = ?
+[2017-02-16 09:59:30]select * from `gmemory` where `gid` = ?
+[2017-02-16 09:59:30]select * from `gdetail` where `gid` = ?
+[2017-02-16 09:59:30]select * from `gparameter` where `gid` = ?
+[2017-02-16 09:59:30]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 09:59:30]select * from `ggift` where `gid` = ?
+[2017-02-16 09:59:30]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 10:05:52]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 10:05:52]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:05:53]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:05:53]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:05:53]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:05:53]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:05:53]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:19]select * from `type` where `pid` = ?
+[2017-02-16 10:06:19]delete from `type` where `id` = ?
+[2017-02-16 10:06:19]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 10:06:19]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:19]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:19]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:19]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:19]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:28]select * from `type` where `pid` = ?
+[2017-02-16 10:06:29]delete from `type` where `id` = ?
+[2017-02-16 10:06:29]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 10:06:29]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:29]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:29]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:29]select * from `type` where `id` = ? limit 1
+[2017-02-16 10:06:57]select * from `links`
+[2017-02-16 10:06:57]select * from `type`
+[2017-02-16 10:06:57]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 10:06:57]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 10:07:10]select * from `links`
+[2017-02-16 10:07:10]select * from `type`
+[2017-02-16 10:07:10]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 10:15:01]select * from `links`
+[2017-02-16 10:15:01]select * from `type`
+[2017-02-16 10:15:01]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 10:15:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 10:19:18]select count(*) as aggregate from `goods`
+[2017-02-16 10:19:18]select * from `goods` limit 5 offset 0
+[2017-02-16 10:20:04]select count(*) as aggregate from `gdetail`
+[2017-02-16 10:20:04]select * from `gdetail` limit 5 offset 0
+[2017-02-16 10:20:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:20:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:20:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:20:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:20:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:24:58]select count(*) as aggregate from `gparameter`
+[2017-02-16 10:24:58]select * from `gparameter` limit 5 offset 0
+[2017-02-16 10:28:57]select count(*) as aggregate from `gparameter`
+[2017-02-16 10:28:57]select * from `gparameter` limit 5 offset 0
+[2017-02-16 10:28:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:28:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:29:06]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:29:06]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:29:28]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:29:28]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:29:39]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:29:39]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:29:51]select count(*) as aggregate from `gdetail`
+[2017-02-16 10:29:51]select * from `gdetail` limit 5 offset 0
+[2017-02-16 10:29:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:29:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:29:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:29:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:29:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:30:11]select count(*) as aggregate from `gparameter`
+[2017-02-16 10:30:11]select * from `gparameter` limit 5 offset 0
+[2017-02-16 10:30:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:30:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:30:24]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:30:24]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:31:07]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:31:07]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:32:53]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:32:53]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:32:59]select count(*) as aggregate from `gversion`
+[2017-02-16 10:32:59]select * from `gversion` limit 5 offset 0
+[2017-02-16 10:33:49]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 10:33:49]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 10:34:51]select count(*) as aggregate from `goods`
+[2017-02-16 10:34:51]select * from `goods` limit 5 offset 0
+[2017-02-16 10:35:08]select count(*) as aggregate from `gdetail`
+[2017-02-16 10:35:08]select * from `gdetail` limit 5 offset 0
+[2017-02-16 10:35:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:35:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:35:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:35:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:35:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:40:16]select count(*) as aggregate from `goods`
+[2017-02-16 10:40:16]select * from `goods` limit 5 offset 0
+[2017-02-16 10:41:02]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 10:42:12]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 10:42:13]select * from `goods`
+[2017-02-16 10:44:00]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 10:44:01]select count(*) as aggregate from `gdetail`
+[2017-02-16 10:44:01]select * from `gdetail` limit 5 offset 0
+[2017-02-16 10:44:01]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:01]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:01]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:01]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:01]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:11]select count(*) as aggregate from `gdetail`
+[2017-02-16 10:44:11]select * from `gdetail` limit 5 offset 5
+[2017-02-16 10:44:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 10:44:26]select count(*) as aggregate from `goods`
+[2017-02-16 10:44:26]select * from `goods` limit 5 offset 0
+[2017-02-16 10:44:31]select count(*) as aggregate from `goods`
+[2017-02-16 10:44:31]select * from `goods` limit 5 offset 5
+[2017-02-16 10:44:44]select count(*) as aggregate from `goods`
+[2017-02-16 10:44:44]select * from `goods` limit 5 offset 0
+[2017-02-16 10:54:20]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 10:54:20]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 10:54:33]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 10:54:33]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 10:54:43]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 10:54:43]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 11:37:49]select * from `links`
+[2017-02-16 11:37:49]select * from `type`
+[2017-02-16 11:37:49]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 11:37:49]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 11:37:50]select * from `links`
+[2017-02-16 11:37:50]select * from `type`
+[2017-02-16 11:37:50]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 11:37:50]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 11:43:31]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 11:44:25]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 11:44:25]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 11:44:33]select * from `links`
+[2017-02-16 11:44:33]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 11:44:34]select * from `links`
+[2017-02-16 11:44:34]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 11:46:00]select * from `gversion` where `gid` = ?
+[2017-02-16 11:46:00]select * from `gmemory` where `gid` = ?
+[2017-02-16 11:46:00]select * from `gdetail` where `gid` = ?
+[2017-02-16 11:46:00]select * from `gparameter` where `gid` = ?
+[2017-02-16 11:46:00]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 11:46:00]select * from `ggift` where `gid` = ?
+[2017-02-16 11:46:00]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 12:14:03]select * from `links`
+[2017-02-16 12:14:03]select * from `type`
+[2017-02-16 12:14:03]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 12:14:03]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 12:14:38]select * from `links`
+[2017-02-16 12:14:38]select * from `type`
+[2017-02-16 12:14:38]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 12:14:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 14:46:55]select * from `links`
+[2017-02-16 14:46:55]select * from `type`
+[2017-02-16 14:46:55]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 14:46:55]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 14:48:25]select * from `links`
+[2017-02-16 14:48:25]select * from `type`
+[2017-02-16 14:48:25]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 14:48:25]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 14:49:15]select * from `adminuser` where `username` = ? limit 1
+[2017-02-16 14:49:23]select * from `links`
+[2017-02-16 14:49:23]select * from `type`
+[2017-02-16 14:49:23]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 14:49:23]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 14:50:08]select * from `gversion` where `gid` = ?
+[2017-02-16 14:50:08]select * from `gmemory` where `gid` = ?
+[2017-02-16 14:50:08]select * from `gdetail` where `gid` = ?
+[2017-02-16 14:50:08]select * from `gparameter` where `gid` = ?
+[2017-02-16 14:50:08]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 14:50:08]select * from `ggift` where `gid` = ?
+[2017-02-16 14:50:08]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 14:50:25]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 14:50:28]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 14:50:30]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 14:50:31]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 14:59:05]select * from `links`
+[2017-02-16 14:59:05]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:03:10]select * from `links`
+[2017-02-16 15:03:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:06:48]select * from `links`
+[2017-02-16 15:06:49]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:08:16]select * from `links`
+[2017-02-16 15:08:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:09:27]select * from `links`
+[2017-02-16 15:09:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:10:22]select * from `links`
+[2017-02-16 15:10:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:11:48]select * from `links`
+[2017-02-16 15:11:48]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:13:16]select * from `links`
+[2017-02-16 15:13:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:15:38]select * from `links`
+[2017-02-16 15:15:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:19:40]select * from `links`
+[2017-02-16 15:19:40]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:22:01]select * from `links`
+[2017-02-16 15:22:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:34:14]select * from `links`
+[2017-02-16 15:34:14]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:35:35]select * from `links`
+[2017-02-16 15:35:35]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 15:44:00]select * from `links`
+[2017-02-16 15:44:00]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:06:11]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:07:10]select * from `links`
+[2017-02-16 16:07:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:07:37]select * from `links`
+[2017-02-16 16:07:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:10:55]select * from `links`
+[2017-02-16 16:10:55]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:11:14]select * from `links`
+[2017-02-16 16:11:14]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:16:37]select * from `links`
+[2017-02-16 16:16:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:18:50]select * from `links`
+[2017-02-16 16:18:50]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:20:34]select * from `links`
+[2017-02-16 16:20:35]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:23:13]select * from `links`
+[2017-02-16 16:23:13]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:28:43]select * from `links`
+[2017-02-16 16:28:43]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:36:02]select * from `links`
+[2017-02-16 16:36:02]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:37:25]select * from `links`
+[2017-02-16 16:37:25]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:37:52]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:13]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:16]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:47]select * from `links`
+[2017-02-16 16:38:47]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:38:49]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:51]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:51]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:52]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:52]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:53]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:53]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:53]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:54]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:54]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:54]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:55]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:55]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:56]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:56]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:57]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:57]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:57]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:58]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:59]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:38:59]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:39:00]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:39:41]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:39:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:39:47]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:40:05]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:40:13]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:40:23]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:41:57]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:42:01]select * from `links`
+[2017-02-16 16:42:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:42:05]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:56:27]select * from `links`
+[2017-02-16 16:56:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 16:56:33]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 16:56:37]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:08:17]select * from `links`
+[2017-02-16 17:08:17]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:08:22]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:09:46]select * from `links`
+[2017-02-16 17:09:46]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:09:48]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:19:08]select * from `links`
+[2017-02-16 17:19:08]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:19:13]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:19:37]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:19:51]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:22:20]select * from `links`
+[2017-02-16 17:22:20]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:22:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:23:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:23:39]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:23:41]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:25:59]select * from `links`
+[2017-02-16 17:25:59]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:28:52]select * from `links`
+[2017-02-16 17:28:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:28:57]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:35:28]select * from `links`
+[2017-02-16 17:35:28]select * from `type`
+[2017-02-16 17:35:28]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 17:35:28]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:35:33]select * from `gversion` where `gid` = ?
+[2017-02-16 17:35:33]select * from `gmemory` where `gid` = ?
+[2017-02-16 17:35:33]select * from `gdetail` where `gid` = ?
+[2017-02-16 17:35:33]select * from `gparameter` where `gid` = ?
+[2017-02-16 17:35:33]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 17:35:33]select * from `ggift` where `gid` = ?
+[2017-02-16 17:35:33]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 17:36:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:36:59]select * from `links`
+[2017-02-16 17:36:59]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:37:04]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:40:41]select * from `links`
+[2017-02-16 17:40:41]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:41:37]select * from `links`
+[2017-02-16 17:41:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:41:39]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:42:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:42:52]select * from `links`
+[2017-02-16 17:42:52]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:43:18]select * from `links`
+[2017-02-16 17:43:18]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:43:20]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:44:35]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:45:21]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:46:51]select * from `links`
+[2017-02-16 17:46:51]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:46:55]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:47:00]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:48:31]select * from `links`
+[2017-02-16 17:48:31]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 17:48:33]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 17:48:35]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:13:02]select * from `links`
+[2017-02-16 18:13:02]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:13:06]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:23:08]select * from `links`
+[2017-02-16 18:23:08]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:23:11]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:24:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:26:30]select * from `links`
+[2017-02-16 18:26:30]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:26:34]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:26:45]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:27:06]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:27:27]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:29:08]select * from `links`
+[2017-02-16 18:29:08]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:29:13]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:29:59]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 18:30:08]select count(*) as aggregate from `goods`
+[2017-02-16 18:30:08]select * from `goods` limit 5 offset 0
+[2017-02-16 18:30:15]select count(*) as aggregate from `goods`
+[2017-02-16 18:30:15]select * from `goods` limit 5 offset 5
+[2017-02-16 18:30:21]select * from `goods` where `goods`.`id` = ? limit 1
+[2017-02-16 18:30:21]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 18:31:01]select count(*) as aggregate from `goods`
+[2017-02-16 18:31:01]select * from `goods` limit 5 offset 0
+[2017-02-16 18:35:28]select * from `links`
+[2017-02-16 18:35:28]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:35:30]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:37:15]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:39:33]select * from `links`
+[2017-02-16 18:39:33]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:39:36]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:39:40]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:41:36]select * from `links`
+[2017-02-16 18:41:36]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:42:08]select * from `links`
+[2017-02-16 18:42:08]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:42:11]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:42:16]select * from `links`
+[2017-02-16 18:42:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:42:45]select * from `links`
+[2017-02-16 18:42:45]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:42:50]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:43:45]select * from `links`
+[2017-02-16 18:43:45]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:44:21]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:46:39]select * from `links`
+[2017-02-16 18:46:39]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:48:13]select * from `links`
+[2017-02-16 18:48:13]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:48:33]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:49:34]select * from `links`
+[2017-02-16 18:49:34]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:49:39]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:51:03]select * from `links`
+[2017-02-16 18:51:03]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:51:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:54:49]select * from `links`
+[2017-02-16 18:54:49]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:54:54]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:56:05]select * from `links`
+[2017-02-16 18:56:05]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:56:14]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:57:44]select * from `links`
+[2017-02-16 18:57:44]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 18:57:48]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 18:59:05]select * from `gversion` where `gid` = ?
+[2017-02-16 18:59:05]select * from `gmemory` where `gid` = ?
+[2017-02-16 18:59:05]select * from `gdetail` where `gid` = ?
+[2017-02-16 18:59:05]select * from `gparameter` where `gid` = ?
+[2017-02-16 18:59:05]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 18:59:05]select * from `ggift` where `gid` = ?
+[2017-02-16 18:59:05]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 19:04:38]select * from `links`
+[2017-02-16 19:04:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:04:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:05:02]select * from `gversion` where `gid` = ?
+[2017-02-16 19:05:02]select * from `gmemory` where `gid` = ?
+[2017-02-16 19:05:02]select * from `gdetail` where `gid` = ?
+[2017-02-16 19:05:02]select * from `gparameter` where `gid` = ?
+[2017-02-16 19:05:02]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 19:05:02]select * from `ggift` where `gid` = ?
+[2017-02-16 19:05:02]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 19:05:21]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:05:29]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:07:34]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:07:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:14:11]select * from `links`
+[2017-02-16 19:14:11]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:14:17]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:15:42]select * from `links`
+[2017-02-16 19:15:42]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:16:15]select * from `links`
+[2017-02-16 19:16:15]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:16:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:16:37]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:16:44]select * from `gversion` where `gid` = ?
+[2017-02-16 19:16:44]select * from `gmemory` where `gid` = ?
+[2017-02-16 19:16:44]select * from `gdetail` where `gid` = ?
+[2017-02-16 19:16:44]select * from `gparameter` where `gid` = ?
+[2017-02-16 19:16:44]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 19:16:44]select * from `ggift` where `gid` = ?
+[2017-02-16 19:16:44]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 19:16:55]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:17:20]select * from `links`
+[2017-02-16 19:17:20]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:17:22]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:21:18]select * from `links`
+[2017-02-16 19:21:18]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:21:23]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:24:00]select * from `links`
+[2017-02-16 19:24:00]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:24:03]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:24:39]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:25:04]select * from `links`
+[2017-02-16 19:25:04]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:25:08]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:25:14]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:25:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:25:21]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:25:28]select * from `links`
+[2017-02-16 19:25:28]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:27:36]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:27:38]select * from `links`
+[2017-02-16 19:27:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:27:41]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:33:40]select * from `links`
+[2017-02-16 19:33:40]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:33:46]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:33:50]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:34:05]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:34:22]select * from `links`
+[2017-02-16 19:34:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:37:53]select * from `links`
+[2017-02-16 19:37:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:38:03]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:34]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:43]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:44]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:45]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:45]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:46]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:46]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:46]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:39:59]select * from `links`
+[2017-02-16 19:39:59]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:40:11]select * from `links`
+[2017-02-16 19:40:11]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:40:15]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:43:15]select * from `links`
+[2017-02-16 19:43:15]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:43:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:43:43]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:44:21]select * from `links`
+[2017-02-16 19:44:21]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:44:24]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:44:30]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:45:38]select * from `links`
+[2017-02-16 19:45:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:46:46]select * from `links`
+[2017-02-16 19:46:46]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:47:53]select * from `links`
+[2017-02-16 19:47:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:47:56]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:47:58]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:03]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:04]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:04]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:05]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:05]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:06]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:07]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:08]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:08]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:09]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:09]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:10]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:48:11]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 19:55:52]select * from `links`
+[2017-02-16 19:55:52]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 19:57:10]select * from `links`
+[2017-02-16 19:57:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:03:37]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:03:50]select * from `links`
+[2017-02-16 20:03:50]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:17]select * from `links`
+[2017-02-16 20:04:17]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:25]select * from `links`
+[2017-02-16 20:04:25]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:26]select * from `links`
+[2017-02-16 20:04:26]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:26]select * from `links`
+[2017-02-16 20:04:26]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:04:27]select * from `links`
+[2017-02-16 20:04:27]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:05:23]select * from `links`
+[2017-02-16 20:05:24]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:05:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:06:22]select * from `links`
+[2017-02-16 20:06:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:06:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:07:22]select * from `links`
+[2017-02-16 20:07:22]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:07:25]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:07:41]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:09:38]select * from `links`
+[2017-02-16 20:09:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:09:45]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:17]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:18]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:24]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:25]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:25]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:53:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 20:57:19]select * from `links`
+[2017-02-16 20:57:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 20:57:21]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:00:25]select * from `links`
+[2017-02-16 21:00:25]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:00:58]select * from `links`
+[2017-02-16 21:00:58]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:01:03]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:01:24]select * from `links`
+[2017-02-16 21:01:24]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:01:26]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:03:05]select * from `links`
+[2017-02-16 21:03:05]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:03:09]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:04:03]select * from `links`
+[2017-02-16 21:04:03]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:04:06]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:04:38]select * from `links`
+[2017-02-16 21:04:38]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:04:39]select * from `links`
+[2017-02-16 21:04:39]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:04:41]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:07:35]select * from `links`
+[2017-02-16 21:07:35]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:07:37]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:09:12]select * from `links`
+[2017-02-16 21:09:12]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:09:16]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:10:44]select * from `links`
+[2017-02-16 21:10:44]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:10:47]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:11:16]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:12:04]select * from `links`
+[2017-02-16 21:12:04]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:12:10]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:12:40]select * from `links`
+[2017-02-16 21:12:40]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:12:47]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:14:31]select * from `links`
+[2017-02-16 21:14:31]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:14:35]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:15:41]select * from `links`
+[2017-02-16 21:15:41]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:15:47]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:18:53]select * from `links`
+[2017-02-16 21:18:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:18:58]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:19:07]select * from `links`
+[2017-02-16 21:19:07]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:20:42]select * from `links`
+[2017-02-16 21:20:42]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:21:06]select * from `links`
+[2017-02-16 21:21:06]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:21:19]select * from `links`
+[2017-02-16 21:21:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:21:37]select * from `links`
+[2017-02-16 21:21:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:24:03]select * from `links`
+[2017-02-16 21:24:03]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:24:08]select `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color`, `goods`.`id` from `type` inner join `goods` on `goods`.`tid` = `type`.`id` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` where `tname` = ?
+[2017-02-16 21:24:19]select * from `links`
+[2017-02-16 21:24:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:24:30]select * from `links`
+[2017-02-16 21:24:30]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 21:36:14]select count(*) as aggregate from `goods`
+[2017-02-16 21:36:14]select * from `goods` limit 5 offset 0
+[2017-02-16 21:36:19]select count(*) as aggregate from `goods`
+[2017-02-16 21:36:19]select * from `goods` limit 5 offset 5
+[2017-02-16 21:42:19]select count(*) as aggregate from `goods`
+[2017-02-16 21:42:19]select * from `goods` limit 5 offset 5
+[2017-02-16 21:42:54]select count(*) as aggregate from `goods`
+[2017-02-16 21:42:54]select * from `goods` limit 5 offset 5
+[2017-02-16 21:43:07]select count(*) as aggregate from `gdetail`
+[2017-02-16 21:43:07]select * from `gdetail` limit 5 offset 0
+[2017-02-16 21:43:07]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:43:07]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:43:07]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:43:07]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:43:07]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:49:07]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 21:49:07]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 21:49:22]select count(*) as aggregate from `gdetail`
+[2017-02-16 21:49:22]select * from `gdetail` limit 5 offset 0
+[2017-02-16 21:49:22]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:49:22]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:49:22]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:49:22]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:49:22]select * from `goods` where `id` = ? limit 1
+[2017-02-16 21:51:07]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 21:51:07]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 22:04:51]select count(*) as aggregate from `goods`
+[2017-02-16 22:04:51]select * from `goods` limit 5 offset 0
+[2017-02-16 22:08:00]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 22:08:00]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 22:11:12]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:11:13]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:11:13]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:13]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:13]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:13]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:13]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:33]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 22:11:33]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 22:11:44]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:11:44]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:11:44]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:44]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:44]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:44]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:11:44]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:10]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:15:10]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:15:10]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:10]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:10]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:10]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:10]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:15:15]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 22:15:15]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 22:15:54]select count(*) as aggregate from `goods`
+[2017-02-16 22:15:54]select * from `goods` limit 5 offset 0
+[2017-02-16 22:17:43]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:17:43]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:17:43]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:17:43]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:17:43]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:17:43]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:17:43]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:35:05]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 22:35:05]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 22:41:54]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:41:54]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:41:54]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:41:54]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:41:54]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:41:54]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:41:54]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:48]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:42:48]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:42:48]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:48]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:48]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:48]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:48]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:42:55]select count(*) as aggregate from `gdetail` where (`gid` = ? or `color` like ?)
+[2017-02-16 22:42:55]select * from `gdetail` where (`gid` = ? or `color` like ?) limit 5 offset 0
+[2017-02-16 22:42:55]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:43:04]select count(*) as aggregate from `gdetail` where (`gid` = ? or `color` like ?)
+[2017-02-16 22:43:04]select * from `gdetail` where (`gid` = ? or `color` like ?) limit 5 offset 0
+[2017-02-16 22:43:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:43:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:43:15]select count(*) as aggregate from `gdetail` where (`gid` = ? or `color` like ?)
+[2017-02-16 22:43:15]select * from `gdetail` where (`gid` = ? or `color` like ?) limit 5 offset 0
+[2017-02-16 22:44:23]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:44:23]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:44:23]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:44:23]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:44:23]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:44:23]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:44:23]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:45:04]select count(*) as aggregate from `gdetail` where (`gid` = ? or `color` like ?)
+[2017-02-16 22:45:04]select * from `gdetail` where (`gid` = ? or `color` like ?) limit 5 offset 0
+[2017-02-16 22:47:42]select count(*) as aggregate from `gdetail` where (`gid` = ? or `color` like ?)
+[2017-02-16 22:47:42]select * from `gdetail` where (`gid` = ? or `color` like ?) limit 5 offset 0
+[2017-02-16 22:47:42]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:49:49]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-16 22:49:49]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-16 22:49:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:49:57]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-16 22:49:57]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-16 22:49:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:49:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:49:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:49:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:50:59]select count(*) as aggregate from `goods`
+[2017-02-16 22:50:59]select * from `goods` limit 5 offset 0
+[2017-02-16 22:51:07]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 22:52:11]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:52:11]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:52:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:11]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:21]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-16 22:52:21]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-16 22:52:28]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-16 22:52:28]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-16 22:52:49]select count(*) as aggregate from `gdetail`
+[2017-02-16 22:52:49]select * from `gdetail` limit 5 offset 0
+[2017-02-16 22:52:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:52:49]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:56:43]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 22:56:43]select * from `type` where `id` = ? limit 1
+[2017-02-16 22:56:43]select * from `type` where `id` = ? limit 1
+[2017-02-16 22:56:43]select * from `type` where `id` = ? limit 1
+[2017-02-16 22:56:43]select * from `type` where `id` = ? limit 1
+[2017-02-16 22:58:02]select count(*) as aggregate from `gparameter`
+[2017-02-16 22:58:02]select * from `gparameter` limit 5 offset 0
+[2017-02-16 22:58:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:58:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 22:58:35]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 22:58:35]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 23:02:54]select * from `links`
+[2017-02-16 23:02:54]select * from `type`
+[2017-02-16 23:02:54]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 23:02:54]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 23:05:52]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:05:52]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:05:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:05:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:05:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:05:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:05:52]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:05]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:06:05]select * from `gdetail` limit 5 offset 5
+[2017-02-16 23:06:05]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:05]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:05]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:05]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:05]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:20]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:06:20]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:06:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:06:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:08:48]select * from `goods`
+[2017-02-16 23:10:47]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:10:47]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:10:47]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:10:47]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:47]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:47]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:47]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:47]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:57]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:10:57]select * from `gdetail` limit 5 offset 5
+[2017-02-16 23:10:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:10:57]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:11:04]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:11:04]select * from `gdetail` limit 5 offset 10
+[2017-02-16 23:11:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:11:33]select count(*) as aggregate from `goods`
+[2017-02-16 23:11:33]select * from `goods` limit 5 offset 0
+[2017-02-16 23:11:52]select count(*) as aggregate from `goods`
+[2017-02-16 23:11:52]select * from `goods` limit 5 offset 5
+[2017-02-16 23:12:25]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 23:13:26]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:13:26]select * from `goods`
+[2017-02-16 23:14:45]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:14:45]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:14:45]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:14:45]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:14:45]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:14:45]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:14:45]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:14:45]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:15:33]select * from `goods`
+[2017-02-16 23:16:18]select count(*) as aggregate from `goods`
+[2017-02-16 23:16:18]select * from `goods` limit 5 offset 0
+[2017-02-16 23:16:29]select count(*) as aggregate from `goods` where (`gname` like ?)
+[2017-02-16 23:16:29]select * from `goods` where (`gname` like ?) limit 5 offset 0
+[2017-02-16 23:16:51]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:16:51]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 23:18:00]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:18:00]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 5
+[2017-02-16 23:18:08]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:18:08]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 23:18:22]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:18:22]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 5
+[2017-02-16 23:18:50]select * from `goods`
+[2017-02-16 23:19:00]insert into `gversion` (`gid`, `version`) values (?, ?)
+[2017-02-16 23:19:00]select count(*) as aggregate from `gversion`
+[2017-02-16 23:19:00]select * from `gversion` limit 5 offset 0
+[2017-02-16 23:19:14]select * from `goods`
+[2017-02-16 23:19:32]insert into `gmemory` (`gid`, `memory`) values (?, ?)
+[2017-02-16 23:19:33]select count(*) as aggregate from `gmemory`
+[2017-02-16 23:19:33]select * from `gmemory` limit 5 offset 0
+[2017-02-16 23:19:41]select * from `goods`
+[2017-02-16 23:19:56]insert into `gsize` (`gid`, `size`) values (?, ?)
+[2017-02-16 23:19:57]select count(*) as aggregate from `gsize`
+[2017-02-16 23:19:57]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:20:02]delete from `gsize` where `id` = ?
+[2017-02-16 23:20:02]select count(*) as aggregate from `gsize`
+[2017-02-16 23:20:02]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:20:16]select * from `goods`
+[2017-02-16 23:20:31]insert into `gsize` (`gid`, `size`) values (?, ?)
+[2017-02-16 23:20:31]select count(*) as aggregate from `gsize`
+[2017-02-16 23:20:31]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:20:47]select * from `goods`
+[2017-02-16 23:21:00]insert into `gsize` (`gid`, `size`) values (?, ?)
+[2017-02-16 23:21:01]select count(*) as aggregate from `gsize`
+[2017-02-16 23:21:01]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:21:15]delete from `gsize` where `id` = ?
+[2017-02-16 23:21:16]select count(*) as aggregate from `gsize`
+[2017-02-16 23:21:16]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:21:26]select * from `goods`
+[2017-02-16 23:21:30]select * from `goods`
+[2017-02-16 23:21:41]insert into `gsize` (`gid`, `size`) values (?, ?)
+[2017-02-16 23:21:41]select count(*) as aggregate from `gsize`
+[2017-02-16 23:21:41]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:22:08]select * from `goods`
+[2017-02-16 23:22:24]insert into `gsize` (`gid`, `size`) values (?, ?)
+[2017-02-16 23:22:24]select count(*) as aggregate from `gsize`
+[2017-02-16 23:22:24]select * from `gsize` limit 5 offset 0
+[2017-02-16 23:22:32]select * from `goods`
+[2017-02-16 23:22:43]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:22:43]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 23:22:57]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:22:57]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 5
+[2017-02-16 23:23:04]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-16 23:23:04]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-16 23:24:32]select * from `links`
+[2017-02-16 23:24:32]select * from `type`
+[2017-02-16 23:24:32]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 23:24:32]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 23:28:19]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-16 23:29:44]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:29:45]select * from `goods`
+[2017-02-16 23:31:02]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:31:02]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:31:02]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:31:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:08]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:31:08]select * from `gdetail` limit 5 offset 10
+[2017-02-16 23:31:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:08]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:15]select * from `goods`
+[2017-02-16 23:31:15]select * from `gdetail` where `id` = ? limit 1
+[2017-02-16 23:31:46]select * from `gdetail` where `id` = ? limit 1
+[2017-02-16 23:31:46]update `gdetail` set `id` = ?, `gid` = ?, `color` = ?, `con` = ? where `id` = ?
+[2017-02-16 23:31:46]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:31:46]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:31:46]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:46]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:46]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:46]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:31:46]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:32:02]select * from `links`
+[2017-02-16 23:32:02]select * from `type`
+[2017-02-16 23:32:02]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 23:32:02]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 23:32:19]select * from `gversion` where `gid` = ?
+[2017-02-16 23:32:19]select * from `gmemory` where `gid` = ?
+[2017-02-16 23:32:19]select * from `gdetail` where `gid` = ?
+[2017-02-16 23:32:19]select * from `gparameter` where `gid` = ?
+[2017-02-16 23:32:19]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 23:32:19]select * from `ggift` where `gid` = ?
+[2017-02-16 23:32:19]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 23:34:50]select * from `links`
+[2017-02-16 23:34:50]select * from `type`
+[2017-02-16 23:34:50]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 23:34:50]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 23:34:55]select * from `gversion` where `gid` = ?
+[2017-02-16 23:34:55]select * from `gmemory` where `gid` = ?
+[2017-02-16 23:34:55]select * from `gdetail` where `gid` = ?
+[2017-02-16 23:34:55]select * from `gparameter` where `gid` = ?
+[2017-02-16 23:34:55]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-16 23:34:55]select * from `ggift` where `gid` = ?
+[2017-02-16 23:34:55]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-16 23:35:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:35:01]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:35:03]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:53]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:54]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:55]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:55]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:56]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:57]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:58]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:58]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:59]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:59]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:36:59]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:01]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:01]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:37:01]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-16 23:39:17]select count(*) as aggregate from `goods`
+[2017-02-16 23:39:17]select * from `goods` limit 5 offset 0
+[2017-02-16 23:39:48]select * from `links`
+[2017-02-16 23:39:48]select * from `type`
+[2017-02-16 23:39:48]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-16 23:39:48]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-16 23:40:54]select * from `goods`
+[2017-02-16 23:49:20]select * from `goods`
+[2017-02-16 23:52:04]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:52:04]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:52:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:04]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:21]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:52:21]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:52:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:21]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:26]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:52:26]select * from `gdetail` limit 5 offset 10
+[2017-02-16 23:52:26]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:26]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:26]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:32]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:52:32]select * from `gdetail` limit 5 offset 5
+[2017-02-16 23:52:32]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:32]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:32]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:32]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:52:32]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:53:05]select count(*) as aggregate from `gparameter`
+[2017-02-16 23:53:05]select * from `gparameter` limit 5 offset 0
+[2017-02-16 23:53:06]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:53:06]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:53:14]select * from `goods`
+[2017-02-16 23:54:02]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-16 23:54:02]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:54:02]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:54:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:02]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:12]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-16 23:54:12]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-16 23:54:12]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:15]select * from `gdetail` where `id` = ? limit 1
+[2017-02-16 23:54:15]delete from `gdetail` where `id` = ?
+[2017-02-16 23:54:15]select count(*) as aggregate from `gdetail`
+[2017-02-16 23:54:15]select * from `gdetail` limit 5 offset 0
+[2017-02-16 23:54:15]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:15]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:15]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:15]select * from `goods` where `id` = ? limit 1
+[2017-02-16 23:54:15]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:02:03]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 00:02:03]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-17 00:04:53]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 00:04:53]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-17 00:04:57]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:04:57]select * from `gdetail` limit 5 offset 0
+[2017-02-17 00:04:57]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:04:57]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:04:57]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:04:57]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:04:57]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:05:03]select * from `goods`
+[2017-02-17 00:12:01]select * from `goods`
+[2017-02-17 00:12:27]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:12:27]select * from `gdetail` limit 5 offset 0
+[2017-02-17 00:12:27]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:27]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:27]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:27]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:27]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:51]select count(*) as aggregate from `gdetail` where (`color` like ?)
+[2017-02-17 00:12:51]select * from `gdetail` where (`color` like ?) limit 5 offset 0
+[2017-02-17 00:12:51]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:51]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:13:03]select count(*) as aggregate from `goods`
+[2017-02-17 00:13:03]select * from `goods` limit 5 offset 0
+[2017-02-17 00:13:08]select * from `goods` where `goods`.`id` = ? limit 1
+[2017-02-17 00:13:09]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 00:14:39]select * from `goods` where `goods`.`id` = ? limit 1
+[2017-02-17 00:14:39]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 00:15:01]select count(*) as aggregate from `goods`
+[2017-02-17 00:15:01]select * from `goods` limit 5 offset 0
+[2017-02-17 00:15:04]select count(*) as aggregate from `goods`
+[2017-02-17 00:15:04]select * from `goods` limit 5 offset 5
+[2017-02-17 00:15:19]select count(*) as aggregate from `goods`
+[2017-02-17 00:15:19]select * from `goods` limit 5 offset 0
+[2017-02-17 00:16:08]select * from `goods` where `goods`.`id` = ? limit 1
+[2017-02-17 00:16:08]delete from `goods` where `id` = ?
+[2017-02-17 00:16:09]select count(*) as aggregate from `goods`
+[2017-02-17 00:16:09]select * from `goods` limit 5 offset 0
+[2017-02-17 00:16:17]select count(*) as aggregate from `goods`
+[2017-02-17 00:16:17]select * from `goods` limit 5 offset 0
+[2017-02-17 00:16:54]select count(*) as aggregate from `goods`
+[2017-02-17 00:16:54]select * from `goods` limit 5 offset 0
+[2017-02-17 00:16:59]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 00:17:56]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 00:17:56]select * from `goods`
+[2017-02-17 00:19:12]select count(*) as aggregate from `goods`
+[2017-02-17 00:19:12]select * from `goods` limit 5 offset 0
+[2017-02-17 00:19:20]select count(*) as aggregate from `goods`
+[2017-02-17 00:19:20]select * from `goods` limit 5 offset 5
+[2017-02-17 00:19:23]select * from `goods` where `goods`.`id` = ? limit 1
+[2017-02-17 00:19:23]delete from `goods` where `id` = ?
+[2017-02-17 00:19:24]select count(*) as aggregate from `goods`
+[2017-02-17 00:19:24]select * from `goods` limit 5 offset 0
+[2017-02-17 00:19:28]select count(*) as aggregate from `goods`
+[2017-02-17 00:19:28]select * from `goods` limit 5 offset 5
+[2017-02-17 00:24:16]select * from `links`
+[2017-02-17 00:24:16]select * from `type`
+[2017-02-17 00:24:16]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 00:24:16]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:26:02]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 00:27:05]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 00:27:05]select * from `goods`
+[2017-02-17 00:27:59]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`) values (?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 00:27:59]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:27:59]select * from `gdetail` limit 5 offset 0
+[2017-02-17 00:27:59]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:27:59]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:27:59]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:27:59]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:27:59]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:28:06]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:28:06]select * from `gdetail` limit 5 offset 10
+[2017-02-17 00:28:06]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:28:06]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:28:06]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:28:06]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:30:08]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 00:31:46]insert into `goods` (`id`, `tid`, `gname`, `pic`, `price`, `desc`, `store`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 00:31:46]select * from `goods`
+[2017-02-17 00:33:02]insert into `gdetail` (`gid`, `color`, `con`, `pic7`, `pic1`, `pic2`, `pic3`, `pic4`) values (?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 00:33:03]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:33:03]select * from `gdetail` limit 5 offset 0
+[2017-02-17 00:33:03]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:33:03]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:33:03]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:33:03]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:33:03]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:33:19]select * from `links`
+[2017-02-17 00:33:19]select * from `type`
+[2017-02-17 00:33:19]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 00:33:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:33:33]select * from `gversion` where `gid` = ?
+[2017-02-17 00:33:33]select * from `gmemory` where `gid` = ?
+[2017-02-17 00:33:33]select * from `gdetail` where `gid` = ?
+[2017-02-17 00:33:33]select * from `gparameter` where `gid` = ?
+[2017-02-17 00:33:33]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 00:33:33]select * from `ggift` where `gid` = ?
+[2017-02-17 00:33:33]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 00:36:54]select * from `links`
+[2017-02-17 00:36:54]select * from `type`
+[2017-02-17 00:36:54]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 00:36:54]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:36:58]select * from `links`
+[2017-02-17 00:36:58]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:36:59]select * from `district` where `upid` = ?
+[2017-02-17 00:36:59]select * from `district` where `upid` = ?
+[2017-02-17 00:37:14]select * from `links`
+[2017-02-17 00:37:14]select * from `lunbo` where `status` = ?
+[2017-02-17 00:37:14]select * from `guanggao` where `status` = ?
+[2017-02-17 00:37:15]select count(*) as aggregate from `shop` where `uid` is null
+>>>>>>> 02-15
