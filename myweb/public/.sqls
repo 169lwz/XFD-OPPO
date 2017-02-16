@@ -3188,3 +3188,6 @@
 [2017-02-17 00:49:01]select * from `links`
 [2017-02-17 00:49:01]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
 [2017-02-17 00:49:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:57:03]select * from `links`
+[2017-02-17 00:57:03]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-17 00:57:03]select count(*) as aggregate from `shop` where `uid` is null
