@@ -3177,3 +3177,14 @@
 [2017-02-15 19:54:25]select * from `gdetail` where `gid` = ? and `color` = ?
 [2017-02-15 19:54:25]select * from `ggift` where `gid` = ?
 [2017-02-15 19:54:25]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 00:46:26]select * from `links`
+[2017-02-17 00:46:26]select * from `lunbo` where `status` = ?
+[2017-02-17 00:46:26]select * from `guanggao` where `status` = ?
+[2017-02-17 00:46:26]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:48:57]select * from `links`
+[2017-02-17 00:48:57]select * from `lunbo` where `status` = ?
+[2017-02-17 00:48:57]select * from `guanggao` where `status` = ?
+[2017-02-17 00:48:57]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:49:01]select * from `links`
+[2017-02-17 00:49:01]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-17 00:49:01]select count(*) as aggregate from `shop` where `uid` is null
