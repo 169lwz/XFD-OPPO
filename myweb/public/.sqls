@@ -4929,3 +4929,11 @@
 [2017-02-17 01:03:31]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
 [2017-02-17 01:03:33]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
 [2017-02-17 01:03:34]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:06:52]select * from `links`
+[2017-02-17 01:06:52]select * from `lunbo` where `status` = ?
+[2017-02-17 01:06:52]select * from `guanggao` where `status` = ?
+[2017-02-17 01:06:52]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:06:55]select * from `links`
+[2017-02-17 01:06:55]select * from `type`
+[2017-02-17 01:06:55]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 01:06:55]select count(*) as aggregate from `shop` where `uid` is null

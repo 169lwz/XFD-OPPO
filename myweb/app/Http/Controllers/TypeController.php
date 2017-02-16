@@ -140,20 +140,15 @@ class TypeController extends Controller
 	//获取分类中的所有数据
 	public static function getAlltypes(){
          $type = DB::table('type')->get();
-            return $type;
-           
+            return $type;        
 	}
 	public static function getAlldata(){
 		$data = DB::table('goods')
 			  ->join('gdetail','gdetail.gid','=','goods.id')
 			  ->select('goods.id as spid','goods.price','goods.tid','gdetail.color','gdetail.pic7','gdetail.con')
 			  ->get();
-
 			  return $data;
 	} 
-
-	
-
 	// 嵌套数组样式模式
 	public static function getTypesInfo($types,$res){
 		// $data=[];
@@ -166,10 +161,6 @@ class TypeController extends Controller
 
 			}
 
-			// if($v['id']==$pid){
-			// 	$v['sub']=self::getTypesInfo($types,$v['id']);// 递归
-			// 	$data[]=$v;
-			// }
 		}
 		
 		return $types;
