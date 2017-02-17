@@ -6357,3 +6357,8 @@
 [2017-02-17 09:00:45]select count(*) as aggregate from `goods`
 [2017-02-17 09:00:45]select * from `goods` limit 5 offset 0
 >>>>>>> 02-17
+[2017-02-17 09:35:14]select * from `links`
+[2017-02-17 09:35:14]select * from `type`
+[2017-02-17 09:35:14]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 09:35:14]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 09:35:16]select * from `links`
