@@ -7617,3 +7617,68 @@
 [2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:24:02]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:24:02]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:24:07]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-17 11:24:15]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:24:15]select * from `user` where `username` = ? limit 1
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:24:16]select * from `links`
+[2017-02-17 11:24:16]select * from `lunbo` where `status` = ?
+[2017-02-17 11:24:16]select * from `guanggao` where `status` = ?
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:16]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:24:16]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:24:30]select * from `links`
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:24:30]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:30]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 11:24:39]update `orders` set `status` = ? where `uid` = ? and `order_num` = ?
+[2017-02-17 11:24:39]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:24:39]select * from `links`
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:39]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:24:39]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:40]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 11:24:42]select `yanse` from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-17 11:24:42]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `order_num` = ? and `orders`.`uid` = ?
+[2017-02-17 11:24:42]select * from `ggift`
+[2017-02-17 11:24:42]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-17 11:24:42]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-17 11:24:42]select * from `links`
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:42]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:24:42]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:42]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:24:51]select * from `links`
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:24:51]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:24:51]select order_num,count(*) as count from orders where uid=46 group by order_num
