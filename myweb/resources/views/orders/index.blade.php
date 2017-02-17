@@ -9,7 +9,7 @@
 	<div class="mws-panel-body no-padding">
 	    <div role="grid" class="dataTables_wrapper" id="DataTables_Table_1_wrapper">
 
-	   App\Http\Controllers\
+	  
 	    	<div id="DataTables_Table_1_length" class="dataTables_length">
 	    		<label>Show 
 	    			<select name="num" size="1" aria-controls="DataTables_Table_1">
@@ -122,13 +122,15 @@
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		var page=parseInt($(this).attr('info'));
+		// console.log(page);
 		if(page>=$('#mo').attr('info')){
 				page=$('#mo').attr('info');
+				myajax(num,page,key);
+				// return false;
 			}else{
 				page=page+1;
 				myajax(num,page,key);
-			}
-		
+			}	
 	});
 
 	$('select:eq(0)').change(function(){

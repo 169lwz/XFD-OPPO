@@ -81,7 +81,7 @@
 	myajax(5,1);
 	
 	$('#shou').click(function(){
-		$('#ye)').empty();
+		$('#ye').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		myajax(num,1,key);

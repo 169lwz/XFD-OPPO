@@ -101,8 +101,6 @@ Route::group(['middleware'=>'login'],function(){ //前台路由组
 
 Route::group(['middleware'=>'wzpz'],function(){
 	Route::controller('/home/login','LoginController'); //前台登录模块
-
-
 	Route::controller('/home','HomeController'); //前台商城主页
 
 });

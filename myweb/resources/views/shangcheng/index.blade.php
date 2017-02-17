@@ -4,7 +4,8 @@
       <div class='full-carousel slick-dot-circle'>
         <div class='hero slick-slide'>
           <div class='hero-image center'>
-            <a  href='http://www.opposhop.cn/products/406.html' target='_blank' title=''>
+            <!-- <a  href='http://www.opposhop.cn/products/406.html' target='_blank' title=''> -->
+            <img src="/lunbo/14869557372020.jpg" alt="">
               <picture>    
                 <source media='(min-width: 990px)' srcset='http://static.oppo.com/archives/201701/201701120601405877547ca34b1.jpg' />
                 <source media='(min-width: 750px)' srcset='http://static.oppo.com/archives/201701/20170112060144587754804ee3f.jpg' />
@@ -56,7 +57,7 @@
      
       <section class='brick-s grid-one store-portable-hidden'>
           <div class="wrapper">
-            <img src="images/services.png" alt="">
+            <img src="/qiantai/images/201701120501255877534135d1f.jpg" alt="">
           </div>
       </section>
     </main>

@@ -40,8 +40,8 @@
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">网站名称</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">联系电话</th>
 		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">版权信息</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">网站介绍</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 128px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width:10px;" aria-label="CSS grade: activate to sort column ascending">网站介绍</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 188px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
 		            </tr>
 		        </thead>
 
@@ -244,7 +244,7 @@
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
 					
-				a= $('<tr class="odd" align="center"><td><img src="'+$(this).attr('ico')+'" width="50px"></td><input type="hidden" name="id" value="'+$(this).attr('id')+'"><td>'+$(this).attr('keyword')+'</td><td><img src="'+$(this).attr('pic')+'" width="50px"></td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('phone')+'</td><td>'+$(this).attr('con')+'</td><td>'+$(this).attr('desc')+'</td><td><a href="/wzpz/delete/'+$(this).attr('id')+'" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="/wzpz/edit/'+$(this).attr('id')+'" class="icol32-cog-edit"></a><input type="radio" name="xz" value="'+$(this).attr('auto')+'"></td></tr>');
+				a= $('<tr class="odd" align="center"><td><img src="'+$(this).attr('ico')+'" width="50px"></td><input type="hidden" name="id" value="'+$(this).attr('id')+'"><td>'+$(this).attr('keyword')+'</td><td><img src="'+$(this).attr('pic')+'" width="50px"></td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('phone')+'</td><td>'+$(this).attr('con')+'</td><td>'+$(this).attr('desc')+'</td><td><a href="/wzpz/delete/'+$(this).attr('id')+'" class="icol32-bin"></a>&nbsp;<a href="/wzpz/edit/'+$(this).attr('id')+'" class="icol32-cog-edit"></a>&nbsp;<input type="radio" name="xz" value="'+$(this).attr('auto')+'"></td></tr>');
 					var c=$(a).find('input[name="xz"]');
 					if(c.val()=='1'){
 						c.attr('checked',true);
@@ -268,7 +268,7 @@
 			dataType:'text',
 			success:function(mes){
 				if(mes=='yes'){
-					
+					alert('更改配置成功');
 				}
 			}
 		});

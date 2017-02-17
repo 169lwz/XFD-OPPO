@@ -55,17 +55,7 @@
               <input type="text" name="con" value="{{$list['con']}}">
             </div>
           </div>
-
-          <div class="mws-form-row">
-            <label class="mws-form-label">网站状态 </label>
-            <div class="mws-form-item">
-              <select name="status" id="">
-
-                <option value="0" @if($list['status']==0) selected @endif>开启</option>
-                <option value="1" @if($list['status']==1) selected @endif>关闭</option>
-              </select>
-            </div>
-          </div>                        
+                       
             <input type="hidden" name="id" value="{{$list['id']}}">
           <div class="mws-form-row">
             <label class="mws-form-label">关键字 </label>

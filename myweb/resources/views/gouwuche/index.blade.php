@@ -119,7 +119,7 @@
     </div>
     <div class="form-actions brick-shadow">
       <div class="form-actions-left">
-        <a target="_blank" href="http://www.opposhop.cn" class="link-primary">继续购买&gt;&gt;</a>
+        <a target="_blank" href="/home/shangcheng" class="link-primary">继续购买&gt;&gt;</a>
       </div>
 
       <div class="form-actions-right">

@@ -437,7 +437,7 @@
             var div=$('#siyou:eq(0)').clone().attr({'info':'cha','style':'display:none'});
             div.find('p').find('span').html($(this).attr('gname')).css('color','black');
             div.find('p').find('span').next('span').html('x '+$(this).attr('num')).css('color','#008b56');
-            div.find('img').attr('src',$(this).attr('yanse1'));
+            div.find('img').attr('src',$(this).attr('pic'));
             div.find('.desc').html($(this).attr('yanse')+'&nbsp;&nbsp;'+$(this).attr('desc'))
             var aa=$(this).attr('zp1');
              // console.log(aa);

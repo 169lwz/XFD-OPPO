@@ -22,18 +22,17 @@ class OrdersController extends Controller
         $key = $request->input('key');
     	$num = $request->input('num');   //每页 显示的最大条数
     	$page = ($request->input('page')-1)*$num; //显示的起始位置
-    	$data = DB::table('orders')->join('address','address.id','=','orders.address_id')->join('goods','goods.id','=','orders.goodsid')->join('user','user.id','=','orders.uid')->select('orders.*','goods.gname','address.name','address.phone','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi','user.username')->skip($page)->take($num)->where('recycle1',0)->where('order_num','like','%'.$key.'%')->orderBy('orders.addtime','desc')->groupBy('order_num')->groupBy('uid')->get();
-        // $count = DB::table('orders')->where('order_num','like','%'.$key.'%')->count();
-        $count=count($data);
+    	$data = DB::table('orders')->join('address','address.id','=','orders.address_id')->join('goods','goods.id','=','orders.goodsid')->join('user','user.id','=','orders.uid')->select('orders.*','goods.gname','address.name','address.phone','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi','user.username')->skip($page)->take($num)->where('recycle1',0)->where('order_num','like','%'.$key.'%')->orderBy('orders.addtime','desc')->groupBy('order_num')->get();
+        $aa =DB::table('orders')->join('address','address.id','=','orders.address_id')->join('goods','goods.id','=','orders.goodsid')->join('user','user.id','=','orders.uid')->select('orders.*','goods.gname','address.name','address.phone','address.sheng1','address.shi1','address.xian1','address.jiedao1','address.xiangxi','user.username')->where('recycle1',0)->where('order_num','like','%'.$key.'%')->orderBy('orders.addtime','desc')->groupBy('order_num')->get();
+        $count=count($aa);
         $maxpage= ceil($count/$num);
-        // dd($data);
         foreach($data as $k=>$v){
             $time=date("Y-m-d H:i:s",$v['addtime']);
             $data[$k]['addtime']=$time;
         }
         $data[count($data)]=$maxpage;
 
-        // dd($data);
+        // dd($count);
     	echo json_encode($data);
     }
 
