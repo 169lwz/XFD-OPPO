@@ -35,7 +35,8 @@ class DetailController extends Controller
 	    */
 		public function getIndexq($id,$color){
 
-			// dd($id);
+			$res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        	$links = $res->getLinksarr();
 			
 			// dd($id,$color);
 			// $goodsdata = DB::table('goods')->where('id',$id)->first();						
@@ -61,7 +62,8 @@ class DetailController extends Controller
 				'color'=>$gcolor,
 				'memory'=>$gmemory,
 				'version'=>$gversion,
-				'gift'=>$ggift
+				'gift'=>$ggift,
+				'links'=>$links
 				
 				]);
 		}
