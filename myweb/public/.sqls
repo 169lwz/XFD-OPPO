@@ -6446,3 +6446,133 @@
 [2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 10:16:20]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:22:15]select * from `links`
+[2017-02-17 10:22:15]select * from `type`
+[2017-02-17 10:22:15]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:15]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:15]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:22:16]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:29:28]select * from `links`
+[2017-02-17 10:29:28]select * from `gversion` where `gid` = ?
+[2017-02-17 10:29:28]select * from `gmemory` where `gid` = ?
+[2017-02-17 10:29:28]select * from `gdetail` where `gid` = ?
+[2017-02-17 10:29:28]select * from `gparameter` where `gid` = ?
+[2017-02-17 10:29:28]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 10:29:28]select * from `ggift` where `gid` = ?
+[2017-02-17 10:29:28]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 10:29:28]select * from `links`
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:29:28]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:29:28]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:40:45]select * from `links`
+[2017-02-17 10:40:45]select * from `type`
+[2017-02-17 10:40:45]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:45]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:46]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:40:53]select * from `links`
+[2017-02-17 10:40:53]select * from `gversion` where `gid` = ?
+[2017-02-17 10:40:53]select * from `gmemory` where `gid` = ?
+[2017-02-17 10:40:53]select * from `gdetail` where `gid` = ?
+[2017-02-17 10:40:53]select * from `gparameter` where `gid` = ?
+[2017-02-17 10:40:53]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 10:40:53]select * from `ggift` where `gid` = ?
+[2017-02-17 10:40:53]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 10:40:53]select * from `links`
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:40:57]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:40:58]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:41:30]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 10:41:33]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 10:41:38]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:41:43]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:41:44]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:41:44]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:41:45]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:43:20]select * from `links`
+[2017-02-17 10:43:20]select * from `gversion` where `gid` = ?
+[2017-02-17 10:43:20]select * from `gmemory` where `gid` = ?
+[2017-02-17 10:43:20]select * from `gdetail` where `gid` = ?
+[2017-02-17 10:43:20]select * from `gparameter` where `gid` = ?
+[2017-02-17 10:43:20]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 10:43:20]select * from `ggift` where `gid` = ?
+[2017-02-17 10:43:20]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 10:43:20]select * from `links`
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:20]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:20]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:24]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:43:41]select * from `links`
+[2017-02-17 10:43:41]select * from `gversion` where `gid` = ?
+[2017-02-17 10:43:41]select * from `gmemory` where `gid` = ?
+[2017-02-17 10:43:41]select * from `gdetail` where `gid` = ?
+[2017-02-17 10:43:41]select * from `gparameter` where `gid` = ?
+[2017-02-17 10:43:41]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 10:43:41]select * from `ggift` where `gid` = ?
+[2017-02-17 10:43:41]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 10:43:41]select * from `links`
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:41]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:43:48]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:43:50]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:43:51]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:43:52]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:44:10]select * from `links`
+[2017-02-17 10:44:10]select * from `gversion` where `gid` = ?
+[2017-02-17 10:44:10]select * from `gmemory` where `gid` = ?
+[2017-02-17 10:44:10]select * from `gdetail` where `gid` = ?
+[2017-02-17 10:44:10]select * from `gparameter` where `gid` = ?
+[2017-02-17 10:44:10]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 10:44:10]select * from `ggift` where `gid` = ?
+[2017-02-17 10:44:10]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 10:44:10]select * from `links`
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:10]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:44:59]select * from `goods`
+[2017-02-17 10:45:11]insert into `gversion` (`gid`, `version`) values (?, ?)
+[2017-02-17 10:45:11]select count(*) as aggregate from `gversion`
+[2017-02-17 10:45:11]select * from `gversion` limit 5 offset 0
+[2017-02-17 10:45:33]select * from `goods`
+[2017-02-17 10:46:40]insert into `gmemory` (`gid`, `memory`) values (?, ?)
+[2017-02-17 10:46:41]select count(*) as aggregate from `gmemory`
+[2017-02-17 10:46:41]select * from `gmemory` limit 5 offset 0
+[2017-02-17 10:47:14]select * from `goods`
+[2017-02-17 10:47:14]select * from `gmemory` where `id` = ? limit 1
+[2017-02-17 10:47:28]select count(*) as aggregate from `goods`
+[2017-02-17 10:47:28]select * from `goods` limit 5 offset 0
