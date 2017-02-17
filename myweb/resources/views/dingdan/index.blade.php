@@ -78,7 +78,7 @@
       <div class="order-list">
         <div class="order-item order-product desk-text-align-center">
           <a target="_blank" href="http://www.opposhop.cn/products/380">
-            <img src="{{$v['pic']}}" alt="" class="order-product-thumbnail">
+            <img src="{{$v['pic7']}}" alt="" class="order-product-thumbnail">
           </a>
           <div class="row">
             <a target="_blank" href="http://www.opposhop.cn/products/380">{{$v['gname']}}</a>
@@ -102,7 +102,7 @@
         <div class="order-item order-primary desk-text-align-center" info="look">
           <div class="row">订单状态：<span>@if($v['status']==1)新订单@elseif($v['status']==2)已发货@elseif($v['status']==3)已收货@elseif($v['status']==4)未支付@elseif($v['status']==5)已取消@endif</span> 
           </div>
-          <div class="row" style="display:none"><a  class="button button-s but">立即支付</a></div>
+          <div class="row" style="display:none"><a href="" class="button button-s but">立即支付</a></div>
           <div class="row"><a href="" class="button button-s">查看详情</a></div>
           
           @if($v['status']==4) <div class="row" style="display:none"><a  class="box-link">取消订单</a></div> @endif
@@ -114,7 +114,33 @@
       </div>
     </div>
 
-@endforeach    
+@endforeach  
+
+  <div id='dialog-confirm' style="display:none">
+    <div class="mask-common"></div>
+      <div class="dialog-common dialog-box-common">
+        <div class="dialog-container">
+          <!-- <a class="dialog-close-common">×</a> -->
+          <div class="dialog-content-common">
+            <div class="field">
+              <h4 class='dialog-title-common'>您确定取消订单吗？</h4>
+            </div>
+            <div class="dialog-common-content">
+            </div>
+            <div class="field dialog-btn">
+              <div class="g g-wrapper-s">
+                <div class="gi lap-one-half">
+                  <a class='button button-one'>确定</a>
+                </div>
+                <div class="gi lap-one-half">
+                  <a class='button-light button-two'>取消</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
 {{csrf_field()}}
 
 <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
@@ -173,22 +199,34 @@
 
   
  s1.click(function(){
+    $('#dialog-confirm').css('display','block');
     var ddh=$(this).parents('.order-list').prev('ul').prev('div').find('div').find('strong').find('a').html();//订单号
+    console.log(ddh);
+    var qq=$(this).parent().prev('div').prev('div').prev('div').find('span');
+    var qq1=$(this).parent();
+    var qq2=$(this).parent().prev('div').prev('div');
+    $('.button-one').click(function(){
 
-      $(this).parent().prev('div').prev('div').prev('div').find('span').html('已取消');
-      $(this).parent().attr('style','display:none');
-      $(this).parent().prev('div').prev('div').attr('style','display:none');
-
-    $.ajax({
-      url:'/dingdan/edit',
-      type:'post',
-      data:{'_token':token,'order_num':ddh},
-      success:function(mes){
-        if(mes=='yes'){ 
+      $.ajax({
+        url:'/dingdan/edit',
+        type:'post',
+        data:{'_token':token,'order_num':ddh},
+        success:function(mes){
+          if(mes=='yes'){ 
+            
+            qq.html('已取消');
+            qq1.attr('style','display:none');
+            qq2.attr('style','display:none');
+            $('#dialog-confirm').css('display','none');
+          }
         }
-      }
-    });
- })
+      });     
+    });   
+ });
+
+$('.button-two').click(function(){
+  $('#dialog-confirm').css('display','none');
+});
  
   s2.click(function(){
     var ddh1=$(this).parents('.order-list').prev('ul').prev('div').find('div').find('strong').find('a').html();//订单号    
@@ -199,18 +237,28 @@
   
   $('.but').click(function(){
     var a1=$(this).parents('.order-list').parent().find('div').find('div').find('strong').find('a').html();//相对应的订单号
-    $.ajax({
-      url:'/dingdan/edit1', //修改订单状态
-      type:'post',
-      data:{'_token':token,'order_num':a1},
-      dataType:'text',
-      success:function(mes){
-        if(mes=='yes'){
-          alert('支付成功');
-          location.href='/dingdan/index';         
+    var result = prompt("请输入你的支付密码：", "");
+      if(result == 'yes') {  
+       alert('支付成功');
+       var coco=$('#order_num').html();
+      // console.log(coco);
+       // 要该状态的订单 订单号
+      $.ajax({
+        url:'/dingdan/edit1', //修改订单状态
+        type:'post',
+        data:{'_token':token,'order_num':a1},
+        dataType:'text',
+        success:function(mes){
+          if(mes=='yes'){
+            location.href='/dingdan/index';         
+          }
         }
+      });
+      return false;
+      } else {
+       alert("你未输入值或者输入错误");
       }
-    });    
+    
   });
 </script>
 
@@ -220,29 +268,6 @@
 </div>
 
   </main>
-  <div id='dialog-confirm' class='hidden'>
-      <div class="mask-common"></div>
-      <div class="dialog-common dialog-box-common">
-        <div class="dialog-container">
-          <a class="dialog-close-common">×</a>
-          <div class="dialog-content-common">
-                        <div class="field">
-              <h4 class='dialog-title-common'>您确定取消订单吗？</h4>
-            </div>
-                                    <div class="dialog-common-content">
-                        </div>
-                        <div class="field dialog-btn">
-              <div class="g g-wrapper-s">
-                                <div class="gi lap-one-half">
-                  <a class='button button-one'>确定</a>
-                </div>
-                                                <div class="gi lap-one-half">
-                  <a class='button-light button-two'>取消</a>
-                </div>
-                              </div>
-            </div>
-                                  </div>
-        </div>
-      </div>
-    </div>
+
+
 @endsection

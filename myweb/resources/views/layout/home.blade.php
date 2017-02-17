@@ -8,8 +8,9 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
     <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
-    <title>『OPPO官方商城』OPPO最新款智能手机在线购买_OPPO最新款智能手机快捷支付-OPPO智能手机官网 </title>
-    <meta name="keywords" content="OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付 " />
+    <title>{{\App\Http\Controllers\WzpzController::config()['name']}} </title>
+    <link href="{{\App\Http\Controllers\WzpzController::config()['ico']}}" rel="icon"></link>
+    <meta name="keywords" content="{{\App\Http\Controllers\WzpzController::config()['keyword']}} " />
     <meta name="description" content="OPPO官网商城首页为您提供OPPO最新款智能手机在线订购,OPPO最新款智能手机在线购买,OPPO最新款智能手机快捷支付等信息,多种OPPO智能手机任您选择与订购,智能手机网上购买尽在OPPO官网。 " />
     <link media="all" type="text/css" rel="stylesheet" href="/qiantai/css/styles.css?v=20161221100627">
     <script type="text/javascript">
@@ -177,7 +178,7 @@
       </div>      
       <div class='logo logo-extend'>
         <a href='http://www.oppo.com/cn/'>
-          <img src="/qiantai/images/logo.png" alt="">
+          <img src="{{\App\Http\Controllers\WzpzController::config()['pic']}}" width="50px" alt="">
         </a>
 
       </div>
@@ -341,7 +342,7 @@
           <img src="/qiantai/images/qrcode-fwc.jpg" class="wx-float" alt="">
         </a>
       </div>
-      <p class='copy'>© 2005 - 2017 东莞市永盛通信科技有限公司 版权所有 粤ICP备14056724号-2 联系方式：4001-666-888</p>
+      <p class='copy'>© 2005 - 2017 {{\App\Http\Controllers\WzpzController::config()['con']}} 版权所有 粤ICP备14056724号-2 联系方式：{{\App\Http\Controllers\WzpzController::config()['phone']}}</p>
       <a href="http://wljg.gdgs.gov.cn/corpsrch.aspx?key=441900000436441" target="_blank" title="企业名称：广东欧珀电子工业有限公司
 法定代表人：金乐亲
 标识状态：已激活 粤工商备E191512001248

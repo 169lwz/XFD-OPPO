@@ -1,5 +1,13 @@
 @extends('layout.home')
 @section('con')
+
+<style type="text/css">
+  .fontds{
+    color:#1f8657;
+    width:100px;
+  }
+
+</style>
      <main class="main-content user">
     <div class="wrapper">
       <ul class="breadcrumb">
@@ -47,10 +55,10 @@
     </div>
     <div class="gi one-whole lap-width-auto">
       <div id="zhifu" class="gi pull-left" style="display:none">
-        <a class="button button-s" href="http://www.opposhop.cn/orders/170212025045677/payments">立即支付</a>
+        <!-- <a class="button button-s" href="http://www.opposhop.cn/orders/170212025045677/payments">立即支付</a> -->
       </div>
       <div id="quxiao" class="gi pull-left" style="display:none">
-        <a class="box-link" href='javascript:%20vm.cancel("170212025045677");'>取消订单</a>
+        <!-- <a class="box-link" href='javascript:%20vm.cancel("170212025045677");'>取消订单</a>/ -->
       </div>
     </div>
   </div>
@@ -98,8 +106,17 @@
           <div class="goods-list-description">
             <h4 class="heading">
               <a href="http://www.opposhop.cn/products/323" target="_blank">{{$v['gname']}}</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>{{$v['yanse']}}</span>
             </h4>
             <p>{{$v['desc']}}</p>
+            <br>
+            @if(isset($v['zp1']))
+            赠品 : 
+            @foreach($v['zp1'] as $v1)
+            <span class="fontds">{{$v1['gift']}}&nbsp;&nbsp; <img src="{{$v1['picture2']}}" width="90px" height="120px"> </span>
+            @endforeach
+            @endif
           </div>
           <div class="goods-list-quantity"><strong>×{{$v['num']}}</strong></div>
           <div class="goods-list-price"><strong>￥{{$v['price']}}.00</strong></div>
@@ -111,13 +128,6 @@
 
 
 </div>
-
-
-
-
-
-
-
 
 
   <div class="total-price slab-extra-light gi one-whole desk-one-third">

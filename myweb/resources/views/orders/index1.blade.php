@@ -1,6 +1,6 @@
 @extends('layout.adminindex')
 @section('con')
-<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+
 
 <div class="mws-panel grid_8">
 	<div class="mws-panel-header">
@@ -53,22 +53,26 @@
 <div id="big1" style="display:none">
 
 	<div id="small1">
-		<table id="text-color" border="1" width="800px">
-			<tr><th colspan="10">订单详情</th></tr>
+		<table id="text-color" border="1" width="900px">
+			<tr><th colspan="6">订单详情</th></tr>
 			<tr >
 				<th>商品名称</th>
+				<th width="300px">商品描述</th>
 				<th>购买数量</th>
 				<th>单价</th>
+				<th>图例</th>
 				<th>小计</th>
 			</tr>
 			<tr id="lll">
-				<th colspan="10" id="zz" >
-					<div id="zz">
-						<p id="sjr">收件人 : </p><p id="sjr1">165</p>
-						<p id="dh">电话 : </p><p id="dh1">444</p>
-						<p id="dz">地址 : </p><p id="dz1">55</p>				
-						<p id="zj">应付金额 : </p><p id="zj1">55</p>
-						<button id="quxiao">取消</button>				
+				<th colspan="6" id="zz" >
+					<div id="ww">
+						<p id="z1">收&nbsp;&nbsp;件&nbsp;&nbsp;人 :&nbsp;&nbsp;&nbsp;&nbsp;<span>fds</span></p> 
+						<p id="z2">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话 : &nbsp;&nbsp;&nbsp;&nbsp;<span>sss</span></p>	
+						<p id="z3">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 :&nbsp;&nbsp;&nbsp;&nbsp;<span>csdfs</span></p>	
+						<p id="z4">应付金额 :&nbsp;&nbsp;&nbsp;&nbsp;<span>xxxx</span></p>	
+						<p id="zeng"></p>
+						<p id="zeng1">赠品 :</p>
+						<button id="quxiao1">取消</button>
 					</div>
 
 				</th>
@@ -82,11 +86,12 @@
 	</div>
 </div>
 {{csrf_field()}}
+<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
 	myajax(5,1);
 	
 	$('#shou').click(function(){
-		$('#ye)').empty();
+		$('#ye').empty();
 		var key=$('#search').val();
 		var num=$('select:eq(0)').val();
 		myajax(num,1,key);
@@ -121,8 +126,9 @@
 				page=$('#mo').attr('info');
 			}else{
 				page=page+1;
+				myajax(num,page,key);
 			}
-		myajax(num,page,key);
+		
 	});
 
 	$('select:eq(0)').change(function(){
@@ -151,41 +157,42 @@
 		myajax(num,1,key);
 	});
 //====================删除操作===================================
-	$('.icol32-bin').live('click',function(){
-		var id=$(this).parent().parent().find('td:eq(2)').html(); //订单号
-		var uid=$(this).parent().parent().find('input').val();    //用户ID
-		var _token=$('input[name="_token"]').val();
-		var num=$('select:eq(0)').val();
-		var page=$('#ye').val();
-		var key=$('#search').val();
-		$.ajax({
-			url:'/orders/del1',
-			type:'post',
-			data:{'id':id,'uid':uid,'_token':_token},
-			dataType:'text',
-			success:function(mes){
-				if(mes=='yes'){
-					$('#del').css('display','block');
+	// $('.icol32-bin').live('click',function(){
+	// 	var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
+	// 	var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
+	// 	var _token=$('input[name="_token"]').val();
+	// 	var num=$('select:eq(0)').val();
+	// 	var page=$('#ye').val();
+	// 	var key=$('#search').val();
+	// 	$.ajax({
+	// 		url:'/orders/del',
+	// 		type:'post',
+	// 		data:{'id':id,'_token':_token,'uid':uid},
+	// 		dataType:'text',
+	// 		success:function(mes){
+	// 			if(mes=='yes'){
+	// 				$('#del').css('display','block');
 
-					setTimeout(function(){
-						$('#del').css('display','none');
-					},1000);
-					$('#ye').empty();
-					myajax(num,page,key);
-				}else{
+	// 				setTimeout(function(){
+	// 					$('#del').css('display','none');
+	// 				},1000);
+	// 				$('#ye').empty();
+	// 				myajax(num,page,key);
+	// 			}else{
 
-				}
-			}
-		});
+	// 			}
+	// 		}
+	// 	});
 
-	});
+	// });
 //====================修改操作====================================
 
 	$('.edit0').live('change',function(){
 		var dz=$(this).val();
-		var id=$(this).parent().parent().find('td:eq(2)').html();
-		var uid=$(this).parent().parent().find('input').val();
-		// console.log(uid);
+		var id=$(this).parent().prev().prev('td').html(); //订单号
+		var uid=$(this).parent().parent().find('input').val(); //用户id
+		console.log(uid);
+		console.log(id);
 		// return false;
 		var _token=$('input[name="_token"]').val();
 		$.ajax({
@@ -214,8 +221,9 @@
 		$('#big1').css('display','block');
 		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
 		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
-		// console.log(id);
+		// console.log($(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td'));
 		// return false;
+		// console.log($(this).parent().parent().find('td:eq(0)'));
 		var _token=$('input[name="_token"]').val();
 		var dd=$('#lll');
 		$.ajax({
@@ -225,13 +233,18 @@
 		dataType:'json',
 		success:function(mes){
 			$(mes).each(function(){
-				$('#zj1').html($(this).attr('total')+'.00');
-				$('#sjr1').html($(this).attr('name'));
-				$('#dh1').html($(this).attr('phone'));
-				$('#dz1').html($(this).attr('sheng1')+$(this).attr('shi1')+$(this).attr('xian1')+$(this).attr('jiedao1')+$(this).attr('xiangxi'));
-				var con=$('<tr class="sc"><td>'+$(this).attr('gname')+'</td><td>'+$(this).attr('num')+'</td><td>'+$(this).attr('price')+'</td><td>'+$(this).attr('num')*$(this).attr('price')+'.00'+'</td></tr>');
+				$('#z4').find('span').html($(this).attr('total')+'.00');
+				$('#z1').find('span').html($(this).attr('name'));
+				$('#z2').find('span').html($(this).attr('phone'));
+				var zou=$(this).attr('zp1');
+				// console.log(zou);
+				$(zou).each(function(i){
+					// var con1=$('<span>赠品: </span><span>'+$(this).attr('gfit')+'</span>');
+					$('#zeng').append('<span class="sc">+'+'<img src="'+$(this).attr('picture1')+'" width="60px"></span>');
+				});
+				$('#z3').find('span').html($(this).attr('sheng1')+$(this).attr('shi1')+$(this).attr('xian1')+$(this).attr('jiedao1')+$(this).attr('xiangxi'));
+				var con=$('<tr class="sc"><td>'+$(this).attr('gname')+'</td><td>'+$(this).attr('desc')+'</td><td>'+$(this).attr('num')+'</td><td>'+$(this).attr('price')+'</td><td><img src="'+$(this).attr('pic')+'" width="90px"/></td><td>'+$(this).attr('num')*$(this).attr('price')+'.00'+'</td></tr>');
 				dd.before(con);
-
 			});
 		}
 	});
@@ -246,7 +259,7 @@
 		}
 	});
 
-	$('#quxiao').click(function(){ //点击显示订单详情的DIV
+	$('#quxiao1').click(function(){ //点击显示订单详情的DIV
 		$('#big1').css('display','none');
 	})
 
@@ -258,7 +271,8 @@
 			dataType:'json',
 			async:false,
 			success:function(mes){
-				$('select:eq(1)').val(page);
+				// $('select:eq(1)').val(page);
+				$('#ye').val(page);
 				var y=$('#ye');
 				var y1=$(mes)[$(mes).length-1]; //最大页数
 				// console.log(y1);
@@ -273,6 +287,7 @@
 
 				$('#z tr').remove();
 				var a= null;
+				// console.log($(mes)[$(mes).length-1])
 				$('#mo').attr('info',$(mes)[$(mes).length-1]);//末页最大页数
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;

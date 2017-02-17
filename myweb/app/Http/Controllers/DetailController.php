@@ -55,6 +55,9 @@ class DetailController extends Controller
 				->get();
 			 // dd($data);
 			$newdata=$data[0];
+			$res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        	$links = $res->getLinksarr();
+        	// dd($data);
 			return view('detailq.index',[
 				'data'=>$newdata,
 				'detail'=>$gdetail,
@@ -62,8 +65,8 @@ class DetailController extends Controller
 				'color'=>$gcolor,
 				'memory'=>$gmemory,
 				'version'=>$gversion,
-				'gift'=>$ggift
-				
+				'gift'=>$ggift,
+				'links'=>$links
 				]);
 		}
 
@@ -211,6 +214,7 @@ class DetailController extends Controller
 						
 
 		}
+
 
 
 }

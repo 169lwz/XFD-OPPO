@@ -4,12 +4,13 @@
 
 <div class="mws-panel grid_8">
 	<div class="mws-panel-header">
-		<span><i class="icon-table"></i>订单浏览</span>
+		<span><i class="icon-table"></i>配置浏览</span>
+
 	</div>
 	<div class="mws-panel-body no-padding">
 	    <div role="grid" class="dataTables_wrapper" id="DataTables_Table_1_wrapper">
 
-	   App\Http\Controllers\
+	    
 	    	<div id="DataTables_Table_1_length" class="dataTables_length">
 	    		<label>Show 
 	    			<select name="num" size="1" aria-controls="DataTables_Table_1">
@@ -19,6 +20,10 @@
 	    				<option value="50">50</option>
 	    			</select> 
 	    		entries</label>
+	    				<select name="" id="qudong">
+			<option value="0">开启</option>
+			<option value="1">关闭</option>
+		</select>
 	    	</div>
 
 	    	<div class="dataTables_filter" id="DataTables_Table_1_filter">
@@ -29,12 +34,14 @@
 	    	<table class="mws-datatable-fn mws-table dataTable" id="DataTables_Table_1" aria-describedby="DataTables_Table_1_info">
 		        <thead>
 		            <tr role="row">
-		            	<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">用户名</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 208px;" aria-label="Browser: activate to sort column ascending">收件人</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 195px;" aria-label="Platform(s): activate to sort column ascending">订单号</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">下单时间</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">状态</th>
-		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
+		            	<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 130px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">ico</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 140px;" aria-label="Browser: activate to sort column ascending">关键字</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Platform(s): activate to sort column ascending">网站logo</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">网站名称</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">联系电话</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 135px;" aria-label="Engine version: activate to sort column ascending">版权信息</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 98px;" aria-label="CSS grade: activate to sort column ascending">网站介绍</th>
+		            	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 128px;" aria-label="CSS grade: activate to sort column ascending">操作</th>
 		            </tr>
 		        </thead>
 
@@ -51,34 +58,10 @@
 	</div>
 </div>
 <div id="big1" style="display:none">
-
-	<div id="small1">
-		<table id="text-color" border="1" width="900px">
-			<tr><th colspan="6">订单详情</th></tr>
-			<tr >
-				<th>商品名称</th>
-				<th width="300px">商品描述</th>
-				<th>购买数量</th>
-				<th>单价</th>
-				<th>图例</th>
-				<th>小计</th>
-			</tr>
-			<tr id="lll">
-				<th colspan="6" id="zz" >
-					<div id="ww">
-						<p id="z1">收&nbsp;&nbsp;件&nbsp;&nbsp;人 :&nbsp;&nbsp;&nbsp;&nbsp;<span>fds</span></p> 
-						<p id="z2">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话 : &nbsp;&nbsp;&nbsp;&nbsp;<span>sss</span></p>	
-						<p id="z3">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 :&nbsp;&nbsp;&nbsp;&nbsp;<span>csdfs</span></p>	
-						<p id="z4">应付金额 :&nbsp;&nbsp;&nbsp;&nbsp;<span>xxxx</span></p>	
-						<p id="zeng"></p>
-						<p id="zeng1">赠品 :</p>
-						<button id="quxiao1">取消</button>
-					</div>
-
-				</th>
-			</tr>
-		</table>
-	</div>
+	<table border="1">
+		<form></form>
+	</table>
+	
 </div>
 <div id="del" style="display:none">
 	<div id="del1">
@@ -88,6 +71,8 @@
 {{csrf_field()}}
 <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
+	var _token=$('input[name="_token"]').val();
+
 	myajax(5,1);
 	
 	$('#shou').click(function(){
@@ -215,40 +200,7 @@
 			}
 		});
 	});
-//====================查看操作====================================
-	$('.icol32-cog-edit').live('click',function(){
-		$('.sc').remove(); 
-		$('#big1').css('display','block');
-		var id=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').html(); //订单号
-		var uid=$(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td').parent().find('input').val();
-		// console.log($(this).parent().parent().find('td:eq(1)').next('td').next('td').prev('td'));
-		// return false;
-		// console.log($(this).parent().parent().find('td:eq(0)'));
-		var _token=$('input[name="_token"]').val();
-		var dd=$('#lll');
-		$.ajax({
-		url:'/orders/detail',
-		type:'post',
-		data:{'order_num':id,'_token':_token,'uid':uid},
-		dataType:'json',
-		success:function(mes){
-			$(mes).each(function(){
-				$('#z4').find('span').html($(this).attr('total')+'.00');
-				$('#z1').find('span').html($(this).attr('name'));
-				$('#z2').find('span').html($(this).attr('phone'));
-				var zou=$(this).attr('zp1');
-				// console.log(zou);
-				$(zou).each(function(i){
-					// var con1=$('<span>赠品: </span><span>'+$(this).attr('gfit')+'</span>');
-					$('#zeng').append('<span class="sc">+'+'<img src="'+$(this).attr('picture1')+'" width="60px"></span>');
-				});
-				$('#z3').find('span').html($(this).attr('sheng1')+$(this).attr('shi1')+$(this).attr('xian1')+$(this).attr('jiedao1')+$(this).attr('xiangxi'));
-				var con=$('<tr class="sc"><td>'+$(this).attr('gname')+'</td><td>'+$(this).attr('desc')+'</td><td>'+$(this).attr('num')+'</td><td>'+$(this).attr('price')+'</td><td><img src="'+$(this).attr('pic')+'" width="90px"/></td><td>'+$(this).attr('num')*$(this).attr('price')+'.00'+'</td></tr>');
-				dd.before(con);
-			});
-		}
-	});
-});
+//====================修改操作====================================
 
 
 	
@@ -265,7 +217,7 @@
 
 	function myajax(num,page,key){ //num =每页显示条数 page= 当前页数 key=搜索条件
 		$.ajax({
-			url:'/orders/show',
+			url:'/wzpz/show',
 			type:'get',
 			data:{'num':num,'page':page,'key':key},
 			dataType:'json',
@@ -292,9 +244,13 @@
 				$(mes).each(function(i){
 					if(i==$(mes).length-1)return;
 					
-				a= $('<tr class="odd" align="center"><td>'+$(this).attr('username')+'</td><input type="hidden" name="uid" value="'+$(this).attr('uid')+'"><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('order_num')+'</td><td>'+$(this).attr('addtime')+'</td><td><select class="edit0"><option value="1" disabled>新订单</option><option value="2">已发货</option><option value="3" disabled>已收货</option><option value="4" disabled>未支付</option><option value="5" disabled>已取消</option></select></td><td><a href="javascript:;" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="icol32-cog-edit"></a></td></tr>');
+				a= $('<tr class="odd" align="center"><td><img src="'+$(this).attr('ico')+'" width="50px"></td><input type="hidden" name="id" value="'+$(this).attr('id')+'"><td>'+$(this).attr('keyword')+'</td><td><img src="'+$(this).attr('pic')+'" width="50px"></td><td>'+$(this).attr('name')+'</td><td>'+$(this).attr('phone')+'</td><td>'+$(this).attr('con')+'</td><td>'+$(this).attr('desc')+'</td><td><a href="/wzpz/delete/'+$(this).attr('id')+'" class="icol32-bin"></a>&nbsp;&nbsp;&nbsp;<a href="/wzpz/edit/'+$(this).attr('id')+'" class="icol32-cog-edit"></a><input type="radio" name="xz" value="'+$(this).attr('auto')+'"></td></tr>');
+					var c=$(a).find('input[name="xz"]');
+					if(c.val()=='1'){
+						c.attr('checked',true);
+					}
 					$('#z').append(a);
-					$(a).find('select').val($(this).attr('status'));
+					$('#qudong').val($(this).attr('status'));
 					// console.log($(this).attr('status'));
 				});
 			}
@@ -302,6 +258,38 @@
 		$('#shang').attr('info',page);
 		$('#xia').attr('info',page);
 	}
+
+	$('input[name="xz"]').live('click',function(){
+		var id=$(this).parent().parent().find('input[name="id"]').val();
+		$.ajax({
+			url:'/wzpz/xz',
+			type:'get',
+			data:{'id':id},
+			dataType:'text',
+			success:function(mes){
+				if(mes=='yes'){
+					
+				}
+			}
+		});
+	});
+
+
+	$('#qudong').change(function(){
+		var oo=$(this).val();
+		console.log(oo);
+		$.ajax({
+			url:'/wzpz/qd',
+			type:'get',
+			data:{'status':oo},
+			dataType:'text',
+			success:function(mes){
+				if(mes=='yes'){
+					alert('修改成功');
+				}
+			}
+		});
+	});
 
 	
 </script>

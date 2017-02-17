@@ -73,6 +73,9 @@
             <div class="cart-product-description">
               <h3 class="heading">{{$v['gname']}}</h3>
               <p>{{$v['desc']}}</p>
+                @if(isset($v['zp1']))
+              <p>赠品: @foreach($v['zp1'] as $v1) <span>{{$v1['gift']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> @endforeach </p>
+                @endif
             </div>
             <div class="cart-counter-box">
               <input type="hidden" name="id" value="{{$v['id']}}">

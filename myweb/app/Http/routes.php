@@ -44,10 +44,16 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/val','ValController');// 后台商品属性
 
+	Route::controller('/wzpz','WzpzController');// 网站配置
+
+	Route::controller('/home/detail','DetailController');// 前台商品详情
+
+
 });
 
 
 
+	
 
 
 //========================前台===================================================
@@ -57,7 +63,7 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 
 
-Route::controller('/home/login','LoginController'); //前台登录模块
+// Route::controller('/home/login','LoginController'); //前台登录模块
 
 Route::post("/home/zhuce","AjaxController@zhuce");//ajax验证注册的账号
 
@@ -91,9 +97,14 @@ Route::group(['middleware'=>'login'],function(){ //前台路由组
 
 });
 
-Route::controller('/home','HomeController'); //前台商城主页
+Route::group(['middleware'=>'wzpz'],function(){
+	Route::controller('/home/login','LoginController'); //前台登录模块
 
-Route::controller('/home/detail','DetailController');// 前台商品详情
+
+	Route::controller('/home','HomeController'); //前台商城主页
+
+});
+
 
 Route::get("/home/forget","LoginController@forget"); //忘记密码
 

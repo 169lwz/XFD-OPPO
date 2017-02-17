@@ -314,7 +314,7 @@
   <div class="goods-list">
     <div class="goods-list-show">
       <a class="goods-list-image" href="http://www.opposhop.cn/products/393" target="_blank">
-        <img src="{{$v['pic']}}">
+        <img id="tu5" src="{{$v['pic']}}">
       </a>
     </div>
     <div class="goods-list-detail">
@@ -324,8 +324,10 @@
             <a href="http://www.opposhop.cn/products/393" target="_blank">{{$v['gname']}}</a>
           </h4>
           <p>{{$v['desc']}}</p>
+          <input type="hidden" name="spid" value="{{$v['id']}}">
+          <input type="hidden" name="yance" value="{{$v['color']}}">
         </div>
-        <div class="goods-list-quantity"><strong>×<span>{{$v['num']}}</span></strong></div>
+        <div class="goods-list-quantity"><strong>×<span id="ggs">{{$v['num']}}</span></strong></div>
         <div class="goods-list-price"><strong>￥<span>{{$v['price']}}.00</span></strong></div>
       </div>
 
@@ -682,15 +684,19 @@
 
     $('#tijiao').click(function(){ //提交订单的按钮
       var address_id=$('#tijiao').attr('address_id');//地址id
+      var goodsid=$('input[name="spid"]').val();
+      var yance=$('input[name="yance"]').val();
+      var nu=$('#ggs').html(); //数量
+      var tu=$('#tu5').attr('src');
       if(address_id==null){
         $('#sxs').html('请选择地址');
         return false;
       }
       var yftotal=$('#yifu').html();
       $.ajax({
-        url:'/dingdan/scorders',//生成订单
+        url:'/dingdan/scorders1',//生成订单
         type:'post',
-        data:{'_token':token,'address_id':address_id,'yftotal':yftotal},
+        data:{'_token':token,'address_id':address_id,'yftotal':yftotal,'goodsid':goodsid,'color':yance,'num':nu,'pic':tu},
         dataType:'text',
         success:function(mes){
           if(mes=='yes'){

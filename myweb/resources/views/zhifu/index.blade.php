@@ -1,5 +1,18 @@
 @extends('layout.home1')
 @section('con')
+
+  <style type="text/css">
+    .zpp{
+      width: 400px;
+      height: 20px;
+      position: absolute;
+      margin-top: -36px;
+      margin-left: 156px;
+    }
+ 
+  </style>
+
+
 <main class="main-content slab-light order-payments-revision opr">
     <div class="wrapper">
       <ul class="breadcrumb">
@@ -60,13 +73,18 @@
       </div>
     </div>
     <div class="opr-order-details" style="display:none">
+    
       <p id="chc"><label>商品清单：</label></p>
-      <div id="siyou">
+
+      <div id="siyou" style="display:none">
         <br>
         <p><span></span>&nbsp;&nbsp;&nbsp;<span></span></p>
+        <img src="" alt="" width="150px" height="150px">
+        <span class="desc"></span>
+        <p class="zpp"></p>
         <br>
       </div>
-
+  
       <p><label>收货信息：</label></p>
       <p id="mydizhi"></p>
     </div>
@@ -415,10 +433,18 @@
         dataType:'json',
         success:function(mes){
           $('div[info="cha"]').remove();     
-          $(mes).each(function(){
+          $(mes).each(function(i){
             var div=$('#siyou:eq(0)').clone().attr({'info':'cha','style':'display:none'});
             div.find('p').find('span').html($(this).attr('gname')).css('color','black');
             div.find('p').find('span').next('span').html('x '+$(this).attr('num')).css('color','#008b56');
+            div.find('img').attr('src',$(this).attr('yanse1'));
+            div.find('.desc').html($(this).attr('yanse')+'&nbsp;&nbsp;'+$(this).attr('desc'))
+            var aa=$(this).attr('zp1');
+             // console.log(aa);
+            $(aa).each(function(i){
+              div.find('.zpp').append('<span>赠品 :'+aa[i]+'</span>');
+            });
+           
             $('.opr-text').find('i').html($(this).attr('order_num'));
             $('#opr-price').html($(this).attr('total'));
             $('#mydizhi').html($(this).attr('sheng1')+$(this).attr('shi1')+$(this).attr('xian1')+$(this).attr('jiedao1')+$(this).attr('xiangxi')+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+$(this).attr('name')+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+'（'+$(this).attr('phone')+'）');

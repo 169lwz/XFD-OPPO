@@ -205,5 +205,7 @@ return [
     
     'guanggao_dir'=>'./guanggao/',
 
+    'wzpzt_dir'=>'./wzpz/',
+
 
 ];

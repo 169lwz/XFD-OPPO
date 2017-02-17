@@ -21,10 +21,53 @@ class ShopController extends Controller
 		}
 	}
 
+    public function postAdd(Request $request){ //从详情页添加到购物车
+        // dd(session('user'));
+        // die;
+        if(empty(session('user'))){
+            echo 'no';
+            die;
+        }
+        $ys=$request->input('ys'); //选中的颜色
+        $pic=$request->input('pic');//图片
+        // dd($pic)
+        $id=$request->input('id'); //商品id
+        $num=$request->input('num'); //购买数量
+        $dt=DB::table('shop')->where('uid',session('user')['id'])->get();
+        // dd($dt);
+        foreach($dt as $v){
+            // dd($v);
+            if($id==$v['goodsid'] && $ys==$v['ys']){
+                $nnn=DB::table('shop')->where('uid',session('user')['id'])->where('goodsid',$id)->where('ys',$ys)->first();
+                    // dd($nnn);
+                $data=DB::table('shop')->where('uid',session('user')['id'])->where('goodsid',$id)->where('ys',$ys)->update(['num'=>$num+$nnn['num']]);
+                if($data){
+                    echo 'yes';
+                    die;
+                }
+            }
+        }
+         $data=DB::table('shop')->insert(['uid'=>session('user')['id'],'ys'=>$ys,'goodsid'=>$id,'num'=>$num,'addtimes'=>time(),'pic'=>$pic]);
+                if($data){
+                    echo 'yes';
+                }
+        
+    }
+
     public function getIndex(){ //购物车遍历
+        // dd(session('user'));
+
     	$uid=session('user')['id'];
-    	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','goods.pic','goods.desc','goods.gname','goods.price','goods.store')->where('shop.uid',$uid)->get();
-        // dd($uid);
+    	$data=DB::table('shop')->join('goods','goods.id','=','shop.goodsid')->select('shop.*','shop.pic','goods.desc','goods.gname','goods.price','goods.store')->where('shop.uid',$uid)->get();
+        $da=DB::table('ggift')->get();
+        foreach($data as &$v){ //一层一层的遍历
+            foreach($da as $v1){
+                if($v['goodsid']==$v1['gid']){ 
+                    $v['zp1'][]=$v1;
+                }
+            }
+        }
+        // dd($data);
         $res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
         $links = $res->getLinksarr();
     	return view('gouwuche.index',['list'=>$data,'links'=>$links]);
@@ -42,7 +85,7 @@ class ShopController extends Controller
         $uid=session('user')['id'];
     	$id=$request->input('id');
     	$data=DB::table('shop')->where('uid',$uid)->where('id',$id)->first();
-    	$pic=$data['sf'];
+    	$pic=$data['pic'];
     	$res=DB::table('shop')->where('uid',$uid)->where('id',$id)->delete();
     	if($res){
     		if(file_exists('./image/'.$pic)){
@@ -59,7 +102,7 @@ class ShopController extends Controller
     	$data=DB::table('shop')->where('uid',$uid)->get();
     	$pic=[];
     	foreach($data as $v){
-    		$pic[]=$v['sf'];
+    		$pic[]=$v['pic'];
     	}
 
     	$res=DB::table('shop')->where('uid',$uid)->delete();
@@ -131,4 +174,23 @@ class ShopController extends Controller
         $data=DB::table('shop')->where('uid',session('user')['id'])->count();
         echo $data;
     }
+
+
+    //在详情也判断购买数量是否超出库存
+
+    public function getNumss(Request $request){
+        $id=$request->input('id');
+        $data=DB::table('goods')->where('id',$id)->first();
+        echo $data['store'];
+    }
+
+
+
+
+
+
+
+
+
+
 }

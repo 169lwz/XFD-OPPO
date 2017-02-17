@@ -260,7 +260,6 @@
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
-<<<<<<< HEAD
                     </li>                                           
 
                     </li>
@@ -311,7 +310,15 @@
                         </ul>
                     </li>
                   
-                                                           
+
+                    <li>
+                        <a href="#"><i class="icon-share"></i>网站配置</a>
+                        <ul  class="closed">
+                            <li><a href="/wzpz/index">配置浏览</a></li>
+                            <li><a href="/wzpz/add">配置添加</a></li>
+                        </ul>
+                    </li>
+                                                                             
 
                 </ul>
             </div> 
