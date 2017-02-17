@@ -7145,3 +7145,475 @@
 [2017-02-17 10:55:48]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 10:55:48]select * from `wzpz` where `auto` = ? limit 1
 [2017-02-17 10:55:49]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:39]select * from `links`
+[2017-02-17 10:58:39]select * from `type`
+[2017-02-17 10:58:39]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:39]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:58:39]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:39]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:40]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:41]select * from `links`
+[2017-02-17 10:58:41]select * from `type`
+[2017-02-17 10:58:41]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:58:41]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:41]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:43]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 10:58:43]select * from `links`
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:58:43]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:43]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 10:58:44]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:58:46]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 10:58:46]select * from `links`
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:58:46]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:58:46]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 10:59:01]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:59:03]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:59:05]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:59:12]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 10:59:12]select * from `links`
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:59:12]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:12]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 10:59:14]select * from `address` where `uid` = ?
+[2017-02-17 10:59:14]select * from `links`
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 10:59:14]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:59:14]select * from `district` where `upid` = ?
+[2017-02-17 10:59:14]select * from `address` where `uid` = ?
+[2017-02-17 10:59:14]select count(*) as aggregate from `address` where `uid` = ?
+[2017-02-17 10:59:46]select * from `district` where `upid` = ?
+[2017-02-17 10:59:48]select * from `district` where `upid` = ?
+[2017-02-17 10:59:50]select * from `district` where `upid` = ?
+[2017-02-17 10:59:51]select * from `district` where `upid` = ?
+[2017-02-17 10:59:58]select `id` from `address`
+[2017-02-17 10:59:58]insert into `address` (`name`, `phone`, `xiangxi`, `email`, `sheng`, `shi`, `xian`, `jiedao`, `sheng1`, `shi1`, `xian1`, `jiedao1`, `uid`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 10:59:58]select * from `address` where `uid` = ?
+[2017-02-17 11:00:16]select `shop`.*, `shop`.`pic`, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`store` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`uid` = ?
+[2017-02-17 11:00:16]select * from `ggift`
+[2017-02-17 11:00:16]select * from `links`
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:16]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:16]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:16]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:00:21]select * from `links`
+[2017-02-17 11:00:21]select * from `type`
+[2017-02-17 11:00:21]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:21]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:21]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:00:25]select * from `links`
+[2017-02-17 11:00:25]select * from `gversion` where `gid` = ?
+[2017-02-17 11:00:25]select * from `gmemory` where `gid` = ?
+[2017-02-17 11:00:25]select * from `gdetail` where `gid` = ?
+[2017-02-17 11:00:25]select * from `gparameter` where `gid` = ?
+[2017-02-17 11:00:25]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 11:00:25]select * from `ggift` where `gid` = ?
+[2017-02-17 11:00:25]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 11:00:25]select * from `links`
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:25]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:25]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:25]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `shop` where `uid` = ?
+[2017-02-17 11:00:29]insert into `shop` (`uid`, `ys`, `goodsid`, `num`, `addtimes`, `pic`) values (?, ?, ?, ?, ?, ?)
+[2017-02-17 11:00:29]select `shop`.*, `shop`.`pic`, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`store` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`uid` = ?
+[2017-02-17 11:00:29]select * from `ggift`
+[2017-02-17 11:00:29]select * from `links`
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:29]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:00:41]select * from `links`
+[2017-02-17 11:00:41]select * from `type`
+[2017-02-17 11:00:41]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:41]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:41]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:42]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:00:46]select * from `links`
+[2017-02-17 11:00:46]select * from `gversion` where `gid` = ?
+[2017-02-17 11:00:46]select * from `gmemory` where `gid` = ?
+[2017-02-17 11:00:46]select * from `gdetail` where `gid` = ?
+[2017-02-17 11:00:46]select * from `gparameter` where `gid` = ?
+[2017-02-17 11:00:46]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 11:00:46]select * from `ggift` where `gid` = ?
+[2017-02-17 11:00:46]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 11:00:46]select * from `links`
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:46]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:46]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:46]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:54]select * from `shop` where `uid` = ?
+[2017-02-17 11:00:54]insert into `shop` (`uid`, `ys`, `goodsid`, `num`, `addtimes`, `pic`) values (?, ?, ?, ?, ?, ?)
+[2017-02-17 11:00:55]select `shop`.*, `shop`.`pic`, `goods`.`desc`, `goods`.`gname`, `goods`.`price`, `goods`.`store` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`uid` = ?
+[2017-02-17 11:00:55]select * from `ggift`
+[2017-02-17 11:00:55]select * from `links`
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:55]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:00:55]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:00:55]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select `shop`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`id` = ? limit 1
+[2017-02-17 11:01:02]select `shop`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price` from `shop` inner join `goods` on `goods`.`id` = `shop`.`goodsid` where `shop`.`id` = ? limit 1
+[2017-02-17 11:01:02]select * from `links`
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:01:02]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:01:02]select * from `district` where `upid` = ?
+[2017-02-17 11:01:02]select * from `address` where `uid` = ?
+[2017-02-17 11:01:41]select * from `shop` where `id` = ? limit 1
+[2017-02-17 11:01:41]insert into `orders` (`uid`, `addtime`, `goodsid`, `num`, `order_num`, `total`, `address_id`, `yanse`, `pic`) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 11:01:41]select * from `shop` where `id` = ? limit 1
+[2017-02-17 11:01:41]delete from `shop` where `id` = ?
+[2017-02-17 11:01:41]select * from `shop` where `id` = ? limit 1
+[2017-02-17 11:01:41]insert into `orders` (`uid`, `addtime`, `goodsid`, `num`, `order_num`, `total`, `address_id`, `yanse`, `pic`) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2017-02-17 11:01:41]select * from `shop` where `id` = ? limit 1
+[2017-02-17 11:01:41]delete from `shop` where `id` = ?
+[2017-02-17 11:01:41]select * from `links`
+[2017-02-17 11:01:41]select * from `orders` where `order_num` = ? limit 1
+[2017-02-17 11:01:41]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:01:41]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:01:42]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `address`.`name`, `address`.`phone`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`uid` = `orders`.`uid` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `order_num` = ? and `address`.`id` = ? and `orders`.`uid` = ?
+[2017-02-17 11:01:42]select * from `ggift`
+[2017-02-17 11:01:42]select * from `gdetail` inner join `goods` on `goods`.`id` = `gdetail`.`gid` inner join `orders` on `orders`.`yanse` = `gdetail`.`color` where `order_num` = ?
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:06]select * from `links`
+[2017-02-17 11:05:06]select * from `lunbo` where `status` = ?
+[2017-02-17 11:05:06]select * from `guanggao` where `status` = ?
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:06]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:06]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:09]select * from `links`
+[2017-02-17 11:05:09]select * from `type`
+[2017-02-17 11:05:09]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:09]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:09]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:10]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:27]select * from `links`
+[2017-02-17 11:05:27]select * from `type`
+[2017-02-17 11:05:27]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:27]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:27]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:29]select * from `links`
+[2017-02-17 11:05:29]select * from `type`
+[2017-02-17 11:05:29]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:29]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:29]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:30]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:05:43]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:05:43]select * from `links`
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:43]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:43]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:43]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:44]select order_num,count(*) as count from orders where uid=46 group by order_num
+[2017-02-17 11:05:53]select `yanse` from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-17 11:05:53]select `orders`.*, `goods`.`desc`, `goods`.`gname`, `goods`.`price` from `orders` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `order_num` = ? and `orders`.`uid` = ?
+[2017-02-17 11:05:53]select * from `ggift`
+[2017-02-17 11:05:53]select sum(`num`) as aggregate from `orders` where `uid` = ? and `order_num` = ?
+[2017-02-17 11:05:53]select `orders`.*, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` where `order_num` = ? limit 1
+[2017-02-17 11:05:53]select * from `links`
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:53]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:05:53]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:05:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:07:23]select * from `links`
+[2017-02-17 11:07:23]select * from `lunbo` where `status` = ?
+[2017-02-17 11:07:23]select * from `guanggao` where `status` = ?
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:23]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:07:26]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:07:26]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:33]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:34]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:35]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:36]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:53]select * from `links`
+[2017-02-17 11:10:53]select * from `lunbo` where `status` = ?
+[2017-02-17 11:10:53]select * from `guanggao` where `status` = ?
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:53]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:53]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:10:55]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:56]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:57]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:10:58]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:11:24]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:11:25]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:11:32]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:11:32]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:31]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:31]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:45]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:46]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:47]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:13:48]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:14:26]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-17 11:14:45]select count(*) as aggregate from `user` where `email` = ?
+[2017-02-17 11:14:52]select count(*) as aggregate from `user` where `phone` = ?
+[2017-02-17 11:14:54]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:15:02]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:15:02]insert into `user` (`username`, `pass`, `email`, `phone`, `status`, `token`) values (?, ?, ?, ?, ?, ?)
+[2017-02-17 11:15:05]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:15:06]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:20]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:20]select * from `user` where `id` = ? limit 1
+[2017-02-17 11:16:20]update `user` set `status` = ? where `id` = ?
+[2017-02-17 11:16:20]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:21]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:34]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-17 11:16:45]select count(*) as aggregate from `user` where `email` = ?
+[2017-02-17 11:16:56]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:57]select * from `user` where `email` = ? limit 1
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:16:57]select * from `links`
+[2017-02-17 11:16:57]select * from `lunbo` where `status` = ?
+[2017-02-17 11:16:57]select * from `guanggao` where `status` = ?
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:16:57]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:16:57]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:16:57]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:06]select * from `links`
+[2017-02-17 11:17:06]select * from `type`
+[2017-02-17 11:17:06]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:17:06]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:06]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:18]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:17:18]select * from `links`
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:17:18]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:18]select order_num,count(*) as count from orders where uid=47 group by order_num
+[2017-02-17 11:17:20]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:21]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:23]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:29]select * from `links`
+[2017-02-17 11:17:29]select * from `lunbo` where `status` = ?
+[2017-02-17 11:17:29]select * from `guanggao` where `status` = ?
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:29]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:29]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:17:32]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:33]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:34]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:40]select count(*) as aggregate from `user` where `phone` = ?
+[2017-02-17 11:17:42]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:17:42]select * from `user` where `phone` = ? limit 1
+[2017-02-17 11:20:10]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:10]select * from `user` where `phone` = ? limit 1
+[2017-02-17 11:20:41]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:41]update `user` set `pass` = ? where `id` = ?
+[2017-02-17 11:20:41]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:42]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:49]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-17 11:20:58]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:58]select * from `user` where `username` = ? limit 1
+[2017-02-17 11:20:59]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:20:59]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:04]select count(*) as aggregate from `user` where `username` = ?
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:11]select * from `user` where `username` = ? limit 1
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:11]select * from `links`
+[2017-02-17 11:21:11]select * from `lunbo` where `status` = ?
+[2017-02-17 11:21:11]select * from `guanggao` where `status` = ?
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:11]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:21:11]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:11]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select `gdetail`.`pic7`, `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `gdetail` on `gdetail`.`color` = `orders`.`yanse` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
+[2017-02-17 11:21:14]select * from `links`
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select * from `orders` where `uid` = ? group by `order_num`
+[2017-02-17 11:21:14]select count(*) as aggregate from `shop` where `uid` = ?
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:21:14]select order_num,count(*) as count from orders where uid=47 group by order_num
+[2017-02-17 11:21:15]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:16]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:37]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:37]update `user` set `pass` = ? where `id` = ?
+[2017-02-17 11:21:37]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:21:38]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:00]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:00]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:07]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:07]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:08]select * from `links`
+[2017-02-17 11:22:08]select * from `lunbo` where `status` = ?
+[2017-02-17 11:22:08]select * from `guanggao` where `status` = ?
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:08]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:08]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 11:22:12]select * from `links`
+[2017-02-17 11:22:12]select * from `type`
+[2017-02-17 11:22:12]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 11:22:12]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
