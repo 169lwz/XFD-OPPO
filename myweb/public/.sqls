@@ -6243,6 +6243,7 @@
 [2017-02-17 00:09:03]select * from `lunbo` where `status` = ?
 [2017-02-17 00:09:03]select * from `guanggao` where `status` = ?
 [2017-02-17 00:09:03]select count(*) as aggregate from `shop` where `uid` is null
+<<<<<<< HEAD
 >>>>>>> 3976f864d43b1060520c638e9dce60639e450f53
 =======
 [2017-02-17 01:23:10]select * from `links`
@@ -6433,3 +6434,37 @@
 [2017-02-17 09:33:30]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
 [2017-02-17 09:33:30]select count(*) as aggregate from `shop` where `uid` is null
 >>>>>>> 02-17zhu
+=======
+[2017-02-17 00:12:36]select count(*) as aggregate from `gdetail`
+[2017-02-17 00:12:36]select * from `gdetail` limit 5 offset 0
+[2017-02-17 00:12:36]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:36]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:36]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:36]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:36]select * from `goods` where `id` = ? limit 1
+[2017-02-17 00:12:42]select * from `lunbo`
+[2017-02-17 00:12:48]select * from `guanggao`
+[2017-02-17 00:13:01]select `orders`.*, `goods`.`gname`, `address`.`name`, `address`.`phone`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi`, `user`.`username` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` inner join `user` on `user`.`id` = `orders`.`uid` where `recycle1` = ? and `order_num` like ? group by `order_num`, `uid` order by `orders`.`addtime` asc limit 5 offset 0
+[2017-02-17 00:13:01]select count(*) as aggregate from `orders` where `order_num` like ?
+[2017-02-17 00:13:12]select count(*) as aggregate from `user` where `recycle` = ?
+[2017-02-17 00:13:12]select * from `user` where `recycle` = ? limit 5 offset 0
+[2017-02-17 00:13:23]select * from `links`
+[2017-02-17 00:13:23]select * from `lunbo` where `status` = ?
+[2017-02-17 00:13:23]select * from `guanggao` where `status` = ?
+[2017-02-17 00:13:23]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:13:37]select * from `links`
+[2017-02-17 00:13:37]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-17 00:13:37]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:14:09]select * from `links`
+[2017-02-17 00:14:09]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-17 00:14:09]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:14:12]select * from `links`
+[2017-02-17 00:14:12]select * from `lunbo` where `status` = ?
+[2017-02-17 00:14:12]select * from `guanggao` where `status` = ?
+[2017-02-17 00:14:12]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 00:14:28]select * from `links`
+[2017-02-17 00:14:28]select `type`.`tname`, `goods`.`id`, `goods`.`price`, `gdetail`.`con`, `gdetail`.`pic7`, `gdetail`.`color` from `goods` inner join `type` on `type`.`id` = `goods`.`tid` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid`
+[2017-02-17 00:14:28]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 08:56:31]select * from `adminuser` where `username` = ? limit 1
+[2017-02-17 09:06:29]select * from `adminuser` where `username` = ? limit 1
+>>>>>>> wcf
