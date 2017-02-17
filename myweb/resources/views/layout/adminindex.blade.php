@@ -160,7 +160,7 @@
                        欢迎登陆!
                     </div>
                     <ul>
-                        <li><a>大煞笔</a></li>
+                        <li><a>管理员</a></li>
                         <!-- <li><a href="#">修改密码</a></li> -->
                         <li><a href="/admin/login/logout">退出</a></li>
                     </ul>
@@ -234,9 +234,8 @@
                         <ul  class="closed">
                             <li><a href="/admin/goods/index">浏览商品</a></li>
                             <li><a href="/admin/goods/add">添加商品</a></li>
-                            <li><a href="/admin/goods/hsz">回收站</a></li>
-                        </ul>
 
+                        </ul>
                     </li> 
                     <li>
                         <a href="#"><i class="icon-share"></i>商品详情</a>
@@ -260,12 +259,23 @@
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
+<<<<<<< HEAD
                     </li>                                           
-
+=======
                     </li>
+>>>>>>> 6ae8377b11194416e3efa5640fabdddb1dba451e
 
                     <li>
-                        <a href="#"><i class="icon-share"></i>轮播图管理</a>
+                        <a href="#"><i class="icon-share"></i>赠品管理</a>
+                        <ul  class="closed">
+                            <li><a href="/admin/val/indexgift">浏览赠品</a></li>
+                            <li><a href="/admin/val/addgift">添加赠品</a></li>
+                        </ul>
+                    </li>
+
+                    </li>                                           
+                    <li>
+                        <a href="#"><i class="icon-stats"></i>轮播图管理</a>
                         <ul  class="closed">
                             <li><a href="/admin/lunbo/index">轮播图浏览</a></li>
                             <li><a href="/admin/lunbo/add">轮播图添加</a></li>
@@ -274,7 +284,7 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="icon-share"></i>广告管理</a>
+                        <a href="#"><i class="icon-newspaper"></i>广告管理</a>
                         <ul  class="closed">
                             <li><a href="/admin/guanggao/index">广告图浏览</a></li>
                             <li><a href="/admin/guanggao/add">广告图添加</a></li>
@@ -283,7 +293,7 @@
                     </li> 
 
                     <li>
-                        <a href="#"><i class="icon-share"></i>友情链接</a>
+                        <a href="#"><i class="icon-link"></i>友情链接</a>
                         <ul  class="closed">
                             <li><a href="/admin/links/index">链接浏览</a></li>
                             <li><a href="/admin/links/add">链接添加</a></li>
@@ -292,12 +302,13 @@
                     </li>   
 
                     <li>
-                        <a href="#"><i class="icon-share"></i>体验店</a>
+                        <a href="#"><i class="icon-gplus"></i>体验店</a>
                         <ul  class="closed">
                             <li><a href="/ty/adindex">门店浏览</a></li>
                             <li><a href="/ty/add">门店添加</a></li>
                         </ul>
                     </li>  
+<<<<<<< HEAD
 
 
                   
@@ -321,6 +332,9 @@
                                                                              
 
                 </ul>
+=======
+             </ul>
+>>>>>>> 6ae8377b11194416e3efa5640fabdddb1dba451e
             </div> 
         </div>
         <div id="mws-container" class="clearfix">

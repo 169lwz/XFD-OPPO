@@ -4,13 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-use App\Models\Goods;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class DetailController extends Controller
 {
-	//前台详情
+   //前台详情
 
 		/*
 			ajax实现选择颜色切换图片
@@ -36,7 +35,8 @@ class DetailController extends Controller
 	    */
 		public function getIndexq($id,$color){
 
-			// dd($id);
+			$res = new LinksController();  //调用LinksController控制器里的自定义getLinksarr()方法
+        	$links = $res->getLinksarr();
 			
 			// dd($id,$color);
 			// $goodsdata = DB::table('goods')->where('id',$id)->first();						
@@ -67,6 +67,7 @@ class DetailController extends Controller
 				'version'=>$gversion,
 				'gift'=>$ggift,
 				'links'=>$links
+
 				]);
 		}
 
@@ -77,11 +78,14 @@ class DetailController extends Controller
 			呈递详情浏览页面
 			/admin/detail/indexh
 		*/
+		
+
 		public function getIndexh(Request $request){
-			//获取图片数据	
+			// dd($request->all());
+			// 获取图片数据	
 			$data = DB::table('gdetail')->where(function($query) use($request){
 				if($request->input('keyword')!=null){
-					$query->where('gid',$request->input('keyword'));
+					$query->orWhere('color','like',$request->input('keyword'));
 				}
 			})->paginate($request->input('num',5));
 			
@@ -214,7 +218,5 @@ class DetailController extends Controller
 						
 
 		}
-
-
 
 }

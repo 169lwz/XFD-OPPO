@@ -44,7 +44,7 @@
 			                
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">商品名称</th>			                
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">图片</th>			                
-			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending"><a href="/admin/detail/index">颜色</a></th>			                
+			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending">颜色</a></th>			                
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending"><a href="/admin/val/indexversion">网络版本</a></th>			                
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending"><a href="/admin/val/indexmemory">内存</a></th>			             			 
 			                <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 338px;" aria-label="Browser: activate to sort column ascending"><a href="/admin/val/indexsize">尺寸</a></th>			             			 
@@ -59,7 +59,7 @@
 				                	<tr class="even">
 				                @endif
 				                        <td class=" ">{{$v['gname']}}</td>
-				                        <td class=" "><img src="{{$v['pic7']}}" alt="" width="60px"></td>           
+				                        <td class=" "><img src="{{$v['pic7']}}" alt="" style="width:60px"></td>           
 				                        <td class=" ">{{$v['color']}}</td>           
 				                        <td class=" ">{{$v['version']}}</td>           
 				                        <td class=" ">{{$v['memory']}}</td>           

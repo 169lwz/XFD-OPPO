@@ -132,24 +132,38 @@ class TypeController extends Controller
 	// 拼装一个类别的数组
 	public static function getTypearr(){
 		$types = self::getAlltypes();
-		$types = self::getTypesInfo($types,0);		
+		$res = self::getAlldata();
+		$types = self::getTypesInfo($types,$res);	
+		return $types;	
 	}
 
 	//获取分类中的所有数据
 	public static function getAlltypes(){
-		return DB::table('type')->get();
+         $type = DB::table('type')->get();
+            return $type;        
 	}
-
+	public static function getAlldata(){
+		$data = DB::table('goods')
+			  ->join('gdetail','gdetail.gid','=','goods.id')
+			  ->select('goods.id as spid','goods.price','goods.tid','gdetail.color','gdetail.pic7','gdetail.con')
+			  ->get();
+			  return $data;
+	} 
 	// 嵌套数组样式模式
-	public static function getTypesInfo($types,$pid){
-		$data=[];
-		foreach($types as $k=>$v){
-			if($v['pid']==$pid){
-				$v['sub']=self::getTypesInfo($types,$v['id']);// 递归
-				$data[]=$v;
+	public static function getTypesInfo($types,$res){
+		// $data=[];
+		foreach($types as &$v){
+
+			foreach($res as $key=>$value){
+				if($v['id'] == $value['tid']){
+					$v['good'][]=$value;
+				}
+
 			}
+
 		}
-		return $data;
+		
+		return $types;
 	}	
 }
 

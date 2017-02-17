@@ -76,17 +76,13 @@ class AjaxController extends Controller
 
 
     public function chongzhi(){
-        echo 'yes';
-        
 
-        // $res = session('user')['pass'];
+        $res = session('user')['pass'];
 
-        // if(Hash::check($res),$_POST['info']){
-        //     echo "yes";
-        // }else{
-        //     echo "no";
-        // }
+        if(Hash::check($_POST['info'],$res)){
+            echo "yes";
+        }else{
+            echo "no";
+        }
     }
-
-
 }

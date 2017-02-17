@@ -30,7 +30,7 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 
 	Route::controller('/admin/lunbo','LunboController');  //轮播图模块
 
-	Route::controller('/admin/guanggao','GuanggaoController');  //广告模块
+	Route::controller('/admin/guanggao','GuanggaoController'); //广告模块
 
 	Route::controller('/admin/links','LinksController');  //链接模块
 
@@ -41,6 +41,8 @@ Route::group(['middleware'=>'adminlogin'],function(){ //后台路由组
 	Route::controller('/admin/detail','DetailController');// 后台商品详情
 
 	Route::controller('/admin/parameter','ParameterController');// 后台商品参数
+
+	Route::controller('/home/detail','DetailController');// 前台商品详情
 
 	Route::controller('/admin/val','ValController');// 后台商品属性
 
@@ -110,7 +112,7 @@ Route::get("/home/forget","LoginController@forget"); //忘记密码
 
 Route::controller('/ty','TyController');
 
-// Route::controller('/home/detail','DetailController');// 前台商品详情
+Route::controller('/spss/select','SelectController');// 前台商品搜索
 
 
 

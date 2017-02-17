@@ -84,7 +84,7 @@
                         <div class="input_area">
                             <!-- <input type="text" name='pass' id="pwd" autocomplete="off"  class="pwd"/>
                             <label class="placeholder" for="pwd">请输入帐号密码</label> -->
-                            <input type="text" autocomplete="off" placeholder="请输入账号密码" info='请输入正确密码' name="pass">
+                            <input type="password" autocomplete="off" placeholder="请输入账号密码" info='请输入正确密码' name="pass">
                         </div>
                         <div class="error_tip" id="info_pwd"></div>
                         <div id="captcha_area" style="display:block">
