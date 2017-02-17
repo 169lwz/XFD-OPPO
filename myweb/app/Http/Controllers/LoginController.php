@@ -40,7 +40,7 @@ class LoginController extends Controller
        		if($data['status']==0){		//status=1 启用;status=0 禁用
           	     return back()->with("error","该用户已被禁用,请先激活账号或联系客服");
             }else{
-                session(['user'=>$data]); //将用户信息存入session
+                session(['user'=>$data]); //登录成功,将用户信息存入session
                 // session(['user',$data]); //将用户信息存入session
                 return redirect("/home/index");
                 // return redirect("/admin/user/recycle")->with("success","登录成功");      //跳转到前台首页
