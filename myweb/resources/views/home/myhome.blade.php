@@ -29,7 +29,7 @@
         </div>  
     </div>
 
-    <div class="logo logo-extend">
+    <div class="logo-extend" style='text-align:center;margin-bottom:20px'>
         <a href="/dingdan/index">
           <img src="/myhome_files/logo.png" alt="">
         </a>
