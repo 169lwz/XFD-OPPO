@@ -6433,3 +6433,16 @@
 [2017-02-17 09:33:30]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
 [2017-02-17 09:33:30]select count(*) as aggregate from `shop` where `uid` is null
 >>>>>>> 02-17zhu
+[2017-02-17 10:16:12]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
+[2017-02-17 10:16:19]select * from `links`
+[2017-02-17 10:16:19]select * from `type`
+[2017-02-17 10:16:19]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:19]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:19]select * from `wzpz` where `auto` = ? limit 1
+[2017-02-17 10:16:20]select * from `wzpz` where `auto` = ? and `status` = ? limit 1
