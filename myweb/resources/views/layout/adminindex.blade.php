@@ -260,8 +260,8 @@
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
 
-                    </li>                                           
 
+                    </li>                                           
 
 
                     <li>
@@ -309,9 +309,6 @@
                     </li>  
 
 
-
-                  
-
                     <li>
                         <a href="#"><i class="icon-share"></i>赠品管理</a>
                         <ul  class="closed">
@@ -327,12 +324,8 @@
                             <li><a href="/wzpz/index">配置浏览</a></li>
                             <li><a href="/wzpz/add">配置添加</a></li>
                         </ul>
-                    </li>
-                                                                             
-
+                    </li>                                                                            
                 </ul>
-
-            
 
             </div> 
         </div>

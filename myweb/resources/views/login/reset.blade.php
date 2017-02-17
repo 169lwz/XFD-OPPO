@@ -52,11 +52,11 @@
                         </div>
 
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="请输入6-16位新密码"  name="pass" value=""><span id="pp"></span>
+                            <input type="password" autocomplete="off" placeholder="请输入6-16位新密码"  name="pass" value=""><span id="pp"></span>
                         </div>
 
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="确认密码"  name="repass" value=""><span id="rr"></span>
+                            <input type="password" autocomplete="off" placeholder="确认密码"  name="repass" value=""><span id="rr"></span>
                         </div>
 
                         <div class="error_tip" id="info_phone"></div>

@@ -197,7 +197,7 @@
               <li class='gi'>
                 <a class='m-item' href='http://www.oppo.com/cn/products.html'><span>产品</span></a>
               </li>
-              <li class='gi is-active'>
+              <li class='gi'>
                 <a class='m-item' id='storeLink' href='http://www.lamp169.com/home/shangcheng' data-hd-url='http://hd.oppo.com/act/2016/1001/index.html'><span>商城</span></a>
               </li>
               <li class='gi'>

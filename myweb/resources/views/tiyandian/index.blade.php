@@ -600,6 +600,7 @@
       data:{'p':p},
       type:'get',
       dataType:'json',
+      async:true,
       success:function(mes){
         // console.log($(mes));
         $(mes).each(function(i){

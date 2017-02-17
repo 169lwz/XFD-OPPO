@@ -65,7 +65,7 @@
                         <input type='hidden' name='id' value='{{$id}}'>
 
                         <div class="input_area">
-                            <input type="text" autocomplete="off" placeholder="请输入原密码" info='请输入正确用户名' name="oldpass"><span id="uu"></span>
+                            <input type="password" autocomplete="off" placeholder="请输入原密码" info='请输入正确用户名' name="oldpass"><span id="uu"></span>
                         </div>
                         
                         <div class="input_area">
