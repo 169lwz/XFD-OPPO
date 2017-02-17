@@ -32,7 +32,7 @@
   <div class='myOppo-menu'>
     <h1 class='h-gamma'>我的订单</h1>
     <ul class='navigation'>
-    <li class='is-active'>
+    <li class=''>
     <a href='/dingdan/index'>我的订单</a>
     </li>
     <li class=''>

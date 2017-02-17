@@ -259,11 +259,7 @@
                             <li><a href="/admin/val/addmemory">添加商品内存</a></li>
                             <li><a href="/admin/val/addsize">添加商品尺寸</a></li>                         
                         </ul>
-<<<<<<< HEAD
                     </li>                                           
-=======
-                    </li>
->>>>>>> 6ae8377b11194416e3efa5640fabdddb1dba451e
 
                     <li>
                         <a href="#"><i class="icon-share"></i>赠品管理</a>
@@ -308,10 +304,6 @@
                             <li><a href="/ty/add">门店添加</a></li>
                         </ul>
                     </li>  
-<<<<<<< HEAD
-
-
-                  
 
                     <li>
                         <a href="#"><i class="icon-share"></i>赠品管理</a>
@@ -328,13 +320,8 @@
                             <li><a href="/wzpz/index">配置浏览</a></li>
                             <li><a href="/wzpz/add">配置添加</a></li>
                         </ul>
-                    </li>
-                                                                             
-
+                    </li>                                                                            
                 </ul>
-=======
-             </ul>
->>>>>>> 6ae8377b11194416e3efa5640fabdddb1dba451e
             </div> 
         </div>
         <div id="mws-container" class="clearfix">
