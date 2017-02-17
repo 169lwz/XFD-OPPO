@@ -4938,6 +4938,7 @@
 [2017-02-17 01:06:55]select * from `type`
 [2017-02-17 01:06:55]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
 [2017-02-17 01:06:55]select count(*) as aggregate from `shop` where `uid` is null
+<<<<<<< HEAD
 =======
 [2017-02-15 09:29:52]select `orders`.*, `goods`.`gname`, `goods`.`pic`, `address`.`name`, `address`.`phone`, `address`.`email`, `address`.`sheng1`, `address`.`shi1`, `address`.`xian1`, `address`.`jiedao1`, `address`.`xiangxi` from `orders` inner join `address` on `address`.`id` = `orders`.`address_id` inner join `goods` on `goods`.`id` = `orders`.`goodsid` where `orders`.`uid` = ? group by `order_num` order by `addtime` desc
 [2017-02-15 09:29:52]select * from `links`
@@ -6243,3 +6244,116 @@
 [2017-02-17 00:09:03]select * from `guanggao` where `status` = ?
 [2017-02-17 00:09:03]select count(*) as aggregate from `shop` where `uid` is null
 >>>>>>> 3976f864d43b1060520c638e9dce60639e450f53
+=======
+[2017-02-17 01:23:10]select * from `links`
+[2017-02-17 01:23:10]select * from `type`
+[2017-02-17 01:23:10]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 01:23:10]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:23:45]select * from `links`
+[2017-02-17 01:23:45]select * from `lunbo` where `status` = ?
+[2017-02-17 01:23:45]select * from `guanggao` where `status` = ?
+[2017-02-17 01:23:45]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:24:07]select count(*) as aggregate from `goods`
+[2017-02-17 01:24:07]select * from `goods` limit 5 offset 0
+[2017-02-17 01:26:22]select count(*) as aggregate from `goods`
+[2017-02-17 01:26:22]select * from `goods` limit 5 offset 0
+[2017-02-17 01:26:31]select count(*) as aggregate from `gdetail`
+[2017-02-17 01:26:31]select * from `gdetail` limit 5 offset 0
+[2017-02-17 01:26:31]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:31]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:31]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:31]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:31]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:46]select count(*) as aggregate from `gparameter`
+[2017-02-17 01:26:46]select * from `gparameter` limit 5 offset 0
+[2017-02-17 01:26:46]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:26:46]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:27:24]select count(*) as aggregate from `ggift`
+[2017-02-17 01:27:24]select * from `ggift` limit 5 offset 0
+[2017-02-17 01:45:58]select count(*) as aggregate from `ggift`
+[2017-02-17 01:45:58]select * from `ggift` limit 5 offset 0
+[2017-02-17 01:47:23]select * from `goods`
+[2017-02-17 01:47:28]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 01:47:28]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-17 01:47:35]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 01:47:35]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 5
+[2017-02-17 01:47:51]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 01:47:51]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 0
+[2017-02-17 01:47:55]select count(*) as aggregate from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid`
+[2017-02-17 01:47:55]select `goods`.`gname`, `gdetail`.`pic7`, `gdetail`.`color`, `gversion`.`version`, `gmemory`.`memory`, `gsize`.`size` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` inner join `gversion` on `goods`.`id` = `gversion`.`gid` inner join `gmemory` on `goods`.`id` = `gmemory`.`gid` inner join `gsize` on `goods`.`id` = `gsize`.`gid` limit 5 offset 5
+[2017-02-17 01:49:06]select *, concat(path,id) as paths from `type` order by `paths` asc
+[2017-02-17 01:49:06]select * from `type` where `id` = ? limit 1
+[2017-02-17 01:49:06]select * from `type` where `id` = ? limit 1
+[2017-02-17 01:49:06]select * from `type` where `id` = ? limit 1
+[2017-02-17 01:49:06]select * from `type` where `id` = ? limit 1
+[2017-02-17 01:49:15]select count(*) as aggregate from `goods`
+[2017-02-17 01:49:15]select * from `goods` limit 5 offset 0
+[2017-02-17 01:49:51]select count(*) as aggregate from `gparameter`
+[2017-02-17 01:49:51]select * from `gparameter` limit 5 offset 0
+[2017-02-17 01:49:51]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:49:51]select * from `goods` where `id` = ? limit 1
+[2017-02-17 01:50:36]select * from `links`
+[2017-02-17 01:50:36]select * from `lunbo` where `status` = ?
+[2017-02-17 01:50:36]select * from `guanggao` where `status` = ?
+[2017-02-17 01:50:36]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:50:42]select * from `links`
+[2017-02-17 01:50:42]select * from `lunbo` where `status` = ?
+[2017-02-17 01:50:42]select * from `guanggao` where `status` = ?
+[2017-02-17 01:50:42]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:50:58]select * from `links`
+[2017-02-17 01:50:58]select * from `lunbo` where `status` = ?
+[2017-02-17 01:50:58]select * from `guanggao` where `status` = ?
+[2017-02-17 01:50:58]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:51:01]select * from `links`
+[2017-02-17 01:51:01]select * from `type`
+[2017-02-17 01:51:01]select `goods`.`id` as `spid`, `goods`.`price`, `goods`.`tid`, `gdetail`.`color`, `gdetail`.`pic7`, `gdetail`.`con` from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id`
+[2017-02-17 01:51:01]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 01:51:42]select * from `gversion` where `gid` = ?
+[2017-02-17 01:51:42]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:51:42]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:51:42]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:51:42]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:51:42]select * from `ggift` where `gid` = ?
+[2017-02-17 01:51:42]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:51:58]select * from `gversion` where `gid` = ?
+[2017-02-17 01:51:58]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:51:58]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:51:58]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:51:58]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:51:58]select * from `ggift` where `gid` = ?
+[2017-02-17 01:51:58]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:52:11]select * from `gversion` where `gid` = ?
+[2017-02-17 01:52:11]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:52:11]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:52:11]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:52:11]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:52:11]select * from `ggift` where `gid` = ?
+[2017-02-17 01:52:11]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:53:50]select * from `gversion` where `gid` = ?
+[2017-02-17 01:53:50]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:53:50]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:53:50]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:53:50]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:53:50]select * from `ggift` where `gid` = ?
+[2017-02-17 01:53:50]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 01:53:59]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:54:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:54:00]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:54:02]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:54:05]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:54:07]select `goods`.`desc`, `gdetail`.* from `goods` inner join `gdetail` on `gdetail`.`gid` = `goods`.`id` inner join `gparameter` on `gparameter`.`gid` = `goods`.`id` where `goods`.`id` = ? and `color` = ? limit 1
+[2017-02-17 01:59:15]select * from `gversion` where `gid` = ?
+[2017-02-17 01:59:15]select * from `gmemory` where `gid` = ?
+[2017-02-17 01:59:15]select * from `gdetail` where `gid` = ?
+[2017-02-17 01:59:15]select * from `gparameter` where `gid` = ?
+[2017-02-17 01:59:15]select * from `gdetail` where `gid` = ? and `color` = ?
+[2017-02-17 01:59:15]select * from `ggift` where `gid` = ?
+[2017-02-17 01:59:15]select `goods`.*, `gdetail`.`color`, `gdetail`.`con`, `gdetail`.`pic7` from `goods` inner join `gdetail` on `goods`.`id` = `gdetail`.`gid` where `goods`.`id` = ? and `color` = ?
+[2017-02-17 02:01:02]select * from `links`
+[2017-02-17 02:01:02]select count(*) as aggregate from `shop` where `uid` is null
+[2017-02-17 02:01:03]select * from `district` where `upid` = ?
+[2017-02-17 02:01:03]select * from `district` where `upid` = ?
+[2017-02-17 09:00:21]select * from `adminuser` where `username` = ? limit 1
+[2017-02-17 09:00:45]select count(*) as aggregate from `goods`
+[2017-02-17 09:00:45]select * from `goods` limit 5 offset 0
+>>>>>>> 02-17

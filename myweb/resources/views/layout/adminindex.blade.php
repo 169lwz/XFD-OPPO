@@ -234,7 +234,7 @@
                         <ul  class="closed">
                             <li><a href="/admin/goods/index">浏览商品</a></li>
                             <li><a href="/admin/goods/add">添加商品</a></li>
-                            
+
                         </ul>
                     </li> 
                     <li>
